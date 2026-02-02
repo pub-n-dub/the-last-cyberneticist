@@ -14,7 +14,9 @@ Here are the liner notes for each episode.
 
 The Realm of Cybernetics
 
-* What is Cybernetics
+* What is Cybernetics?
+* Why is Cybernetics relevant?
+* What does it mean to everyday life?
 
 
 #### Post-production notes
