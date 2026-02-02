@@ -7,6 +7,7 @@ Technology-themed podcast musing on cybernetics applied to everyday life.
 ## Episode list
 
 * Episode #1: The realm of Cybernetics
+* Episode #2: (in planning)
 
 ## Episode outline
 
