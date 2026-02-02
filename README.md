@@ -1,6 +1,6 @@
 ## The Last Cyberneticist
 
-![podcast-image](/images/tlc-podcast.jpg)
+![podcast-image](/images/me-last-cyberneticist-mini.jpg)
 
 Technology-themed podcast musing on cybernetics applied to everyday life.
 
