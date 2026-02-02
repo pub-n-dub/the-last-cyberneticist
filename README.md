@@ -2,9 +2,20 @@
 
 Hit podcast show of tech and education.
 
-### Episode list
+## Episode list
 
-* Episode #1: 
+* Episode #1: The realm of Cybernetics
+
+## Episode outline
+
+Here are the liner notes for each episode.
+
+### Episode #1
+
+The Realm of Cybernetics
+
+* What is Cybernetics
+
 
 #### Post-production notes
 
