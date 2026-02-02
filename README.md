@@ -12,7 +12,7 @@ Here are the liner notes for each episode.
 
 ### Episode #1
 
-The Realm of Cybernetics
+_The Realm of Cybernetics_
 
 What is cybernetics and why is it relevant in today's society? Considering computers, hardware, software, artificial intelligence, and robotics, the realm of cybernetics is one that describes this complexity in a compact and easy-to-navigate manner.
 
