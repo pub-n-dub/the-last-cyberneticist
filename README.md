@@ -14,6 +14,8 @@ Here are the liner notes for each episode.
 
 The Realm of Cybernetics
 
+What is cybernetics and why is it relevant in today's society? Considering computers, hardware, software, artificial intelligence, and robotics, the realm of cybernetics is one that describes this complexity in a compact and easy-to-navigate manner.
+
 * Announcement
 * What is Cybernetics?
 * Why is Cybernetics relevant?
@@ -32,3 +34,5 @@ The Realm of Cybernetics
 Announcement: Recorded, then amplified 8.6 db, the noise reduction of the default, which is -12 db.
 
 Remainders: Just recorded and exported as-is on the Sony microphone.
+
+`sox 01.mp3 02.mp3 output.mp3`
