@@ -9,9 +9,7 @@ Technology-themed podcast musing on cybernetics applied to everyday life.
 * Episode #1: The realm of Cybernetics
 * Episode #2: (in planning)
 
-## Episode outline
-
-Here are the liner notes for each episode.
+Below are the liner-notes for each episode devised in-planning.
 
 ### Episode #1
 
