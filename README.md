@@ -24,8 +24,8 @@ The Realm of Cybernetics
 * The nature of hardware and software
 * The composition of artificial intelligence
 * The schism of artificial intelligence
-
-
+* How do we resolve the schism?
+* Exit
 
 #### Post-production notes
 
