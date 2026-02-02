@@ -1,6 +1,8 @@
-## the-last-cyberneticist
+## The Last Cyberneticist
 
-Hit podcast show of tech and education.
+![podcast-image](/images/tlc-podcast.jpg)
+
+Technology-themed podcast musing on cybernetics applied to everyday life.
 
 ## Episode list
 
