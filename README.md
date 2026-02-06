@@ -7,7 +7,7 @@ Technology-themed podcast musing on cybernetics applied to everyday life.
 ## Episode list
 
 * Episode #1: The Realm of Cybernetics
-* Episode #2: (in planning)
+* Episode #2: What is possible with Cybernetics?
 
 Below are the liner-notes for each episode devised in-planning.
 
@@ -30,10 +30,7 @@ What is cybernetics and why is it relevant in today's society? Considering compu
 * How do we resolve the schism?
 * Exit
 
-#### Post-production notes
+### Episode #2
 
-Announcement: Recorded, then amplified 8.6 db, the noise reduction of the default, which is -12 db.
+_What is possible with Cybernetics?_
 
-Remainders: Just recorded and exported as-is on the Sony microphone.
-
-`sox 01.mp3 02.mp3 output.mp3`
