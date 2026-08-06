@@ -8,8 +8,15 @@ Technology-themed podcast musing on cybernetics applied to everyday life.
 
 * Episode #1: The Realm of Cybernetics
 * Episode #2: What is possible with Cybernetics?
+* Series arc: Hero-1 repair, fitting, and Heiserman-style embodiment
 
 Below are the liner-notes for each episode devised in-planning.
+
+Reusable production notes:
+
+- [Hero-1 series outline](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/hero1-series-outline.md:1)
+- [Series music guide](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/series-music-guide.md:1)
+- [Series music cheat sheet](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/series-music-cheat-sheet.md:1)
 
 ### Episode #1
 
@@ -34,3 +41,13 @@ What is cybernetics and why is it relevant in today's society? Considering compu
 
 _What is possible with Cybernetics?_
 
+This episode can serve as the bridge between the conceptual opening of `The Last Cyberneticist` and a concrete embodied research series.
+
+Recommended turn:
+
+* Move from abstract cybernetics to physical systems you can diagnose, repair, and test
+* Introduce the `Hero-1` as a practical cybernetic workspace rather than a nostalgia object
+* Set up the idea that embodiment changes what intelligence, adaptation, and control look like
+* Point forward to a documented restoration and experimentation series
+
+For the working production outline, see [episodes/hero1-series-outline.md](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/hero1-series-outline.md:1).
