@@ -6,7 +6,7 @@ Current planning date: Thursday, August 6, 2026.
 
 ## Working purpose
 
-Use the `Hero-1` series as the first concrete answer to the question raised by Episode #2:
+Use the `Hero-1` series as the first concrete answer to the question raised by Episode #4:
 
 `What is possible with cybernetics when the machine has a body, sensors, limits, and a repair history?`
 
@@ -56,14 +56,15 @@ Shorter version:
 Recommended placement:
 
 1. Use one short Berkeley-Heiserman paragraph in Episode 2.
-2. Use a clearer but still brief explanation in Episode 3.
-3. Save the deeper conceptual treatment for a later dedicated episode after the first real repair and motion milestones.
+2. Use Episode 3 to introduce the Berkeley-Heiserman paper briefly as a framing document rather than a full seminar.
+3. Let Episode 4 be the first true bench episode.
+4. Save the deeper conceptual treatment for a later dedicated episode after the first real repair and motion milestones.
 
 Bridge by episode:
 
 - Episode 2: use Berkeley-Heiserman to name the problem-space
-- Episode 3: use it to explain why `Hero-1` is the right platform
-- Episode 4: use it only implicitly, by showing that embodiment can fail at the steering layer
+- Episode 3: use the Berkeley-Heiserman paper to explain the architecture briefly and name what present discourse leaves thin
+- Episode 4: let embodiment arrive concretely through the first real `Hero-1` fault
 - Episode 5: use Berkeley lightly when discussing control logic and physical organization
 - Episode 6: use Shannon and Berkeley lightly when discussing the path from logic to hardware and tooling
 - Episode 7: use Heiserman directly when the first adaptive loop is real rather than hypothetical
@@ -101,11 +102,11 @@ Recurring structure:
 
 Episode #1 established the conceptual territory.
 
-The Hero-1 arc can now do four jobs at once:
+The revised arc can now do four jobs at once:
 
-1. make Episode #2 concrete
-2. give the show a repeatable narrative structure
-3. connect repair work to embodied AI without overclaiming
+1. let Episode #2 sharpen the question without forcing an early case study
+2. let Episode #3 briefly introduce the Berkeley-Heiserman paper as vocabulary
+3. let Episode #4 begin the repeatable bench structure with real stakes
 4. build naturally toward RB5X Heiserman `eami`
 
 This also protects the series from sounding like:
@@ -120,64 +121,67 @@ This also protects the series from sounding like:
 
 Title:
 
-`What Is Possible with Cybernetics? A Hero-1 Answer`
+`What Is Possible with Cybernetics?`
 
 Purpose:
 
-Bridge the show from theory into a real embodied system.
+Bridge the show from theory into embodied-system questions without yet centering a single robot.
 
 Core claim:
 
-Cybernetics becomes easier to understand when we can watch a machine sense, fail, move, drift, and be repaired.
+Cybernetics becomes easier to understand when intelligence is forced back into sensing, control, state, action, and failure in the world.
 
 Talking points:
 
-- Use the `Hero-1` as the first concrete case study for the podcast
-- Explain why a robot is a better cybernetics teaching object than software alone
+- Explain why embodied systems are better cybernetics teaching objects than software alone
 - Introduce the idea that constraints make intelligence more legible
-- Briefly introduce Berkeley as a thinker of sensing, control, state, and action, and Heiserman as a thinker of adaptive revision
-- Set up the coming restoration series as the practical continuation
+- Briefly introduce Wiener, McCarthy, and the narrowing from cybernetics to early AI
+- Name Berkeley as a thinker of sensing, control, state, and action, and Heiserman as the adaptive extension without letting him dominate the episode
+- Suggest lightly that the best way into these questions is not always the most ambitious build, but the platform that can actually be tested honestly
+- Point forward to Episode 3 as the paper bridge and Episode 4 as the first bench episode
 
 Bridge note:
 
-- Keep this to one paragraph at most
-- Name Berkeley and Heiserman, but do not explain the full comparison set yet
-- Let the robot remain the center of attention
+- Keep Berkeley-Heiserman to one paragraph at most
+- Do not explain the full comparison set yet
+- Let the conceptual split between cybernetics and AI carry the episode rather than the robot
 
 Closing move:
 
-`The next step is not another abstract argument. The next step is to put a real machine on the bench and find out what still works.`
+`The next step is not to jump straight to a machine. The next step is to recover the vocabulary that tells us what we are looking at when a machine finally does appear.`
 
 ## Episode 3
 
 Title:
 
-`Why Hero-1, Why Now?`
+`Berkeley, Heiserman, and the Lost Architecture`
 
 Purpose:
 
-Explain why this robot matters specifically.
+Briefly introduce the paper as the architectural and historical bridge for the series.
 
 Core claim:
 
-The `Hero-1` is useful because it sits at the intersection of vintage robotics, visible control structure, and practical experimentation.
+Berkeley and Heiserman offer a still-useful vocabulary for embodied machine intelligence that present discourse often leaves undertheorized.
 
 Talking points:
 
-- Historical role of the `Hero-1` and `ET-18` family
-- Why this machine is more than a collector object
-- Why a constrained robot can still teach modern lessons
-- Explain that Berkeley provides the architecture and Heiserman provides the adaptive deepening
-- Why the project aims beyond preservation toward embodied adaptive work
+- Introduce the paper title and its central claim
+- Present Berkeley as more than a symbolic logician: a thinker of sensing, storage, calculation, control, state, and action
+- Use Heiserman to name the adaptive extension through memory, generalization, and revision, but keep him proportionate rather than making him the whole episode
+- Explain the paper's criticism of present embodied-AI discourse: capability often outruns explicit architectural vocabulary
+- Frame Rodney as the harder self-programming horizon already begun years ago, while clarifying that the repaired `Hero-1` is the nearer instrument for testing the paper's architecture
+- Close by saying the bench episodes will test whether this recovered vocabulary actually earns its keep
 
 Bridge note:
 
-- This is the best early place to say why the `Hero-1` is more than a restoration target
-- Use Berkeley-Heiserman to justify the platform choice, not to summarize the monograph
+- Keep this episode brief and selective
+- Do not turn the episode into a compressed journal article
+- Use the paper to name the architecture, not to exhaust the bibliography
 
 Closing move:
 
-`If this robot becomes reliable again, it stops being only an artifact and starts becoming an instrument.`
+`If this paper is right, then the bench is where its claims either become concrete or start to fail.`
 
 ## Episode 4
 
@@ -187,7 +191,7 @@ Title:
 
 Purpose:
 
-Center the current repair blocker as the beginning of the real story.
+Center the current repair blocker as the first true `Hero-1` episode and the beginning of the real bench story.
 
 Core claim:
 
@@ -195,10 +199,12 @@ Before any adaptive behavior matters, the machine must be mechanically and elect
 
 Talking points:
 
-- As of Thursday, August 6, 2026, the wheel runs to the extreme left stop
+- As of Monday, August 10, 2026, the wheel runs to the extreme left stop
 - Why unloaded testing matters
 - Why reliable embodiment comes before software ambition
 - Why the first hard problem is physical, not conceptual
+- Briefly allude to Rodney from the 1979 self-programming book as part of the older dream of a self-organizing machine, then return immediately to the concrete machine on hand
+- Introduce this `Hero-1` as already assembled when acquired from early Apple engineers, which makes it less a box of parts than a preserved technical inheritance that now has to be tested honestly
 
 Bridge note:
 
@@ -365,14 +371,14 @@ Closing move:
 
 If you want the shortest path from the current repo state to published material, record in this order:
 
-1. Episode 2: `What Is Possible with Cybernetics? A Hero-1 Answer`
-2. Episode 3: `Why Hero-1, Why Now?`
+1. Episode 2: `What Is Possible with Cybernetics?`
+2. Episode 3: `Berkeley, Heiserman, and the Lost Architecture`
 3. Episode 4: `The Steering Fault Is the First Real AI Problem`
 
 That sequence preserves continuity:
 
 - concept first
-- platform second
+- paper second
 - blocker third
 
-It also lets the audience understand why the steering problem is not a detour, but the exact place where the cybernetics becomes real.
+It also lets the audience understand why the steering problem is not a detour, but the exact place where the cybernetics becomes real after the vocabulary has been set.
