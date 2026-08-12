@@ -1,0 +1,772 @@
+===== PDF PAGE 001 =====
+
+J. J. Coupling (1950) How to Build a Thinking Machine. Astounding Science Fiction 45(6) (August 1950): 117--127.
+
+HOW TO BUILD A
+
+THINKING MACHINE
+
+BY J. J. COUPLING
+
+This highly original article contains specifications for building a
+
+machine that thinks — solves problems by trial and learning — and
+
+does not merely do arithmetic. And it also contains some fascinating
+
+analysis of what constitutes an ideal “thinker”. See the Editorial.
+
+There is a lot of guff in the talk
+of these days about “thinking ma-
+chines”. When I attended a confer-
+ence on large-scale digital computers
+at Harvard, I found that people who
+had built operating digital comput-
+ers, or had almost completed them,
+were very modest in their state-
+ments. Those who were just starting
+had larger ideas, and for the men
+with plans only the sky was the
+limit. |
+
+Electronic computer projects have
+come up hard against the fact that it
+is a man-sized job just to make a lot
+of vacuum tube circuits operate reli-
+ably, a job a lot bigger than most
+enthusiasts had realized. Many of
+the grander ideas and speculations
+of a year or.so ago have been put on
+the shelf, and the young geniuses
+
+HOW TO BUILD A THINKING MACHINE
+
+have buckled down to the truly stu-
+pendous problem of making ex-
+ceedingly large and complicated
+electronic devices do.even very sim-
+ple-minded computing jobs.
+
+On the fringe of the activities, a
+few still talk about giant electronic
+brains. When, however, one of these,
+who has written a book on the stib-
+ject, asked a seasoned applied mathe-
+matician, “Dr. Blank, do you believe
+that electronic computers think?” he
+was misunderstood to say “stink.”
+The harried mathematician replied,
+“Now that you put the words into
+
+my mouth, I rather think that they
+
+do.” There followed a short con- .
+versation completely at cross pur-
+poses.
+
+This doesn’t nean that “thinking
+machines” in the form of immensely
+
+117
+
+
+===== PDF PAGE 02 =====
+
+complicated electronic systems will
+never be built. They have just been
+pushed a little farther into the future.
+We know, for instance, that ma-
+chines of present design could—if
+they presently existed—play chess.
+Perhaps playing chess isn’t thinking
+in a true sense of the word, what-
+ever thinking means in a “true”
+sense, or in any other sense, for that
+matter. It will do for the, Sunday
+supplements, however. But even for
+this sort of thing we will have to wait
+until more machines are available.
+For anything beyond there will be a
+long wait indeed.
+
+Perhaps, however, this is an un-
+duly gloomy view. What is thinking,
+anyhow? Is thinking something that
+necessarily involves cubic yards of
+organized gadgets? Or, will the his-
+torian of the year 3,000 look back
+and say, there, in that simple device
+built in 194—, or in that patent of
+193— the thinking robot began.
+Without an historian’s hindsight, we
+cannot know, but we are free to
+speculate. What, then, is thinking?
+
+I certainly wish I knew what
+“thinking” is. Unfortunately, I don’t
+know, and I rather think that if I
+did know I wouldn’t be writing this
+article for Astounding SCIENCE
+
+FICTION. In a rough preliminary
+way, however, it may be possible to
+
+assign certain general characteris-
+tics to a thinking machine, although
+a given machine would not neces-
+sarily have to embody all of these.
+First of all, I think that a think-
+ing machine’s behavior should not be
+
+118
+
+entirely predictable. The machine
+should have a random element, so to
+speak. Partly, the justification for
+this is that people who think are in
+a measure unpredictable. There is a
+stronger justification, however. We
+might illustrate this by an example.
+
+Suppose we asked a thinking ma-
+chine to make its way through a
+maze, and suppose we offered it a
+maze with two paths through; one
+long, involving. many choices at
+branches; and the other shorter, in-
+volving fewer choices, Such a maze
+is shown in the figure. Suppose we
+describe a path through the maze by
+a sequence of letters, R and L, right
+and left, thus giving the order in
+which the machine should turn right
+or left in solving the maze. In the
+maze shown in the figure, one solu-
+tion—the solid line—is, R,R. Another
+—the dashed line—is L, R, L, R, R, L.
+Certainly, we would think more
+highly of a machine’s intelligence if
+it made its way through the maze in
+the first manner. rather than the
+second.
+
+If, however, the machine makes
+choices according to some fixed pat-
+tern in trying to solve a maze, then
+for some mazes it will always choose
+the longer way. But, if there is a
+random element in the making of
+
+choices, the machine will more likely
+find the shorter path in any maze.
+Further, if the machine is so con-
+structed that it learns the way.
+through the maze only after several
+successes, it will almost always learn
+the shorter way.
+
+ASTOUNDING SCIENCE-FICTION
+
+
+===== PDF PAGE 03 =====
+
+Thus, by considering the ques-
+tion of solving a maze, we are led to
+believe that (1) a thinking machine
+should have a random element, and
+(2) it should learn only after suc-
+ceeding several times. This is ap-
+pealing in a human sense, too, for
+certainly we fumble around a lot in
+solving our problems, and by and
+large we don’t learn by succeeding
+just once. [ think that these criteria
+can probably be justified for ma-
+chines designed to solve any but the
+simplest and most routine problems.
+
+We have talked about the ma-
+chine’s “learning” its way through
+the maze. That means that it must
+adjust itself to its environment—the
+problem it solves—so that it is not
+the same after having worked a
+problem as it was before. In other
+words, it must learn from experi-
+ence. This implies a criterion of
+value. Such a criterion may be either
+built-in or external. We human be-
+ings have both kinds. When a baby
+takes its hand out of the fire, it is
+relying on an internal standard; it
+doesn’t want to be burned. When a
+baby takes its hand out of the cookie
+jar, it is using an external criterion
+of value belonging to its mother, a
+criterion which may make itself felt
+through a sharp tone of voice, or
+otherwise.
+
+Conceivably, we could reward our
+thinking machine in some way when
+it pleased us, perhaps by pressing a
+button on it labeled, maybe, “pat on
+the back.” In a simple machine we
+would probably merely make it tend
+
+HOW TO BUILD A THINKING MACHINE
+
+to remember a course of action which
+achieved the solution of some prob-
+lem. The machine’s pleasure could,
+
+if we wished, be made manifest by
+
+the flashing of a green light or by
+the wagging of a mechanical tail.
+
+Does this sound  interesiing?
+Would an unpredictable machine
+which solved and remembered the
+solution to a maze be of interest to
+the average reader of science fiction?
+Suppose that, in addition, we added
+the feature that if the maze were
+changed, the machine would gradu-
+ally forget the older, now invalid,
+course of action and learn how to
+solve the new maze. Would that help
+to make the machine interesting? I
+don’t know. Offhand, the answer
+might seem to be, yes. However, I
+would advise the reader to suspend
+judgment.
+
+In the meantime, here is a descrip-
+tion of a simple device which I
+thought up while considering maze-
+solving machines. While it hasn’t
+
+119
+
+
+===== PDF PAGE 04 =====
+
+been built and debugged, I’m quite
+sure that it is operable and could be
+made by following’ the description
+and circuits given in the Appendix.
+
+The device consists of two boxes,
+one called the “entity” and the other
+the “environment.” The environ-
+ment spontaneously sends signals
+called “pain signals’ to the entity.
+These pain signals light a red lamp
+on top of the entity and also cause
+the entity to send out a code signal
+of “As” and “Bs” along the “A” or
+“B” wires of N pairs of wires lead-
+ing from the entity to the environ-
+
+ENTITY
+
+ment. Instead of As and Bs we may
+say instead, if we wish, ones and
+zeros. Such a group of ones and
+zeros can be thought of as forming
+a binary number, as, the number
+1001, for instance.
+
+At first, the binary numbers sent
+from the entity to the environment
+in response to pain signals from the
+énvironment are chosen entirely at
+random. However, the environment
+is so constructed that on receipt of
+one particular binary number it will
+send a “pleasure” signal to the en-
+tity. This pleasure signal lights a
+
+ENVIRONMENT
+
+RED PULSE
+GENERATOR
+(LONG, +)
+
+PULSE
+GENERATOR
+
+Block diagram of machine which can learn by trial-and-error, and remember.
+
+120
+
+ASTOUNDING SCIENCE-FICTION
+
+
+===== PDF PAGE 05 =====
+
+“Noise source” generator circuit. N-plus-1 needed.
+
+green lamp on top of the entity and
+also biases the tubes in the entity
+which send the binary numbers to
+the environment in such a way as to
+favor the last signal sent over all
+other combinations. After several
+successes, the biases will become
+such as to predispose the entity over-
+whelmingly toward sending the com-
+bination of pulses which elicits a
+pleasure signal. If the environment
+is changed so as to require a dif-
+ferent code from the entity in order
+to obtain a pleasure signal, the biases
+will gradually leak off; the entity
+will gradually forget the old pattern,
+and then it will learn a new one.
+
+We could make such a device
+learn quickly and forget quickly, or
+learn only after many successes and
+be very stubborn about forgetting, or
+any other combination of stubborn-
+ness or adaptability.
+
+What about maze-solving, though?
+Well, we saw earlier that two solu-
+tions of the maze shown in the figure
+
+can be written in terms of turnings
+to the right, R, or to the left, L, as
+R, Rand L, R, L, R, R, L. We can
+just as well let 1 stand for R or right
+and let O stand for L or left. Then
+the two solutions can be written 11
+and 010110. Suppose there were six
+pairs of wires between our environ-
+ment—which now represents the
+maze—and our entity—which is now
+a maze-solving machine. We can set
+the environment to give a pleasure
+pulse when it receives the number
+010110. That takes care of the long
+path solution, the dotted path of the
+figure. We can further add circuits
+to the environment, duplicating some
+of those already there, so that it will
+give a pleasure pulse for any num-
+ber beginning with 11. Thus, the
+entity will have succeeded if it learns
+
+110000
+110001
+~ 110010
+110011
+
+or, in fact, any of the sixteen six-
+
+‘digit binary. numbers which start
+
+HOW TO BUILD A THINKING MACHINE 121
+
+
+===== PDF PAGE 06 =====
+
+NOISE
+SOURCE
+
+{7-—.
+I6
+
+1S
+
+SHORT NEGATIVE GREEN
+PULSE BLOCKS RED PULSE
+
+GENERATOR FOR A TIME
+
+> 14
+
+“Red pulse” generator circuit—the equivalent of pain stimulus for the
+electronic organism.
+
+with 11. No wonder the entity will
+be most likely to hit on the short
+path. There are sixteen numbers
+corresponding to it, and only one
+corresponding to the long path!
+
+I really think that a reader who
+has waded through the Appendix
+can’t deny at this point that we
+have a way of making a machine
+which can in this sense solve a maze.
+Further, the machine does so while
+satisfying some criteria which, when
+they were presented earlier looked,
+I hope, rather interesting. The ma-
+chine is unpredictable. It learns after
+repeated trials. It tends to find the
+shortest way through the maze. If
+the maze is changed, it forgets the
+old and now useless route through,
+and it learns the new one. It even
+flashes a green light when it is
+pleased by its success.
+
+I also really think that a reader
+
+122
+
+who has got this far is bound to be
+disappointed. The machine doesn’t
+look like a man, or even like a dog.
+If it ran through the maze on wheels,
+there would be some satisfaction to
+it, but the machine doesn’t move. It
+is incapable of seeing, hearing, feel-
+ing or smelling the real physical
+maze, and it can only solve the maze
+when the maze is represented by
+a certain setting of dull-looking
+switches on a box called “environ-
+ment” which stands for the maze.
+This little gadget isn’t what we bar-
+gained for at all.
+
+There may be compensations, how-
+ever. If the reader is sadder at this
+point, perhaps he is wiser as well.
+Neither I nor he knows just what we
+mean by “thinking.” And I don’t
+think that we are going to be taken
+in by any attractive definitions, only
+to have to admit that according to
+
+ASTOUNDING SCIENCE-FICTION
+
+
+===== PDF PAGE 07 =====
+
+such definitions a trivial gadget must’ the device. It is divided into two
+be admitted to think. parts shown separated by a vertical
+dashed line. The elements to the left
+
+----—— constitute the entity and those to the
+
+right constitute the environment.
+APPENDIX The environment has a red pulse
+generator, which spontaneously emits
+
+MACHINE WHICH ADJUSTS “red” pulses, which are long posi-
+TO ENVIRONMENT tive pulses. It has an input lead from
+
+a green pulse generator. The arrival
+The purpose of this appendix is to of a “green” pulse, which is a short
+describe in more detail a device men- __ negative pulse, temporarily paralyzes
+
+tioned in the text. the red pulse generator. The output
+Figure | shows a block diagram of of the red pulse generator goes to a
+
+= Wh” + REF,
+Ne, 22
+
+A
+B FIG. 4
+D neni
+ee ee
+1 24 23
+N 9
+Oo L»
+an
+(a 26 \e7
+#T =
+
+Discriminator and “Green pulse” generator circuit. The “Green pulse” is the
+electronic organism’s equivalent of pleasure sensation.
+
+HOW TO BUILD A THINKING MACHINE 123
+
+
+===== PDF PAGE 08 =====
+
+combination seeker and to a red light
+in the entity.
+
+The environment also has a dis-
+.criminator. This has n input chan-
+nels from the entity. The input chan-
+nels consist of two wires each, the
+wires of each pair being labeled “O”
+and “1”. The entity can act on the
+environment by sending simultane-
+ously a negative pulse to the en-
+vironment on each channel. In a
+given channel, the pulse can be on
+either the 0 or the 1 wire. Thus, the
+pulses on the various channels can be
+thought of as forming a binary num-
+ber of n digits or bits. The discrimi-
+nator is equipped with n single-pole-
+double-throw switches by means of
+which it can be adjusted to respond
+to one only of the 2" possible binary
+numbers. When the discriminator
+receives the preset number from
+the entity, it activates the green pulse
+generator. This sends a short nega-
+tive pulse to the red pulse gen-
+erator, which temporarily paralyzes
+it, and also sends a short negative
+pulse to the combination seeker in
+the environment and to the green
+light. .
+
+The entity consists of the red and
+green lights and the combination
+seeker. This latter always sends a
+binary number to the environment
+when stimulated by a red pulse. Im-
+mediately after turn-on these num-
+bers are randomly produced through
+the use of noise generators. How-
+ever, whenever the number preset in
+the environment is produced by the
+entity, the entity receives a green
+
+124
+
+pulse, and this prejudices it to a
+greater or lesser degree, depending
+on adjustment, in favor of producing
+the preset number the next time it
+is stimulated by a red pulse.
+
+Some of the less obvious contents
+
+of the boxes of Figure 1 will now be
+described.
+
+Figure 2 shows a noise source.
+One of these is needed in the en-
+vironment to produce red pulses, and
+n are needed in the entity. The
+source of the noise is a gas tube 1 fed
+through a resistor 2. The noise volt-
+age of the gas tube goes to a two-
+stage amplifier consisting of tubes 3
+and 4, which might be halves of a
+double triode. Large coupling ca-
+pacitors 5 and very. high grid re-
+sistors 6 are used in order to obtain
+good low-frequency response. If the
+resistors 6 are 10 megohms or so, the
+tubes will be self-biasing. The plate
+resistors 7 are also high to give high
+gain. The noise output appears
+across capacitor 8, which cuts off
+the high frequencies. Maybe more
+than two stages of amplification will
+be needed.
+
+Figure 3 shows a circuit for the
+red pulse generator. A blocking os-
+cillator 11 is triggered by a noise
+generator 10. An amplifier 12 is used
+to invert the long negative pulse
+
+produced so as to give a long posi-
+tive pulse at the output 13. Green
+
+pulses, which are short and nega-
+tive, are applied to the lead 14 and
+act through crystal diode 15 to puta
+negative charge on condenser 16.
+This biases the oscillator 11 so that
+
+ASTOUNDING SCIENCE-FICTION
+
+
+===== PDF PAGE 09 =====
+
+the noise generator 10 does not trig-
+ger it until part of the charge leaks
+off through resistor 17.
+
+Figure 4 shows the discriminator
+and the green pulse generator. The
+n negative pulses from the entity
+come on wire pairs a,b,—,n to switch-
+es 24, each of which can be set to
+positions 0 or 1. These switches lead
+to crystal diodes 23, all of which
+
+36
+T NOISE
+SOURCE | Pe ||
+
+FIG.5
+
+have a common terminal in bus 20.
+The bus is connected to a negative
+voltage source 21 by means of a very
+high resistance 28. The bus cannot
+go negative unless all of the. diodes
+23 as biased negative by pulses from
+the entity, for the entity impedance
+plus the impedance of the crytsal
+diodes in the conducting direction is
+small compared with the resistance
+
+GREEN PULSE
+
+39 —,SHORT
+
+RED PULSE
+
+34—~ 34
+33 +LONG
+
+Circuit for the combination-seeker in the “entity”—N needed.
+
+HOW TO BUILD A THINKING MACHINE
+
+123
+
+
+===== PDF PAGE 10 =====
+
+28. Thus, the bus can go negative
+only if the binary number preset on
+switches 24 is received from the en-
+tity. When bus 20 goes negative the
+inverting amplifier 25 applies a posi-
+tive triggering pulse to blocking os-
+cillator 26, and thus the blocking
+oscillator delivers a short negative
+green pulse at the output 27. In con-
+nection with Figure 5, it is impor-
+tant to note that the ground of the
+circuits of Figure 4 is connected
+(22) to a positive terminal in Fig-
+ure 5, a terminal marked + ref.
+
+Figure 5 shows one of the n ele-
+ments of the combination selector in
+the entity. The halves of a double
+triode, 30 and 31, are commonly
+biased a little negative by batteries
+43 acting through very high resist-
+ances 42, so that after a long spell of
+inactivity each tube will have the
+same negative bias. The tubes 30
+
+and 31 have a common cathode re-.
+
+sistance 32 which is high enough so
+that if the grids are made positive
+with respect to ground, they will still
+not be positive with respect to cath-
+ode, and so that if one grid is made
+appreciably more positive than the
+other, only the tube with the more
+positive grid will have plate current.
+
+The grid of tube 30 is driven by
+noise generator 36, and this tends to
+make the grid of 30 negative or posi-
+tive with respect to the grid of 31 in
+a random manner. A red pulse ap-
+
+plied to lead 33 is transmitted to the .
+
+grids of both 30 and 31 by capacitors
+34 which are of such capacitance as
+to offer a high impedance to signals
+
+‘126
+
+of the frequencies supplied by noise
+generator 36 but a reasonably low
+impedance to the higher frequencies
+of the red pulse. If at the time the
+red pulse appears the grid of 30 is
+more positive — less negative — than
+that of 31, because of the signal from
+the noise. generator 36, tube 30 will
+conduct and a negative pulse will be
+sent out on the “1” wire 38 of the
+output channel, and no pulse will be
+sent out over the “O” wire 37. If the
+grid of 30 is more negative than that
+of 31 when the red pulse arrives, a
+negative pulse will go out on 37 and
+no pulse on 38.
+
+Now, when the pulses sent out by
+the entity accidentally form the
+combination preset in the environ-
+ment, a green pulse arrives on lead
+39. This is applied through capaci-
+tors 40 to crystal diodes 41 in such
+a direction as to tend to make the
+diodes conduct. The capacitors 40
+are of low capacitance, so that they
+transmit the short green pulses but
+are essentially open circuits to the
+long red pulses. The diodes 41 are
+also biased by voltages derived from
+the plates of tubes 30 and 31, so that
+only the diode connected to the plate
+of the tube with plate current—the
+lower-potential plate—will be made
+conducting by a green pulse. Thus,
+when a green pulse comes along,
+one of the diodes is made conducting
+and this tends to put a negative
+
+charge on one of the capacitors 34.
+
+‘The capacitor which is charged
+
+negatively is that associated with the
+nonconducting tube. Hence, a green
+
+ASTOUNDING SCIENCE-FICTION
+
+
+===== PDF PAGE 11 =====
+
+pulse changes the relative biases of
+the tubes 30 and 31 in such a way as
+to bias the grid of the nonconduct-
+ing tube more negative. Thus, for in-
+stance, if a pulse goes out over the
+“0” wire and if a green pulse is
+elicited from the environment, the
+tubes are biased so as to favor pro-
+duction of a pulse on the “O” wire
+the next time a red pulse arrives. If,
+however, the entity is left inactive or
+without green pulses for a time—if
+the entity is turned off or if the pres-
+ent combination in the environment
+
+is changed—the biases will gradually
+equalize because of resistors 42 and
+the entity will no longer be predis-
+posed toward sending some particu-
+lar pulse combination.
+
+Returning to Figure 3, the “para-
+lyzing” or inactivating circuit con-
+sisting of elements 15, 16 and 17
+prevents the entity from elicting a
+rapid succession of green pulses
+from the environment. It also gives
+the entity freedom from red pulses
+for a time as a reward for acting
+properly on the environment.
+
+THE END
