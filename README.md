@@ -125,7 +125,7 @@ A substantive part of the process of learning is taking action by doing. A part 
 Episode Summary:
 
 * USB DC power
-  - Making a cable
+  - Making a cable (USB-A cut and two power lines soldered to `square-pin` female jumpers)
   - Illustrating it on the Boagaphish `4-bit wonder` board
 * Memory programming
   - Choices between old and new tech
