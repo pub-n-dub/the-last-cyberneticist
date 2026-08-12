@@ -1,0 +1,169 @@
+Welcome to episode three of The Last Cybernet Assist.
+Last episode, I started to ask the questions about what is possible cybernetics.
+So the question is still the right one, and the right path, we fit ourselves on the right path.
+But then I realized, I'm thinking back in the episode that I probably jumped a little bit too quick, and there are some things in history.
+That would be beneficial, because it's really easy to lose the threat of cybernetics if you jump straight into the AI spectacle.
+That's the first thing one tends to do, so I talked about steering behavior adaptation.
+But let's step back a little bit here first, so I think there's a gap.
+So it's not much of a gap with cybernetics itself.
+And I don't want to get into that with a parade of names.
+I'll tell you what lots of different things. And that in a nostalgic way.
+Let's focus the discussion upon three figures that I think define the field in totality.
+There are other people, of course, that would argue with this, but I think that Ross Ashby, Gray Walter, Norbert Viner are the giants of the field.
+And I'll make that clear as I go through this.
+So let's start here. So Viner, Norbert Viner, he defined cybernetics.
+So he gave it the name, he set the parameters, all the definitions, he came up with basically defined the foundation of the entire field.
+He was the first one to look at the embodiment of it and looked at it strictly from an embodiment point of view.
+And he also looked at it from an encephalographic way, so he was able to build a machine that could read brainwaves.
+He had a unique kind of a set of experiences on what embodiment meant from a mentalization to actuation.
+And not in an abstract way, but in a finite way, in a definitive way. So that's really helpful.
+And Ashby, he was quite the academic and spent an enormous amount of time digging into topics and ideas and always questioned everything that he was writing about.
+So it's very easy to get lost in reading him because he knows a lot, but if you stick with it, you'll come out the other side of it, but I'm going to help with that here in this episode so that it won't be so intimidating.
+So Ashby would make the situation more serious, let's say, so he would say, what does it mean for a system not just to behave, but that ever-present stability, adaptation and viability.
+Now, viability was done by other figures that are very notable as well, but I'm not going to touch on that right now.
+But this way, I think it'll be a better, I call this a bridge episode, this would be a better way for us to really understand where we're coming from and where we're going to, because we want to talk about machine intelligence.
+So that's what we really want to get into here.
+And we want to be faithful to the information, the details, and the history so that we don't start thinking the wrong kinds of things.
+So the end result of this would be, so we're looking at the ender points where we start to work on the robots, the actual robot itself, the Hero 1, and then the Rodney, the Heisman Rodney system.
+Is that you came to talk about the basic things about steering and repair, how does information consumed by the robot and utilized for different things, what is correction involved, self-programming, that's the Rodney part of it, and staying within a certain bounds of reproducibility.
+We touched on that, so that's re-igniting that here.
+So what's the organization that makes all this possible, not just intellectually, but also syntactically.
+So a binder, let's go to a binder first.
+Great importance, control, communication, feedback in the animal and the machine, very famous book, set the vocabulary, and I said defined artificial intelligence itself in the 1955 lecture, which we talked in the last episode.
+So all that, if you take a binder just as that collection of intellect, you have everything you need, and you start to realize that when you have everything you need, these other things seem kind of like tacked on.
+So what does that mean when we're talking about here, so systems that have to act, that seems pretty straightforward, right, but to get that action, we've got systems that need to sense conditions, compare these conditions, and adjust the conduct in time.
+Don't forget the time part, that seems to be always brushed under the carpet.
+Let's talk about intelligence in a divider way, in a demanding way, in a very demanding way, instead of admiring these outputs we got here.
+So in cybernetics and animal and the machine, the divider keeps looking at feedback.
+Feedback is the conduct, it stops being, you know, like, okay, go do something, here's a command, but it starts to organize the correction factors through time.
+And he came up with the idea of homeostasis in machines, so this is something that a natural process always does, and that's why we're alive.
+Don't describe the bodies for the governor's concentration, controls, thermostats, you know, that kind of language from that time.
+But it's an organized assembly of regulating mechanisms.
+And that's extremely useful because it gives us a descriptive point where we can work for, work for, work from.
+So when you see something, when you see a machine doing something that's misbehaving, quote unquote, you ask about the loop that's causing that.
+Ask about the variables that are being controlled when information is reaching controllers, delay distortion instabilities.
+It gives you more tangible targets for the repair phase than just, oh, it failed, so I don't know what's going on.
+Which tends to be, you know, a lot of things that people go through.
+So the divider also is important because he shows that the language of control is not confined to one scale.
+So we can describe a reflex, a pilot, an anti-aircraft predictor, a communications channel, or an organism trying to maintain its internal economy.
+And now economy can be used in the micro and the macro sense.
+So this breadth is what made cybernetic such a large field in the first place.
+But just the breadth itself, I mean, okay, that's great to admire, but let's not tend in abstractions.
+So let's then come back to say, okay, now let's look at Walter.
+He brings it back down to a real sense.
+Here's where cybernetics comes down from the abstraction to the concrete.
+So in 1953's The Living Brain, the book discusses the joining of biology, control, communication, and machinery.
+So one of the most interesting parts of the book is the evolutionary premium of what's called stewardship.
+So an organism that's moving through the world needs a forward part that can contain information, that can feed back for guidance for operative motor centers.
+So Walter talks about that this kind of a feedback control, this flavor is commonplace in physiology.
+But now we're now applying it to engineering problems, in terms of cybernetics, and he directly tied in this idea to the vineyards.
+So he extended it, added upon it, and evolved it.
+So it brought cybernetics away from the abstractions.
+However, realistic, we want to say that from Viner, but then brought them to a steered guidance, a steering orientation adjustment,
+motions and the conductive conditions of risk, and it's much closer to robotics than the public image of AI.
+But Walter's special importance is not just conceptual, it's also experimental.
+He builds physical working models, and that's why I say that he's important, not just for this episode,
+but his influence will be felt throughout the entire series working on here.
+I've encapsulated some of this in a manifesto of sorts, the method of artificial systems.
+And so one of those things that kind of keep on working, keep on working on, and I'm still working on the details of hypotheses about brain function and machinery.
+And yeah, I'm hoping that this podcast will help to elevate that and to work out exactly what that means.
+So I'm not looking for a theory of behavior, I knew it was Walter.
+He just put mechanisms out there and said, what's going on here?
+And that's Elsie and Elmer, the tortoises, 1950.
+Very well, well, and I say well, we see, but quite publicly visible experiments using phototaxis.
+So I'm looking for a light source when they're hungry, so it kind of bridges into, okay, the machines get a recharge
+in a practical sense, but then it also contests the evolutionary, I'm sorry, survival mechanism, which is a component of evolution.
+And that's really where it got very interesting.
+So the behavior is still discussable, but it's rich enough that it's not trivial.
+So the sweet spots of cybernetics is this part of Walter, he really put his finger on what we're talking about here.
+So the mechanism that is in physiology, biology, we've now identified one of them, and here it is in a model and we're testing it and you can see what happens.
+And there are a lot of interesting behaviors that were extrapolated from that, so when you read the living brain and you get toward the latter third of it,
+you start to see that there's a categorization of syntactical, a zoology, if you will, of these behaviors and circuits that won't create sets of behaviors.
+So there was a quantification of these ideas.
+That was really very interesting. This was also validated by Alan Holland, he was quite a Walter expert.
+It's 1980s, I think, 80s and 90s.
+And he spent a lot of time working on reproducing that kind of machine to extract those behaviors and this artificial ethology.
+He ended up making that field, so that was really, that's also very interesting as well.
+We start to understand that we can dig into complex behavior that was completely invisible prior by doing,
+I'm not going to say simple, but a very straightforward way of building an experimentation that takes you to places that it's amazing.
+It really is when you start working on it.
+And I hope to communicate that here as we go along.
+So, I see anything else I want to talk about with Walter before I go into Ashby.
+Sometimes it might alarm people about the rhetoric around intelligent machinery, machine intelligence.
+And I want to emphasize that this is a natural thing, it belongs to the natural world.
+Although we're working on technology and it's a technical question, but it's not inescapable from our normal cognitive processes.
+So, something that we can naturally understand, it's compatible with our idea of what life is.
+So, the people that don't know what's going on, they'll put a lot of flash and flair and don't look around the edges, but look how nice this is.
+And while that's interesting, you'll find that a lot of stuff is missing.
+There's no coherence.
+And I want to emphasize that what you build does not have to look impressive.
+It can look like just a big ball of wires, but the idea of the coherence movement recovery.
+So, asking for, looking for what's the action to do in the feedback of that into the little, into the motor, into the controllers.
+That's where it's really, that's the meaning of the matter here.
+That just that very simple action makes the cybernetic arguments that makes them visible.
+I think on the tortoises, I think we can say a little bit about the tortoises that you can do.
+There's a one-to-one relationship between the schematics, like I talked about, the core reflex.
+That's in the book that translates into a mechanical system.
+That's very, that's, this one-to-one is really, again, to re-emphasize that, that's where it becomes rather important for your own thing.
+Behavioral completeness is what I would say.
+I don't see it a lot in the, I don't know, and I would say the normal world.
+But in the everyday world, when I see a lot of, I'm making up people in the substacks and we stuff about this newest robot from this company, that company.
+And, okay, I always want to get into these other questions just like, okay, the promotion of something that's here is not really what I'm interested in.
+But I'm more interested in like, like, so like, just like how the tortoises would work.
+What problems are they trying to solve?
+What's the internal stability points of this system?
+Are we just forcing it to do things like just typing into a terminal and say, okay, go over there, go do this, go do this, punch that, kick that.
+You're doing that, I can start to say, okay, is this a serious machine?
+Is this a grand machine? Is it a closed loop? Is it not?
+So let's see, I think that should be enough for Walter for now.
+We may touch on this a bit later.
+But, when Walter's came out, Walter's stuff came out and also Berkeley Sque, in 1952, a couple years later.
+There was a lot of theatrics and public theatrics that came around and that's just the nature of the world, I would say.
+And I think as a response to that, well, S.B. published the first design for a brain in 1952, the first edition.
+So that was about two years after Walter's demonstration.
+And he made a note in the second edition that I think that was, no, the design was in 1954 and the second edition was 1960.
+And by the second edition he talks about a lot of the comments he got and the revisions he made.
+So I would recommend the second edition, one of the first, because it really touches on the Walter Sque and a lot of other things that were happening in the decade of the 50s.
+And he was able to bring that into the discussion about, so when you're asking questions about what preserves the organization, what remains stable, it can adapt.
+And he diagrammatically represents that, you can say, okay, this is actually much more informed.
+And so that's what I would say.
+So basically the substance of that design for a brain is like, how much variety must a regulator be able to meet to cope with the changing world?
+And variety we'll talk about throughout, so let's just let it pass for the moment now.
+But if I summarize design for a brain, I would say that it emphasizes repeatedly on adaptation, equilibrium, stability, and the nervous system as a physical machine.
+Trial and error, stability of parts within holes, adaptive behavior, machine organization.
+There was just a quick side, there was a book in the 60s that didn't become popular to the 90s by David Baum.
+I was called the holographic universe, or the holographic principle, and it was a conception of stability of parts and holes.
+And that kind of philosophical foundation mixed in with this ASPE work, it really completes that, so I just kind of drop it in the middle here.
+But that brings us, that brings us much closer to adaptive intelligence, but allowing us to understand it and empathize with those kinds of systems.
+Because the disturbances that we can absorb and to keep our wholeness is what makes us live each day.
+So we preserve, so let's talk about it in a very syntactic way, we preserve key variables, we absorb disturbances.
+We may suffer under things that we impose upon ourselves, but disturbances change is something that we can do internally all the time.
+Structured regulation are half within a range.
+So the homeostant is one of the ASPE's machines, and that was the summation of basically what ordinary life is for our life.
+So let's think about this here now. If we look at this collection, these three individuals, I mentioned in this episode about these topics.
+And I don't want to get this as clever and these are great artifacts that we can do other things with.
+But the language that I'm mentioning today is going to appear now and again.
+But what we want to, I guess the take home message is that we want to always keep in mind that when we are talking about cybernetics,
+I'm talking about machine intelligence from that cybernetic point of view.
+We're looking at an organization first and foremost.
+Now an organization can be, internally, my physiology, my attitude about things, the choices I make, but also can extend into social systems and governments.
+So organization is a principle that can be scientifically described. That's what I would say what cybernetics is all about and the value proposition of it.
+And since that can be said rather easily, and I can go, here's an example, here's an example, but I think anybody can figure that out for themselves, but let's make something that's really hard for ourselves.
+Let's do the robot part, you know, that I talked about last episode. And in order to do that, to do the robot based on how we encapsulate all those things that I just talked about,
+adaptation, stability, variety, it's not enough, I think, I pose that it's not enough to take the most advanced, so the advanced machinery, which is Walter's tortoises.
+And I went through that process and I also read Holland's works as well in the artificial theology, and the problem that I had with it was, it seemed too pat.
+And I could make a tortoise, or make a machine that responded to the principles of photo taxes. I think I wrote a paper about three or four or five times.
+When I got to the end of that process, I just told myself, so why? It never got beyond that adaptation stability variety context, so I talked about abstractions, I talked about finiteness, and now I'm looking for more discreetness, and I never got to that.
+And after all the years of that have gone in between, I started to think that there's, there has to be something like an architectural language.
+So, I got sensing, I got storage, I got state control revision action.
+That's the language for those other higher concepts. And Ashby is the one that I look to to say, is this honest, am I talking about the system in a real honest way, and I can filter that easily with Ashby?
+That you can, he makes it compatible. So, when I talk about the next episode about the Berkeley, Heisenmann, unrealized architecture, that it really is the description of the machinery itself, the parts that we're talking about to each that whole.
+I can get into extremes with it anymore, so what's already been discussed is about as far out into outer space as we will go with this thing.
+And from now on, we're not, we're going to break down in the organizations, we're going to break down the sensors in the control layers, and look at information loops, so that we can say, okay, we got an architecture.
+So, what we have, we have the cybernetic parts, we have the background of the foundation and the principles, and we can stretch into ethics, and the things that are really important to people and artificial intelligence.
+So, we can come into what I call the unrealized architecture, which is an architecture vocabulary that we can leverage to look at, okay, control communication feedback and homeostasis.
+No, that's, I think that's really, that's really the most important part of it.
+So, in the next episode, I'll talk, yeah, we'll move on to Berkeley and Heisenmann, because I think I've covered the gaps.
+That's the explicit architecture vocabulary from a team of intelligence.
+I'll also mention in the next episode, and I'll also put up my sub stack, that, with that paper, there's a paper that I put on RXF, that is the discussion of that, and what that actually means.
+This is a bridge episode, and I want to thank you for listening.
