@@ -6,7 +6,7 @@ Current planning date: Thursday, August 6, 2026.
 
 ## Working purpose
 
-Use the `Hero-1` series as the first concrete answer to the question raised by Episode #4:
+Use the `Hero-1` series as the first concrete answer to the question raised by Episode #5:
 
 `What is possible with cybernetics when the machine has a body, sensors, limits, and a repair history?`
 
@@ -56,19 +56,21 @@ Shorter version:
 Recommended placement:
 
 1. Use one short Berkeley-Heiserman paragraph in Episode 2.
-2. Use Episode 3 to introduce the Berkeley-Heiserman paper briefly as a framing document rather than a full seminar.
-3. Let Episode 4 be the first true bench episode.
-4. Save the deeper conceptual treatment for a later dedicated episode after the first real repair and motion milestones.
+2. Use Episode 3 to restore Wiener, Grey Walter, and Ashby as the historical bridge into embodied cybernetics.
+3. Use Episode 4 to introduce the Berkeley-Heiserman paper briefly as a framing document rather than a full seminar.
+4. Let Episode 5 be the first true bench episode.
+5. Save the deeper conceptual treatment for a later dedicated episode after the first real repair and motion milestones.
 
 Bridge by episode:
 
-- Episode 2: use Berkeley-Heiserman to name the problem-space
-- Episode 3: use the Berkeley-Heiserman paper to explain the architecture briefly and name what present discourse leaves thin
-- Episode 4: let embodiment arrive concretely through the first real `Hero-1` fault
-- Episode 5: use Berkeley lightly when discussing control logic and physical organization
-- Episode 6: use Shannon and Berkeley lightly when discussing the path from logic to hardware and tooling
-- Episode 7: use Heiserman directly when the first adaptive loop is real rather than hypothetical
-- Episode 8: give the fullest Berkeley-Heiserman treatment, because the platform has then earned the comparison
+- Episode 2: use Berkeley-Heiserman lightly to name the problem-space
+- Episode 3: restore Wiener, Grey Walter, and Ashby as the historical and experimental bridge
+- Episode 4: use the Berkeley-Heiserman paper to explain the architecture briefly and name what present discourse leaves thin
+- Episode 5: let embodiment arrive concretely through the first real `Hero-1` fault
+- Episode 6: use Berkeley lightly when discussing control logic and physical organization
+- Episode 7: use Shannon and Berkeley lightly when discussing the path from logic to hardware and tooling
+- Episode 8: use Heiserman directly when the first adaptive loop is real rather than hypothetical
+- Episode 9: give the fullest Berkeley-Heiserman treatment, because the platform has then earned the comparison
 
 ## Recommended series identity
 
@@ -102,12 +104,13 @@ Recurring structure:
 
 Episode #1 established the conceptual territory.
 
-The revised arc can now do four jobs at once:
+The revised arc can now do five jobs at once:
 
 1. let Episode #2 sharpen the question without forcing an early case study
-2. let Episode #3 briefly introduce the Berkeley-Heiserman paper as vocabulary
-3. let Episode #4 begin the repeatable bench structure with real stakes
-4. build naturally toward RB5X Heiserman `eami`
+2. let Episode #3 restore the historical cybernetic bridge before the paper layer arrives
+3. let Episode #4 briefly introduce the Berkeley-Heiserman paper as vocabulary
+4. let Episode #5 begin the repeatable bench structure with real stakes
+5. build naturally toward RB5X Heiserman `eami`
 
 This also protects the series from sounding like:
 
@@ -138,7 +141,7 @@ Talking points:
 - Briefly introduce Wiener, McCarthy, and the narrowing from cybernetics to early AI
 - Name Berkeley as a thinker of sensing, control, state, and action, and Heiserman as the adaptive extension without letting him dominate the episode
 - Suggest lightly that the best way into these questions is not always the most ambitious build, but the platform that can actually be tested honestly
-- Point forward to Episode 3 as the paper bridge and Episode 4 as the first bench episode
+- Point forward to Episode 3 as the historical bridge, Episode 4 as the paper bridge, and Episode 5 as the first bench episode
 
 Bridge note:
 
@@ -151,6 +154,39 @@ Closing move:
 `The next step is not to jump straight to a machine. The next step is to recover the vocabulary that tells us what we are looking at when a machine finally does appear.`
 
 ## Episode 3
+
+Title:
+
+`Ashby, Grey Walter, and Norbert Wiener`
+
+Purpose:
+
+Repair the historical bridge between general cybernetics and the later architectural papers.
+
+Core claim:
+
+Wiener, Grey Walter, and Ashby together provide the clearest early vocabulary for communication, embodied behavior, regulation, and adaptation.
+
+Talking points:
+
+- Present Wiener as the public theorist of communication, control, and feedback
+- Present Grey Walter as the builder who made cybernetic behavior concrete in small embodied machines
+- Present Ashby as the theorist of regulation, variety, viability, and adaptive organization
+- Explain why this triad is a better bridge than jumping directly from current AI discourse into later papers
+- Keep the focus on recoverable problems rather than biography: steering, correction, stability, persistence, and change through time
+- Close by saying Berkeley and Heiserman will sound more intelligible once this older ground has been restored
+
+Bridge note:
+
+- Keep the episode historically aware but not encyclopedic
+- Avoid turning it into three miniature biographies
+- Use the figures to recover the problem-space the later episodes will inhabit
+
+Closing move:
+
+`Before we ask what a machine can become, we may need to remember how cybernetics first learned to describe what a machine is doing at all.`
+
+## Episode 4
 
 Title:
 
@@ -183,7 +219,7 @@ Closing move:
 
 `If this paper is right, then the bench is where its claims either become concrete or start to fail.`
 
-## Episode 4
+## Episode 5
 
 Title:
 
@@ -216,7 +252,7 @@ Closing move:
 
 `If the wheel cannot hold center, nothing above that layer really counts yet.`
 
-## Episode 5
+## Episode 6
 
 Title:
 
@@ -246,7 +282,7 @@ Closing move:
 
 `The manuals do not just describe the machine. They help restore the feedback loop between observation and action.`
 
-## Episode 6
+## Episode 7
 
 Title:
 
@@ -277,7 +313,7 @@ Closing move:
 
 `The robot becomes much more interesting the moment it can be observed, programmed, and tested in loops instead of one-off demonstrations.`
 
-## Episode 7
+## Episode 8
 
 Title:
 
@@ -308,7 +344,7 @@ Closing move:
 
 `A small honest loop is the first moment this stops being restoration alone and becomes research.`
 
-## Episode 8
+## Episode 9
 
 Title:
 
@@ -360,25 +396,27 @@ Closing move:
 
 ## Practical production advice
 
-- Record Episode 2 and Episode 3 before attempting a longer run
-- Treat Episode 4 as the first true lab-drama episode
+- Record Episode 2, Episode 3, and Episode 4 before attempting a longer run
+- Treat Episode 5 as the first true lab-drama episode
 - End every episode with one concrete next action
 - Pull wording from active lab notes so the series stays anchored
 - Reuse a consistent intro and outro so the project feels serial rather than accidental
-- Reuse the Berkeley-Heiserman bridge selectively, with the longest treatment reserved for Episode 8 or a follow-up theory episode
+- Reuse the Berkeley-Heiserman bridge selectively, with the longest treatment reserved for Episode 9 or a follow-up theory episode
 
 ## Recommended immediate recording order
 
 If you want the shortest path from the current repo state to published material, record in this order:
 
 1. Episode 2: `What Is Possible with Cybernetics?`
-2. Episode 3: `Berkeley, Heiserman, and the Lost Architecture`
-3. Episode 4: `The Steering Fault Is the First Real AI Problem`
+2. Episode 3: `Ashby, Grey Walter, and Norbert Wiener`
+3. Episode 4: `Berkeley, Heiserman, and the Lost Architecture`
+4. Episode 5: `The Steering Fault Is the First Real AI Problem`
 
 That sequence preserves continuity:
 
 - concept first
-- paper second
-- blocker third
+- historical bridge second
+- paper third
+- blocker fourth
 
-It also lets the audience understand why the steering problem is not a detour, but the exact place where the cybernetics becomes real after the vocabulary has been set.
+It also lets the audience understand why the steering problem is not a detour, but the exact place where the cybernetics becomes real after the historical and architectural vocabulary has been set.

@@ -8,16 +8,17 @@ Technology-themed podcast musing on cybernetics applied to everyday life.
 
 * Episode #1: The Realm of Cybernetics
 * Episode #2: What is possible with Cybernetics?
-* Episode #3: Berkeley, Heiserman, and the Lost Architecture
+* Episode #3: Ashby, Grey Walter, and Norbert Wiener
+* Episode #4: Berkeley, Heiserman, and the Lost Architecture
 * Series arc: Hero-1 repair, fitting, and Heiserman-style embodiment
 
 Below are the liner-notes for each episode devised in-planning.
 
 Reusable production notes:
 
-- [Hero-1 series outline](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/hero1-series-outline.md:1)
-- [Series music guide](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/series-music-guide.md:1)
-- [Series music cheat sheet](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/series-music-cheat-sheet.md:1)
+- [Hero-1 series outline](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/outlines/hero1-series-outline.md:1)
+- [Series music guide](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/outlines/series-music-guide.md:1)
+- [Series music cheat sheet](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/outlines/series-music-cheat-sheet.md:1)
 
 ### Episode #1
 
@@ -26,6 +27,8 @@ _The Realm of Cybernetics_
 Cybernetics is the study of control, communication, and feedback in systems, whether those systems are biological, mechanical, or computational. It asks how a system senses the world, processes information, makes adjustments, and acts in response. That makes it highly relevant today, because modern life is increasingly shaped by systems built from hardware, software, artificial intelligence, and robotics.
 
 In that context, cybernetics matters because it offers a compact way to understand complexity. Rather than treating computers, machines, AI, and robots as separate domains, it describes them through shared principles such as sensing, control, state, adaptation, and feedback. This makes cybernetics a useful framework for navigating how intelligent systems actually function in contemporary society.
+
+Episode Summary:
 
 * Announcement
 * What is Cybernetics?
@@ -46,15 +49,34 @@ _What is possible with Cybernetics?_
 
 This episode can serve as the bridge between the conceptual opening of `The Last Cyberneticist` and a concrete embodied research series.
 
-Recommended turn:
+Episode Summary:
 
 * Move from abstract cybernetics to the question of embodied systems in general
 * Set up the idea that embodiment changes what intelligence, adaptation, and control look like
 * Contrast cybernetics with the narrowing performed by early artificial intelligence
 * Briefly suggest that not every serious embodied-AI path begins with the hardest possible build
-* Point forward to a paper-centered Episode 3 and a bench-centered Episode 4
+* Point forward to a historian-engineer Episode 3, a paper-centered Episode 4, and a bench-centered Episode 5
 
 ### Episode #3
+
+_Ashby, Grey Walter, and Norbert Wiener_
+
+This inserted episode should repair a historical gap before the series becomes too paper-specific.
+
+Episode Summary:
+
+* Present Wiener as the public namer of cybernetics and the broad theorist of communication, control, and feedback
+* Present Grey Walter as the builder who made cybernetic behavior visible in machines that looked simple but acted richly
+* Present Ashby as the thinker of adaptation, regulation, variety, and the conditions under which a system can remain viable
+* Explain that these three figures together form a better bridge into embodied intelligence than jumping directly from abstract AI discourse to later architectural papers
+* Clarify that the point is not hero worship or compressed biography, but recovering the practical questions they were asking: how does a system steer, persist, correct, and change
+* Close by saying that Berkeley and Heiserman can then be heard more clearly as a continuation and deepening of this older cybernetic line rather than as isolated curiosities
+
+Closing move:
+
+`Before we ask what a machine can become, we may need to remember how cybernetics first learned to describe what a machine is doing at all.`
+
+### Episode #4
 
 _Berkeley, Heiserman, and the Lost Architecture_
 
@@ -82,4 +104,4 @@ Closing move:
 
 `If the paper is right, then the next question is no longer what the architecture sounds like on paper. The next question is what survives when a real machine is forced to live inside it.`
 
-For the working production outline, see [episodes/hero1-series-outline.md](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/hero1-series-outline.md:1).
+For the working production outline, see [outlines/hero1-series-outline.md](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/outlines/hero1-series-outline.md:1).
