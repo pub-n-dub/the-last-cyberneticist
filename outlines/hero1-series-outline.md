@@ -89,8 +89,10 @@ Tone:
 Format:
 
 - solo episodes first
-- `10-15 minutes` for the first two episodes
-- `15-22 minutes` once the project reaches stable motion or software milestones
+- `24-26 minutes` for all mainline episodes
+- default writing target: `about 25 minutes`
+- if a draft is under `23 minutes`, expand it before treating it as finished
+- if a draft is over `27 minutes`, tighten it before treating it as finished
 
 Recurring structure:
 
@@ -99,6 +101,12 @@ Recurring structure:
 3. What the machine is teaching
 4. Why it matters for cybernetics
 5. One next step
+
+Writing rule:
+
+- scripts should be drafted as readable prose paragraphs rather than stacked note lines
+- target roughly `2,700-3,200 spoken words` unless a slower or faster delivery is explicitly intended
+- use the house guide in [episode-writing-guidelines.md](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/outlines/episode-writing-guidelines.md:1) for future episodes
 
 ## Why this strategy fits the show
 

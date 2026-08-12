@@ -47,7 +47,7 @@ Episode Summary:
 
 _What is possible with Cybernetics?_
 
-This episode can serve as the bridge between the conceptual opening of `The Last Cyberneticist` and a concrete embodied research series.
+In this episode, I move from the general idea of cybernetics toward the harder question of what becomes possible when intelligence is forced back into a body, into constraints, and into the world. The argument is that cybernetics becomes more meaningful when we stop treating intelligence as a disembodied software spectacle and start thinking in terms of sensing, control, adaptation, failure, and action under real conditions. Along the way, I contrast that broader cybernetic tradition with the narrowing that took place in early artificial intelligence, and I suggest that not every serious path into embodied intelligence begins with the most ambitious machine. This episode sets up the historical bridge of Episode 3, the architectural bridge of Episode 4, and the bench-centered turn that follows.
 
 Episode Summary:
 
@@ -61,7 +61,7 @@ Episode Summary:
 
 _Ashby, Grey Walter, and Norbert Wiener_
 
-This inserted episode should repair a historical gap before the series becomes too paper-specific.
+In this bridge episode, I step back from present-day AI spectacle and return to three of the central figures in cybernetics: Norbert Wiener, Grey Walter, and W. Ross Ashby. Wiener gives the foundational language of control, communication, and feedback; Walter makes cybernetic behavior visible in real embodied machines; and Ashby sharpens the question of adaptation, regulation, stability, and viable organization. The point is not biography for its own sake, but the recovery of an older vocabulary for asking what a machine is doing when it steers, persists, corrects itself, and changes through time. This historical ground matters because it prepares the way for the next episode on Berkeley and Heiserman, where those same questions become more explicitly architectural.
 
 Episode Summary:
 
@@ -80,7 +80,7 @@ Closing move:
 
 _Berkeley, Heiserman, and the Lost Architecture_
 
-This episode should briefly introduce the paper in [`/home/cartheur/ame/aiventure/aiventure-github/monographs/symbolic-logic/arxiv/v.2/`](/home/cartheur/ame/aiventure/aiventure-github/monographs/symbolic-logic/arxiv/v.2/README.md:1) before the series moves to the bench.
+In this upcoming episode, I use Berkeley and Heiserman to recover an older architectural vocabulary for machine intelligence before the series moves fully to the bench. Berkeley is treated not just as a symbolic logician, but as a thinker of sensing, storage, calculation, control, state, and action, while Heiserman extends that world toward adaptation, memory, revision, and a more creature-like machine history. The episode also asks what present embodied-AI discourse still leaves underdescribed: persistence, recoverability, maintenance, and organized change through time. From there, the argument turns toward the `Hero-1` as the nearer machine on which these ideas can be tested honestly, while also naming the harder self-programming horizon that lies beyond it.
 
 Episode Summary:
 
