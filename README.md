@@ -118,6 +118,18 @@ Episode Summary:
 
 ### Episode #6
 
+_A Four-Bit Wonder_
+
+J.J. Coupling wrote a piece that appeared in the August 1950 _Astounding Science Fiction_ magazine called "How to build a thinking machine". In it he describes a set of circuits for an entity navigating an environment in the form of a maze. What is striking is that he uses language that we recognize today as feedback, memory, and supervised reinforcement learning without the trappings. The author's name was a pseudonym for John R. Pierce, a notable physicist and engineer with contributions to telecommunications and satellite technology. On page 121 he introduces a table of binary numbers that correspond to a long and short way through a maze where negative reinforcement from the environment lit a red lamp and positive reinforcement a green one.
+
+Rather than work within the confines of the technology of his era (tubes), I will examine Coupling's thesis against the `four-bit wonder`: a handmade, wirewrapped protoboard that I used to test switch inputs and static RAM with a 2114.
+
+Episode Summary:
+
+* Here
+
+### Episode #7
+
 _A Real-Live Robot: Initial Preparations_
 
 A substantive part of the process of learning is taking action by doing. A part of the embedding of experience comes not just from reading or listening to information, but to use one's hands to craft and build by feedback. Before getting started it is useful to create items that are ubiquitously applicable across the experience so as not to disrupt the process where we expect problems will arise and do not want to become entangled in the separation between a precoursor failure and the ones that should be addressed exclusively through the experiential process feedback. This episode will start the preparations cycle by looking at the kinds of power that are most convenient and why such choices are more ideal than others.
@@ -131,7 +143,7 @@ Episode Summary:
   - Choices between old and new tech
   - Restoring a straighforward ROM burner
 
-### Episode #7
+### Episode #8
 
 _A Real-Live Robot: Final Preparations_
 
