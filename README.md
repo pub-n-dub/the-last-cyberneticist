@@ -105,3 +105,33 @@ Closing move:
 `If the paper is right, then the next question is no longer what the architecture sounds like on paper. The next question is what survives when a real machine is forced to live inside it.`
 
 For the working production outline, see [outlines/hero1-series-outline.md](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/outlines/hero1-series-outline.md:1).
+
+### Episode #5
+
+_The Inherent Stability Represented in Behavior Diagrams_
+
+Consumer robotics has demonstrated itself to be an effective avenue to provide advanced technology to the average person both in the way of affordability and distribution of an interesting feature-set. One of the most interesting is a concept borrowed from psychiatry of the slow-fast cognitive processes. Recent embodied-robotics literature includes several explicit fast/slow or dual-system control architectures but where do these actually derive from? This episode will examine the first Aibo version marketed in 1999 called `R-code` where the author has inspected the scripts that were distributed to the public and created flow diagrams where one could more readily visualize the behavior each script is attempting to exhibit to the robot's owner.
+
+Episode Summary:
+
+* Here
+
+### Episode #6
+
+_A Real-Live Robot: Initial Preparations_
+
+A substantive part of the process of learning is taking action by doing. A part of the embedding of experience comes not just from reading or listening to information, but to use one's hands to craft and build by feedback. Before getting started it is useful to create items that are ubiquitously applicable across the experience so as not to disrupt the process where we expect problems will arise and do not want to become entangled in the separation between a precoursor failure and the ones that should be addressed exclusively through the experiential process feedback. This episode will start the preparations cycle by looking at the kinds of power that are most convenient and why such choices are more ideal than others.
+
+Episode Summary:
+
+* Here
+
+### Episode #7
+
+_A Real-Live Robot: Final Preparations_
+
+Once having the precoursors sorted, one can begin the final process of beginning on the new adventure.
+
+Episode Summary:
+
+* Here
