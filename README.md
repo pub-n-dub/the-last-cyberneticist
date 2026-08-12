@@ -61,7 +61,7 @@ Episode Summary:
 
 _Ashby, Grey Walter, and Norbert Wiener_
 
-In this bridge episode, I step back from present-day AI spectacle and return to three of the central figures in cybernetics: Norbert Wiener, Grey Walter, and W. Ross Ashby. Wiener gives the foundational language of control, communication, and feedback; Walter makes cybernetic behavior visible in real embodied machines; and Ashby sharpens the question of adaptation, regulation, stability, and viable organization. The point is not biography for its own sake, but the recovery of an older vocabulary for asking what a machine is doing when it steers, persists, corrects itself, and changes through time. This historical ground matters because it prepares the way for the next episode on Berkeley and Heiserman, where those same questions become more explicitly architectural.
+I step back from present-day AI spectacle and return to three of the central figures in cybernetics: Norbert Wiener, Grey Walter, and W. Ross Ashby. Wiener gives the foundational language of control, communication, and feedback; Walter makes cybernetic behavior visible in real embodied machines; and Ashby sharpens the question of adaptation, regulation, stability, and viable organization. The point is not biography for its own sake, but the recovery of an older vocabulary for asking what a machine is doing when it steers, persists, corrects itself, and changes through time. This historical ground matters because it prepares the way for the next episode on Berkeley and Heiserman, where those same questions become more explicitly architectural.
 
 Episode Summary:
 
