@@ -80,7 +80,7 @@ Closing move:
 
 _Berkeley, Heiserman, and the Lost Architecture_
 
-In this upcoming episode, I use Berkeley and Heiserman to recover an older architectural vocabulary for machine intelligence before the series moves fully to the bench. Berkeley is treated not just as a symbolic logician, but as a thinker of sensing, storage, calculation, control, state, and action, while Heiserman extends that world toward adaptation, memory, revision, and a more creature-like machine history. The episode also asks what present embodied-AI discourse still leaves underdescribed: persistence, recoverability, maintenance, and organized change through time. From there, the argument turns toward the `Hero-1` as the nearer machine on which these ideas can be tested honestly, while also naming the harder self-programming horizon that lies beyond it.
+I combine the work of Edmund C. Berkeley and David L. Heiserman to recover an older architectural vocabulary for machine intelligence before the series moves fully to the bench. Berkeley is treated not just as a symbolic logician, but as a thinker of sensing, storage, calculation, control, state, and action, while Heiserman extends that world toward adaptation, memory, revision, and a more creature-like machine history. The episode also asks what present embodied-AI discourse still leaves underdescribed: persistence, recoverability, maintenance, and organized change through time. From there, the argument turns toward the `Hero-1` as the nearer machine on which these ideas can be tested honestly, while also naming the harder self-programming horizon that lies beyond it.
 
 Episode Summary:
 
