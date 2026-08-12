@@ -82,7 +82,7 @@ _Berkeley, Heiserman, and the Lost Architecture_
 
 This episode should briefly introduce the paper in [`/home/cartheur/ame/aiventure/aiventure-github/monographs/symbolic-logic/arxiv/v.2/`](/home/cartheur/ame/aiventure/aiventure-github/monographs/symbolic-logic/arxiv/v.2/README.md:1) before the series moves to the bench.
 
-Recommended turn:
+Episode Summary:
 
 * Introduce the arXiv paper as a framing document, not a full seminar
 * Present Berkeley as more than a symbolic logician: a thinker of sensing, storage, control, state, and action
