@@ -9,7 +9,7 @@ Technology-themed podcast musing on cybernetics applied to everyday life.
 * Episode #1: The Realm of Cybernetics
 * Episode #2: What is possible with Cybernetics?
 * Episode #3: Ashby, Grey Walter, and Norbert Wiener
-* Episode #4: Berkeley, Heiserman, and the Lost Architecture
+* Episode #4: The Unrealized Architecture
 * Series arc: Hero-1 repair, fitting, and Heiserman-style embodiment
 
 Below are the liner-notes for each episode devised in-planning.
@@ -78,31 +78,32 @@ Closing move:
 
 ### Episode #4
 
-_Berkeley, Heiserman, and the Lost Architecture_
+_The Unrealized Architecture_
 
-I combine the work of Edmund C. Berkeley and David L. Heiserman to recover an older architectural vocabulary for machine intelligence before the series moves fully to the bench. Berkeley is treated not just as a symbolic logician, but as a thinker of sensing, storage, calculation, control, state, and action, while Heiserman extends that world toward adaptation, memory, revision, and a more creature-like machine history. The episode also asks what present embodied-AI discourse still leaves underdescribed: persistence, recoverability, maintenance, and organized change through time. From there, the argument turns toward the `Hero-1` as the nearer machine on which these ideas can be tested honestly, while also naming the harder self-programming horizon that lies beyond it.
+This episode moves through Edmund C. Berkeley and David L. Heiserman as a way of recovering an architectural vocabulary for machine intelligence from the recorded side rather than as a tightly bounded paper summary. Berkeley supplies the language of sensing, storage, calculation, control, state, and action, while Heiserman extends that line toward revisable behavior, simulated adaptation, and the machine as a creature with a history. From there, the episode turns through `Squee`, `Simon`, `Rodney`, the early `AIBO ERS-111`, and finally the speculative `Tati robot`, where the question becomes not just what intelligence is, but how behavior becomes visible, embodied, and historically traceable in real machines.
 
 Episode Summary:
 
-* Introduce the arXiv paper as a framing document, not a full seminar
-* Present Berkeley as more than a symbolic logician: a thinker of sensing, storage, control, state, and action
-* Use Heiserman to name the adaptive extension, but keep him proportionate rather than letting him take over the whole episode
-* Explain why this older vocabulary still exposes what present embodied-AI discourse often leaves thin: persistence, recoverability, maintenance, and organized change through time
-* Put the Berkeley-Heiserman vocabulary beside current embodied-AI systems such as Google Gemini robotics, and ask whether what looks like progress is sometimes just capability outrunning intelligibility. Then connect that to the long rise from 8-bit assembly to high-level abstraction: once machines are doing more of the programming, the arc may bend back toward low-level organization rather than away from it. In that sense, the telescope aimed at the pink planet becomes a sarcastic image for the corporate promise that sheer scale can solve embodied intelligence, only for the closer view to reveal something more synthetic than solved.
-* Mention Google Gemini LLM embodied robot and use the microprocessor evolution through 8-bit assembly, then its "Moore's Law" expansionism and OO programming to allow humans to better program machines. What was a thick bar increases at a slope to where with the examination of the Gemini proposal, we need not just a set of binoculars but a telescope to see a pink planet. And upon peering at this sight, we might find it too synthetic. The evolution will return to assembly-language programming since machines (LLMs) will be doing the programming.
-* Briefly frame Rodney as the harder self-programming horizon, while making clear that the immediate test platform will be the repaired `Hero-1`
-* Close by saying the paper is not the destination; it is the vocabulary the bench will test
+* Introduce the `arXiv` paper as a framing point, but keep the episode in spoken, exploratory mode rather than seminar mode
+* Present Berkeley as more than a symbolic logician by emphasizing relay logic, memory, control, and behavioral organization
+* Use `Squee` as the concrete bridge from symbolic architecture into embodied machine behavior
+* Bring in Heiserman through `Robot Intelligence`, `Rodney`, and the question of revisable behavior, simulation, and machine history
+* Critique present embodied-AI discourse by arguing that performance and benchmarks often outrun intelligibility, continuity, and architectural description
+* Use the move from binary to hexadecimal to assembly and then to higher-level languages as a way of asking what parts of the stack belong to the machine and what parts were created for human convenience
+* Ground the discussion in lived robotics through the contrast between an underwhelming humanoid purchase and the more behaviorally legible `AIBO ERS-111`
+* Introduce the speculative `Tati robot` as a possibly Berkeley-adjacent construction whose refined build suggests a more advanced branch of the same machine culture
+* Close by returning to unrealized architecture as a practical vocabulary for the workspace: claims must either become concrete through work or fail and be tried again
 
-Useful paper points:
+Useful episode points:
 
-* The paper's first contribution is interpretive: Berkeley as an early theorist of embodied machine intelligence
-* Its second is comparative: Berkeley and Heiserman share a descriptive scheme of sensing, memory or state, control, action, and adaptation
-* Its critical force is present-day: current LLM-centered robotics often shows capability without an equally explicit account of persistence, recoverability, maintenance, and structured revision
-* Editorial payoff for the series: Rodney names the harder horizon, while the `Hero-1` offers the nearer machine on which those architectural claims can actually be examined after repair
+* Berkeley and Heiserman are treated as a shared descriptive line rather than isolated historical curiosities
+* `Squee` is used to make activities, modes, transitions, and conditions visible as a behavioral architecture
+* `AIBO ERS-111` serves as a public-facing example of behavior as embodiment
+* The `Tati robot` opens a possible future investigative thread about hidden lineages of cybernetic construction
 
 Closing move:
 
-`If the paper is right, then the next question is no longer what the architecture sounds like on paper. The next question is what survives when a real machine is forced to live inside it.`
+`The unrealized vocabulary is something that we want to bring into our everyday work, into the workspace.`
 
 For the working production outline, see [outlines/hero1-series-outline.md](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/outlines/hero1-series-outline.md:1).
 
