@@ -4,6 +4,11 @@
 
 Technology-themed podcast musing on cybernetics applied to everyday life.
 
+> We do not build machines so they can become opaque and outlive us in silence. We build them so they can remain legible, repairable, and answerable to human life across time.
+>
+> Philip K. Dick's `Autofac` is a background driving force for this project.
+> Across the podcast and the machinery itself, the motivating evidence is the same: visible control, durable memory, repairable hardware, and systems that can still be understood by the people who inherit them.
+
 ## Episode list
 
 * Episode #1: The Realm of Cybernetics
@@ -143,7 +148,7 @@ _Feel the (ROM) Burn_
 
 Software only becomes serious on this bench once it can be turned back into a physical thing. This episode centers on the restoration and use of a `GTEK 7228` EPROM programmer as both a practical tool and a historical artifact of the older development loop. Instead of treating code as something infinitely fluid and abstract, the episode follows the more stubborn path: diagnosing the programmer, getting it back into reliable working order, and using it to place behavior into memory devices that the machine can actually run. The point is not nostalgia for obsolete tooling, but the recovery of a workflow in which verification, compatibility, and material handling become part of the intelligence story again. It also makes a stronger claim: older programmable ROM devices such as the `27C32` can be worth insisting on because they offer a more stable and durable storage path than much modern flash media, especially when long-term readability matters more than convenience.
 
-Rather than work within the confines of the technology of his era (tubes), I will examine Coupling's thesis against the `four-bit wonder`: a handmade, wirewrapped protoboard that I used to test switch inputs and static RAM with a 2114.
+We know that memory is a critical part of the operation of a computer. We also realize that we want to create something that can stand the test of time. 
 
 Episode Summary:
 
