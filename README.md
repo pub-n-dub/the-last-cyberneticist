@@ -115,7 +115,11 @@ Consumer robotics has demonstrated itself to be an effective avenue to provide a
 
 Episode Summary:
 
-* Here
+* Examine how the `AIBO ERS-111` behavior scripts make state, transitions, and policy more visible than the polished surface behavior alone
+* Use the diagrams to show why apparent personality in a consumer robot is still grounded in explicit control structure
+* Ask whether the familiar fast/slow or dual-process language in modern robotics is really new, or whether older behavior systems already carried the same organizational intuition
+* Treat behavior diagrams as a practical way of seeing stability, escalation, interruption, and return without mystifying the machine
+* Set up the broader claim that intelligible behavior matters more than theatrical intelligence claims
 
 ### Episode #6
 
@@ -127,9 +131,31 @@ Rather than work within the confines of the technology of his era (tubes), I wil
 
 Episode Summary:
 
-* Here
+* Use the handmade `four-bit wonder` as a deliberately small laboratory for testing switches, state, timing, and memory
+* Compare Coupling's mid-century thinking-machine thesis with a modern bench-scale reconstruction mindset rather than a museum re-creation
+* Show how a tiny wirewrapped board can clarify feedback, reinforcement, and route selection better than a more opaque contemporary system
+* Introduce static RAM, simple logic paths, and manual testing as the kind of honest groundwork that makes later robot work more trustworthy
+* Bridge from exploratory bench electronics into the need for repeatable memory programming
 
 ### Episode #7
+
+_Feel the (ROM) Burn_
+
+Software only becomes serious on this bench once it can be turned back into a physical thing. This episode centers on the restoration and use of a `GTEK 7228` EPROM programmer as both a practical tool and a historical artifact of the older development loop. Instead of treating code as something infinitely fluid and abstract, the episode follows the more stubborn path: diagnosing the programmer, getting it back into reliable working order, and using it to place behavior into memory devices that the machine can actually run. The point is not nostalgia for obsolete tooling, but the recovery of a workflow in which verification, compatibility, and material handling become part of the intelligence story again. It also makes a stronger claim: older programmable ROM devices such as the `27C32` can be worth insisting on because they offer a more stable and durable storage path than much modern flash media, especially when long-term readability matters more than convenience.
+
+Rather than work within the confines of the technology of his era (tubes), I will examine Coupling's thesis against the `four-bit wonder`: a handmade, wirewrapped protoboard that I used to test switch inputs and static RAM with a 2114.
+
+Episode Summary:
+
+* Focus on ROM burning as the point where abstract program logic has to become a real physical artifact that the machine can actually execute
+* Center the episode on the restoration and use of the `GTEK 7228` as the concrete instrument that makes the memory-programming step real
+* Compare the `GTEK 7228` workflow with newer tooling and explain the tradeoffs between convenience, verification, historical fit, and long-term storage robustness
+* Show why restoring a working EPROM programmer is not side work, but part of making the experimental loop repeatable
+* Argue that programmable ROM devices such as the `27C32` deserve serious attention because their storage model can be more robust and legible over time than modern flash-heavy workflows
+* Treat the act of programming chips as a material form of software work, where verification, handling, compatibility, and retention suddenly matter again
+* Position the ROM-burning stage as the threshold between planning the system and being able to place behavior back into hardware
+
+### Episode #8
 
 _A Real-Live Robot: Initial Preparations_
 
@@ -144,7 +170,21 @@ Episode Summary:
   - Choices between old and new tech
   - Restoring a straighforward ROM burner
 
-### Episode #8
+### Episode #9
+
+_The Presence of Motorola_
+
+The center of the computing world is the centralized processor. This episode will examing the 6808 and 6809.
+
+Episode Summary:
+
+* Introduce the `6808` and `6809` as the local centers of decision, sequencing, and coordination inside the machine
+* Explain why processor choice matters for memory layout, peripheral access, timing behavior, and the shape of the software that can realistically run
+* Contrast the modest but legible capabilities of these chips with the present habit of treating computation as an invisible cloud resource
+* Use Motorola's design language to show how architecture becomes concrete at the level of opcodes, buses, registers, and board constraints
+* Prepare the ground for the final fitting work by clarifying what the machine's computational body can and cannot support
+
+### Episode #10
 
 _A Real-Live Robot: Final Preparations_
 
@@ -152,4 +192,8 @@ Once having the precoursors sorted, one can begin the final process of beginning
 
 Episode Summary:
 
-* Here
+* Bring together the preparatory threads: stable power, known-good programmed memory, and a clearer grasp of the processor and support hardware
+* Show that final preparation is less about dramatic assembly and more about reducing unknowns before the first serious live trials
+* Treat each precursor step as part of one cybernetic discipline: make the machine observable, make interventions reversible, and make failures interpretable
+* Mark the transition from parts, tools, and bench procedures into the first genuinely integrated robot sessions
+* Close by framing the next stage as the point where preparation ends and the machine begins to answer back
