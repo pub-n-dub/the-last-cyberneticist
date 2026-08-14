@@ -1,18 +1,52 @@
-# Episode 8 Script
+# Episode 8 Podcast Script
 
 ## Title
 
 `The Tati Robot`
 
+## Format Note
+
+This version is adapted for spoken performance.
+
+- `HOST` is read aloud.
+- `SFX` and `MUSIC` are production cues and are not read aloud.
+- Brief pauses should be honored. Silence is part of the pacing.
+
 ## Script
 
-FADE IN:
+MUSIC: No theme at first. Only a low, restrained tension bed.
 
-### INT. ARCHIVE ROOM - NIGHT
+SFX: A faint room tone. Paper on a table. Very soft mechanical hum.
 
-A photograph of an unidentified robot lies on a table under a hard pool of light.
+HOST:
 
-### VOICEOVER
+An unidentified robot.
+
+Found in Paris.
+
+Too finished to be an accident.
+
+PAUSE.
+
+At least to my eye, it does not look like a rough prototype.
+
+It looks like the result of prior work.
+
+It looks like something that came after earlier attempts, earlier failures, earlier lessons.
+
+It looks like a late expression of a hidden line.
+
+PAUSE.
+
+And because of that, I want to ask a simple question.
+
+Who built it?
+
+PAUSE.
+
+MUSIC: Let the tension bed widen slightly.
+
+HOST:
 
 Welcome to Episode 8 of `The Last Cyberneticist`.
 
@@ -26,31 +60,7 @@ It is not a bench episode either.
 
 It is a case file.
 
-### INSERT - THE ROBOT
-
-An unidentified machine.
-
-Found in Paris.
-
-Too finished to be an accident.
-
-### VOICEOVER
-
-At least to my eye, this does not look like a rough prototype.
-
-It looks like the result of prior work.
-
-It looks like something that came after earlier attempts, earlier failures, earlier lessons.
-
-It looks like a late expression of a hidden line.
-
-And because of that, I want to ask a simple question.
-
-Who built it?
-
-### CUT TO:
-
-### CLOSE ON - NOTES BESIDE THE PHOTOGRAPH
+PAUSE.
 
 Not mythology.
 
@@ -58,19 +68,11 @@ Not wishful thinking.
 
 Not romantic fog.
 
-### VOICEOVER
-
-Before I go any further, I need to be careful.
-
-I am not claiming that I know the answer.
-
-I do not.
-
-What I do have is a set of clues.
-
-And what I want to do in this episode is walk through those clues in a disciplined way.
-
 Just a proper Sherlock exercise.
+
+MUSIC: A subtle cue shift. Still spare.
+
+HOST:
 
 We have an object.
 
@@ -82,19 +84,21 @@ We have one named `Squee` assistant whose recollections are very important.
 
 And we have a machine, the so-called `Tati robot`, that appears to belong to the same broad family of relay-era behavioral construction, but in a more mature and theatrical form.
 
+PAUSE.
+
 So let us begin with the object itself.
 
-### INT. SCREENING ROOM OF THE MIND - CONTINUOUS
+SFX: Light paper movement. A photograph being set down.
 
-The robot turns slowly in imagined light.
-
-### VOICEOVER
+HOST:
 
 When I look at the Tati robot, I do not see a one-off toy.
 
 I do not see a casual shop experiment.
 
 I do not see something thrown together in a weekend.
+
+PAUSE.
 
 I see a machine with a settled body.
 
@@ -106,7 +110,7 @@ I see integrated structure.
 
 I see a creaturely form that was not an afterthought.
 
-### INSERT - DETAILS
+PAUSE.
 
 The eyes matter.
 
@@ -116,7 +120,7 @@ The posture matters.
 
 The chassis matters.
 
-### VOICEOVER
+PAUSE.
 
 The thing looks like it was meant to be watched.
 
@@ -129,6 +133,8 @@ We are dealing with presentation.
 We are dealing with behavioral display.
 
 We are dealing with a machine that lives in public space, or at least in demonstrative space.
+
+PAUSE.
 
 That is one reason I call it the Tati robot.
 
@@ -144,13 +150,9 @@ It feels like a machine that carries its own choreography.
 
 That is the first clue.
 
-### CUT TO:
+MUSIC: Transition cue. A little more investigative.
 
-### INT. HISTORICAL DOSSIER - NIGHT
-
-Typed names appear one by one.
-
-### VOICEOVER
+HOST:
 
 The second clue is that we do know something about Berkeley's machine world.
 
@@ -164,9 +166,9 @@ That is tidy.
 
 It is also misleading.
 
-The record around `Simon` gives us a small but very important team.
+PAUSE.
 
-### INSERT - TEAM
+The record around `Simon` gives us a small but very important team.
 
 `William A. Porter`, who handled the basic construction.
 
@@ -174,7 +176,7 @@ The record around `Simon` gives us a small but very important team.
 
 `Andrew Vall`, another electrical-engineering student, also involved in getting it to function properly.
 
-### VOICEOVER
+PAUSE.
 
 Right there, we already have a pattern.
 
@@ -183,6 +185,8 @@ Mechanical construction.
 Electrical integration.
 
 Behavioral or control realization through working circuitry.
+
+PAUSE.
 
 That is not just three names.
 
@@ -200,13 +204,9 @@ A small team.
 
 Or at least a small workshop culture.
 
-### CUT TO:
+SFX: Quiet click, like a case file tab being turned.
 
-### INT. BRONX APARTMENT - RECONSTRUCTION
-
-A half-working robot on a workbench. Wires. A lamp. Evening.
-
-### VOICEOVER
+HOST:
 
 Then we come to `Squee`.
 
@@ -216,6 +216,8 @@ Because `Squee` is smaller, earlier, and less sophisticated than the Tati robot.
 
 But `Squee` is also one of the clearest cases of behavior being made visible in a compact robot form.
 
+PAUSE.
+
 And here the record gives us somebody extremely important: `Jack Koff`.
 
 Koff said Berkeley hired him as one of three assistants.
@@ -223,6 +225,8 @@ Koff said Berkeley hired him as one of three assistants.
 And then Berkeley gave him the robot and told him to get it working.
 
 That sentence matters.
+
+PAUSE.
 
 Because what Koff describes next changes the whole atmosphere of the case.
 
@@ -240,17 +244,17 @@ But the machine did not run reliably.
 
 And he put in the circuitry it needed.
 
-### INSERT - CASE NOTE
+PAUSE.
 
-This is not a Traitorous Eight story.
+That is not a Traitorous Eight story.
 
 It is not a formal breakaway.
 
 It is not a documented schism like Fairchild.
 
-### VOICEOVER
-
 But it is something very important all the same.
+
+PAUSE.
 
 It tells us that Berkeley's world already involved decentralized machine work.
 
@@ -262,13 +266,9 @@ And once you know that, the Tati robot starts to look less impossible.
 
 Because now we have a believable setting in which a more advanced side-current could exist.
 
-### CUT TO:
+MUSIC: Drop nearly to silence.
 
-### INT. EVIDENCE BOARD - NIGHT
-
-A theory card is pinned up, then crossed out.
-
-### VOICEOVER
+HOST:
 
 Now let me pause and remove one weak theory.
 
@@ -276,13 +276,15 @@ I checked whether there was any evidence that `Jensen`, `Vall`, or `Porter` had 
 
 And I did not find evidence for that.
 
+PAUSE.
+
 That does not mean the Paris clue is useless.
 
 It just means it is not, at present, a strong authorship clue.
 
 It is a distribution clue.
 
-### INSERT - WAYS AN OBJECT REACHES PARIS
+An object can reach Paris in many ways.
 
 Sale.
 
@@ -294,7 +296,7 @@ Private transport.
 
 Later resale.
 
-### VOICEOVER
+PAUSE.
 
 So I do not want to build fantasy on top of a weak lead.
 
@@ -304,15 +306,13 @@ The engineering-culture theory is strong.
 
 That is the important distinction.
 
-### CUT TO:
+MUSIC: Percussive investigative tick, very subtle.
 
-### INT. SUSPECT BOARD - LATER
-
-Three columns. Names. Arrows. Question marks.
-
-### VOICEOVER
+HOST:
 
 So who are the suspects?
+
+PAUSE.
 
 The first suspect is the trio itself:
 
@@ -322,19 +322,19 @@ Why them?
 
 Because together they already match the kind of machine the Tati robot appears to be.
 
-### INSERT - SUSPECT ONE
-
 `Porter` explains the body.
 
 `Jensen` explains the integration.
 
 `Vall` explains the refinement on the electrical and control side.
 
-### VOICEOVER
+PAUSE.
 
 I cannot prove they built it.
 
 But if you asked me to name the strongest direct-builder team from the known historical circle, that is the team I would name.
+
+PAUSE.
 
 The second suspect is a hybrid team:
 
@@ -350,6 +350,8 @@ He sits in the exact zone between concept and behavior.
 
 So if the Tati robot is a more advanced creature-machine downstream from `Squee`, Koff becomes a very plausible bridge figure.
 
+PAUSE.
+
 The third suspect is not a named person but a named pattern.
 
 A Berkeley-adjacent workshop culture.
@@ -358,23 +360,19 @@ This is, in some ways, my strongest explanation overall.
 
 Because it explains the Tati robot without forcing us to pretend we already know the exact hands.
 
-### INSERT - WORKING HYPOTHESIS
+PAUSE.
 
 The named people show us the skill ecology,
 
 and the unidentified machine shows us what that ecology may have been capable of beyond the published line.
 
-### VOICEOVER
+PAUSE.
 
 I think that is a serious possibility.
 
-### CUT TO:
+MUSIC: Warm but restrained undertone enters, still unresolved.
 
-### INT. BERKELEY'S SHADOW - ABSTRACT SPACE
-
-The outline of a public intellectual. The outline of a workshop behind him.
-
-### VOICEOVER
+HOST:
 
 Then there is Berkeley himself.
 
@@ -383,6 +381,8 @@ Was he involved?
 Was he aware?
 
 That is a different question.
+
+PAUSE.
 
 My current judgment is that if the Tati robot really belongs to Berkeley's orbit, then Berkeley was probably aware of it at least in outline.
 
@@ -394,7 +394,7 @@ I find it easier to believe that Berkeley knew something was being built, or kne
 
 But I also find it easier to believe that he was not the sole physical builder.
 
-Why?
+PAUSE.
 
 Because Berkeley, as he comes down to us, seems more interested in architecture, explanation, publication, and demonstration than in the most creaturely or theatrical realization of the machine.
 
@@ -408,13 +408,9 @@ More seduced by what the machine looked like while behaving.
 
 More willing to build a creature rather than just a demonstration.
 
-### CUT TO:
+SFX: Room tone returns. A slightly deeper hum.
 
-### INT. WORKSHOP OF INFERENCE - NIGHT
-
-Tools on a bench. An unfinished chassis. Empty labels waiting to be named.
-
-### VOICEOVER
+HOST:
 
 And this is where the episode gets interesting for me, because now the Tati robot stops being just an object and becomes evidence.
 
@@ -426,6 +422,8 @@ Evidence that named figures often stand on top of unnamed or under-described tec
 
 Evidence that a machine can survive after the explanatory line that produced it has been forgotten.
 
+PAUSE.
+
 And maybe most importantly, evidence that reenactment may be one of the only ways to test these ideas properly.
 
 Because if we really want to know whether the Tati robot belongs to the `Simon` and `Squee` lineage, we can only go so far with argument.
@@ -436,7 +434,7 @@ Eventually we have to test whether that apparent coherence is real.
 
 Eventually we have to ask what kind of subsystems would make such a machine possible.
 
-### INSERT - BUILD QUESTIONS
+PAUSE.
 
 What kind of chassis.
 
@@ -448,7 +446,7 @@ What kind of behavioral transitions.
 
 What kind of craft discipline.
 
-### VOICEOVER
+PAUSE.
 
 At that point, the Sherlock exercise becomes a cybernetic exercise.
 
@@ -456,13 +454,9 @@ The mystery becomes mechanical.
 
 And that is exactly where I want it to go.
 
-### CUT TO:
+MUSIC: Begin closing rise, still minimal.
 
-### INT. ARCHIVE ROOM - RETURN
-
-The photograph again. Now it feels less like an image than testimony.
-
-### VOICEOVER
+HOST:
 
 So let me close with the best disciplined conclusion I can give right now.
 
@@ -476,11 +470,11 @@ And if I had to name the strongest suspects, I would name `Porter`, `Jensen`, an
 
 If that exact team did not build it, then something very close to that team pattern probably did.
 
+PAUSE.
+
 So the real discovery here may not be a single culprit.
 
 It may be something bigger.
-
-### INSERT - FINAL THEORY
 
 A hidden workshop line.
 
@@ -488,16 +482,20 @@ A small machine culture.
 
 A branch of cybernetic construction that exceeded the official published story and then vanished into the margins.
 
-### VOICEOVER
+PAUSE.
 
 If that is true, then the Tati robot is not just a curiosity.
 
 It is a witness.
 
-And the right question is no longer only, `Who built it?`
+LONG PAUSE.
+
+And the right question is no longer only, who built it?
+
+PAUSE.
 
 The right question becomes:
 
-`What kind of world had to exist for such a machine to be built at all?`
+What kind of world had to exist for such a machine to be built at all?
 
-FADE OUT.
+MUSIC: Hold for a beat, then fade.
