@@ -1,0 +1,9 @@
+# Podcast Opening Monologue
+
+Berkeley remains the center of gravity here, but he is not the end of the story. What makes him matter is not simply that he wrote about symbolic logic or early machine intelligence. It is that he gives us a way of thinking about intelligence as organized, embodied, stateful conduct. He stands at a point where logic, machinery, control, and behavior begin to come together in a form that still feels unfinished.
+
+What has changed is the reason the project now has to evolve. Wiener’s `Time and Organization` makes the underlying issue larger and clearer. It shows that control and communication are not just properties of a single device or discipline, but principles that can organize action across machines, organisms, and social systems. And it insists that organization is never merely static. It is temporal. It depends on sequence, coordination, rhythm, storage, timing, and the ability of a system to hold itself together across intervals.
+
+That is why the project cannot stop at Berkeley alone. Once we see what he is doing, and once Wiener enlarges the frame, a wider horizon opens. Shannon shows how logic becomes hardware. Wiener and Ashby widen the frame into control, communication, regulation, and organization. Walter makes embodiment physically visible. Heiserman carries the line deeper into memory, generalization, and adaptive revision. Turing offers a nearby but different path through learning and development.
+
+So the real question is not whether Berkeley should be replaced by a broader cast. He should not. The question is what Berkeley allows us to see once Wiener’s horizon is brought into view. And what he allows us to see is a larger, underdescribed tradition of living machine intelligence: intelligence as persistence, recoverability, internal organization, timing, and world-facing conduct. That is the horizon ahead. Berkeley remains the anchor, but the destination is larger than Berkeley himself.
