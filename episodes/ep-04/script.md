@@ -1,4 +1,6 @@
-# Episode 4
+# Episode 4 Script
+
+_Generated on Friday, August 14, 2026 from a local `whisper.cpp` transcription pass using `ggml-base.en.bin`. This is a readable draft based on the recorded episode and has been cleaned for obvious recognition errors, proper nouns, and broken phrasing._
 
 ## Title
 
@@ -8,19 +10,55 @@
 
 Welcome to Episode 4 of `The Last Cyberneticist`.
 
-Last time I used Wiener, Grey Walter, and Ashby to restore the older cybernetic ground. I felt that was necessary because before we move fully to the bench, we need a vocabulary that is stronger than spectacle and stronger than the present habit of calling every impressive output intelligence. If we skip that step, then the machine arrives before the language does, and we end up admiring demonstrations without really knowing what we are looking at. This episode is about one such vocabulary, and it comes through Edmund Berkeley and David Heiserman.
+This episode is entitled `The Unrealized Architecture`.
 
-I do not want to turn this into a seminar. I am not going to try to compress an entire paper into a podcast episode, and I am not going to read a bibliography aloud. I only want to recover the part that matters for the series. The claim is simple: Berkeley and Heiserman give us an architectural way to talk about machine intelligence, not intelligence as a slogan, not intelligence as a miracle, but intelligence as the organization of sensing, storage, calculation, control, state, action, and eventually adaptation. That is what I mean by the unrealized architecture. It is unrealized not because nobody ever thought about it, but because the descriptive language appeared before the larger culture was ready to inhabit it. Public discussion has become very good at noticing capability and very poor at naming the layers that produce it, and poorer still at carrying those layers through into a serious mechanical culture.
+In the last episode, I explored Norbert Wiener, Grey Walter, and Ross Ashby.
 
-That is also why this episode has to exist before the `Hero-1` episodes begin in earnest. I do not want the robot to appear merely as a charming antique, and I do not want the paper to appear merely as an academic ornament. The point of the bridge is to make those two things meet. Berkeley helps name the architecture. Heiserman helps name the adaptation problem. The `Hero-1` gives both of those ideas a body. If that sentence is true, then the bench will confirm it. If it is false, the bench will expose that too.
+It was a bridge episode, and a way to restore cybernetic foundations that will help us later on. Since it is rather necessary to know, as we start to expand and dig into the topics, we want to establish vocabulary that is stronger than spectacle and stronger than the present habit of calling every impressive output intelligence.
 
-There is also an image hovering over this episode now: an unidentified cybernetic creature, theatrical and severe at the same time, all relay pathways, jaws, posture, and implied routine. It looks less like a polished product than like a machine that has wandered out of an older workshop carrying its logic on the outside. I do not mean that image as mere decoration. I mean it as atmosphere and as method. It puts us in the presence of a machine whose behavior feels staged, almost cinematic, before it is fully explained.
+We want to be very clear on what we are saying, what we are describing, and what we are building.
 
-Berkeley is usually remembered as someone who stood between symbolic logic and early computing. That description is not wrong, but it is too small. If you read `Symbolic Logic and Intelligent Machines` carefully, Berkeley is not only talking about logic in the abstract. He is asking what kind of machinery can be built when logic is made operational in hardware and linked to behavior. That is the important move. Once logic is no longer just something on paper, and once it is realized in relays, switching systems, memory, and control, the question changes. The question is no longer only whether a machine can calculate. The question becomes whether a machine can be organized.
+Because if you do not do it that way, in this very explicit way, then something appears, or maybe you buy something from a store, that you cannot describe. And you admire the demonstrations, the kicks, the whizz, and blah blah blah, but you do not know what is actually going on.
 
-Can it take in information? Can it hold a state? Can it select an action? Can it transition from one mode of behavior to another? And can all of this happen in time, in the world, in contact with an environment? Those are different questions from the ones people often ask now. They are slower questions. They are less glamorous questions. But they are more useful if what you care about is not a one-off display but an actual machine that has to continue existing in the presence of delay, noise, failure, interruption, and material limits. That is why Berkeley matters here.
+So in looking at the unrealized architecture, I am speaking about a specific vocabulary, and that is specifically through Edmund C. Berkeley and David L. Heiserman.
 
-He gives a five-part description of intelligent machinery that is still extremely useful:
+I published a paper on arXiv on July 17, 2026, and I will not go into the paper in this episode. Maybe I will drag it in in other ways. But it is really about the review of two parts: the symbolic logic of Edmund Berkeley and the animal behaviors of David L. Heiserman.
+
+So between the two of these, you can create a simple claim: the combination of Berkeley and Heiserman gives us an architectural way to talk about machine intelligence, so that we know that we can describe intelligence as the organization of sensing, storage, calculation, control, state, action, and eventually, if we are lucky, adaptation.
+
+And that is why I use the term `the unrealized architecture`, and not in a pejorative sense, because it is not unrealized because no one ever thought about it. Like I just said, people thought about it. But the descriptive language that is used by these two fellows appeared largely before the culture was ready to inhabit it.
+
+I guess I could say it like that. We just were not ready to accept those ideas.
+
+And to be fair, the evolution of machinery was very slow between, say, the symbolic logic of 1959 and Heiserman's `Robot Intelligence` of 1981.
+
+I mean, we have not really been able to look at the cultural part of that, I would say, until about 2010, when manufacturing became quite advanced.
+
+But let us revisit that a bit later.
+
+I do not want to get lost in everything looking like a charming antique and just ornamentation. We want to establish that Berkeley names the architecture that we are working under, and Heiserman names the adaptation problem.
+
+So in the beginning part of the paper, I mention that Berkeley is remembered as someone who stood between symbolic logic and early computing. It is not an errant description, but it is a little bit small.
+
+So if you read `Symbolic Logic and Intelligent Machines` carefully, it is not an abstract discussion and not just something on paper. It actually is a listing of relay-switching mechanisms, memory, and control, and the kinds of thought problems that you solve by framing them in this way, attaching systems to these different parts of your hypothesis.
+
+So in a quick summary:
+
+Can something take in information?
+
+Can it hold a state?
+
+Can it select an action?
+
+And can it transition from one mode of behavior to another?
+
+Of course, this is in context with an environment.
+
+There is an interesting book I am also reading now called `The Principles of Artificial Intelligence` that discusses the complexities of the environment. I have not gotten into that too much yet, but we will get into that a bit later.
+
+Those are some of the immediate questions you ask yourself about that.
+
+But if we summarize intelligent machinery into five little buzzwords, just five descriptions, we have:
 
 input
 
@@ -32,66 +70,152 @@ calculating capacity
 
 control
 
-That is already more serious than much of the present public language around AI, because once you say those five parts out loud, you start asking harder questions. Where is the input coming from? What is stored? What kind of calculation is being done? What is actually in control? And what action follows from that organization? Suddenly the conversation changes. You are no longer allowed to admire the machine in the abstract. You have to describe its parts and their relations. This is the point where Berkeley stops being only a symbolic logician and starts becoming a thinker of machine architecture.
+So let us talk about the kinds of machinery that Berkeley was discussing as opposed to the kind of machine that Heiserman was discussing, because that will bring us closer to where we are going to go with all this.
 
-And I want to pause on that phrase for a moment, because machine architecture is not just a technical convenience in this series. It is really the thing under dispute. A lot of present discussion behaves as if scale can substitute for architecture. Make the model larger. Add more data. Add more compute. Add a robot body. Add another camera. Add another demo. And perhaps something remarkable will occur. Sometimes something remarkable does occur. Fine. But the cybernetic question does not go away just because the performance is impressive. What is organized here? What persists? What is being regulated? What can recover? What can be maintained? What changes after failure, and what merely starts over?
+Historically, Berkeley worked with very large computing systems, given the time of the late 1940s and 1950s. And he talks about things at a large format. You will see that if you look at the book, especially some of the diagrams. You will see clearly that there are very large things that we are talking about.
 
-That is the kind of question Berkeley prepares us to ask. He does not give us a final answer to all of it, but he gives us a language in which those questions become natural rather than awkward. There is another part of Berkeley that matters even more for this series, and that is that he does not stop at static logical form. He moves toward states and events, and that distinction is crucial. A state lasts. An event is brief. If you want to describe a real machine, that distinction is not optional.
+But that is where the symbolic logic is actually encoded in that kind of description, and he suggests building these things. There is actually a supplemental book on building these different kinds of machines. It was a supplement to his book.
 
-A real machine does not just contain truths and falsehoods. It waits, it holds, it shifts, it triggers, it sequences, and it persists in one condition until another condition arrives and changes it. That is already much closer to behavior than to pure symbolic manipulation. It is one reason I think Berkeley is underrated. He is not merely trying to show that logic can be embodied. He is beginning to show how machine behavior can be organized through time. That phrase matters to me: through time. Not as a snapshot, not as a test score, not as an isolated output, but as a temporal organization.
+But inside that book, toward the back, is a little robot called `Squee`.
 
-That becomes even clearer once he begins talking about robots. The Berkeley material on robots is not there just for color. It is there because the robot gives his architecture a body, and the small figure that matters most here is `Squee`. Squee is not important because it is the most advanced robot ever imagined. It is important because it makes the architectural argument visible. Squee has activities, modes, transitions, and conditions that move it from one behavioral state to another. That is the key thing. The machine is not just computing in a void. It is inhabiting a repertoire.
+And it was featured publicly in 1952.
 
-And this is where I want to admit a speculation of my own. Looking at the unidentified robot in the supplemental artwork, I cannot prove provenance, and I do not want to fake certainty. But the methods of build feel eerily close to Berkeley's world, or at least to the world of someone working near him: exposed logic, explicit pathways, behavior suggested by arrangement, not hidden behind a sealed consumer shell. Maybe it was built by Berkeley. Maybe by someone on his team. But I also find myself wondering about a more oblique possibility: that one or several people around that orbit built it somewhat offstage, at the edges of Berkeley's own published emphasis, sharing the same grammar of relays and behavioral arrangement without needing his full authorship.
+It is not a terribly advanced robot. There was a robot just before that called `Simon` that Berkeley and his associates built. But `Squee` made the architecture arguments visible for our purposes.
 
-That possibility matters because Berkeley, as I read him, does not always seem most animated by robotic contraptions as contraptions. He is more often animated by explanation, demonstration, architecture, instruction, the making legible of machine intelligence. The robot for him can feel like an instrument of disclosure. But someone nearby, someone a little more seduced by the creaturely, theatrical, or mechanical side of the thing, might have pushed further into the robot as presence. If that happened, the result might look exactly like this unidentified figure: Berkeley-adjacent in method, but not necessarily Berkeley-centered in temperament. I do not mean this as the main historical claim of the episode, only as a useful way of seeing the image without flattening it.
+So we are not looking at building giant monolithic things. We are looking at embodied robots.
 
-And that is where the Tati figure enters for me. Not Jacques Tati as a literal collaborator, obviously, but Tati as a name for a sensibility: the hidden comedy of over-arranged machinery, the strange dignity of a mechanism carrying on with its routines, the sense that a built environment can become expressive all by itself. If this unknown robot was built by one pair of hands or by several, perhaps somewhat offstage, perhaps without full blessing, then it may belong to that alternate branch of the story, where cybernetic construction stops being only didactic and becomes cinematic. I cannot yet certify the attribution. What I can say is that the resemblance is strong enough to sharpen the episode's argument and then return us to the larger question of architecture.
+So `Squee` has activities, modes, transitions, and conditions. So it moves from one behavioral state to another.
 
-Searching, homing, depositing, changing activity when a condition changes: that is a behavioral architecture. Once you hear it that way, Berkeley starts to sound much less like a preface to computing and much more like a precursor to embodied machine intelligence. The robot is not there as decoration. It is there as proof that architecture is not a metaphor. Architecture means something. It means there are organized layers. It means one thing depends on another. It means behavior is not magic. It is built.
+And that is extremely important. In fact, that is probably one of the most important things to talk about and understand from that. Because `Squee` is the transition, that piece of information you bring across to where Heiserman comes in.
 
-It also means the machine can enter the frame as a presence, not only as a schematic. This matters to me because the cinematic mood is not accidental here. There is something almost Tati-like about a creature whose intelligence is legible as routine, timing, hesitation, and overorganized behavior. Not comedy in the cheap sense. Comedy in the mechanical sense: a world where arrangement itself becomes expressive, where the choreography of an apparatus tells you something before the explanation catches up. That sensibility helps me here because it keeps the robot from becoming either mere nostalgia or mere demonstration.
+Now, I am not sure if Heiserman was aware of Berkeley. I have not been able to find that truth yet. I will dig into it probably as we go along.
 
-There is also a very practical reason this matters to me right now. I do not want to talk about embodied intelligence in a way that floats free from repair, maintenance, and material constraint. If the machine is real, then its intelligence, whatever that means, has to exist in some relation to power, memory, failure, damage, delay, and control. A lot of the public discussion of robotics is happy to let those details vanish behind polished footage. Cybernetics is useful partly because it does not let them vanish. It keeps dragging the question back down to loops, variables, controllers, thresholds, and states.
+But that idea of activities, modes, transitions, and conditions moving it from one behavioral state to another, let me say that again one more time:
 
-Now, I want to be careful here. Berkeley is not yet Heiserman. He is not yet a theorist of adaptive embodied intelligence in the later, creature-like sense. His systems are still largely designed from above. Their transitions are organized in advance. Their behavior is structured, but not yet deeply self-modifying. That is exactly where Heiserman becomes useful. Heiserman takes a machine that can sense, hold state, control action, and pass through behavior over time, and then asks the next question: what happens when such a machine begins to adapt from experience?
+activities, modes, transitions, and conditions that move it from one behavioral state to another.
 
-That is the extension. That is the deepening. Heiserman is not interesting merely because he wrote about robot intelligence. He is interesting because he pushes the architecture from organized behavior into revisable behavior. Memory becomes more than storage. It becomes a condition for change. Action becomes more than execution. It becomes something that can be shaped by prior outcomes. The machine becomes less like a fixed sequence and more like a creature with a history. That phrase is important too: a creature with a history. Once a machine has a history, it is no longer enough to describe what it can do at one moment. You have to describe what it preserves from one moment to the next, and what it changes because of what happened before.
+So when we look at Heiserman and `Robot Intelligence`, he was speaking in the context of a machine called `Rodney`. He spoke about it prior, but I will keep talking about it again as we go forward.
 
-This is where I think a lot of current discourse becomes weak. There is a great deal of attention given to whether a machine can perform a task, imitate a gesture, or complete a benchmark. There is much less attention given to the continuity of organization that would make those performances part of one coherent being rather than a string of successful episodes. Heiserman helps us ask whether the machine is accumulating anything that matters. Is it revising itself in a structured way? Is memory functional? Is generalization grounded? Is failure teaching the system anything durable? These are harder questions than whether the demo looked good.
+That was exactly that.
 
-That is why I pair Berkeley and Heiserman. Berkeley helps name the architecture. Heiserman helps name the adaptation problem inside that architecture. Berkeley gives us input, output, storage, calculation, control, states, events, and behavior through time. Heiserman then presses on the next layer: what if the organization is not merely enacted, but revised? What if action can be altered by prior consequence? What if the machine carries not only state, but developmental residue? At that point we are much closer to the old cybernetic dream of embodied adaptive intelligence than to the current habit of placing a large model behind a sensor stack and assuming the rest will take care of itself.
+And in the context of `Robot Intelligence`, which is about robots but is more of a simulation on your computer to see these kinds of things, you will see transitions of these same steps. And you will see different levels of sophistication in it.
 
-This is where the paper matters most. Its criticism of current embodied-AI discourse is not that current systems are worthless. The criticism is more exact than that. Current systems often demonstrate impressive capability without giving us an equally explicit account of persistence, recoverability, maintenance, and structured revision through time. In other words, capability is outrunning intelligibility. That is the problem. You can make the machine do something remarkable. Fine. But what is the architecture? What is being sensed? What is being preserved? What state matters? What is recoverable after disruption? What is revised after failure? If those questions are weakly answered, then the machine may still be useful, but our understanding of it is underbuilt.
+And that is where we can take that realization. So the alpha, the beta, the gamma level intelligence, making it air quotes because you cannot see me, feeds back into the screen. And this forms a feedback loop. You have this initial set of things, activities, modes, transitions, and conditions that move from one behavioral state to another. And then we have the actions realized in a software system that we can simulate and observe, those sequences of things happening, to get some sort of awareness and absorption of that.
 
-That underbuilt quality is what I think Berkeley and Heiserman help expose, and they expose it without requiring mysticism. They give us a plain descriptive language: sensing, state, storage, control, action, adaptation. That is already enough to ask much better questions of today's robotics than the public conversation usually asks. It is also enough to tell us why this series should not stay at the level of paper alone, because the paper is not the destination. It is a framing device. It is a way of approaching an unrealized architecture before the machine itself gets the last word.
+So Heiserman, I am unaware if he was aware of Berkeley, but he definitely is extending Berkeley's work.
 
-This is also the place where I want to say something about the long arc from low-level machinery to present abstractions. There was a period in computing when one had to stay much closer to the machine. Memory was visible as a limit. Timing was visible as a limit. Instruction sets mattered in an intimate way. Then over time, layers accumulated. High-level languages, operating systems, object-oriented abstractions, frameworks, managed environments, cloud infrastructures, and now large models sitting on top of enormous compute scaffolding. There was real gain in that. I do not deny it. It allowed humans to command systems of much greater complexity than they otherwise could.
+He takes that unrealized architecture, makes it his own, and then transitions it from the architecture point of view to organized behavior and revisable behavior as the next level. So then you get the alpha, beta, gamma, and the revisability of behaviors becomes clearer as you become more advanced in these nomenclatures.
 
-But there is a cost to that ascent when it becomes culturally absolute. The higher the abstraction rises, the easier it becomes to forget that intelligence still has to cash out in organization somewhere. Sensors are still real. Delays are still real. Memory is still finite. State is still consequential. Action still has to pass through a body or an actuator or a process that can fail. So when I look at current claims about embodied AI, I sometimes feel as though we are being asked to admire a pink planet through a telescope. The image is spectacular. The scale is impressive. The promise is grand. But once you look more closely, the thing can become strangely synthetic, as though the display has run ahead of the explanatory structure.
+So memory is not just storage. It becomes a condition for change.
 
-That is not an argument against current systems. It is an argument for harder description. It is an argument for getting closer again to architecture. In some sense, the story bends back toward assembly, not necessarily in the literal sense that human beings must all go back to hand-writing low-level code, but in the sense that machine intelligence forces us once again to care about organization at a lower level than the public rhetoric prefers. If machines begin to do more of the programming, then we may need an even sharper account of what the underlying layers are, not a looser one. Otherwise we end up with orchestration without understanding.
+And action becomes more than just execution. It becomes something that is shaped by prior outcomes, so learning by experience.
 
-This is one reason I do not want to live in Berkeley and Heiserman for too long. If this vocabulary is real, then it has to survive contact with the bench. And that brings us to the `Hero-1`. The `Hero-1` is not here because it is the most advanced possible machine. It is here because it is a machine on which these claims can be tested honestly. It has a body, sensors, constraints, memory limits, control layers, failure modes, and a repair history. That means it can answer back. It can resist our language. It can force precision on us.
+And the machine becomes less like a fixed sequence and more like a creature with a history.
 
-If Berkeley is right, then sensing, storage, control, state, and action should not be poetic decorations. They should be locatable in the machine. If Heiserman is right, then adaptation should not be a glamorous add-on. It should be something that can eventually be built on top of those layers in a disciplined way. And if both are wrong, the bench will tell us that too. That is the value of moving from theory to a real robot. The robot forces the architecture to cash out. It forces us to stop speaking as though the body were incidental.
+And I think that is interesting too, a creature with a history.
 
-This is also where I want to make one practical point about style, because style and theory are not unrelated here. There is a temptation, when talking about AI, to jump immediately to the grandest possible examples: the biggest model, the newest humanoid, the loudest demonstration. But if the vocabulary is weak, all that scale can become a way of hiding the question rather than answering it. A smaller machine with a clearer architecture can teach more. That is another reason Berkeley and Heiserman matter. They let us ask whether the machine is understandable before we ask whether it is spectacular. And for this show, that is the right order.
+Once a machine has a history, it is no longer enough to describe what it can do at the moment. You have to describe what it preserves from one moment to the next, and what it changes because of what happened before.
 
-It is also why I do not mind if an unidentified robot enters the argument like a character from an old film. Sometimes a machine reveals itself better that way. Not as a triumphal future object, but as a slightly uncanny inhabitant of a built environment, a creature whose mechanisms are visible enough that one can imagine the logic of its conduct. That is much closer to the kind of attention I want than the contemporary demand to be overwhelmed.
+And I do not think this is discussed too much these days.
 
-Now, there is also a harder horizon behind the `Hero-1`, and I do not want to leave that unspoken. The immediate instrument of the series is the repaired `Hero-1`, because that is the machine we can actually put on the bench, diagnose, fit, and force into clarity. But there is a further horizon that belongs more to Rodney and to the deeper Heiserman line: the question of self-programming, developmental extension, and a more creature-like adaptive stack. That horizon is harder. It asks more from the machinery. It asks more from the architecture. And it asks more honesty from us because it is very easy to say the words and much harder to build the thing.
+So the current discourse is rather weak because it gives a lot of attention to whether a machine can perform a task, imitate a gesture, or complete a benchmark, and much less to the continuity of the organization.
 
-So I do not want to pretend that the `Hero-1` is the final answer to that horizon. It is not. But it may be the right instrument for asking the first serious questions. Before you have self-programming, you need control. Before you have developmental adaptation, you need state organization. Before you have open-ended revision, you need a machine whose loops, sensors, and actions can be located cleanly enough that revision means something. That is why the repaired platform matters. It may not be the ultimate creature, but it is an honest machine on which the claims can begin to be sorted.
+That is one of the things that I am trying to emphasize in the paper. Not to bring back old cybernetic dreams in some naive way, but to do a slight critique of the current embodied-AI discourse. Not saying it is worthless, but saying it is taking us to a place where we are not helping ourselves by just winging it.
 
-And honesty is a big theme for me here. Old machines can be honest in a way that highly polished contemporary systems often are not. They expose their limits more openly. They expose their architecture more openly. They do not make it as easy to confuse the result with the explanation. When an older machine fails, you are usually forced to ask what layer failed, what signal failed, what state was lost, what control relation broke down. That is educational in exactly the sense I want this series to be educational. It teaches architecture by resistance.
+We have always been saying, oh, we will just figure it out later, figure it out later, figure it out later. But there comes a point where that is no longer viable, and is in fact quite dangerous.
 
-So let me reduce the argument as plainly as I can. Berkeley is not only a symbolic logician. He is an early thinker of machine architecture. He shows that intelligence can be discussed in terms of input, output, storage, calculation, control, states, events, and robot behavior through time. Heiserman takes that world and pushes it further toward adaptation, memory, generalization, and revisable conduct. Together they offer a language that much present embodied-AI discourse still lacks. They do not give us a complete future. They give us a stronger description.
+So now I can go to a shop, different manufacturers, and they say, oh, there is this robot that I want to get.
 
-And that stronger description matters because it changes what we ask of the machine. Instead of asking only whether it can produce the desired behavior, we ask whether the behavior belongs to an organized whole. Instead of asking only whether the performance is impressive, we ask whether the underlying state, memory, control, and revision layers are intelligible. Instead of asking only whether the machine can be scaled, we ask whether the machine can be understood, maintained, repaired, and eventually extended without dissolving into promotional fog.
+And a lot of times, just from experience, when I bought a humanoid robot about ten years back, when it arrived, I charged the battery up, turned it on, and it stood up, made a few interesting noises, and just stared at me.
 
-That language is not the end of the series. It is the last conceptual stop before the bench, and that is where I want to go next. Because if this architecture means anything, then the next episode is where it starts to meet friction, voltage, steering, failure, repair, and all the other little material truths that theory tends to ignore until the machine refuses to cooperate. That is where the `Hero-1` gets to answer. That is where we find out whether this unrealized vocabulary actually earns its keep.
+And I think that is why the person who had sold it to me was really happy to let it go, because it is just, what happens now? What am I doing here? Now I have got to figure out what this is supposed to mean.
 
-If the paper is right, then the bench is where its claims either become concrete or start to fail.
+Now, things like the `AIBO`, especially the first one, the `ERS-111`, changed the game. This is prior to the humanoid, of course.
+
+But that had a personality, so you just turn it on and start to experiment with it and play with it. And the architecture, the behavior, becomes observable throughout the discourse.
+
+Like Berkeley, and the animalized architecture, and Heiserman, if one takes the thread a bit further to the `AIBO ERS-111`, the scripts that run the behavior system, the operating system if you will, there is that thread of behavior as embodiment.
+
+And I think I will do an episode on that so I can explain more what that means, what I mean by that.
+
+So Berkeley and Heiserman exposed something that was rather mystical prior. It is plain descriptive language. It is finite.
+
+`AIBO` brings it to the public, to ordinary people. Not the `AIBO` now, which I think they stopped making now actually. It is quite a terrible thing they have imposed on people with that, but that is another discussion.
+
+The current systems, like some of the critique I made in the paper, if you are looking at Berkeley, Heiserman, including the `AIBO 111`, you can see a kind of graph, like a bar.
+
+So we know that the computer deals in binary. You can get this in Berkeley. You will see zeroes and ones.
+
+And then you understand, okay, from that, it is really horrible to try to program in binary, right? But then you want to go to hexadecimal, which is a more compact way of describing it. But humans do not want to do that either, and it is in numbers, right?
+
+So they invented assembly language, which made it a little more formalized and more human.
+
+So if you look at that increase, if you make your finger okay, here is binary, here is hexadecimal, and here is assembly, so you have got your fingers at a certain width, your index finger and your thumb at a certain distance from each other.
+
+And taking that, and saying look at Heiserman at that point, at that apex, at that point in time, you say, okay, with this assembly, I can program pretty much anything, right?
+
+So in his time, it was an 8-bit system, until about 1985.
+
+And that assembly was the full description of all the behavior that was manifest from that extension.
+
+So then if you take it from that point, and then create a gap, and then reproduce that index finger and thumb width on the right side, then that is the same width of that assembly language.
+
+Then you see that everything is described across the boundary, but there is a gap in the middle.
+
+And the gap in the middle is all the stuff that we have created for ourselves, like the higher-level languages, object-oriented C, C++, C#, Java, everything outside of the tool languages.
+
+So when I ask myself whether the stuff in the middle is just for us humans, or whether it is actually relevant to an architectural discussion in the machine, I have my own opinion on that.
+
+I would state that it was for our benefit. We created it for ourselves.
+
+But now that we are back into AI, quite sophisticated artificial-intelligence systems, I think that would also hold true.
+
+Because we have to establish the history not just of our species, but of the intellectual contributions of those that made a certain segment of our world the way it is.
+
+So for me, I am a cyberneticist, right? And I am interested in those things. I want to get to the history. I want to find everything I can about how architecture is not teleology. So it is not something divine, all unto itself.
+
+What I am getting at is self-evidence.
+
+I do not want to have something that has bibles of documentation just to talk about what it is. It should be self-evident. Now, it may be complex, but we need to talk about self-evidence. And it is that history, that understanding of history, that takes us down that path.
+
+On that subject, I wanted to step back to the Berkeley thing, to `Squee`.
+
+I will probably do another episode on this, but if you look at `Squee`, `Squee` was constructed not just by Berkeley, but by a team. It was Berkeley and Associates.
+
+So there were, I think, five to seven different people who were working for him at the time. But if you narrow down who was most likely working on it, you would come up with three names.
+
+I would say Robert A. Jensen, electrical engineering and functional integration.
+
+Andrew Vall, again a similar job to Jensen.
+
+And then William A. Porter, mechanical construction.
+
+There is a little bit on the side of this where there is another robot, and I am going to put it in the supplement on the Substack, and that is at `cartheur.substack.com`.
+
+The story goes that a professor found this robot in a shop in Paris, and he named it the `Tati robot`, after Jacques Tati, the French filmmaker, who made a really interesting set of movies in the 1950s, 1960s, and early 1970s.
+
+One in particular called `Mon Oncle`, `My Uncle`. It is actually quite an interesting movie, and you get the sense of this futuristic escapescape, this landscape, this area out of time.
+
+And in the movie it is contrasted with the traditional French city, and then you have this new system that is being built just as it is carving out the old. And that metaphor is quite interesting.
+
+But the `Tati robot`, no one actually knows where it came from or who built it.
+
+But I would speculate, and I will probably do an investigative series on this, where I think that Jensen, Vall, and Porter were involved in this construction for two reasons.
+
+There is an apparent similarity in construction technique between `Squee` and this robot.
+
+And the fact that if you look at this unknown robot, you can tell that is a refined manufacture. When I make a prototype, or when somebody makes a prototype, it is usually quite messy, ugly, things flying everywhere.
+
+But this one is really compacted and placed in just the right way.
+
+And I was aware that at the time there was a bit of a schism between the team and Berkeley himself. Maybe not as cataclysmic as Fairchild, but I think there was something there. So there is a bit of credence to that.
+
+But the reason why I mention it is that once you explore unrealized architectures, and not just take them seriously, but start to examine them and look at them, pull up the threads and take the nuggets, the parts that you need to really understand, activities, modes, transitions, and conditions that move from one behavioral state to another, everything else starts to come out of that.
+
+And the idea of `Squee` being not a very sophisticated robot, into this other robot that is extremely sophisticated, makes perfect sense.
+
+So the unrealized vocabulary is something that we want to bring into our everyday work, into the workspace. And at this workspace, we decide what to do with the claims.
+
+They will either become concrete, and start for us as things to work on, or they will become a point for us to fail and try again.
 
 Thank you for listening.
