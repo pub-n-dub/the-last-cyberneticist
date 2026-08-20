@@ -130,7 +130,9 @@ Episode Summary:
 
 _A Four-Bit Wonder_
 
-J.J. Coupling wrote a piece that appeared in the August 1950 _Astounding Science Fiction_ magazine called "How to build a thinking machine". In it he describes a set of circuits for an entity navigating an environment in the form of a maze. What is striking is that he uses language that we recognize today as feedback, memory, and supervised reinforcement learning without the trappings. The author's name was a pseudonym for John R. Pierce, a notable physicist and engineer with contributions to telecommunications and satellite technology. On page 121 he introduces a table of binary numbers that correspond to a long and short way through a maze where negative reinforcement from the environment lit a red lamp and positive reinforcement a green one.
+J.J. Coupling wrote a piece that appeared in the August 1950 _Astounding Science Fiction_ magazine called "How to build a thinking machine". In it he describes a set of circuits for an entity navigating an environment in the form of a maze. What is striking is that he uses language that we recognize today as feedback, memory, and supervised reinforcement learning without the trappings. This leads, inevitably, to ways of expressions new and unforeseen.
+
+The author's name was a pseudonym for John R. Pierce, a notable physicist and engineer with contributions to telecommunications and satellite technology. On page 121 he introduces a table of binary numbers that correspond to a long and short way through a maze where negative reinforcement from the environment lit a red lamp and positive reinforcement a green one.
 
 Rather than work within the confines of the technology of his era (tubes), I will examine Coupling's thesis against the `four-bit wonder`: a handmade, wirewrapped protoboard that I used to test switch inputs and static RAM with a 2114.
 
