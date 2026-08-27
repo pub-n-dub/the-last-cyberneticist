@@ -130,19 +130,18 @@ Episode Summary:
 
 _A Four-Bit Wonder_
 
-J.J. Coupling wrote a piece that appeared in the August 1950 _Astounding Science Fiction_ magazine called "How to build a thinking machine". In it he describes a set of circuits for an entity navigating an environment in the form of a maze. What is striking is that he uses language that we recognize today as feedback, memory, and supervised reinforcement learning without the trappings. This leads, inevitably, to ways of expressions new and unforeseen.
-
-The author's name was a pseudonym for John R. Pierce, a notable physicist and engineer with contributions to telecommunications and satellite technology. On page 121 he introduces a table of binary numbers that correspond to a long and short way through a maze where negative reinforcement from the environment lit a red lamp and positive reinforcement a green one.
-
-Rather than work within the confines of the technology of his era (tubes), I will examine Coupling's thesis against the `four-bit wonder`: a handmade, wirewrapped protoboard that I used to test switch inputs and static RAM with a 2114.
+This episode moves from finished machine behavior back down into binary, gates, and physical circuitry. It begins with `J. J. Coupling`'s August 1950 `Astounding Science Fiction` article `How to Build a Thinking Machine`, written under the pseudonym of `John R. Pierce`. What matters here is not only the machine idea, but Pierce's skepticism about inflated claims around thinking machines. Rather than letting the language run ahead of the machinery, he asks a narrower and better question: what would count, even in rough form, as a machine that learns? His answer takes shape in a maze. The maze matters because it creates a constrained setting in which route choice, bias, memory, reinforcement, and revised behavior can be observed clearly. That gives the episode a bridge into the later maze-oriented work around `David L. Heiserman`, `Rodney`, and the existing codebase discussion, not as a proven line of direct influence, but as a logical recurrence in how people think about adaptation in machines over time. From there, the episode turns to the `four-bit wonder`, a handmade wirewrapped protoboard built as a small test setup for timing, state, and memory. Using switches, lamps, a timing-divider section, and a `2114` static RAM, it provides a concrete place to inspect readback, retention, and even some power-on variability directly. The point is not to present a grand machine, but to establish a genuine place to begin experimentation with simple tools and modest parts before moving on to durable program placement in ROM.
 
 Episode Summary:
 
-* Use the handmade `four-bit wonder` as a deliberately small laboratory for testing switches, state, timing, and memory
-* Compare Coupling's mid-century thinking-machine thesis with a modern bench-scale reconstruction mindset rather than a museum re-creation
-* Show how a tiny wirewrapped board can clarify feedback, reinforcement, and route selection better than a more opaque contemporary system
-* Introduce static RAM, simple logic paths, and manual testing as the kind of honest groundwork that makes later robot work more trustworthy
-* Bridge from exploratory bench electronics into the need for repeatable memory programming
+* Move from high-level behavior back down to binary, gates, and actual buildable circuitry
+* Introduce Coupling's August 1950 skepticism about thinking-machine hype as a discipline of buildability
+* Use the maze as a constrained setting for route choice, memory, reinforcement, and revised behavior
+* Connect Coupling's maze logic to `Heiserman`, `Rodney`, and the broader codebase discussion without overstating direct influence
+* Explain why the `four-bit wonder` was built: to make state, timing, readback, and retention visible in a small handmade setup
+* Describe the board concretely through wire-wrapping, the timing-divider section, the `2114` static RAM, and the address/data lamp layout
+* Note the observed variability of the power-on state as a small but interesting material echo of Coupling's random element
+* Bridge from exploratory RAM work into the next step of durable program placement through ROM burning
 
 ### Episode #7
 
