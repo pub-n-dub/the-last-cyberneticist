@@ -145,9 +145,9 @@ Episode Summary:
 
 ### Episode #7
 
-_The Benefits of Remembering (as well as Doing)_
+_The Benefits of Remembering_
 
-Static RAM 2114 addressing and data; busses and the benefits of manual programming with switches.
+Static RAM 2114 addressing and data; busses and the benefits of manual programming with switches where we want to talk in greater detail about how integrated circuits work and are constructed, how they are being used in the "four-bit wonder" board for addressing, buses, data, and static RAM where the utility of switches to indicate binary numbers on said busses and feedback with LEDs of disdictive colors sets into the mind point and purpose.
 
 Episode Summary:
 
