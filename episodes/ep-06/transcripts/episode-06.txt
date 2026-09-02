@@ -1,3 +1,5 @@
+FIX: When power is restored, the SRAM’s contents are not initialized to a defined pattern. The LEDs may therefore show a different 4-bit value at a selected address from one power-up to another. This is an observable startup condition of a volatile memory system, not reliable information preserved while power was off.
+
 Welcome to Episode 6 of The Last Cybernetesist.
 This episode is called A Four-bit Wonder.
 In the last episode I talked about the early IBO ERS-triple-1, behavior diagrams, and about

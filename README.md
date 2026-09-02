@@ -145,13 +145,14 @@ Episode Summary:
 
 ### Episode #7
 
-_The Benefits of Remembering_
+_The Benefits of Remembering (as well as Doing)_
 
 Static RAM 2114 addressing and data; busses and the benefits of manual programming with switches.
 
 Episode Summary:
 
 * Getting everything prepared
+* A solid power source
 * Describe the process of wirewrapping the contents of the four-bit wonder
 
 ### Episode #8
@@ -193,6 +194,17 @@ Episode Summary:
 
 ### Episode #11
 
+_Advent of Holmes: The 'Tati' Robot_
+
+A strange robot was found in a Paris second-hand store in the early 2000s by Daniel Dennet.
+
+Episode Summary:
+
+* A change of pace
+* An exercise in contemplating 'who made it'
+
+### Episode #12
+
 _Away from scratch-building toward manufactured production_
 
 The M6x09-II-SBC.
@@ -203,7 +215,7 @@ Episode Summary:
 * The benefits of professional designing
 * Cogent experience in creating the impossible on a grand scale
 
-### Episode #12
+### Episode #13
 
 _The Preessence Esoteric of Motorola_
 
@@ -217,7 +229,7 @@ Episode Summary:
 * Use Motorola's design language to show how architecture becomes concrete at the level of opcodes, buses, registers, and board constraints
 * Prepare the ground for the final fitting work by clarifying what the machine's computational body can and cannot support
 
-### Episode #13
+### Episode #14
 
 _Feel the (ROM) Burn_
 
@@ -235,7 +247,7 @@ Episode Summary:
 * Treat the act of programming chips as a material form of software work, where verification, handling, compatibility, and retention suddenly matter again
 * Position the ROM-burning stage as the threshold between planning the system and being able to place behavior back into hardware
 
-### Episode #14
+### Episode #15
 
 _Little-Lost Robot: Initial Preparations_
 
@@ -250,7 +262,7 @@ Episode Summary:
   - Choices between old and new tech
   - Restoring a straighforward ROM burner
 
-### Episode #15
+### Episode #16
 
 _Little-Lost Robot: Final Preparations_
 
