@@ -1,8 +1,8 @@
-# Episode 8 Script
+# Episode 12 Script
 
 ## Title
 
-`The Tati Robot`
+`Advent of Holmes: The Tati Robot`
 
 ## Script
 
@@ -14,9 +14,9 @@ A photograph of an unidentified robot lies on a table under a hard pool of light
 
 ### VOICEOVER
 
-Welcome to Episode 8 of `The Last Cyberneticist`.
+Welcome to Episode 12 of `The Last Cyberneticist`.
 
-This episode is called `The Tati Robot`.
+This episode is called `Advent of Holmes: The Tati Robot`.
 
 This one is a little different.
 

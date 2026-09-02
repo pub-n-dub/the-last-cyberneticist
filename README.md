@@ -210,7 +210,7 @@ Episode Summary:
 
 _Criteria of Merit: Polysance_
 
-Episode 11 turns the series' argument outward through Polysance, a nonprofit educational initiative in electronic computing, programming, and integrated-circuit design. Its first-principles, cross-disciplinary approach, informed by Charles H. Moore's work and Forth methodology, supplies a practical answer to the series' question of merit. The issue is not whether a small board can be made to look intelligent, but what kind of public understanding becomes possible when a person can inspect a machine's address, proposed value, stored state, comparison, and manual intervention for themselves. The comparator game becomes an educational action: modest enough to be truthful, tangible enough to invite participation, and clear enough to replace spectacle with shared inquiry.
+Episode 11 turns the series' argument outward through Polysance, a nonprofit educational initiative in electronic computing, programming, and integrated-circuit design. Its first-principles, cross-disciplinary approach, informed by Charles H. Moore's work and Forth methodology, supplies a practical answer to the series' question of merit. This is also a donor-facing episode: it asks viewers to support hands-on education for bored, intelligent children who need genuine intellectual challenge rather than another polished technology spectacle. The comparator game becomes the proof of concept: modest enough to be truthful, tangible enough to invite participation, and clear enough to replace passive consumption with shared inquiry.
 
 Episode Summary:
 
@@ -222,6 +222,7 @@ Episode Summary:
 * Make the boundary part of the lesson: the original-board game does not choose values, write automatically, sequence phases, scan addresses, or retain SRAM state without power
 * Present the separate autonomous board as a later exploration path, not as an achievement quietly smuggled into the demonstration
 * Define merit through legibility, participation, repairability, and the ability to test a claim together
+* Make a direct case for donations to support the materials, preparation, patient teaching, and learner access that this educational work requires
 
 ### Episode #12
 

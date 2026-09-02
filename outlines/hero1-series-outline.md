@@ -431,11 +431,11 @@ Title:
 
 Purpose:
 
-Turn the Four-Bit Wonder memory game into a Polysance nonprofit educational action centered on legible, participatory machine behavior and first-principles learning in electronic computing, programming, and integrated-circuit design.
+Turn the Four-Bit Wonder memory game into a Polysance nonprofit educational action and donor invitation centered on legible, participatory machine behavior and first-principles learning in electronic computing, programming, and integrated-circuit design.
 
 Core claim:
 
-The educational value of a cybernetic machine lies not in making it appear intelligent, but in making its state, limits, and consequences available for people to inspect and test together.
+The educational value of a cybernetic machine lies not in making it appear intelligent, but in making its state, limits, and consequences available for people to inspect and test together. That work deserves support because bored, intelligent children need serious, tangible problems worthy of their attention.
 
 Talking points:
 
@@ -446,6 +446,7 @@ Talking points:
 - Treat limits as part of the demonstration: the original-board game does not choose values, write automatically, sequence phases, scan addresses, or retain SRAM state without power
 - Present the autonomous board as a separate later exploration, preserving the distinction between manual education and autonomous control
 - Define the initiative's criteria of merit as legibility, participation, repairability, and shared verification
+- Make the donor case plainly: contributions support components, preparation, patient teaching, and access to genuine intellectual challenge
 
 Closing move:
 
