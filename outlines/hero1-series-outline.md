@@ -69,8 +69,11 @@ Bridge by episode:
 - Episode 5: let embodiment arrive concretely through the first real `Hero-1` fault
 - Episode 6: use Berkeley lightly when discussing control logic and physical organization
 - Episode 7: use Shannon and Berkeley lightly when discussing the path from logic to hardware and tooling
-- Episode 8: use Heiserman directly when the first adaptive loop is real rather than hypothetical
-- Episode 9: give the fullest Berkeley-Heiserman treatment, because the platform has then earned the comparison
+- Episode 8: use the Four-Bit Wonder comparator to make stored state, target, and evaluation visible
+- Episode 9: make the formal-language argument, with Trakhtenbrot as a qualified limit on reasoning about architectural configurations
+- Episode 10: build the independent Four-Bit Wonder Machine Autonomous Version as the first concrete read-compare-revise controller
+- Episode 16: use Heiserman directly when the first adaptive loop is real rather than hypothetical
+- Episode 17: give the fullest Berkeley-Heiserman treatment, because the platform has then earned the comparison
 
 ## Recommended series identity
 
@@ -325,6 +328,133 @@ Closing move:
 
 Title:
 
+`Four-Bit Wonder: The Comparator Changes Everything`
+
+Purpose:
+
+Show the smallest change that turns exposed memory into an inspectable evaluation: a stored word can now be lower than, equal to, or higher than a target.
+
+Core claim:
+
+Comparison is not yet adaptation, but it is the indispensable moment when a machine's state becomes meaningful in relation to a condition.
+
+Talking points:
+
+- The original Four-Bit Wonder remains a manual, legible SRAM experiment
+- A `74LS85` compares the word read from the `MM2114A` with the word chosen on the four data switches
+- Green, red, and yellow indicators expose `LOW / INCREASE`, `MATCH`, and `HIGH / DECREASE`
+- The comparison is valid only during a selected SRAM read; high-impedance and write states are not evidence
+- Keep the two comparator inputs separate: one from the switch side and one from the SRAM/bus side
+- The limit matters: this is a read-and-match game, not an autonomous learner, because the switches cannot simultaneously remain the target and enter a revised value
+
+Bridge note:
+
+- This is the threshold between visible memory and control: it gives the next episode an explicit error signal from which a safe action policy can follow
+- Frame the three comparator outputs as a vocabulary of difference, not as intelligence or learning
+- End with the engineering problem the comparator exposes: a stable target, a candidate register, and a controlled read-modify-write cycle are needed before the machine can revise itself
+
+Closing move:
+
+`The machine can now tell us not only what it remembers, but how that memory stands in relation to a demand.`
+
+## Episode 9
+
+Title:
+
+`Memory and the Game: Architecture as a Formal Language`
+
+Purpose:
+
+Make the series' philosophical turn while the Four-Bit Wonder is still small, visible, and honest: organized material relations can be treated as a physically realized formal language.
+
+Core claim:
+
+The architecture is not merely described by a language from outside. Its wiring, state transitions, timing, control, and physically consequential responses already form a language in matter.
+
+Talking points:
+
+- The comparator turns memory into a relation: lower, equal, and higher are not stored facts alone but organized differences between a remembered word and a target
+- Four-bit elements can be treated as primitive terms; wiring, addressing, and control become formation rules; readback and physical consequence become semantics
+- Memory makes the architecture temporally extended rather than a static truth table
+- The episode remains clear about its limit: a comparator game is not an autonomous learner
+- Trakhtenbrot matters only after a rigorous encoding from architectural configurations to finite relational structures, and only after showing the relevant expressive power
+- The real question is not `can software decide a formula` but `what behaviors and limits follow from this organized architecture`
+
+Bridge note:
+
+- Let the board carry the abstraction: switches, SRAM, bus states, LEDs, and the comparator should appear whenever the language becomes philosophical
+- Do not claim that four-bit logic alone proves Trakhtenbrot or unbounded computation
+- The later serial, processor, and ROM episodes supply the practical substrate; Episode 16 tests an actual adaptive loop; Episode 17 returns to Berkeley and Heiserman with evidence in hand
+
+Closing move:
+
+`Before the machine can change itself, it must first become legible to itself as a difference that matters.`
+
+## Episode 10
+
+Title:
+
+`A Truly Machine-Intelligent System: The Autonomous Board`
+
+Purpose:
+
+Build the independent Four-Bit Wonder Machine Autonomous Version on a new Vector `8016-1` board, turning the previous episode's architectural argument into a visible controller.
+
+Core claim:
+
+The first honest autonomous behavior is not a generalized intelligence claim. It is a machine that captures a target, changes one stored word toward it, and stops when the relation is satisfied.
+
+Talking points:
+
+- The photographed Four-Bit Wonder remains intact as the manual reference machine; the autonomous version is a separate wire-wrap build
+- Phase 1 captures a target, reads a candidate SRAM word, compares the two, steps the candidate up or down, writes it back, and halts at equality
+- The `74LS85`, `74LS173`, `74LS193`, sequencer, and tri-state bus driver create a visible read-compare-step-write cycle
+- Phase 2 extends the single-address hill climber into a 64-address autonomous scan, advancing only after the current address reaches its target
+- Phase 2B's per-address target memory is optional and should not be smuggled into the first achievement
+- The machine must be built and tested in stages, with bus contention made impossible before continuous operation is attempted
+
+Bridge note:
+
+- Episode 9 asks what an architecture can mean; this episode gives that question a slow, inspectable physical answer
+- Do not call the board a learner before the evidence warrants it; call it an autonomous hill climber whose limits remain visible
+- The new board provides an important precursor to the later processor, ROM, and Hero-1 work
+
+Closing move:
+
+`The difference is no longer only displayed. It has entered the machine's own cycle of correction.`
+
+## Episode 11
+
+Title:
+
+`Criteria of Merit: Polysance`
+
+Purpose:
+
+Turn the Four-Bit Wonder memory game into a Polysance nonprofit educational action centered on legible, participatory machine behavior and first-principles learning in electronic computing, programming, and integrated-circuit design.
+
+Core claim:
+
+The educational value of a cybernetic machine lies not in making it appear intelligent, but in making its state, limits, and consequences available for people to inspect and test together.
+
+Talking points:
+
+- Let participants select an address and proposed value, then observe whether the stored SRAM word is lower, equal, or higher
+- Use the visible `LOW`, `MATCH`, and `HIGH` indications to teach relation, memory, and intervention without mystifying the board
+- Connect the demonstration to Polysance's cross-disciplinary curriculum and its interest in Charles H. Moore's Forth methodology
+- Make a manual write, return to read mode, and show the comparison changing because memory changed
+- Treat limits as part of the demonstration: the original-board game does not choose values, write automatically, sequence phases, scan addresses, or retain SRAM state without power
+- Present the autonomous board as a separate later exploration, preserving the distinction between manual education and autonomous control
+- Define the initiative's criteria of merit as legibility, participation, repairability, and shared verification
+
+Closing move:
+
+`The point is not to persuade someone that the machine is intelligent. It is to give them enough access to decide what the machine is actually doing.`
+
+## Episode 16
+
+Title:
+
 `Alpha-Hero: The First Tiny Adaptive Loop`
 
 Purpose:
@@ -347,12 +477,13 @@ Bridge note:
 - This is the first place to invoke Heiserman directly and positively
 - Explain that the significance of the experiment is not size but the move from fixed response toward remembered or revisable conduct
 - If the experiment is still simple reflex, say so plainly and present it as the threshold to Alpha rather than Beta
+- Recall Episode 9 briefly: the sensed condition, stored state, control decision, action, and feedback now make the formal-language claim operational
 
 Closing move:
 
 `A small honest loop is the first moment this stops being restoration alone and becomes research.`
 
-## Episode 9
+## Episode 17
 
 Title:
 
@@ -409,7 +540,7 @@ Closing move:
 - End every episode with one concrete next action
 - Pull wording from active lab notes so the series stays anchored
 - Reuse a consistent intro and outro so the project feels serial rather than accidental
-- Reuse the Berkeley-Heiserman bridge selectively, with the longest treatment reserved for Episode 9 or a follow-up theory episode
+- Reuse the Berkeley-Heiserman bridge selectively, with the longest treatment reserved for Episode 17 or a follow-up theory episode
 
 ## Recommended immediate recording order
 
