@@ -147,13 +147,19 @@ Episode Summary:
 
 _The Benefits of Remembering_
 
-Static RAM 2114 addressing and data; busses and the benefits of manual programming with switches where we want to talk in greater detail about how integrated circuits work and are constructed, how they are being used in the "four-bit wonder" board for addressing, buses, data, and static RAM where the utility of switches to indicate binary numbers on said busses and feedback with LEDs of distinctive colors sets into the mind point and purpose.
+This episode stays with the `four-bit wonder` and examines what it means for a machine to remember in physical terms. It opens with the idea, developed in Alan Watts's `Recollection`, that remembering is not merely acquiring information but recognizing a continuity that would otherwise be overlooked. The board gives that idea a small, literal form. Integrated circuits become understandable as packages of organized electrical roles: power, ground, address, data, and control. A `2114` static RAM receives a binary address from switches, stores or returns a four-bit value through the data bus, and makes the result visible through distinctive LEDs. By wire-wrapping the board, tracing its buses, powering it from a power bank through a modified USB connector fitted with HP signature-analyzer clips, and programming it one switch at a time, the episode makes memory, readback, and verification legible. It also takes the counterpoint from Watts's `Death`: memory is useful because it can be cleared, revised, and renewed. In the machine, reset and overwrite are not opposed to remembering; they make deliberate new state meaningful. The episode corrects an earlier ambiguity as well: a changing SRAM display at power-up is an undefined volatile startup state, not reliable content preserved while power was off.
 
 Episode Summary:
 
-* Getting everything prepared
-* A solid power source
-* Describe the process of wirewrapping the contents of the four-bit wonder
+* Explain integrated circuits as organized physical components, with pins serving power, ground, address, data, and control roles
+* Detail the `2114` static RAM: binary addressing, four-bit data, chip selection, read/write control, and readback
+* Show how switches assert binary values onto address and data buses, while distinctive LEDs turn those buses into visible feedback
+* Describe the wire-wrapped construction of the `four-bit wonder`, including sockets, point-to-point connections, and traceable signal paths
+* Prepare the board through a stable power bank, modified USB connector, and HP signature-analyzer clips, alongside disciplined control states that reduce hidden variables during testing
+* Frame manual switch programming as a useful way to learn selection, storage, verification, and local fault finding before serial tooling
+* Use `Recollection` to distinguish meaningful continuity from mere accumulation, without treating the analogy as a technical claim about human memory
+* Use `Death` to establish forgetting, clearing, reset, and rewrite as necessary counterparts to useful memory
+* Correct the description of power-on variability: the SRAM's initial contents are undefined after power loss, not retained nonvolatile memory
 
 ### Episode #8
 

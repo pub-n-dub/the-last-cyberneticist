@@ -10,6 +10,10 @@ Welcome to Episode 7 of `The Last Cyberneticist`.
 
 This episode is called `The Benefits of Remembering`.
 
+In `Recollection`, Alan Watts treats remembering as recognition rather than acquisition: noticing what has been overlooked beneath the social role, or persona, we mistake for a complete self. A related thought: if experience left no trace beyond an instant, there would be no way to know it had happened to you. There would be no continuity from which a life, a self, or a sequence of actions could be recognized.
+
+That is not a technical definition of computer memory. It shows why the word matters. To remember is to allow a present state to stand in relation to what came before it. A machine does this in a tiny, literal way. It holds a chosen physical condition long enough for another operation to find it again.
+
 In the last episode, I introduced the `four-bit wonder` as a very small and very plain machine for making state visible. I talked about the board as a disciplinary device, which I still think is the right description. It keeps the language from outrunning the mechanism. It makes memory physical. It makes control visible. It gives me a place where timing, switching, readback, and retention can be inspected directly instead of merely assumed.
 
 But I did not really slow down enough.
@@ -270,7 +274,7 @@ That is one of the benefits of small handmade systems. They let failure remain l
 
 And understanding local failure is very often how larger competence grows.
 
-I also mentioned in the last episode that the power arrangement was intentionally simple, and that deserves one more word here. When I am trying to learn from a system, I want as few hidden variables as possible. A stable, convenient supply reduces confusion. It does not solve every problem, but it means that when the board behaves strangely, I am more likely to be confronting a real issue in logic, control, timing, or wiring rather than a chaotic power situation.
+I also mentioned in the last episode that the power arrangement was intentionally simple. The board runs from a power bank through a modified USB connector fitted with HP signature-analyzer clips. When I am learning from a system, I want as few hidden variables as possible. That stable, convenient supply reduces confusion, so strange behavior is more likely to be a problem in logic, control, timing, or wiring than in chaotic power.
 
 That sort of restraint is part of remembering too.
 
@@ -296,27 +300,15 @@ Now it is chosen state held in a selected location under power.
 
 Now the machine is answerable.
 
-That answerability is the real prize.
+What I want from a machine at this stage is not grandeur. I want legible commitment. If I put `1010` at a place I have selected, I want to return to that place and find `1010` until I deliberately change it or remove the conditions that make storage possible. That is the beginning of trust.
 
-What I want from a machine at this stage is not grandeur. I want legible commitment. If I put `1010` at a place I have selected, I want to be able to return to that place and find `1010` there until I deliberately change it or remove the conditions that make such storage possible. That is the beginning of trust.
+`Death` supplies the counterweight. Watts argues memory makes intelligence possible, but unbroken accumulation leaves no room for renewal: valuable remembering requires forgetting. The board gives that idea a technical form. A known clear state, intentional overwrite, or reset is not memory's enemy. It makes the next pattern meaningful by distinguishing it from what came before.
 
-And trust, in machine work, is built from repeatable small confirmations.
+Machine trust is repeatable confirmation, not an impressive unexplained pattern.
 
-Not slogans.
+The benefits of remembering begin before a machine does anything impressive: a state can be placed, revisited, compared, and used as the basis for a next act. Without that, there is only fleeting reaction.
 
-Not benchmark theater.
-
-Not grand metaphysical claims about intelligence.
-
-Just repeatable small confirmations.
-
-This is why I think the benefits of remembering begin before any machine does anything impressive. They begin the moment a state can be placed, revisited, compared, and used as the basis for a next act. Without that, there is no serious sequence. There is only fleeting reaction.
-
-With it, however modestly, we begin to get history.
-
-A machine with readable state has the beginnings of a past.
-
-And a machine with the beginnings of a past can, in principle, participate in more interesting futures.
+With readable state, a machine has the beginnings of a past and, in principle, more interesting futures.
 
 That is where this board points beyond itself.
 
@@ -366,11 +358,7 @@ Not merely that memory exists.
 
 But that memory is an organized relationship between physical construction, binary selection, control discipline, and visible consequence.
 
-That may sound modest.
-
-I think it is foundational.
-
-And for this project, foundational things matter more than theatrical ones.
+For this project, it is foundational.
 
 The next step, then, is to carry this legibility forward.
 
