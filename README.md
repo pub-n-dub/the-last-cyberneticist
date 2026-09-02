@@ -163,6 +163,21 @@ Episode Summary:
 
 ### Episode #8
 
+_A Comparator Changes Things_
+
+The Four-Bit Wonder now receives its smallest meaningful extension: a `74LS85` four-bit magnitude comparator. It compares the word currently read from the `MM2114A` SRAM with a target selected on the four data switches, making the relation visible as low, match, or high. This is not an autonomous learner. It is the prior condition for one: the machine can finally make an explicit, inspectable distinction between what it remembers and what is being asked of it.
+
+Episode Summary:
+
+* Add the `74LS85` comparator without repurposing the original manual memory experiment
+* Compare a word from the SRAM read bus with a distinct word from the data switches
+* Use green, red, and yellow indicators to show `LOW / INCREASE`, `MATCH`, and `HIGH / DECREASE`
+* Explain why the result is meaningful only during a valid SRAM read, not during write or high-impedance states
+* Treat the comparator as visible evaluation rather than machine intelligence
+* Show why adaptation needs more: a stable target, a candidate register, and a controlled read-modify-write cycle
+
+### Episode #9
+
 _Memory and the Game_
 
 With a solid underpinning of memory, how can we inspire the system to learn?
@@ -174,7 +189,7 @@ Episode Summary:
 * Additions to the four-bit wonder to introduce demonstratable machine intelligence
 * RAM7400
 
-### Episode #9
+### Episode #10
 
 _A truly machine intelligent system_
 
@@ -186,7 +201,7 @@ Episode Summary:
 * 74LS189
 * Words
 
-### Episode #10
+### Episode #11
 
 _Epilogue: Criteria of Merit_
 
@@ -198,7 +213,7 @@ Episode Summary:
 * Words
 * Words
 
-### Episode #11
+### Episode #10
 
 _Advent of Holmes: The 'Tati' Robot_
 
@@ -209,7 +224,7 @@ Episode Summary:
 * A change of pace
 * An exercise in contemplating 'who made it'
 
-### Episode #12
+### Episode #11
 
 _Away from scratch-building toward manufactured production_
 
@@ -221,7 +236,7 @@ Episode Summary:
 * The benefits of professional designing
 * Cogent experience in creating the impossible on a grand scale
 
-### Episode #13
+### Episode #12
 
 _The Preessence Esoteric of Motorola_
 
@@ -235,7 +250,7 @@ Episode Summary:
 * Use Motorola's design language to show how architecture becomes concrete at the level of opcodes, buses, registers, and board constraints
 * Prepare the ground for the final fitting work by clarifying what the machine's computational body can and cannot support
 
-### Episode #14
+### Episode #13
 
 _Feel the (ROM) Burn_
 
@@ -253,7 +268,7 @@ Episode Summary:
 * Treat the act of programming chips as a material form of software work, where verification, handling, compatibility, and retention suddenly matter again
 * Position the ROM-burning stage as the threshold between planning the system and being able to place behavior back into hardware
 
-### Episode #15
+### Episode #14
 
 _Little-Lost Robot: Initial Preparations_
 
@@ -268,7 +283,7 @@ Episode Summary:
   - Choices between old and new tech
   - Restoring a straighforward ROM burner
 
-### Episode #16
+### Episode #15
 
 _Little-Lost Robot: Final Preparations_
 
@@ -281,3 +296,31 @@ Episode Summary:
 * Treat each precursor step as part of one cybernetic discipline: make the machine observable, make interventions reversible, and make failures interpretable
 * Mark the transition from parts, tools, and bench procedures into the first genuinely integrated robot sessions
 * Close by framing the next stage as the point where preparation ends and the machine begins to answer back
+
+### Episode #16
+
+_Alpha-Hero: The First Tiny Adaptive Loop_
+
+The question is no longer whether an evaluative relation can be made visible, but whether a small embodied system can use one honestly. With serial, processor, and ROM work in place, this episode defines one safe sensed condition and one safe action policy, then runs the loop repeatedly. Its achievement is not a grand intelligence claim; it is evidence that the machine can move from fixed response toward remembered or revisable conduct.
+
+Episode Summary:
+
+* Build and test one safe, repeatable sensor-to-action loop
+* Record what changes, what remains stable, and where the loop fails
+* Invoke Heiserman directly only to the degree the evidence earns it
+* Distinguish fixed reflex, remembered response, and genuinely revisable conduct
+* Treat architecture as a language in matter: sensing, storage, control, action, and feedback are the system's own organized terms
+* Use Trakhtenbrot only as a formal horizon requiring an encoding from architectural configurations to finite relational structures
+
+### Episode #17
+
+_Toward RB5X Heiserman in a Hero-1 Body_
+
+The first small loop makes a larger question concrete: which parts of the Berkeley-Heiserman program can be carried into a `Hero-1` without pretending that a historical design can simply be copied into a different body? The aim is a real embodied behavior stack, constrained by the robot's sensing, motion, memory, and serial workflow.
+
+Episode Summary:
+
+* Connect Berkeley's sensing, control, state, action, and persistence to the repaired machine
+* Connect Heiserman's memory, generalization, and revision to the next adaptive steps
+* Identify what should transfer from `RB5X` and what must change because the `Hero-1` is embodied
+* Sketch credible Beta-Hero and Gamma-Hero milestones rather than promising a finished intelligence
