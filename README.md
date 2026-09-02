@@ -178,53 +178,68 @@ Episode Summary:
 
 ### Episode #9
 
-_Memory and the Game_
+_Memory and the Game: Architecture as a Formal Language_
 
-With a solid underpinning of memory, how can we inspire the system to learn?
+The comparator introduces a decisive relation: a remembered word can be lower than, equal to, or higher than a target. This episode asks what follows if that relation is not merely described in software, but physically realized by the architecture itself. The board's wiring, state transitions, timing, control, readback, and visible consequences form a language in matter. Memory gives that language a history, but the episode remains clear that comparison is not yet learning.
 
 Episode Summary:
 
-* The comparative of simplistic McCarthy-stated AI and operating systems
-* TRAKHTENBROT, B.A. and BARZDIN, Ya. M. - Finite Automata. Behavior and Synthesis. Fundamental Studies in Computer Science. Volume 1
-* Additions to the four-bit wonder to introduce demonstratable machine intelligence
-* RAM7400
+* Treat four-bit elements as primitive terms, wiring and control as formation rules, and physical consequence as semantics
+* Use the comparator's `LOW`, `MATCH`, and `HIGH` states to ground the argument in the bench rather than abstraction
+* Explain why memory makes architecture temporally extended rather than a static truth table
+* Contrast external software specification with the question of what follows from the machine's own organization
+* Introduce Trakhtenbrot only with its necessary qualification: an encoding to finite relational structures and suitable expressive power would still have to be established
+* End by naming what the comparator lacks: a retained target, a revisable candidate, and a controlled read-compare-step-write cycle
 
 ### Episode #10
 
-_A truly machine intelligent system_
+_A Truly Machine-Intelligent System: The Autonomous Board_
 
-Now that we understand and feel with our senses that a basic form of intelligence is available in a raw form where the knowing starts with not just the Big Lie but pathways to prove intelligence is achievable in electronic form.
+Episode 10 builds the Four-Bit Wonder Machine Autonomous Version on a new Vector `8016-1` wire-wrap board. The original photographed machine remains an intact manual reference. The new board is a separate, progressive controller: it captures a target, reads a stored candidate, compares them, changes the candidate one step toward the target, writes the revision, and halts on equality.
 
 Episode Summary:
 
-* Building a whole new board
-* 74LS189
-* Words
+* Build the independent new-board machine rather than modifying the original Four-Bit Wonder
+* Phase 1: a single-address hill climber using a target latch, comparator, up/down candidate register, sequencer, and controlled SRAM write path
+* Verify the read-compare-step-write cycle at a slow rate before allowing continuous operation
+* Make bus contention impossible through explicit tri-state control
+* Phase 2: scan all 64 exposed addresses automatically, advancing only after the current address reaches its target
+* Keep Phase 2B per-address target memory optional, so the first autonomous result remains legible
 
 ### Episode #11
 
-_Epilogue: Criteria of Merit_
+_Criteria of Merit: Polysance_
 
-Given we have a tactile and perhaps juvenile perception of intelligence, how can we outgrow our own conditoned bias?
-
-Episode Summary:
-
-* Polysance necessity
-* Words
-* Words
-
-### Episode #10
-
-_Advent of Holmes: The 'Tati' Robot_
-
-A strange robot was found in a Paris second-hand store in the early 2000s by Daniel Dennet.
+Episode 11 turns the series' argument outward through Polysance, a nonprofit educational initiative in electronic computing, programming, and integrated-circuit design. Its first-principles, cross-disciplinary approach, informed by Charles H. Moore's work and Forth methodology, supplies a practical answer to the series' question of merit. The issue is not whether a small board can be made to look intelligent, but what kind of public understanding becomes possible when a person can inspect a machine's address, proposed value, stored state, comparison, and manual intervention for themselves. The comparator game becomes an educational action: modest enough to be truthful, tangible enough to invite participation, and clear enough to replace spectacle with shared inquiry.
 
 Episode Summary:
 
-* A change of pace
-* An exercise in contemplating 'who made it'
+* Introduce Polysance as a first-principles educational initiative for electronic computing, programming, and integrated-circuit design
+* Connect the demonstration to Polysance's cross-disciplinary approach and its interest in Charles H. Moore's Forth methodology
+* Demonstrate the Four-Bit Wonder memory game: choose an address and target, then observe whether the stored value is lower, equal, or higher
+* Show how green, red, and yellow comparison states let participants see a concrete relation rather than accept an invisible AI claim
+* Invite manual intervention: write a new value, return to read mode, and observe how the comparison changes because memory changed
+* Make the boundary part of the lesson: the original-board game does not choose values, write automatically, sequence phases, scan addresses, or retain SRAM state without power
+* Present the separate autonomous board as a later exploration path, not as an achievement quietly smuggled into the demonstration
+* Define merit through legibility, participation, repairability, and the ability to test a claim together
 
-### Episode #11
+### Episode #12
+
+_Advent of Holmes: The Tati Robot_
+
+Episode 12 changes genre. It is neither a bench episode nor a straight history: it is a restrained `Sherlock` case file about an unidentified robot found in a Paris second-hand store in the early 2000s by Daniel Dennett. The question is not whether the machine can be made into a legend, but what the available evidence can actually support about who built it and the workshop culture from which it emerged.
+
+Episode Summary:
+
+* Open on the Tati robot as a mystery object: too finished to read as an accidental one-off
+* Establish the known Berkeley orbit around `Simon`, `Squee`, and their named assistants
+* Use the evidence for decentralized workshop labor, especially Jack Koff's offsite work on `Squee`
+* Test the credible suspect field: Porter, Jensen, Vall, Koff, Berkeley himself, or an unnamed Berkeley-adjacent workshop
+* Eliminate weak explanations, including the unsupported France-family theory
+* End with a bounded inference: the robot most likely emerged from a Berkeley-adjacent machine culture that exceeded the published official line
+* Preserve the investigative tone through documents, photographs, uncertainty, and explicit distinctions between evidence and speculation
+
+### Episode #13
 
 _Away from scratch-building toward manufactured production_
 
@@ -236,7 +251,7 @@ Episode Summary:
 * The benefits of professional designing
 * Cogent experience in creating the impossible on a grand scale
 
-### Episode #12
+### Episode #14
 
 _The Preessence Esoteric of Motorola_
 
@@ -250,7 +265,7 @@ Episode Summary:
 * Use Motorola's design language to show how architecture becomes concrete at the level of opcodes, buses, registers, and board constraints
 * Prepare the ground for the final fitting work by clarifying what the machine's computational body can and cannot support
 
-### Episode #13
+### Episode #15
 
 _Feel the (ROM) Burn_
 
@@ -268,7 +283,34 @@ Episode Summary:
 * Treat the act of programming chips as a material form of software work, where verification, handling, compatibility, and retention suddenly matter again
 * Position the ROM-burning stage as the threshold between planning the system and being able to place behavior back into hardware
 
-### Episode #14
+### Episode #16
+
+_Alpha-Hero: The First Tiny Adaptive Loop_
+
+The question is no longer whether an evaluative relation can be made visible, but whether a small embodied system can use one honestly. With serial, processor, and ROM work in place, this episode defines one safe sensed condition and one safe action policy, then runs the loop repeatedly. Its achievement is not a grand intelligence claim; it is evidence that the machine can move from fixed response toward remembered or revisable conduct.
+
+Episode Summary:
+
+* Build and test one safe, repeatable sensor-to-action loop
+* Record what changes, what remains stable, and where the loop fails
+* Invoke Heiserman directly only to the degree the evidence earns it
+* Distinguish fixed reflex, remembered response, and genuinely revisable conduct
+* Treat Episode 9's architecture-as-language argument as an earlier conceptual frame, now tested in an embodied loop
+
+### Episode #17
+
+_Toward RB5X Heiserman in a Hero-1 Body_
+
+The first small loop makes a larger question concrete: which parts of the Berkeley-Heiserman program can be carried into a `Hero-1` without pretending that a historical design can simply be copied into a different body? The aim is a real embodied behavior stack, constrained by the robot's sensing, motion, memory, and serial workflow.
+
+Episode Summary:
+
+* Connect Berkeley's sensing, control, state, action, and persistence to the repaired machine
+* Connect Heiserman's memory, generalization, and revision to the next adaptive steps
+* Identify what should transfer from `RB5X` and what must change because the `Hero-1` is embodied
+* Sketch credible Beta-Hero and Gamma-Hero milestones rather than promising a finished intelligence
+
+### Episode #18
 
 _Little-Lost Robot: Initial Preparations_
 
@@ -283,7 +325,7 @@ Episode Summary:
   - Choices between old and new tech
   - Restoring a straighforward ROM burner
 
-### Episode #15
+### Episode #19
 
 _Little-Lost Robot: Final Preparations_
 
@@ -296,31 +338,3 @@ Episode Summary:
 * Treat each precursor step as part of one cybernetic discipline: make the machine observable, make interventions reversible, and make failures interpretable
 * Mark the transition from parts, tools, and bench procedures into the first genuinely integrated robot sessions
 * Close by framing the next stage as the point where preparation ends and the machine begins to answer back
-
-### Episode #16
-
-_Alpha-Hero: The First Tiny Adaptive Loop_
-
-The question is no longer whether an evaluative relation can be made visible, but whether a small embodied system can use one honestly. With serial, processor, and ROM work in place, this episode defines one safe sensed condition and one safe action policy, then runs the loop repeatedly. Its achievement is not a grand intelligence claim; it is evidence that the machine can move from fixed response toward remembered or revisable conduct.
-
-Episode Summary:
-
-* Build and test one safe, repeatable sensor-to-action loop
-* Record what changes, what remains stable, and where the loop fails
-* Invoke Heiserman directly only to the degree the evidence earns it
-* Distinguish fixed reflex, remembered response, and genuinely revisable conduct
-* Treat architecture as a language in matter: sensing, storage, control, action, and feedback are the system's own organized terms
-* Use Trakhtenbrot only as a formal horizon requiring an encoding from architectural configurations to finite relational structures
-
-### Episode #17
-
-_Toward RB5X Heiserman in a Hero-1 Body_
-
-The first small loop makes a larger question concrete: which parts of the Berkeley-Heiserman program can be carried into a `Hero-1` without pretending that a historical design can simply be copied into a different body? The aim is a real embodied behavior stack, constrained by the robot's sensing, motion, memory, and serial workflow.
-
-Episode Summary:
-
-* Connect Berkeley's sensing, control, state, action, and persistence to the repaired machine
-* Connect Heiserman's memory, generalization, and revision to the next adaptive steps
-* Identify what should transfer from `RB5X` and what must change because the `Hero-1` is embodied
-* Sketch credible Beta-Hero and Gamma-Hero milestones rather than promising a finished intelligence
