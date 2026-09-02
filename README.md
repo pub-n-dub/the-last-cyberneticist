@@ -145,9 +145,83 @@ Episode Summary:
 
 ### Episode #7
 
+_The Benefits of Remembering_
+
+Static RAM 2114 addressing and data; busses and the benefits of manual programming with switches.
+
+Episode Summary:
+
+* Getting everything prepared
+* Describe the process of wirewrapping the contents of the four-bit wonder
+
+### Episode #8
+
+_Memory and the Game_
+
+With a solid underpinning of memory, how can we inspire the system to learn?
+
+Episode Summary:
+
+* The comparative of simplistic McCarthy-stated AI and operating systems
+* TRAKHTENBROT, B.A. and BARZDIN, Ya. M. - Finite Automata. Behavior and Synthesis. Fundamental Studies in Computer Science. Volume 1
+* Additions to the four-bit wonder to introduce demonstratable machine intelligence
+* RAM7400
+
+### Episode #9
+
+_A truly machine intelligent system_
+
+Now that we understand and feel with our senses that a basic form of intelligence is available in a raw form where the knowing starts with not just the Big Lie but pathways to prove intelligence is achievable in electronic form.
+
+Episode Summary:
+
+* Building a whole new board
+* 74LS189
+* Words
+
+### Episode #10
+
+_Epilogue: Criteria of Merit_
+
+Given we have a tactile and perhaps juvenile perception of intelligence, how can we outgrow our own conditoned bias?
+
+Episode Summary:
+
+* Polysance necessity
+* Words
+* Words
+
+### Episode #11
+
+_Away from scratch-building toward manufactured production_
+
+The M6x09-II-SBC.
+
+Episode Summary:
+
+* What is going on with the board?
+* The benefits of professional designing
+* Cogent experience in creating the impossible on a grand scale
+
+### Episode #12
+
+_The Preessence Esoteric of Motorola_
+
+The center of the computing world is the centralized processor. This episode will examing the 6808 and 6809.
+
+Episode Summary:
+
+* Introduce the `6808` and `6809` as the local centers of decision, sequencing, and coordination inside the machine
+* Explain why processor choice matters for memory layout, peripheral access, timing behavior, and the shape of the software that can realistically run
+* Contrast the modest but legible capabilities of these chips with the present habit of treating computation as an invisible cloud resource
+* Use Motorola's design language to show how architecture becomes concrete at the level of opcodes, buses, registers, and board constraints
+* Prepare the ground for the final fitting work by clarifying what the machine's computational body can and cannot support
+
+### Episode #13
+
 _Feel the (ROM) Burn_
 
-Software only becomes serious on this bench once it can be turned back into a physical thing. This episode centers on the restoration and use of a `GTEK 7228` EPROM programmer as both a practical tool and a historical artifact of the older development loop. Instead of treating code as something infinitely fluid and abstract, the episode follows the more stubborn path: diagnosing the programmer, getting it back into reliable working order, and using it to place behavior into memory devices that the machine can actually run. The point is not nostalgia for obsolete tooling, but the recovery of a workflow in which verification, compatibility, and material handling become part of the intelligence story again. It also makes a stronger claim: older programmable ROM devices such as the `27C32` can be worth insisting on because they offer a more stable and durable storage path than much modern flash media, especially when long-term readability matters more than convenience.
+Our SBC needs non-volitile memory to store programs in order to behave a certain way when powering-on. 
 
 We know that memory is a critical part of the operation of a computer. We also realize that we want to create something that can stand the test of time. 
 
@@ -161,9 +235,9 @@ Episode Summary:
 * Treat the act of programming chips as a material form of software work, where verification, handling, compatibility, and retention suddenly matter again
 * Position the ROM-burning stage as the threshold between planning the system and being able to place behavior back into hardware
 
-### Episode #8
+### Episode #14
 
-_A Real-Live Robot: Initial Preparations_
+_Little-Lost Robot: Initial Preparations_
 
 A substantive part of the process of learning is taking action by doing. A part of the embedding of experience comes not just from reading or listening to information, but to use one's hands to craft and build by feedback. Before getting started it is useful to create items that are ubiquitously applicable across the experience so as not to disrupt the process where we expect problems will arise and do not want to become entangled in the separation between a precoursor failure and the ones that should be addressed exclusively through the experiential process feedback. This episode will start the preparations cycle by looking at the kinds of power that are most convenient and why such choices are more ideal than others.
 
@@ -176,23 +250,9 @@ Episode Summary:
   - Choices between old and new tech
   - Restoring a straighforward ROM burner
 
-### Episode #9
+### Episode #15
 
-_The Presence of Motorola_
-
-The center of the computing world is the centralized processor. This episode will examing the 6808 and 6809.
-
-Episode Summary:
-
-* Introduce the `6808` and `6809` as the local centers of decision, sequencing, and coordination inside the machine
-* Explain why processor choice matters for memory layout, peripheral access, timing behavior, and the shape of the software that can realistically run
-* Contrast the modest but legible capabilities of these chips with the present habit of treating computation as an invisible cloud resource
-* Use Motorola's design language to show how architecture becomes concrete at the level of opcodes, buses, registers, and board constraints
-* Prepare the ground for the final fitting work by clarifying what the machine's computational body can and cannot support
-
-### Episode #10
-
-_A Real-Live Robot: Final Preparations_
+_Little-Lost Robot: Final Preparations_
 
 Once having the precoursors sorted, one can begin the final process of beginning on the new adventure.
 
