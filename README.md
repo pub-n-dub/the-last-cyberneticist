@@ -24,6 +24,7 @@ Reusable production notes:
 - [Hero-1 series outline](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/outlines/hero1-series-outline.md:1)
 - [Series music guide](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/outlines/series-music-guide.md:1)
 - [Series music cheat sheet](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/outlines/series-music-cheat-sheet.md:1)
+- [Paid subscriber planning from Episode 8](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/outlines/paid-subscriber-planning-from-ep-08.md:1)
 
 ### Episode #1
 
