@@ -1,0 +1,302 @@
+Welcome to Episode 7 of The Last Severnet Assist.
+This episode is called "The Benefits of Remembering."
+I want to begin slightly differently than I have in prior episodes.
+In a piece called "Recollection," Alan Watts treats remembering as "recognition"
+rather than "acquisition."
+Noticing what has been overlooked beneath the social role of the persona
+we mistake for a complete self.
+In a related thought, if experience left no trace beyond an instant,
+there would be no way to know it had happened to you.
+There would be no continuity from which a life, a self,
+or a sequence of actions could be recognized.
+Now that what I just read is not a technical definition of computer memory.
+However, to remember is to allow a persistent state to stand in relation to what came before it.
+I'm saying this in regard to some context.
+So a machine does this in a tiny, very literal way.
+It holds a chosen physical condition long enough for another operation to find it again.
+With not so much of the stretch of the imagination,
+one can see a correlation between bio remembering and machine remembering.
+But don't take it too far just yet.
+So in the last episode I introduced a little board.
+It's called "The Four-bit Wonder."
+It's a very small but a very plain machine for making state visible.
+There's no way to obfuscate and vagal, propagandize any kind of output or solution.
+It's only there to show you exactly what is visible.
+In this case, state visibility.
+So I've talked about the board as a disciplinary device,
+which I think is the right description.
+And in later episodes, I'll go into exactly what that means.
+But for now, we want to state that in so doing, it keeps its descriptive language from outrunning the mechanism itself.
+It keeps us from letting our imaginations take flight.
+But it makes memory physical, makes control visible.
+And it gives a place where timing, switching, read back, and retention is inspected directly instead of assumed.
+But because it's important, this concept of remembering, I want to go through a little more detail of the general purpose characteristics of the board,
+the ones that we should focus upon for this task and for what's coming up.
+The central part of this is the 2-1-1-4 static RAM or SRAM.
+And I did hint at a startup variation and the value of a simple power arrangements.
+That was kind of a first pass.
+It's really not enough because as we evolve our discussions and start to move into artificial intelligence, machine intelligence,
+we need to really drive home this particular kind of understanding.
+Because it's not just enough to say, "Oh, it's remembering."
+Oh, it's learning from that memory system over there.
+I mean, they pay, what, $50,000 a year for people who can write self-improving programs, which is self-programming,
+on the old books.
+Not supposed to do that, they told us back in the day.
+But hey, they're paying lots of money for it now.
+But we need to understand what remembering actually means in terms of a machine.
+So how does it do that?
+How does a remembered state become a physical event?
+How do those little integrated circuits, those little rectangles with those metal pins sticking out the side?
+How does it become an addressable system?
+How does it switch to become numbers, numbers become locations, and that selected location?
+You yield back some visible results.
+So I guess you could ask yourself, why would we bother doing this by hand, spending all that time?
+When the modern machine already does it all for us, it's been doing for a very long time.
+And that's the real question, that's the question that's being begged for this episode.
+So I think it's wise to stay with the four-bit wonder a bit longer.
+Let's linger here a bit and start to look at the details and where it can take us.
+Not because it's a great machine or it's a powerful machine or anything like that, but it's just something real and small
+and does not allow us to be subjected either by choice or design or some other factor of smoking mirrors.
+And that's been the argument of this podcast a long time that we've been subject to an illusion and placed on a wheel that we can't escape.
+So there's only one way to escape and let's do this, I would say, a rare and valuable combination.
+So let's start here.
+When people say that computers are made of chips, the phrase is so common that it almost ceases to mean anything.
+A chip sounds like a tiny, magical object, a sealed unit of intelligence.
+But an integrated circuit is much better understood as a dense arrangement of very ordinary electrical functions brought together inside one package.
+It is a way of integrating a large number of components and connections into a form small enough, cheap enough and reliable enough to become useful.
+So, historically speaking, briefly, people were wiring hundreds of thousands of separate transistors, vacuum tubes, really, resistive structures and other kinds of internal elements into one open space and these open spaces were quite large.
+So by the invention of the integrated circuit by Royce, that Intel 1971, I think was the first production, all these transistors, resistive structures and the capacitive elements, internal elements, and written in silicon created the integrated circuit and it's inside a manufacturer substrate.
+That's a package, but it's not intelligence.
+But the package is the container that lets the design set of electrical organization meet the outside wheel through pins.
+So it does a lot of very hard time consuming work and it gives it to a nice neat little place and a very neat voltage.
+So you can not focus on all the physical aspects of getting the system to work, but just take the chips on, I can look at a book, I can decide the chips that I need, and I can start to wire them together.
+Because I know what the pinsets look like, I know what the outputs look like.
+So that pin arrangement is, that's the part that really matters.
+So the chip only becomes part of a system when its pins are given a role.
+So what we got here, so let's let some of these off, got power, ground, address lines, data lines, control lines, clocks in some designs, signal enabling, which means I turn on, turn off, read, I'm right.
+I think that's about all of them. So those particular words describe relationships between the internal organization, the chip and the external wiring pattern that it is bringing up.
+It gives you those ingredients to start to create a larger machine.
+I think that's the reason why I really like the wire wrap concept so much, as opposed to creating a circuit board to put the chips on.
+Because when I started, and I think I had said this already, that I started by building a circuit board.
+industry. And later on, I discovered wire wrapping by reading kind of an old book. When
+you do the etched circuit boarding, a lot of the logic, it disappears into the traces.
+So how the wires are being etched on the board rather than thinking how they are where they're
+there. So when you drop a circuit diagram, okay, this goes to here, this goes to here,
+but you don't really get the sense of it. There's something about the action, the physical
+act of something in your mind, something with your hands, and seeing that result play out
+in front of you. And because of the actions that you take, okay, I gotta lay the chip
+in, and it's got to be next to the parts that they're supposed to connect to. So I don't
+want really long wires. And there has to be some thought of how the pieces are placed
+next to each other, because they'll make the lines as short as possible. So I'm more efficient,
+and I'll consume all my stock of wire wrap wire. And over a time, you start to get to feel
+that there's a certain elegance of the curvature of these things. So you get down, you say,
+okay, I got this thing, I'm going to cut my wire off, I'll cut the insulation at the
+proper length for the tool that I'm using. Set it up in the tool, to do wire it on, other
+side to do wire it on. And then by the sets of repeated wire wrapping, you see this nice
+curvature come out. And then you start to think about colorization, okay, there's like
+red for the voltages, right, power, black for ground, and colors like yellow, green,
+red, blue, for the different functions, or the different words, you know, I control a
+bus addressing. And that creates an entire concatenation of connections that you commit
+deliberately in your mind. And it's a skill that you improve upon, like riding a bike,
+right, you just get better at it as the more you do it. And it becomes more fun and personally
+satisfying to see things work. So I got my sagas, look at my daddy sheets, look at my
+pin outs, which is the same thing in a way. And start to architect the wires, but it's
+not really something that you just think about, you just kind of do it, you just wrap it and
+you see, oh, this idea like this, like that, it just comes out as a part of a creative
+process. So the people always criticize you for saying, Oh, you're such a technical person,
+it's so technical. No, it's at this point, it's artistic, because it's, it's, it's an
+expression. And every I'll do it differently. But it doesn't make wire wrapping superior
+because it is quite verbose. But I think for learning and getting the sense of what it
+is you want to achieve, it's absolutely right for that. So the four bit wonder is not just
+about being a memory board, it's by teaching and exposing the relationships. So let's look
+at the 201 for the static ramp, when it's in toward the middle, aligned vertically that
+way, the long way. So the static RAM, it's a RAM, which means it has, it holds memory,
+it holds a state, a number, random access. So the content can be changed during operation
+and it's efficient, because it picks the different areas of the transistors. And you can look
+at how this is actually constructed, but it's way, great detail, we're going to it now.
+This static RAM is really, really neat, because it doesn't require any refresh cycles associated
+with a dynamic RAM. That's, it's something, by the way, the power cycling and you've got
+to keep that synchronized. And it's just, it's, it's a lot more difficult thing to deal with
+than you get distracted. But with the static RAM, as long as as long as the device is powered,
+the signals will be the timing and the control expectations of the chip. And that way the
+storage stake can remain available. Why I chose it, it's small enough, wide enough,
+and at the baseline enough to where everything feels manageable. What do I mean by that?
+So it's a 1024 by four, which is four bits wide. Hence, four bit wonder, right? It's the
+simplest expression you can come up with, but still has something that you can make meaningful
+things from.
+So when memory is discussed at a higher level, people often imagine an abstract, expansive
+machine has memory. A program uses memory, data sits in memory, but we can't get into
+the idea of selection. Memory only becomes useful when some specific place can be chosen
+for it. And that's what the address is. So it's not some ethereal coordinate. It's a pattern
+presented to a set of lines that one location is distinct from another. And that's the left
+side of the board. You see these bank resistors, and then the two ICs just above it. The addressing
+requires two separate ICs, the bus itself, and an inverter. There's an interesting phenomenon
+on how signals are pulled high, pulled low. And
+Inversion of these signals gives the stability, so they can be viewed via the switches and
+the LEDs that the inputs and the outputs that are coming from it.
+So the red LEDs down toward the bottom left, then the switches, that's a visible statement
+of the address bus.
+You get to see from right to left, one, so I get zero one, right, and then the next one
+over, going from right to left, is the tens, you get the hundreds, thousands, ten thousands
+and hundred thousands, so it's what we call a six-bit address.
+That's the epistemology of it, because the how that's selected, it chooses the value that
+I want to place in there.
+So when I set one, address one, I can put the data in there and it always stays at that
+one.
+So it's kind of a tiny form of dialogue.
+I assert an impression of data that I select, and then it places it inside the address.
+And that assertion is a, it's actually a feedback structure, and that's the subtlety that makes
+the philosophy in the case of working with this and the whole project.
+So when we talk later about programs, experiments, behavior loops, and learning, we're still
+talking about systems when a state is established, the consequence, and the result is checked
+against what was expected.
+So that whole higher level thing that I've talked about prior comes into the point of
+that.
+So it's the relation between command, state, verification, and the humble importance of
+the buses.
+So the word bus, they can sound another grandeur, but it's more that it's really a very simple
+thing.
+A bus is simply a shared group of lines that are used together for roles, such as addressing
+or the data transfer.
+So on the left side, the address bus is a set of lines that together specify location.
+The data bus on the right, again with the bank resistors, which I didn't mention what
+to go on the right side, but they are for the chip, the pull-ups, we call it.
+And for the current limiting for the LEDs, because you can't just plug an LED into a
+power source, it's just one of those things you don't do.
+But then we have an Intel 8226, which is a very old and it's hard to find, but it's
+one of the most reliable bus, a data bus that you can use, because it allows the carrying
+of the value that's been written in one direction or read in the other direction.
+So thinking in terms of buses, that helps in larger concepts, because it prevents us
+from stoning at the wires.
+Okay, there's all these wires and all these wires going.
+As I said, it's impacted away from you inside the IC, so all those little wires are tucked
+in there and they're managed.
+So that a single wire can carry a bit.
+The bus carries a number, or at least part of one.
+And once the board is understood this way, everything starts to simplify.
+It's not a jungle of connections, it's just a very few set of organized paths with distinctive
+jobs.
+And that's the kind of simplification we're going to need if you want to scale into larger
+ideas of memory, ROM, CO control, placements, because if I can't, if a person cannot mentally
+manage what an address bus is, what a data bus is, then we can't even begin the discussion
+of more elaborate systems, and why artificial intelligence is a complete bloody illusion.
+But that we can create systems that not just show that that's an illusion, and maybe that's
+something that we don't really care about, but more importantly, we can demonstrate what
+intelligence machine sounds really actually is away from that.
+So this manual programming by Switches is an extremely valuable exercise for not just
+your mind, but for communicating the proof that we're looking at.
+It could be a kind of moral education perhaps, but I'm not going to be pontificating in
+that way because I've in that place to do such a thing.
+I'm not a holy man, I am just a, well, they can call me a scientist, but they can do a
+lot of things.
+But I want, I always try to keep myself free from bias, if I'm thinking about things in
+a certain way and try to, because I'm looking for the truth.
+I want to understand what something really is about, because I've grown up, I've been
+to university, and a lot of people say, okay, you're programmed to this and it doesn't really
+help you and it's like well University helped a great
+deal in formulating questions, you could start to disseminate yourself from the things you
+told or taught into what and how to investigate things. Not the challenge yet because I'm going
+to challenge that, that gets some kind of thing. Maybe that when you're younger or you really get,
+that's how you get your motivation and your impetus. But later on you kind of say, well, now I have
+these skills, I can say artificial intelligence is complete crap. Okay, I can say that. But how
+does that actually help anything? I can do this kind of thing. So let's stick in the form of wonder,
+right? And then it makes the lower world incredibly, well, just impossible to ignore. Because you're
+building up first principles and creating logical arguments about things in terms of topologies
+that created an incredibly satisfying way. So let me, one of the very most important things
+that I kind of glossed over in the last time was the power system. So we've discussed address,
+full review. So lower left side, forget the top left side for now. I'm going to phase that out
+because I think it's a bit of a distraction at this point. But let's just set that aside.
+Lower the size address, center. Vertical is the ram, the aesthetic ram. Right side, lower is
+the data bus with its four blue LEDs. Top. So directly up from that, the four switches to the
+top is the settings that you have that you want to place in the data bus. Again, the same logic
+is with the address, ones to the right, tens, hundreds, thousands. So you can create one thousand
+one and eleven as the highest value that you can place into an address. Jip select, read write,
+and then the push button, which gives you a nice aesthetic to, okay, I'm going to set that up,
+put that in there. So then we get to understand all those interesting parts. And you'll notice
+that one of them, kind of one of the interesting things I picked up from another professional was
+the use of passive components, resistors inside of these wire rep sockets. You can create
+a way to include the things that you need to do instead of just ignoring them in the same format
+so that you're not interrupting the process, the creative process of putting this thing together.
+But it's still another IC like kind of construct. So that way you don't have any abandonment and
+don't get frustrated by, okay, how do I wrap this thing? Because the, what's interesting kind
+of a bit of a side here is that if you, if you take a wire up socket, one that's specifically made
+for wire wrapping, you'll see that the posts are square, not round. So the idea is that when you
+take a wire wrap wire and you wrap it, that points the edges of that square post basically from a
+cold weld. And don't come free unless you unwrap it with the same tools. You have a, the tool I
+particularly have, it's got one side, you have the wrap and you can unscrew it, flip it, and then
+it has the unwrapped side. Now this, the contact, the wrapping, the joint is so strong that for many
+years they, it was the break was it in aircraft. So you can think how much vibration is up there.
+And yeah, that's the only way you could get away with that. So you, when you would think about like
+the four-bit wonder and these kind of projects, you're building something that's built to last.
+So I'm not just creating something for now and for fun, I'm going to forget about it. It's something
+that I can creatively dedicate myself to, because it will, if I decide, okay, I'm going to set this
+aside for a year or two or five years, you'll come back after five years and this still works.
+So the last thing I'm going to talk about here is the power system. The first instinct you have
+is to go grab a five-volt supply. That's what people just talk about. Grab a five-volt supply. Fine,
+but I think I got to plug it in somewhere, right? And depending on where I'm at, this has got a
+230, this has got a 115, that's got a 100. It's got a 220. There's a variation of things depending on
+place. And then you've got to haul something that's rather heavy. It's a lot of transformers in it.
+Plug it in, drag it off. So what I decided to do was just take a mobile phone battery,
+power bank, they call these things, and I talked about this the end last time, but I just want to
+touch on it briefly, is that the satisfaction of using a stable power supply with it has its own
+trigger senses, so safety. So if something is not wired correctly, nothing will smoke as it were,
+But it's just
+it has its own safety surface inside.
+So on my sub-stack, I have a little sequential diagram
+of creating USB from the USB-A
+into these Hewlett-Packard Signature Analyzer clips.
+That's a real safe arrangement, very small,
+and allows you to put these things together
+in a very safe manner, and something you can reuse.
+So the idea is that when you set all these things
+into the background, all the things you must
+do or worry about, and just look at just the machine
+that we're observing, loading, revising, and testing,
+the repeated experimental loops.
+So this kind of convenience strips away
+all the things you've got to worry about,
+and just focuses on the grammar that we're going to create.
+So what do we create?
+In this episode, address data, control, selection,
+readback, retention, and verification.
+And that's extremely healthy,
+because you get to say things
+like how I began this episode with Alan Watts.
+Is the idea of recollection of remembering something
+is an act of existence.
+Contrarily in his election on death,
+it's the counterweight to that.
+So when Watts says that memory makes
+as intelligent as possible, but that unbroken accumulation
+leaves no room for renewal, the value of remembering
+requires forgetting.
+So the four-bit wonder gives that idea in a technical form.
+We've got a known clear state, and if we write
+into the same addresses, we have an intentional overwrite.
+Or a reset, which is not the memory's enemy.
+Sorry, enemy, it creates a meaningful pattern.
+And that initial, that state that comes online
+when power is removed, bought online,
+that creates a hidden variable perhaps,
+but it creates a state that is random.
+And that's an extremely important member as well,
+but then the thing is to bring that into our discussion
+and to think about it, to create,
+to not hide things under layers of convenience,
+for whatever reason, but to create clear
+and omnipresent workflows where state and behavior
+can be loaded, tested, revised, repeated.
+We can test in a variety of different contexts,
+so we can get to our philosophical context
+and then check and see, is it like that?
+And we can eliminate all the other things and say,
+okay, this is the stuff that we have,
+and you're not being deceived,
+'cause there aren't other layers.
+It's binary numbers going into these places.
+It's a very serious attention to a durable program placement,
+a host assisted interaction.
+The beginning of a true experimental loop,
+and that's where we're gonna go next.
+Thank you for listening.
+
