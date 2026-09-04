@@ -1,4 +1,4 @@
-# Episode 10 Script
+# Episode 13 Script
 
 ## Title
 
@@ -6,7 +6,7 @@
 
 ## Script
 
-Welcome to Episode 10 of `The Last Cyberneticist`.
+Welcome to Episode 13 of `The Last Cyberneticist`.
 
 This episode is called `A Truly Machine-Intelligent System: The Autonomous Board`.
 
