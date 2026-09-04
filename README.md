@@ -194,18 +194,15 @@ Episode Summary:
 
 ### Episode #10
 
-_A Truly Machine-Intelligent System: The Autonomous Board_
+_Away from scratch-building toward manufactured production_
 
-Episode 10 builds the Four-Bit Wonder Machine Autonomous Version on a new Vector `8016-1` wire-wrap board. The original photographed machine remains an intact manual reference. The new board is a separate, progressive controller: it captures a target, reads a stored candidate, compares them, changes the candidate one step toward the target, writes the revision, and halts on equality.
+The M6x09-II-SBC.
 
 Episode Summary:
 
-* Build the independent new-board machine rather than modifying the original Four-Bit Wonder
-* Phase 1: a single-address hill climber using a target latch, comparator, up/down candidate register, sequencer, and controlled SRAM write path
-* Verify the read-compare-step-write cycle at a slow rate before allowing continuous operation
-* Make bus contention impossible through explicit tri-state control
-* Phase 2: scan all 64 exposed addresses automatically, advancing only after the current address reaches its target
-* Keep Phase 2B per-address target memory optional, so the first autonomous result remains legible
+* What is going on with the board?
+* The benefits of professional designing
+* Cogent experience in creating the impossible on a grand scale
 
 ### Episode #11
 
@@ -243,15 +240,18 @@ Episode Summary:
 
 ### Episode #13
 
-_Away from scratch-building toward manufactured production_
+_A Truly Machine-Intelligent System: The Autonomous Board_
 
-The M6x09-II-SBC.
+Episode 13 builds the Four-Bit Wonder Machine Autonomous Version on a new Vector `8016-1` wire-wrap board. The original photographed machine remains an intact manual reference. The new board is a separate, progressive controller: it captures a target, reads a stored candidate, compares them, changes the candidate one step toward the target, writes the revision, and halts on equality.
 
 Episode Summary:
 
-* What is going on with the board?
-* The benefits of professional designing
-* Cogent experience in creating the impossible on a grand scale
+* Build the independent new-board machine rather than modifying the original Four-Bit Wonder
+* Phase 1: a single-address hill climber using a target latch, comparator, up/down candidate register, sequencer, and controlled SRAM write path
+* Verify the read-compare-step-write cycle at a slow rate before allowing continuous operation
+* Make bus contention impossible through explicit tri-state control
+* Phase 2: scan all 64 exposed addresses automatically, advancing only after the current address reaches its target
+* Keep Phase 2B per-address target memory optional, so the first autonomous result remains legible
 
 ### Episode #14
 
