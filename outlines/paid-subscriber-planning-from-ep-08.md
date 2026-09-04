@@ -173,22 +173,23 @@ Useful alternate version:
 
 Public focus:
 
-- the M6x09-II-SBC as a move from scratch-building toward manufactured production
+- the M6x09-II-SBC as the pivot from wire-wrap construction to a finished PCB where bare-metal software can be examined
 
 Paid companion:
 
-- what the board reveals about professional design discipline
-- tradeoffs between one-off wire-wrap legibility and reproducible production
-- why scale changes what counts as a plausible machine architecture
+- annotated M6x09-II-SBC tour: processor, EPROM, SRAM, serial path, reset, clock, and expansion header
+- the practical boundary between the public story and the deeper work: source build, ROM image, serial load, RAM run, and durable ROM placement
+- why reproducibility is what makes later processor and ROM experiments interpretable
 
 Paid artifact:
 
 - board-reading memo for the M6x09-II-SBC
-- notes on manufacturability, integration, and design maturity
+- a one-page software-path diagram from ASSIST09 source to terminal test and EPROM milestone
+- version note distinguishing the public episode from the Episode 14 and 15 technical companions
 
 Useful alternate version:
 
-- guided teardown-style commentary on the board's design choices
+- guided board-and-terminal walkthrough, without turning the public episode into a build manual
 
 ## Episode 13
 
@@ -211,6 +212,46 @@ Paid artifact:
 Useful alternate version:
 
 - photo-led bench update during construction
+
+## Episode 14
+
+Public focus:
+
+- the 6808 and 6809 as visible processor architectures that determine what a small computer can address, sequence, and run
+
+Paid companion:
+
+- a M6x09-II-SBC-specific 6809 walkthrough: reset path, registers, buses, ROM and RAM roles, and serial peripheral access
+- an annotated execution trace that follows a small program from reset through monitor interaction
+
+Paid artifact:
+
+- processor and memory-map reference sheet for the M6x09-II-SBC
+- annotated opcode, register, and bus notes tied to the board rather than presented as abstract processor lore
+
+Useful alternate version:
+
+- slow lecture cut with schematic and terminal captures
+
+## Episode 15
+
+Public focus:
+
+- ROM burning as the moment verified software becomes durable, power-on machine behavior
+
+Paid companion:
+
+- the complete M6x09-II-SBC `27C128` workflow with the Batronix Barlino II 32P: image verification, backup read, exact-device selection, blank check, program, post-program verification, labeling, and test record
+- how to keep the programmer outside the rapid development loop by testing through ASSIST09 and RAM first
+
+Paid artifact:
+
+- ROM milestone checklist and log template
+- annotated ASSIST09 build, checksum, serial smoke-test, and burn records
+
+Useful alternate version:
+
+- quiet bench film of a real verification-and-programming session
 
 ## Episode 11
 

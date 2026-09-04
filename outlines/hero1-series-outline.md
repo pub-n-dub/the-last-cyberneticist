@@ -399,18 +399,19 @@ Title:
 
 Purpose:
 
-Examine the M6x09-II-SBC as a turn away from scratch-building and toward manufactured production, using it to think about what professional board design makes possible.
+Use the M6x09-II-SBC's finished PCB to pivot from wire-wrapped construction into the question of how bare-metal software can be built, loaded, tested, and preserved on a stable hardware platform.
 
 Core claim:
 
-Professional design does not matter because it looks finished. It matters because it concentrates hard-won decisions about layout, integration, reliability, and scale that are difficult to improvise one wire at a time.
+Professional design does not matter because it looks finished. It matters because repeatable hardware makes software behavior inspectable: the board can become a dependable platform for later processor-level and ROM-programming work.
 
 Talking points:
 
-- Ask plainly what is going on with the board and why it presents a different kind of intelligence from a hand-built prototype
+- Introduce the deliberately minimal 6809 system and its finished PCB as a change in what the bench can reveal
+- Contrast the wire-wrap board's signal-level legibility with the M6x09-II-SBC's repeatable platform for examining software behavior
+- Show the public shape of the loop: source, ROM image, serial terminal, RAM test, and durable program placement
+- Reserve processor architecture, memory-map detail, exact terminal bring-up, and EPROM programming procedure for the Episode 14 and 15 technical companions
 - Identify the benefits of professional design: integration, repeatability, documentation pressure, manufacturability, and a different relationship to error
-- Use the board to discuss cogent experience in creating the impossible on a grand scale
-- Contrast one-off bench legibility with the discipline required for something intended to be reproduced or distributed
 
 Closing move:
 

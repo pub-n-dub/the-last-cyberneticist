@@ -196,13 +196,16 @@ Episode Summary:
 
 _Away from scratch-building toward manufactured production_
 
-The M6x09-II-SBC.
+Episode 10 pivots from wire-wrapping and bare-metal hardware construction to the M6x09-II-SBC: a minimal seventeen-component 6809 computer on a finished PCB. The board's layout, bill of materials, manufacturing files, and repeatable assembly make the hardware stable enough to examine the software running on it: build ASSIST09 from source, verify the ROM image, load and test programs through the serial terminal, and burn a verified milestone into EPROM. Professional design matters here not as a cosmetic finish, but because it creates a dependable platform for the next level of inquiry.
 
 Episode Summary:
 
-* What is going on with the board?
-* The benefits of professional designing
-* Cogent experience in creating the impossible on a grand scale
+* Introduce the M6x09-II-SBC as a deliberately minimal 6809 system, not an attempt to make a maximally featured computer
+* Pivot from the visibility of wire-wrap hardware to a finished PCB whose stable, repeatable construction makes software behavior the central object of examination
+* Follow the bare-metal workflow from ASSIST09 source through ROM-image verification, serial loading, RAM smoke testing, and EPROM burning
+* Show why the board's EPROM, SRAM, serial interface, expansion header, layout, bill of materials, and manufacturing files matter to that workflow
+* Contrast a one-off prototype with a platform that another person can assemble, inspect, repair, program, and extend
+* End by asking what clearer, more durable, and more accessible technical systems should be for, leading into Polysance
 
 ### Episode #11
 
@@ -271,17 +274,17 @@ Episode Summary:
 
 _Feel the (ROM) Burn_
 
-Our SBC needs non-volitile memory to store programs in order to behave a certain way when powering-on. 
+The M6x09-II-SBC needs non-volatile memory to preserve a program that can run at power-on. This episode follows the `27C128` EPROM as the boundary where source code, a verified ROM image, a physical device, and the board's observed behavior have to agree. The Batronix Barlino II 32P is the current programming tool; its value is not nostalgia, but a disciplined, repeatable path from a tested image to a labeled, verified hardware milestone.
 
-We know that memory is a critical part of the operation of a computer. We also realize that we want to create something that can stand the test of time. 
+Memory is critical to a computer's operation, but durable behavior requires more than choosing a non-volatile part. It requires a record of the source, build, verification, device, and test result that lets the next person understand what the chip contains and why it can be trusted.
 
 Episode Summary:
 
 * Focus on ROM burning as the point where abstract program logic has to become a real physical artifact that the machine can actually execute
-* Center the episode on the restoration and use of the `GTEK 7228` as the concrete instrument that makes the memory-programming step real
-* Compare the `GTEK 7228` workflow with newer tooling and explain the tradeoffs between convenience, verification, historical fit, and long-term storage robustness
-* Show why restoring a working EPROM programmer is not side work, but part of making the experimental loop repeatable
-* Argue that programmable ROM devices such as the `27C32` deserve serious attention because their storage model can be more robust and legible over time than modern flash-heavy workflows
+* Establish the `27C128` as the M6x09-II-SBC's concrete boot-ROM device and the Batronix Barlino II 32P as the current programming path
+* Build and verify ASSIST09 before programming hardware, then prove the RAM load-and-run path through the serial terminal
+* Show why reading the existing EPROM, selecting the exact device, blank-checking, programming, verifying, labeling, and recording the result are one experiment rather than separate chores
+* Explain why a preserved ROM image needs its source inputs, checksum, build date, test record, and board context to remain meaningful over time
 * Treat the act of programming chips as a material form of software work, where verification, handling, compatibility, and retention suddenly matter again
 * Position the ROM-burning stage as the threshold between planning the system and being able to place behavior back into hardware
 
