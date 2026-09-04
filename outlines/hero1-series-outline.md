@@ -71,7 +71,8 @@ Bridge by episode:
 - Episode 7: use Shannon and Berkeley lightly when discussing the path from logic to hardware and tooling
 - Episode 8: use the Four-Bit Wonder comparator to make stored state, target, and evaluation visible
 - Episode 9: make the formal-language argument, with Trakhtenbrot as a qualified limit on reasoning about architectural configurations
-- Episode 10: build the independent Four-Bit Wonder Machine Autonomous Version as the first concrete read-compare-revise controller
+- Episode 10: move from scratch-building toward manufactured production with the M6x09-II-SBC
+- Episode 13: build the independent Four-Bit Wonder Machine Autonomous Version as the first concrete read-compare-revise controller
 - Episode 16: use Heiserman directly when the first adaptive loop is real rather than hypothetical
 - Episode 17: give the fullest Berkeley-Heiserman treatment, because the platform has then earned the comparison
 
@@ -391,6 +392,31 @@ Closing move:
 `Before the machine can change itself, it must first become legible to itself as a difference that matters.`
 
 ## Episode 10
+
+Title:
+
+`Away from scratch-building toward manufactured production`
+
+Purpose:
+
+Examine the M6x09-II-SBC as a turn away from scratch-building and toward manufactured production, using it to think about what professional board design makes possible.
+
+Core claim:
+
+Professional design does not matter because it looks finished. It matters because it concentrates hard-won decisions about layout, integration, reliability, and scale that are difficult to improvise one wire at a time.
+
+Talking points:
+
+- Ask plainly what is going on with the board and why it presents a different kind of intelligence from a hand-built prototype
+- Identify the benefits of professional design: integration, repeatability, documentation pressure, manufacturability, and a different relationship to error
+- Use the board to discuss cogent experience in creating the impossible on a grand scale
+- Contrast one-off bench legibility with the discipline required for something intended to be reproduced or distributed
+
+Closing move:
+
+`A machine changes character when it stops being only buildable and starts being reproducible.`
+
+## Episode 13
 
 Title:
 

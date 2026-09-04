@@ -173,6 +173,27 @@ Useful alternate version:
 
 Public focus:
 
+- the M6x09-II-SBC as a move from scratch-building toward manufactured production
+
+Paid companion:
+
+- what the board reveals about professional design discipline
+- tradeoffs between one-off wire-wrap legibility and reproducible production
+- why scale changes what counts as a plausible machine architecture
+
+Paid artifact:
+
+- board-reading memo for the M6x09-II-SBC
+- notes on manufacturability, integration, and design maturity
+
+Useful alternate version:
+
+- guided teardown-style commentary on the board's design choices
+
+## Episode 13
+
+Public focus:
+
 - the autonomous board as a separate machine version
 
 Paid companion:
