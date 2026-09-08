@@ -194,24 +194,21 @@ Episode Summary:
 
 ### Episode #10
 
-_Away from scratch-building toward manufactured production_
+_Multenions Transition Automation_
 
-Episode 10 pivots from wire-wrapping and bare-metal hardware construction to the M6x09-II-SBC: a minimal seventeen-component 6809 computer on a finished PCB. The board's layout, bill of materials, manufacturing files, and repeatable assembly make the hardware stable enough to examine the software running on it: build ASSIST09 from source, verify the ROM image, load and test programs through the serial terminal, and burn a verified milestone into EPROM. Professional design matters here not as a cosmetic finish, but because it creates a dependable platform for the next level of inquiry.
-
-Episode Summary:
-
-* Introduce the M6x09-II-SBC as a deliberately minimal 6809 system, not an attempt to make a maximally featured computer
-* Pivot from the visibility of wire-wrap hardware to a finished PCB whose stable, repeatable construction makes software behavior the central object of examination
-* Follow the bare-metal workflow from ASSIST09 source through ROM-image verification, serial loading, RAM smoke testing, and EPROM burning
-* Show why the board's EPROM, SRAM, serial interface, expansion header, layout, bill of materials, and manufacturing files matter to that workflow
-* Contrast a one-off prototype with a platform that another person can assemble, inspect, repair, program, and extend
-* End by asking what clearer, more durable, and more accessible technical systems should be for, leading into Polysance
+Episode 10 pivots
 
 ### Episode #11
 
-_Criteria of Merit: Polysance_
+_Multenions Transition Automation in GA144_
 
-Episode 11 turns the series' argument outward through Polysance, a nonprofit educational initiative in electronic computing, programming, and integrated-circuit design. Its first-principles, cross-disciplinary approach, informed by Charles H. Moore's work and Forth methodology, supplies a practical answer to the series' question of merit. This is also a donor-facing episode: it asks viewers to support hands-on education for bored, intelligent children who need genuine intellectual challenge rather than another polished technology spectacle. The comparator game becomes the proof of concept: modest enough to be truthful, tangible enough to invite participation, and clear enough to replace passive consumption with shared inquiry.
+Episode 11 continues the discussion from last time to include hardware implmenetation of a "time & organization" _tao_ and _logos_ algorithm. Perhaps HUAWEI Tau (τ) Scaling Law
+
+### Episode #12
+
+_The Polysance Initiative_
+
+Episode 12 turns the series' argument outward through Polysance, a nonprofit educational initiative in electronic computing, programming, and integrated-circuit design. Its first-principles, cross-disciplinary approach, informed by Charles H. Moore's work and Forth methodology, supplies a practical answer to the series' question of merit. This is also a donor-facing episode: it asks viewers to support hands-on education for bored, intelligent children who need genuine intellectual challenge rather than another polished technology spectacle. The comparator game becomes the proof of concept: modest enough to be truthful, tangible enough to invite participation, and clear enough to replace passive consumption with shared inquiry.
 
 Episode Summary:
 
@@ -224,6 +221,21 @@ Episode Summary:
 * Present the separate autonomous board as a later exploration path, not as an achievement quietly smuggled into the demonstration
 * Define merit through legibility, participation, repairability, and the ability to test a claim together
 * Make a direct case for donations to support the materials, preparation, patient teaching, and learner access that this educational work requires
+
+### Episode #12
+
+_Away from scratch-building toward manufactured production_
+
+Episode 10 pivots from wire-wrapping and bare-metal hardware construction to the M6x09-II-SBC: a minimal seventeen-component 6809 computer on a finished PCB. The board's layout, bill of materials, manufacturing files, and repeatable assembly make the hardware stable enough to examine the software running on it: build ASSIST09 from source, verify the ROM image, load and test programs through the serial terminal, and burn a verified milestone into EPROM. Professional design matters here not as a cosmetic finish, but because it creates a dependable platform for the next level of inquiry.
+
+Episode Summary:
+
+* Introduce the M6x09-II-SBC as a deliberately minimal 6809 system, not an attempt to make a maximally featured computer
+* Pivot from the visibility of wire-wrap hardware to a finished PCB whose stable, repeatable construction makes software behavior the central object of examination
+* Follow the bare-metal workflow from ASSIST09 source through ROM-image verification, serial loading, RAM smoke testing, and EPROM burning
+* Show why the board's EPROM, SRAM, serial interface, expansion header, layout, bill of materials, and manufacturing files matter to that workflow
+* Contrast a one-off prototype with a platform that another person can assemble, inspect, repair, program, and extend
+* End by asking what clearer, more durable, and more accessible technical systems should be for, leading into Polysance
 
 ### Episode #12
 
