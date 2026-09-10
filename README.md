@@ -164,18 +164,19 @@ Episode Summary:
 
 ### Episode #8
 
-_A Comparator Changes Things_
+_It is the Difference that Matters_
 
-The Four-Bit Wonder now receives its smallest meaningful extension: a `74LS85` four-bit magnitude comparator. It compares the word currently read from the `MM2114A` SRAM with a target selected on the four data switches, making the relation visible as low, match, or high. This is not an autonomous learner. It is the prior condition for one: the machine can finally make an explicit, inspectable distinction between what it remembers and what is being asked of it.
+This episode takes up comparison before it takes up the comparator. A living system does not respond to every difference in the universe; it remains viable because some differences can enter its organization as signals, demands, and occasions for action. Through Cannon's homeostasis, Ashby's essential variables, von Uexküll's *Umwelt*, and Bateson's account of information as a difference that makes a difference, the episode asks how a present condition becomes consequential in relation to another. It keeps the claim disciplined: organisms are not little computers, and a literal comparator is neither life nor learning. Only in the closing movement does the Four-Bit Wonder return. Its `74LS85` gives the abstract argument a deliberately small material form by making a stored word lower than, equal to, or higher than a switch-selected target.
 
 Episode Summary:
 
-* Add the `74LS85` comparator without repurposing the original manual memory experiment
-* Compare a word from the SRAM read bus with a distinct word from the data switches
-* Use green, red, and yellow indicators to show `LOW / INCREASE`, `MATCH`, and `HIGH / DECREASE`
-* Explain why the result is meaningful only during a valid SRAM read, not during write or high-impedance states
-* Treat the comparator as visible evaluation rather than machine intelligence
-* Show why adaptation needs more: a stable target, a candidate register, and a controlled read-modify-write cycle
+* Distinguish the living act of comparison from social ranking and abstract measurement
+* Use Cannon and Ashby to describe viability, regulation, essential variables, and adaptation without reducing life to a central controller
+* Use von Uexküll's *Umwelt* to show why significance depends on an organism's particular capacities to perceive and act
+* Use Bateson to establish that a physical difference becomes information only where an organized system can be affected by it
+* Separate detection, comparison, evaluation, action selection, and learning rather than treating them as interchangeable
+* Bring in the `74LS85` only as a closing technical reduction: visible `LOW`, `MATCH`, and `HIGH` relations between SRAM memory and a switch-selected target
+* End with the architectural question for Episode 9: how target, memory, bus state, timing, and control must be kept distinct before comparison can enter a genuine cycle of revision
 
 ### Episode #9
 

@@ -1,0 +1,18 @@
+Create a square, richly detailed vintage scientific-technical poster for Episode 8 of “The Last Cyberneticist,” titled “It is the Difference that Matters.” Continue the established presentation of Episodes 5–7: a dark deep-teal, blackened-paper background; antique-gold engraved linework and serif typography; subtle aged-paper grain; a fine ornamental border; carefully arranged technical panels; and a broad warm-parchment footer carrying the series identity.
+
+This episode must move away from the circuit-board hero image used in Episodes 6 and 7. The central illustration is a living organism in its world: a small bird balanced on a wind-bent reed at dusk, head turned toward a disturbance in the grass. The bird should be rendered with the same dignified, museum-plate realism as the previous machinery—not as wildlife photography, cute animal art, or fantasy. Around it, depict a legible but restrained “functional circle” of fine gold arrows: CONDITIONS → PERCEPTION → DIFFERENCE → ACTION → ALTERED CONDITIONS → FEEDBACK. Make the arrows and diagrams feel like an early cybernetics field study, not a modern UI.
+
+The surrounding panels should express the episode’s philosophical argument through sparse diagrams and short headings rather than a dense circuit schematic:
+
+- upper left: “THE LIVING WORLD” with small engraved symbols for light, warmth, water, sound, and uneven ground;
+- upper right: “VIABLE CONDITIONS” with an elegant bounded-range diagram, showing that life persists within limits rather than at one frozen number;
+- left middle: “PERCEPTION AND ACTION” showing a sensory mark entering a body and a movement returning to the environment;
+- right middle: “A DIFFERENCE THAT MATTERS” with two nearby states becoming a consequential fork—below, within range, above;
+- lower center: “DO NOT CONFUSE” with a restrained sequence, DETECT ≠ COMPARE ≠ EVALUATE ≠ ACT ≠ LEARN;
+- a small final technical inset near the bottom, not the focal point: a simple 74LS85 comparator symbol comparing MEMORY WORD and TARGET WORD, with three indicator lamps using the established panel convention: green = LOW / INCREASE, red = MATCH, yellow = HIGH / DECREASE. This is the closing bridge to Episode 9, not the episode’s subject.
+
+At the top, use the exact title: “IT IS THE DIFFERENCE THAT MATTERS.” Use a smaller subtitle: “Viability, Relation, and the Living World.” At the bottom, on the parchment panel, use: “THE LAST CYBERNETICIST” and “Episode 8 — It is the Difference that Matters.” Preserve generous spacing, symmetrical editorial structure, warm gold-on-teal contrast, and the serious late-1940s to early-1970s cybernetics-document aesthetic.
+
+Avoid: circuit boards as the central image, a close-up microchip, humanoid robots, glowing brains, DNA helices, cyberpunk neon, split human/machine faces, glossy contemporary infographics, generic stock nature photography, mystical auras, or floating equations. No logos.
+
+Production note, 10 September 2026: the currently generated `artwork.png` reverses the specified comparator colors (red LOW, yellow MATCH, green HIGH). The file is retained as published artwork and will not be regenerated at this time; this prompt records the correct convention for any later revision.
