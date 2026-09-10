@@ -362,7 +362,7 @@ Closing move:
 
 Title:
 
-`Memory and the Game: Architecture as a Formal Language`
+`When the Machine Is Its Own Language`
 
 Purpose:
 

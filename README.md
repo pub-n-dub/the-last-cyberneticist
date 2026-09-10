@@ -180,18 +180,19 @@ Episode Summary:
 
 ### Episode #9
 
-_Memory and the Game: Architecture as a Formal Language_
+_When the Machine Is Its Own Language_
 
-The comparator introduces a decisive relation: a remembered word can be lower than, equal to, or higher than a target. This episode asks what follows if that relation is not merely described in software, but physically realized by the architecture itself. The board's wiring, state transitions, timing, control, readback, and visible consequences form a language in matter. Memory gives that language a history, but the episode remains clear that comparison is not yet learning.
+Episode 9 turns Episode 8’s consequential difference into a technical question: what makes a comparator result evidence rather than a decorative light? The Four-Bit Wonder becomes a small formal system in matter. Bits and four-bit words form its vocabulary; buses, chip selection, read/write control, and timing determine which operations are valid; SRAM carries state across time; and the comparator makes a relation between two independently held words observable. The episode treats the fixed board as a bounded finite-state system, not as an autonomous learner or proof of unlimited computation. Its deeper finite-model-theory horizon, including Trakhtenbrot’s theorem, is preserved for subscriber research notes where its required formal correspondence can be handled properly.
 
 Episode Summary:
 
-* Treat four-bit elements as primitive terms, wiring and control as formation rules, and physical consequence as semantics
-* Use the comparator's `LOW`, `MATCH`, and `HIGH` states to ground the argument in the bench rather than abstraction
-* Explain why memory makes architecture temporally extended rather than a static truth table
-* Contrast external software specification with the question of what follows from the machine's own organization
-* Introduce Trakhtenbrot only with its necessary qualification: an encoding to finite relational structures and suitable expressive power would still have to be established
-* End by naming what the comparator lacks: a retained target, a revisable candidate, and a controlled read-compare-step-write cycle
+* Establish the valid read-and-compare conditions under which `LOW`, `MATCH`, and `HIGH` can count as evidence
+* Treat bits, words, buses, control lines, timing, and state transitions as the material grammar of the board
+* Distinguish valid operations from empty or invalid interpretations, including a high-impedance read and comparing one bus to itself
+* Separate electrical behavior, machine operation, human interpretation, and autonomous control
+* Use the Four-Bit Wonder as a bounded finite-state system whose permitted transitions can be traced and tested
+* Preserve finite-model theory and Trakhtenbrot for a qualified subscriber research note rather than overstating what a four-bit comparator proves
+* Lead into Episode 10’s stable manufactured platform: durable states, transitions, programs, and tests that another person can reproduce
 
 ### Episode #10
 
