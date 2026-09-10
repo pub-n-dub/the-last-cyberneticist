@@ -1,0 +1,66 @@
+digraph selected_academic_lineage {
+  graph [
+    rankdir=TB,
+    bgcolor="white",
+    margin=0.35,
+    pad=0.25,
+    nodesep=0.3,
+    ranksep=0.25,
+    splines=ortho,
+    labelloc="t",
+    labeljust="c",
+    fontname="Liberation Serif",
+    fontsize=22,
+    fontcolor="#202020",
+    label="Christopher Allen Tucker: A Selected Recorded Academic Line\nRead from top to bottom"
+  ];
+
+  node [
+    shape=box,
+    style="rounded",
+    margin="0.14,0.08",
+    fontname="Liberation Serif",
+    fontsize=13,
+    fontcolor="#202020",
+    color="#353535",
+    penwidth=0.8
+  ];
+
+  edge [color="#353535", penwidth=0.8, arrowsize=0.55];
+
+  tucker [label=<<B>Christopher Allen Tucker</B><BR/><FONT POINT-SIZE="10">University of Reading, Ph.D., 2013</FONT>>, fillcolor="#efefef", style="rounded,filled"];
+  warwick [label=<<B>Kevin Warwick</B><BR/><FONT POINT-SIZE="10">Imperial College London, Ph.D., 1982</FONT>>];
+  westcott [label=<<B>John Hugh Westcott</B><BR/><FONT POINT-SIZE="10">University of London, Ph.D., 1951</FONT>>];
+  cherry [label=<<B>Colin Edward Cherry</B>>];
+  wiener [label=<<B>Norbert Wiener</B><BR/><FONT POINT-SIZE="10">Harvard University, Ph.D., 1913</FONT>>];
+  schmidt [label="Karl Schmidt"];
+  natorp [label="Paul Gerhard Natorp"];
+  laas [label="Ernst Laas"];
+  trendelenburg [label="Friedrich Adolf Trendelenburg"];
+  reinhold [label="Karl Leonhard Reinhold"];
+  kant [label="Immanuel Kant"];
+  knutzen [label="Martin Knutzen"];
+  wolff [label="Christian Wolff"];
+  leibniz [label="Gottfried Wilhelm Leibniz"];
+  huygens [label="Christiaan Huygens"];
+  schoote [label="Frans van Schooten"];
+  golius [label="Jacobus Golius"];
+  erpenius [label="Thomas van Erpe (Erpenius)"];
+  scaliger [label="Joseph Justus Scaliger"];
+  turnebe [label="Adrien Turnèbe"];
+  toussain [label="Jacques Toussain"];
+  bude [label="Guillaume Budé"];
+  lascaris [label="Janus Lascaris"];
+  bessarion [label="Basilios Bessarion"];
+  pletho [label="Georgios Plethon Gemistos"];
+  kydones [label="Demetrios Kydones"];
+  kabasilas [label="Neilos Kabasilas"];
+  palamas [label="Gregory Palamas"];
+  metochites [label="Theodore Metochites"];
+  bryennios [label="Manuel Bryennios"];
+  chioniades [label="Gregory Chioniades"];
+  bukhari [label="Shams al-Dīn al-Bukhārī"];
+  tusi [label="Nasīr al-Dīn Tūsī"];
+
+  tucker -> warwick -> westcott -> cherry -> wiener -> schmidt -> natorp -> laas -> trendelenburg -> reinhold -> kant -> knutzen -> wolff -> leibniz -> huygens -> schoote -> golius -> erpenius -> scaliger -> turnebe -> toussain -> bude -> lascaris -> bessarion -> pletho -> kydones -> kabasilas -> palamas -> metochites -> bryennios -> chioniades -> bukhari -> tusi;
+}

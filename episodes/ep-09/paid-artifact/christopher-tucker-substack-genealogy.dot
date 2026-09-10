@@ -1,0 +1,123 @@
+digraph substack_academic_genealogy {
+  graph [
+    rankdir=TB,
+    bgcolor="white",
+    margin=0.55,
+    pad=0.25,
+    nodesep=1.05,
+    ranksep=0.30,
+    splines=ortho,
+    labelloc="t",
+    labeljust="c",
+    fontname="Liberation Serif",
+    fontsize=26,
+    fontcolor="#242424",
+    label="Christopher Allen Tucker:\nAcademic Genealogy"
+  ];
+
+  node [
+    shape=plain,
+    fontname="Liberation Serif",
+    fontsize=15,
+    fontcolor="#242424"
+  ];
+
+  edge [
+    dir=none,
+    color="#242424",
+    penwidth=1.05
+  ];
+
+  tucker [label=<<B>Christopher Allen Tucker</B><BR/><FONT POINT-SIZE="11">University of Reading, Ph.D., 2013</FONT>>];
+  warwick [label=<<B>Kevin Warwick</B><BR/><FONT POINT-SIZE="11">Imperial College London, Ph.D., 1982</FONT>>];
+  westcott [group="left", label=<<B>John Hugh Westcott</B><BR/><FONT POINT-SIZE="11">University of London, Ph.D., 1951</FONT>>];
+  cherry [group="right", label=<<B>Colin Edward Cherry</B><BR/><FONT POINT-SIZE="11">Imperial College London</FONT>>];
+  wiener [group="left", label=<<B>Norbert Wiener</B><BR/><FONT POINT-SIZE="11">Harvard University, Ph.D., 1913 · MIT</FONT>>];
+  schmidt [group="left", label=<Karl Schmidt<BR/><FONT POINT-SIZE="11">Philipps-Universität Marburg</FONT>>];
+  natorp [group="left", label=<<B>Paul Gerhard Natorp</B><BR/><FONT POINT-SIZE="11">University of Marburg</FONT>>];
+  laas [group="left", label=<Ernst Laas<BR/><FONT POINT-SIZE="11">University of Strasbourg</FONT>>];
+  trendelenburg [group="left", label=<<B>Friedrich Adolf Trendelenburg</B><BR/><FONT POINT-SIZE="11">University of Berlin</FONT>>];
+  reinhold [group="right", label=<Karl Leonhard Reinhold<BR/><FONT POINT-SIZE="11">University of Jena</FONT>>];
+  kant [group="right", label=<<B>Immanuel Kant</B><BR/><FONT POINT-SIZE="11">University of Königsberg</FONT>>];
+  knutzen [group="right", label=<Martin Knutzen<BR/><FONT POINT-SIZE="11">University of Königsberg</FONT>>];
+  wolff [group="right", label=<Christian Wolff<BR/><FONT POINT-SIZE="11">University of Halle</FONT>>];
+  leibniz [group="right", label=<<B>Gottfried Wilhelm Leibniz</B><BR/><FONT POINT-SIZE="11">University of Altdorf</FONT>>];
+  huygens [group="left", label=<<B>Christiaan Huygens</B><BR/><FONT POINT-SIZE="11">Leiden University</FONT>>];
+  schoote [group="left", label=<<B>Frans van Schooten</B><BR/><FONT POINT-SIZE="11">Leiden University</FONT>>];
+  golius [group="left", label=<<B>Jacobus Golius</B><BR/><FONT POINT-SIZE="11">Leiden University</FONT>>];
+  erpenius [group="left", label=<Thomas van Erpe (Erpenius)<BR/><FONT POINT-SIZE="11">Leiden University</FONT>>];
+  scaliger [group="left", label=<<B>Joseph Justus Scaliger</B><BR/><FONT POINT-SIZE="11">Leiden University</FONT>>];
+  turnebe [group="right", label=<<B>Adrien Turnèbe</B><BR/><FONT POINT-SIZE="11">Collège de France</FONT>>];
+  toussain [label="Jacques Toussain"];
+  bude [label="Guillaume Budé"];
+  lascaris [label="Janus Lascaris"];
+  bessarion [group="right", label=<<B>Basilios Bessarion</B>>];
+  pletho [group="left", label=<<B>Georgios Plethon Gemistos</B>>];
+  kydones [group="left", label="Demetrios Kydones"];
+  kabasilas [group="left", label="Neilos Kabasilas"];
+  palamas [group="left", label=<<B>Gregory Palamas</B>>];
+  metochites [group="left", label="Theodore Metochites"];
+  bryennios [group="left", label="Manuel Bryennios"];
+  chioniades [group="right", label="Gregory Chioniades"];
+  bukhari [group="right", label="Shams al-Dīn al-Bukhārī"];
+  tusi [group="right", label=<<B>Nasīr al-Dīn Tūsī</B><BR/><FONT POINT-SIZE="11">Maragheh Observatory</FONT>>];
+  crossover_bottom [shape=point, width=0.01, height=0.01, label="", style=invis];
+  crossover_top [shape=point, width=0.01, height=0.01, label="", style=invis];
+  warwick_elbow_out [shape=point, width=0.01, height=0.01, label="", style=invis];
+  warwick_elbow_in [shape=point, width=0.01, height=0.01, label="", style=invis];
+  bryennios_elbow_out [shape=point, width=0.01, height=0.01, label="", style=invis];
+  bryennios_elbow_in [shape=point, width=0.01, height=0.01, label="", style=invis];
+
+  tucker [pos="420,1850!"];
+  warwick [pos="420,1780!"];
+
+  westcott [pos="200,1650!"];
+  cherry [pos="200,1580!"];
+  wiener [pos="200,1510!"];
+  schmidt [pos="200,1440!"];
+  natorp [pos="200,1370!"];
+  laas [pos="200,1300!"];
+  trendelenburg [pos="200,1230!"];
+  reinhold [pos="200,1160!"];
+  kant [pos="200,1090!"];
+  knutzen [pos="200,1020!"];
+  wolff [pos="200,950!"];
+  leibniz [pos="200,880!"];
+  huygens [pos="200,810!"];
+  schoote [pos="200,740!"];
+
+  golius [pos="640,1650!"];
+  erpenius [pos="640,1580!"];
+  scaliger [pos="640,1510!"];
+  turnebe [pos="640,1440!"];
+  toussain [pos="640,1370!"];
+  bude [pos="640,1300!"];
+  lascaris [pos="640,1230!"];
+  bessarion [pos="640,1160!"];
+  pletho [pos="640,1090!"];
+  kydones [pos="640,1020!"];
+  kabasilas [pos="640,950!"];
+  palamas [pos="640,880!"];
+  metochites [pos="640,810!"];
+  bryennios [pos="640,740!"];
+
+  chioniades [pos="420,560!"];
+  bukhari [pos="420,490!"];
+  tusi [pos="420,420!"];
+  crossover_bottom [pos="520,740!"];
+  crossover_top [pos="520,1650!"];
+  warwick_elbow_out [pos="420,1710!"];
+  warwick_elbow_in [pos="200,1710!"];
+  bryennios_elbow_out [pos="640,670!"];
+  bryennios_elbow_in [pos="420,670!"];
+
+  tucker -> warwick;
+  warwick:s -> warwick_elbow_out -> warwick_elbow_in -> westcott:n;
+  westcott -> cherry;
+  cherry -> wiener;
+  wiener -> schmidt -> natorp -> laas -> trendelenburg -> reinhold -> kant -> knutzen -> wolff -> leibniz -> huygens -> schoote;
+  schoote -> crossover_bottom -> crossover_top -> golius -> erpenius -> scaliger -> turnebe -> toussain -> bude -> lascaris -> bessarion -> pletho -> kydones -> kabasilas -> palamas -> metochites -> bryennios;
+  bryennios:s -> bryennios_elbow_out -> bryennios_elbow_in -> chioniades:n;
+  chioniades -> bukhari -> tusi;
+
+}

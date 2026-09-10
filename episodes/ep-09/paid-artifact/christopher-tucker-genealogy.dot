@@ -1,0 +1,40 @@
+digraph academic_genealogy {
+  graph [
+    rankdir=TB,
+    bgcolor="transparent",
+    margin=0.1,
+    pad=0.1,
+    nodesep=0.85,
+    ranksep=0.45,
+    splines=ortho
+  ];
+
+  node [
+    shape=plain,
+    fontname="Liberation Serif",
+    fontsize=15,
+    fontcolor="#202020"
+  ];
+
+  edge [
+    dir=none,
+    color="#202020",
+    penwidth=1.15
+  ];
+
+  tucker [label=<<B>Christopher Allen Tucker</B><BR/><FONT POINT-SIZE="11">University of Reading, Ph.D., 2013</FONT>>];
+  warwick [label=<<B>Kevin Warwick</B><BR/><FONT POINT-SIZE="11">Imperial College London, Ph.D., 1982</FONT>>];
+  westcott [label=<<B>John Hugh Westcott</B><BR/><FONT POINT-SIZE="11">University of London, Ph.D., 1951</FONT>>];
+  antsaklis [label=<<B>Panayotis (Panos) John Antsaklis</B><BR/><FONT POINT-SIZE="11">Brown University, Ph.D., 1977</FONT>>];
+  cherry [label=<<B>Colin Edward Cherry</B>>];
+  wolovich [label=<<B>William Anthony Wolovich</B>>];
+
+  tucker -> warwick;
+  warwick -> westcott;
+  warwick -> antsaklis;
+  westcott -> cherry;
+  antsaklis -> wolovich;
+
+  { rank=same; westcott; antsaklis; }
+  { rank=same; cherry; wolovich; }
+}
