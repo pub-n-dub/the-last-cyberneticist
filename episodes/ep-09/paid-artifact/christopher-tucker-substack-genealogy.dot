@@ -12,7 +12,7 @@ digraph substack_academic_genealogy {
     fontname="Liberation Serif",
     fontsize=26,
     fontcolor="#242424",
-    label="Christopher Allen Tucker:\nAcademic Genealogy"
+    label="The Last Cyberneticist - Academic Genealogy"
   ];
 
   node [
