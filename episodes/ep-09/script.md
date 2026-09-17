@@ -40,7 +40,7 @@ The relation is modest, but it is real. Suppose the target is ‘1001’ and the
 
 This lets us distinguish several layers that are too often merged together. The electrical layer concerns voltages, devices, and paths. The operational layer concerns what the machine is doing: reading, writing, selecting, comparing, holding. The interpretive layer concerns what a human being calls the result: lower can mean increase; match can mean stop; higher can mean decrease. And the control layer would concern what happens next because of that interpretation.
 
-The Four-Bit Wonder currently gives us the first three layers in a restricted form. It does not yet have the fourth. The coloured lights announce a difference to the person at the bench, but they do not route that difference into a sequencer, a candidate register, a controlled write pulse, and a fresh readback. The board is therefore an instrument of inspection, not an autonomous regulator.
+The Four-Bit Wonder gives us the electrical and operational layers, plus a visible output that a person can interpret. It does not yet have the control layer. The coloured lights announce a difference to the person at the bench, but they do not route that difference into a sequencer, a candidate register, a controlled write pulse, and a fresh readback. The board is therefore an instrument of inspection, not an autonomous regulator.
 
 An honest bench demonstration can therefore be told as a trace, not as a flourish. Begin in a known control condition. Set the target. Select an address. Place the SRAM in read mode. Observe the remembered word and its comparator relation. If a change is wanted, leave the interpretation of the read state behind, present the value to be written, perform one deliberate write, then restore the read condition and inspect the result again. Each step has a different authority. Each produces evidence of a different claim.
 
@@ -78,7 +78,9 @@ For the public argument, the nearer point is enough. The board’s physical orde
 
 And it gives us a standard for the future. As the project moves toward serial tools, manufactured boards, ROM images, and later adaptive loops, we should not ask only whether a machine produces an impressive result. We should ask what state it entered, what transition occurred, what information was retained, what path was enabled, and what evidence lets another person repeat the claim.
 
-The next episode turns from the small formal discipline of a wire-wrapped board toward a more stable manufactured platform. The question will be the same, but the scale will change. How do we give these states, transitions, programs, and tests a durable home—one that can be built again, read again, and trusted by someone other than the person who first wired it?
+The next episode turns from the small formal discipline of a wire-wrapped board toward a different possibility: a structured algebra. The question will be how a machine’s states, relations, and transformations can be arranged so that their operations are named, testable, and open to reconstruction. This is a contrast with much of today’s AI, where useful answers can emerge from opaque, gradient-trained systems that search vast spaces of learned associations and patterns. The point is not to deny their power. It is to ask whether another kind of machine intelligence can make its structure visible in the form of its operations.
+
+What happens when we stop treating states and transitions as labels added after the fact, and begin treating them as explicit objects from which a program can be composed?
 
 Thank you for listening.
 
