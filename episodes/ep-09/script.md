@@ -58,7 +58,7 @@ There are two cautions here. First, the machine’s own operational meaning is n
 
 Second, a formal organization is not automatically a general-purpose computer. A small system can have a rigorous grammar and still be sharply bounded. The Four-Bit Wonder is deliberately bounded. Its accessible addresses, word width, control operations, and possible visible relations are limited. That limitation is a virtue for learning because it lets us see the system as a whole.
 
-Computer science gives us a useful name for this kind of bounded organization: a finite-state automaton. In its simplest description, a finite-state automaton has a finite collection of states and specified transitions between them, often depending on an input. The point is not to force every wire on this board into a textbook diagram. The point is to see what such a diagram makes visible.
+Computer science gives us a useful name for this kind of bounded organization: a finite-state system. It has a finite collection of states and specified transitions between them, often depending on an input or an intervention. B. A. Trakhtenbrot and Ya. M. Barzdin’s *Finite Automata: Behavior and Synthesis* gives the field a more specialized use of the word “synthesis”: the construction of an automaton’s program, rather than simply the drawing of its circuit. The Four-Bit Wonder is not yet that kind of programmed system. Here we need only the modest starting point: a machine’s possible conduct can be made explicit enough to inspect. The point is not to force every wire on this board into a textbook diagram. The point is to see what such a diagram makes visible.
 
 At any moment, the board has a state: control lines are set in particular ways, an address is present, the switches select a target, the memory holds some contents, and the comparator outputs occupy one of their allowed relations. An intervention or event can change that state: an address changes, a write is performed, the read condition is restored, a target is altered. The next state is not arbitrary. It follows from the architecture.
 
@@ -87,5 +87,6 @@ Thank you for listening.
 - W. Ross Ashby, *Design for a Brain*, 2nd ed. (1960): stability, feedback, adaptation, and the organization of behaviour.
 - Edmund C. Berkeley, *Giant Brains, or Machines That Think* (1949): logical machinery, memory, control, and organized conduct.
 - John E. Hopcroft, Rajeev Motwani, and Jeffrey D. Ullman, *Introduction to Automata Theory, Languages, and Computation*, 3rd ed. (2006): finite-state automata and formal-language vocabulary.
+- B. A. Trakhtenbrot and Ya. M. Barzdin, *Finite Automata: Behavior and Synthesis* (1973): finite-state systems, behavior, and synthesis.
 
 For the qualified finite-model-theory discussion, see episodes/ep-09/research-notes.md.
