@@ -1,0 +1,27 @@
+Create a square, richly detailed vintage scientific-technical poster for Episode 10 of “The Last Cyberneticist,” titled “Multenions: A Structured Algebra.” Continue the established presentation of Episodes 5–9: a dark deep-teal, blackened-paper background; antique-gold engraved linework and serif typography; subtle aged-paper grain; a fine ornamental border; carefully arranged technical panels; and a broad warm-parchment footer carrying the series identity. The mood is reflective, austere, exact, and late-1940s to early-1970s cybernetics-documentary—not futuristic or cyberpunk.
+
+The central illustration is a small, intelligible door-controller model rendered as a dignified engineering-study object, viewed frontally and slightly from above. It should not be a photorealistic modern automatic door or a generic smart-home device. Show a compact electromechanical door mechanism and its controller as one legible system: a door in a simple frame, an opening/closing linkage, a small control cabinet, distinct sensor marks, and clearly separate signal paths. Around the mechanism, arrange four large named state medallions in a restrained circular progression: CLOSED, OPENING, OPEN, CLOSING. The controller must look constructed from explicit parts whose relations can be followed—not like an opaque autonomous machine.
+
+The central visual argument is that a program is made from explicit objects, permitted transformations, conditions, and lawful compositions. Draw engraved transition arrows between the state medallions, with the following concise labels placed clearly on their respective arrows:
+
+- REQUEST: CLOSED → OPENING;
+- FULLY OPEN: OPENING → OPEN;
+- TIMEOUT: OPEN → CLOSING;
+- OBSTRUCTION: CLOSING → OPENING.
+
+Make the obstruction path visibly distinct and safety-oriented. Include one small broken or barred transition from CLOSED directly to OPEN, labelled “NOT PERMITTED,” so the image explains constraint as well as change. Do not imply that every event acts in every state.
+
+Surround the central controller with restrained technical insets that make the episode’s argument visible:
+
+- upper left: “ELEMENTARY OBJECTS,” a composed field of four precisely separate tokens labelled STATE, EVENT, RELATION, and TRANSFORMATION;
+- upper right: “LAWFUL COMPOSITION,” showing a short sequence of linked objects, STATE + EVENT → TRANSFORMATION → NEXT STATE, with no decorative floating equations;
+- left middle: “ROLES ARE NOT VALUES,” showing the same small four-bit pattern, 0100, in three separate engraved compartments labelled ADDRESS, TARGET, and CANDIDATE; make their distinct paths and roles more prominent than the digits;
+- right middle: “TRACEABLE CONDUCT,” a modest vertical trace: CLOSED → REQUEST → OPENING → FULLY OPEN → OPEN → TIMEOUT → CLOSING → OBSTRUCTION → OPENING;
+- lower left: “FAILURE HAS AN ADDRESS,” with a small diagnostic table or branching mark that distinguishes WRONG STATE, MISREAD EVENT, OMITTED CONDITION, and INVALID COMPOSITION;
+- lower right: “EXPLICIT, NOT OPAQUE,” represented only by a compact inspectable cabinet of named relations and paths contrasted with a distant, faded field of unlabeled marks. Do not show a brain, neural-network diagram, black box, or caricature of artificial intelligence.
+
+Include a small, secondary bridge from Episode 9: a restrained engraved inset titled “FROM THE FOUR-BIT WONDER,” showing a remembered word, target word, comparator relation, and visible trace as four distinct objects. This must remain secondary to the door-controller program. Include an equally small forward-looking lower inset titled “NEXT: FORTH ON GA144,” showing named objects becoming short Forth-style word blocks and a tiny tiled processor array. It should be a technical promise, not a product logo or a futuristic computer scene.
+
+At the top, use the exact title: “MULTENIONS: A STRUCTURED ALGEBRA.” Use the smaller subtitle: “Explicit Objects, Lawful Transformations, Visible Conduct.” At the bottom, on the warm-parchment panel, use: “THE LAST CYBERNETICIST” and “Episode 10 — Multenions: A Structured Algebra.” Preserve generous spacing, symmetrical editorial structure, warm gold-on-teal contrast, and the sober museum-plate quality of a technical field document.
+
+Avoid: humanoid robots, glowing brains, DNA helices, cyberpunk neon, glossy modern UI elements, generic microchip imagery, split human/machine faces, mystical auras, floating equations as decoration, generic neural-network graphics, black-box AI symbolism, a photorealistic commercial automatic door, or claims that the system is autonomous or learning. Do not invent mathematical axioms, operators, or formal notation for Multenions beyond the named programmatic objects and transitions. No logos.
