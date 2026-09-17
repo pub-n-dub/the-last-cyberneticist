@@ -1,4 +1,4 @@
-# Episode 15 Script
+# Episode 16 Script
 
 ## Title
 
@@ -6,7 +6,7 @@
 
 ## Script
 
-Welcome to Episode 15 of `The Last Cyberneticist`.
+Welcome to Episode 16 of `The Last Cyberneticist`.
 
 This episode is called `Feel the (ROM) Burn`.
 

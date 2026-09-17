@@ -9,14 +9,6 @@ Technology-themed podcast musing on cybernetics applied to everyday life.
 > Philip K. Dick's `Autofac` is a background driving force for this project.
 > Across the podcast and the machinery itself, the motivating evidence is the same: visible control, durable memory, repairable hardware, and systems that can still be understood by the people who inherit them.
 
-## Episode list
-
-* Episode #1: The Realm of Cybernetics
-* Episode #2: What is possible with Cybernetics?
-* Episode #3: Ashby, Grey Walter, and Norbert Wiener
-* Episode #4: The Unrealized Architecture
-* Series arc: Hero-1 repair, fitting, and Heiserman-style embodiment
-
 Below are the liner-notes for each episode devised in-planning.
 
 Reusable production notes:
@@ -182,7 +174,7 @@ Episode Summary:
 
 _When the Machine Is Its Own Language_
 
-Episode 9 turns Episode 8’s consequential difference into a technical question: what makes a comparator result evidence rather than a decorative light? The Four-Bit Wonder becomes a small formal system in matter. Bits and four-bit words form its vocabulary; buses, chip selection, read/write control, and timing determine which operations are valid; SRAM carries state across time; and the comparator makes a relation between two independently held words observable. The episode treats the fixed board as a bounded finite-state system, not as an autonomous learner or proof of unlimited computation. Its deeper finite-model-theory horizon, including Trakhtenbrot’s theorem, is preserved for subscriber research notes where its required formal correspondence can be handled properly.
+Episode 9 turns Episode 8’s consequential difference into a technical question: what makes a comparator result evidence rather than a decorative light? The Four-Bit Wonder becomes a small formal system in matter. Bits and four-bit words form its vocabulary; buses, chip selection, read/write control, and timing determine which operations are valid; SRAM carries state across time; and the comparator makes a relation between two independently held words observable. The episode treats the fixed board as a bounded finite-state system, not as an autonomous learner or proof of unlimited computation. It introduces Trakhtenbrot and Barzdin’s distinction between the behavior of an automaton and the synthesis of its program, while making clear that the Four-Bit Wonder is not yet a programmed system. Its deeper finite-model-theory horizon, including Trakhtenbrot’s theorem, is preserved for subscriber research notes where its required formal correspondence can be handled properly. The closing bridge to Episode 10 asks what changes when states and transitions are treated as explicit algebraic objects from which a program can be composed.
 
 Episode Summary:
 
@@ -191,14 +183,25 @@ Episode Summary:
 * Distinguish valid operations from empty or invalid interpretations, including a high-impedance read and comparing one bus to itself
 * Separate electrical behavior, machine operation, human interpretation, and autonomous control
 * Use the Four-Bit Wonder as a bounded finite-state system whose permitted transitions can be traced and tested
+* Introduce behavior and program synthesis as later finite-state concerns without treating the manual board as a programmed automaton
 * Preserve finite-model theory and Trakhtenbrot for a qualified subscriber research note rather than overstating what a four-bit comparator proves
-* Lead into Episode 10’s stable manufactured platform: durable states, transitions, programs, and tests that another person can reproduce
+* Lead into Episode 10’s structured-algebra question: how explicit states, relations, transformations, and compositions can form a program
 
 ### Episode #10
 
-_Multenions Transition Automation_
+_Multenions: A Structured Algebra_
 
-Episode 10 pivots
+Episode 10 continues Episode 9’s finite-state question by introducing Multenions as a structured algebra. Its concern is not a generic claim that an opaque system has found an answer, but whether a finite-state program can be pursued as an exercise in explicit algebraic objects: states, relations, transformations, and the lawful compositions that connect them. The contrast is with contemporary AI systems whose useful results often emerge from gradient-trained parameter spaces and accumulated examples, while their internal route to a result remains difficult to state and reconstruct. The episode does not deny that such systems can be powerful. It asks what becomes possible when the structure of a program is itself the object of inspection. Multenions’ claimed uniqueness among algebras should be introduced as the episode’s thesis and earned through its particular objects, operations, and constraints.
+
+Episode Summary:
+
+* Return to Episode 9’s finite-state system: a bounded repertoire of states and permitted transitions
+* Introduce Multenions as a structured algebra whose programmatic objects and operations are intended to remain explicit
+* Treat a finite-state program as a constructed algebraic object rather than an opaque result or a loose flowchart
+* Make the intended contrast with gradient-trained, data-intensive systems precise without caricaturing all contemporary AI
+* Identify the objects, operations, compositions, constraints, and observable consequences that make the algebra distinct
+* Test the claim of uniqueness through a worked finite-state example rather than merely asserting it
+* End by asking how such explicit algebraic programs can be implemented, inspected, and made to act in hardware
 
 ### Episode #11
 
@@ -223,21 +226,6 @@ Episode Summary:
 * Present the separate autonomous board as a later exploration path, not as an achievement quietly smuggled into the demonstration
 * Define merit through legibility, participation, repairability, and the ability to test a claim together
 * Make a direct case for donations to support the materials, preparation, patient teaching, and learner access that this educational work requires
-
-### Episode #12
-
-_Away from scratch-building toward manufactured production_
-
-Episode 10 pivots from wire-wrapping and bare-metal hardware construction to the M6x09-II-SBC: a minimal seventeen-component 6809 computer on a finished PCB. The board's layout, bill of materials, manufacturing files, and repeatable assembly make the hardware stable enough to examine the software running on it: build ASSIST09 from source, verify the ROM image, load and test programs through the serial terminal, and burn a verified milestone into EPROM. Professional design matters here not as a cosmetic finish, but because it creates a dependable platform for the next level of inquiry.
-
-Episode Summary:
-
-* Introduce the M6x09-II-SBC as a deliberately minimal 6809 system, not an attempt to make a maximally featured computer
-* Pivot from the visibility of wire-wrap hardware to a finished PCB whose stable, repeatable construction makes software behavior the central object of examination
-* Follow the bare-metal workflow from ASSIST09 source through ROM-image verification, serial loading, RAM smoke testing, and EPROM burning
-* Show why the board's EPROM, SRAM, serial interface, expansion header, layout, bill of materials, and manufacturing files matter to that workflow
-* Contrast a one-off prototype with a platform that another person can assemble, inspect, repair, program, and extend
-* End by asking what clearer, more durable, and more accessible technical systems should be for, leading into Polysance
 
 ### Episode #12
 
@@ -286,6 +274,21 @@ Episode Summary:
 
 ### Episode #15
 
+_Away from scratch-building toward manufactured production_
+
+Episode 15 pivots from wire-wrapping and bare-metal hardware construction to the M6x09-II-SBC: a minimal seventeen-component 6809 computer on a finished PCB. The board's layout, bill of materials, manufacturing files, and repeatable assembly make the hardware stable enough to examine the software running on it: build ASSIST09 from source, verify the ROM image, load and test programs through the serial terminal, and burn a verified milestone into EPROM. Professional design matters here not as a cosmetic finish, but because it creates a dependable platform for the next level of inquiry.
+
+Episode Summary:
+
+* Introduce the M6x09-II-SBC as a deliberately minimal 6809 system, not an attempt to make a maximally featured computer
+* Pivot from the visibility of wire-wrap hardware to a finished PCB whose stable, repeatable construction makes software behavior the central object of examination
+* Follow the bare-metal workflow from ASSIST09 source through ROM-image verification, serial loading, RAM smoke testing, and EPROM burning
+* Show why the board's EPROM, SRAM, serial interface, expansion header, layout, bill of materials, and manufacturing files matter to that workflow
+* Contrast a one-off prototype with a platform that another person can assemble, inspect, repair, program, and extend
+* End by asking what clearer, more durable, and more accessible technical systems should be for
+
+### Episode #16
+
 _Feel the (ROM) Burn_
 
 The M6x09-II-SBC needs non-volatile memory to preserve a program that can run at power-on. This episode follows the `27C128` EPROM as the boundary where source code, a verified ROM image, a physical device, and the board's observed behavior have to agree. The Batronix Barlino II 32P is the current programming tool; its value is not nostalgia, but a disciplined, repeatable path from a tested image to a labeled, verified hardware milestone.
@@ -301,20 +304,6 @@ Episode Summary:
 * Explain why a preserved ROM image needs its source inputs, checksum, build date, test record, and board context to remain meaningful over time
 * Treat the act of programming chips as a material form of software work, where verification, handling, compatibility, and retention suddenly matter again
 * Position the ROM-burning stage as the threshold between planning the system and being able to place behavior back into hardware
-
-### Episode #16
-
-_Alpha-Hero: The First Tiny Adaptive Loop_
-
-The question is no longer whether an evaluative relation can be made visible, but whether a small embodied system can use one honestly. With serial, processor, and ROM work in place, this episode defines one safe sensed condition and one safe action policy, then runs the loop repeatedly. Its achievement is not a grand intelligence claim; it is evidence that the machine can move from fixed response toward remembered or revisable conduct.
-
-Episode Summary:
-
-* Build and test one safe, repeatable sensor-to-action loop
-* Record what changes, what remains stable, and where the loop fails
-* Invoke Heiserman directly only to the degree the evidence earns it
-* Distinguish fixed reflex, remembered response, and genuinely revisable conduct
-* Treat Episode 9's architecture-as-language argument as an earlier conceptual frame, now tested in an embodied loop
 
 ### Episode #17
 
