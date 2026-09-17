@@ -1,0 +1,23 @@
+Create a square, richly detailed vintage scientific-technical poster for Episode 9 of “The Last Cyberneticist,” titled “When the Machine Is Its Own Language.” Continue the established presentation of Episodes 5–8: a dark deep-teal, blackened-paper background; antique-gold engraved linework and serif typography; subtle aged-paper grain; a fine ornamental border; carefully arranged technical panels; and a broad warm-parchment footer carrying the series identity. The mood is reflective, austere, exact, and late-1940s to early-1970s cybernetics-documentary—not futuristic or cyberpunk.
+
+The central illustration is the Four-Bit Wonder as a dignified wire-wrapped bench instrument, shown in a slightly elevated three-quarter view. It should be recognizably a handmade board: socketed chips, orderly point-to-point wire-wrap connections, four target switches, a small SRAM, a 74LS85 comparator, and three indicator lamps. Do not render it as a generic modern motherboard or a dense photographic close-up. The board must feel legible: a machine whose paths can be followed.
+
+The central visual argument is that a comparator lamp counts as evidence only when the signal paths and control state are valid. Show two clearly separate engraved routes meeting at the comparator:
+
+- a left route labelled “MEMORY WORD,” emerging from a selected SRAM in a valid READ condition;
+- a right route labelled “TARGET WORD,” emerging from four manual switches;
+- the routes must remain visibly separate until they enter opposite sides of the 74LS85 comparator; never show them tied together as one bus;
+- beneath the comparator, show three small lamps: green = LOW, red = MATCH, yellow = HIGH. The color assignment is essential.
+
+Surround the board with restrained technical insets that make the episode’s formal argument visible:
+
+- upper left: “VALID READ” with a small control-state panel: CHIP SELECT active, WRITE ENABLE inactive, MEMORY OUTPUT AVAILABLE;
+- upper right: “NOT EVIDENCE” with a high-impedance or floating output drawn as a broken, faded line, accompanied by the short phrase “A LAMP ALONE IS NOT A FACT”;
+- left middle: “TWO WORDS, TWO ROLES,” showing the same binary pattern taking distinct roles as ADDRESS, TARGET, and STORED WORD according to its path and operation;
+- right middle: “TRACEABLE CONDUCT,” with a modest sequence: SET TARGET → SELECT ADDRESS → READ → COMPARE → OBSERVE. Do not depict autonomous writing or learning;
+- lower center: “FINITE-STATE SYSTEM,” represented by a small, elegant state-and-transition diagram with a bounded set of named conditions; keep it schematic and secondary to the physical board;
+- a very small lower inset pointing forward: “NEXT: A STRUCTURED ALGEBRA,” represented only by a few named objects and lawful connecting marks, not by floating equations or a futuristic AI symbol.
+
+At the top, use the exact title: “WHEN THE MACHINE IS ITS OWN LANGUAGE.” Use the smaller subtitle: “Valid States, Visible Relations, and Evidence.” At the bottom, on the warm-parchment panel, use: “THE LAST CYBERNETICIST” and “Episode 9 — When the Machine Is Its Own Language.” Preserve generous spacing, symmetric editorial structure, warm gold-on-teal contrast, and the sober museum-plate quality of a technical field document.
+
+Avoid: humanoid robots, glowing brains, DNA helices, cyberpunk neon, modern glossy UI elements, generic microchip imagery, split human/machine faces, mystical auras, visualizations of neural networks, opaque black-box AI imagery, misleading tied comparator inputs, or a machine that appears autonomous. No logos. No modern sans-serif interface labels. No floating equations as decoration.
