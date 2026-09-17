@@ -187,6 +187,8 @@ Episode Summary:
 * Preserve finite-model theory and Trakhtenbrot for a qualified subscriber research note rather than overstating what a four-bit comparator proves
 * Lead into Episode 10’s structured-algebra question: how explicit states, relations, transformations, and compositions can form a program
 
+Technical preparation for Episodes 10 and 11: document a minimal Multenions specification that names its elementary objects, lawful operations, compositions, and invalid cases; express one finite-state program as a worked example with an initial state, inputs, trace, and halt or error condition; then map each object and transformation to a Forth representation and word on the GA144. The purpose is to make Episode 11 a testable realization of Episode 10’s algebraic claim, rather than treating Forth code as an unexplained implementation detail.
+
 ### Episode #10
 
 _Multenions: A Structured Algebra_
@@ -201,13 +203,23 @@ Episode Summary:
 * Make the intended contrast with gradient-trained, data-intensive systems precise without caricaturing all contemporary AI
 * Identify the objects, operations, compositions, constraints, and observable consequences that make the algebra distinct
 * Test the claim of uniqueness through a worked finite-state example rather than merely asserting it
-* End by asking how such explicit algebraic programs can be implemented, inspected, and made to act in hardware
+* End by asking how those explicit algebraic objects can be rendered as Forth words on the GA144 without losing their legibility
 
 ### Episode #11
 
 _Multenions Transition Automation in GA144_
 
-Episode 11 continues the discussion from last time to include hardware implmenetation of a "time & organization" _tao_ and _logos_ algorithm. Perhaps HUAWEI Tau (τ) Scaling Law
+Episode 11 puts Episode 10’s claim to work on a real machine. A minimal Multenions finite-state program is rendered on the GA144 as explicit Forth representations: named states, events, relations, transformations, permitted compositions, invalid cases, and an observable execution trace. The episode asks how explicit organization persists through time in hardware: where each object is represented, which Forth word performs a lawful transformation, how one transformation makes the next available, and how a halt or error condition can be verified. Its purpose is not to present Forth as an unexplained implementation layer, but to test whether the structured program remains legible when it meets a physical machine.
+
+Episode Summary:
+
+* Carry Episode 10’s named algebraic objects into a concrete GA144 representation
+* Map states, events, relations, transformations, and constraints to inspectable Forth words and storage
+* Show time as an ordered, traceable succession of permitted state transitions rather than an abstract slogan
+* Show organization as the explicit arrangement of objects, memory, words, constraints, and observable consequences
+* Work through one small finite-state example with an initial state, inputs, a visible trace, and a halt or error condition
+* Test that invalid transitions and failed conditions have a locatable cause rather than appearing as unexplained output
+* Preserve the distinction between a legible finite-state controller and a general claim of autonomous intelligence
 
 ### Episode #12
 
