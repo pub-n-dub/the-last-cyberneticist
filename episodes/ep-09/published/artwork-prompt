@@ -2,6 +2,8 @@ Create a square, richly detailed vintage scientific-technical poster for Episode
 
 The central illustration is the Four-Bit Wonder as a dignified wire-wrapped bench instrument, shown in a slightly elevated three-quarter view. It should be recognizably a handmade board: socketed chips, orderly point-to-point wire-wrap connections, four target switches, a small SRAM, a 74LS85 comparator, and three indicator lamps. Do not render it as a generic modern motherboard or a dense photographic close-up. The board must feel legible: a machine whose paths can be followed.
 
+Use a small upper-left identification panel reading exactly “THE FOUR-BIT WONDER” and “A LEGIBLE BENCH MACHINE.” Label the central board exactly “FOUR-BIT WONDER.” Do not include references to *Astounding Science Fiction*, August 1950, J. J. Coupling, or any quotation or attribution.
+
 The central visual argument is that a comparator lamp counts as evidence only when the signal paths and control state are valid. Show two clearly separate engraved routes meeting at the comparator:
 
 - a left route labelled “MEMORY WORD,” emerging from a selected SRAM in a valid READ condition;
@@ -11,7 +13,7 @@ The central visual argument is that a comparator lamp counts as evidence only wh
 
 Surround the board with restrained technical insets that make the episode’s formal argument visible:
 
-- upper left: “VALID READ” with a small control-state panel: CHIP SELECT active, WRITE ENABLE inactive, MEMORY OUTPUT AVAILABLE;
+- upper left: “VALID READ” with a small control-state panel: CHIP SELECT active, WRITE ENABLE inactive, DATA OUTPUT AVAILABLE (VALID DATA). Do not show or imply an `/OE` control signal;
 - upper right: “NOT EVIDENCE” with a high-impedance or floating output drawn as a broken, faded line, accompanied by the short phrase “A LAMP ALONE IS NOT A FACT”;
 - left middle: “TWO WORDS, TWO ROLES,” showing the same binary pattern taking distinct roles as ADDRESS, TARGET, and STORED WORD according to its path and operation;
 - right middle: “TRACEABLE CONDUCT,” with a modest sequence: SET TARGET → SELECT ADDRESS → READ → COMPARE → OBSERVE. Do not depict autonomous writing or learning;
