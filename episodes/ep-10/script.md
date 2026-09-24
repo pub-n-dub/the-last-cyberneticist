@@ -98,7 +98,7 @@ That lineage needs both a formal account and a physical home. A finite-state pro
 
 For now, Multenions gives us a direction of travel. We will pursue finite-state programs as explicit algebraic objects. We will ask whether their operations can be structured so that a machine’s conduct remains visible not only after it has produced a result, but while it is being built, tested, repaired, and changed.
 
-Next, we will ask whether these explicit objects can survive contact with a real machine. Can a structured algebra be rendered as Forth on the GA144 without losing the legibility it promised? Which Forth representation corresponds to each object, which word performs each transformation, how does word composition realize the algebra’s lawful composition, and what trace lets another person tell that the machine did what we say it did?
+Next, we will make the bridge from algebra to algorithm. Naming objects and lawful operations is not yet enough: a machine also needs a stated rule for choosing its next operation, a sequence it may follow, conditions that halt it or expose an error, and a trace another person can inspect. We will specify that finite-state program before asking a real machine to carry it. Only then can the later GA144 and Forth implementation test whether this structure survives contact with hardware without losing the legibility it promised.
 
 Thank you for listening.
 
