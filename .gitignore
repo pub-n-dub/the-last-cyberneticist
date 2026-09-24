@@ -1,3 +1,4 @@
 *.aup3-wal
 *.aup3
 episodes/ep-02/project/episode-2.aup3-shm
+*.~lock.script.odt#
