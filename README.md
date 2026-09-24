@@ -187,7 +187,7 @@ Episode Summary:
 * Preserve finite-model theory and Trakhtenbrot for a qualified subscriber research note rather than overstating what a four-bit comparator proves
 * Lead into Episode 10’s structured-algebra question: how explicit states, relations, transformations, and compositions can form a program
 
-Technical preparation for Episodes 10 and 11: document a minimal Multenions specification that names its elementary objects, lawful operations, compositions, and invalid cases; express one finite-state program as a worked example with an initial state, inputs, trace, and halt or error condition; then map each object and transformation to a Forth representation and word on the GA144. The purpose is to make Episode 11 a testable realization of Episode 10’s algebraic claim, rather than treating Forth code as an unexplained implementation detail.
+Technical preparation for Episodes 10–13: document a minimal Multenions specification that names its elementary objects, lawful operations, compositions, and invalid cases; discern an appropriate finite-state algorithm with an initial state, inputs, trace, and halt or error condition; illustrate that algorithm independently of a particular implementation; then map each object and transformation to a Forth representation and word on the GA144. The purpose is to make Episode 13 a testable realization, rather than treating Forth code as an unexplained implementation detail.
 
 ### Episode #10
 
@@ -205,29 +205,57 @@ Episode Summary:
 * Introduce, but do not yet establish, the exact objects, operations, constraints, and uniqueness claim that would make Multenions formally distinct
 * End by asking how those explicit algebraic objects can be rendered as Forth words on the GA144 without losing their legibility
 
-Possible bridge before Episode 11: if the historical Multenions specification cannot be mapped directly and responsibly to GA144 Forth, insert a bridge episode. It should establish the exact formal objects, lawful operations, invalid compositions, representations, and trace conditions required for an implementation. It should also use Trakhtenbrot and Barzdin’s distinction between an automaton’s behaviour and the synthesis of its program to identify the algorithmic structure being realized, rather than treating a Forth implementation as evidence by assertion. Only then should Episode 11 claim to test a concrete Multenions realization on hardware.
-
 ### Episode #11
 
-_Multenions Transition Automation in GA144_
+_From Algebra to Algorithm: Multenions and Program Synthesis_
 
-Episode 11 puts Episode 10’s claim to work on a real machine. A minimal Multenions finite-state program is rendered on the GA144 as explicit Forth representations: named states, events, relations, transformations, permitted compositions, invalid cases, and an observable execution trace. The episode asks how explicit organization persists through time in hardware: where each object is represented, which Forth word performs a lawful transformation, how one transformation makes the next available, and how a halt or error condition can be verified. Its purpose is not to present Forth as an unexplained implementation layer, but to test whether the structured program remains legible when it meets a physical machine.
+An algebra gives computing a vocabulary and a discipline: it tells us what objects exist, what operations are lawful, and which compositions are forbidden. It does not, by itself, tell a machine what to do next. That requires an algorithm: a rule for selecting operations in sequence, under stated conditions, toward a halt, error, or other completion condition. This bridge episode turns Episode 10’s structured-algebra proposal into an implementable program design. Drawing on Trakhtenbrot and Barzdin’s distinction between an automaton’s behaviour and the synthesis of its program, it asks what exact algorithmic structure must be constructed before a Forth implementation can be evidence of anything more than a convenient encoding.
 
 Episode Summary:
 
-* Carry Episode 10’s named algebraic objects into a concrete GA144 representation
-* Map states, events, relations, transformations, and constraints to inspectable Forth words and storage
-* Show time as an ordered, traceable succession of permitted state transitions rather than an abstract slogan
-* Show organization as the explicit arrangement of objects, memory, words, constraints, and observable consequences
-* Work through one small finite-state example with an initial state, inputs, a visible trace, and a halt or error condition
-* Test that invalid transitions and failed conditions have a locatable cause rather than appearing as unexplained output
-* Preserve the distinction between a legible finite-state controller and a general claim of autonomous intelligence
+* Distinguish algebraic structure from an algorithm that selects and orders lawful operations
+* Specify the objects, relations, transformations, preconditions, invalid compositions, and observable consequences required by the proposed Multenions programme
+* Choose and justify a finite-state algorithmic structure: state representation, transition rule, input handling, memory update, verification, and halt or error condition
+* Show why `Compare` does not itself select a revision, and why a relation cannot become a `Write` without an intervening decision and transformed value
+* Define the trace and failure evidence another builder needs in order to reconstruct or challenge the program’s conduct
+* Separate McAulay’s historical formal programme from the modern implementation mapping, making any claimed correspondence explicit and testable
+* End with a prepared specification for Episode 12’s illustrative execution cycle
 
 ### Episode #12
 
+_A Machine Must Know Its Next Move_
+
+Episode 12 makes the central claim visible before it is entrusted to a complex machine. A held `Target` and a remembered `Candidate` are compared; the relation selects one lawful next operation—step upward, step downward, or halt; the revised candidate is written and verified; and a trace lets another person determine whether that sequence actually occurred. The example is deliberately small, but it establishes an existential criterion for machine-intelligence innovation: a machine needs more than a result or an algebraic vocabulary. It needs explicit distinctions, an algorithm for acting on them through time, constraints against invalid action, persistent state, and publicly inspectable evidence of its conduct. The episode is not a Forth tutorial. It is the demonstration that makes a later GA144 implementation meaningful.
+
+Episode Summary:
+
+* Work through `Compare → StepUp/StepDown/Halt → Write → Verify` as one complete, traceable cycle
+* Make clear why a relation does not determine an action until an algorithm specifies the next lawful operation
+* Show how state, memory, transition rules, invalid cases, verification, and halt conditions form one intelligible organization
+* Treat the ability to reconstruct a machine’s conduct as a criterion of meaningful machine-intelligence innovation
+* Preserve the distinction between a small legible controller and a general claim of autonomous intelligence
+* End by asking how this exact cycle can be represented without loss on the GA144
+
+### Episode #13
+
+_Multenions Transition Automation in GA144_
+
+Episode 13 puts Episodes 10–12’s claim to work on a real machine. A minimal Multenions finite-state program is rendered on the GA144 as explicit Forth representations: named states, events, relations, transformations, permitted compositions, invalid cases, and an observable execution trace. The episode asks how explicit organization persists through time in hardware: where each object is represented, which Forth word performs a lawful transformation, how one transformation makes the next available, and how a halt or error condition can be verified. Its purpose is not to present Forth as an unexplained implementation layer, but to test whether the structured program remains legible when it meets a physical machine.
+
+Episode Summary:
+
+* Carry Episode 12’s demonstrated objects and algorithm into a concrete GA144 representation
+* Map states, events, relations, transformations, and constraints to inspectable Forth words and storage
+* Show time as an ordered, traceable succession of permitted state transitions rather than an abstract slogan
+* Show organization as the explicit arrangement of objects, memory, words, constraints, and observable consequences
+* Verify that invalid transitions and failed conditions have a locatable cause rather than appearing as unexplained output
+* Preserve the distinction between a legible finite-state controller and a general claim of autonomous intelligence
+
+### Episode #14
+
 _The Polysance Initiative_
 
-Episode 12 turns the series' argument outward through Polysance, a nonprofit educational initiative in electronic computing, programming, and integrated-circuit design. Its first-principles, cross-disciplinary approach, informed by Charles H. Moore's work and Forth methodology, supplies a practical answer to the series' question of merit. This is also a donor-facing episode: it asks viewers to support hands-on education for bored, intelligent children who need genuine intellectual challenge rather than another polished technology spectacle. The comparator game becomes the proof of concept: modest enough to be truthful, tangible enough to invite participation, and clear enough to replace passive consumption with shared inquiry.
+Episode 14 turns the series' argument outward through Polysance, a nonprofit educational initiative in electronic computing, programming, and integrated-circuit design. Its first-principles, cross-disciplinary approach, informed by Charles H. Moore's work and Forth methodology, supplies a practical answer to the series' question of merit. This is also a donor-facing episode: it asks viewers to support hands-on education for bored, intelligent children who need genuine intellectual challenge rather than another polished technology spectacle. The comparator game becomes the proof of concept: modest enough to be truthful, tangible enough to invite participation, and clear enough to replace passive consumption with shared inquiry.
 
 Episode Summary:
 
@@ -241,11 +269,11 @@ Episode Summary:
 * Define merit through legibility, participation, repairability, and the ability to test a claim together
 * Make a direct case for donations to support the materials, preparation, patient teaching, and learner access that this educational work requires
 
-### Episode #12
+### Episode #15
 
 _Advent of Holmes: The Tati Robot_
 
-Episode 12 changes genre. It is neither a bench episode nor a straight history: it is a restrained `Sherlock` case file about an unidentified robot found in a Paris second-hand store in the early 2000s by Daniel Dennett. The question is not whether the machine can be made into a legend, but what the available evidence can actually support about who built it and the workshop culture from which it emerged.
+Episode 15 changes genre. It is neither a bench episode nor a straight history: it is a restrained `Sherlock` case file about an unidentified robot found in a Paris second-hand store in the early 2000s by Daniel Dennett. The question is not whether the machine can be made into a legend, but what the available evidence can actually support about who built it and the workshop culture from which it emerged.
 
 Episode Summary:
 
@@ -257,11 +285,11 @@ Episode Summary:
 * End with a bounded inference: the robot most likely emerged from a Berkeley-adjacent machine culture that exceeded the published official line
 * Preserve the investigative tone through documents, photographs, uncertainty, and explicit distinctions between evidence and speculation
 
-### Episode #13
+### Episode #16
 
 _A Truly Machine-Intelligent System: The Autonomous Board_
 
-Episode 13 builds the Four-Bit Wonder Machine Autonomous Version on a new Vector `8016-1` wire-wrap board. The original photographed machine remains an intact manual reference. The new board is a separate, progressive controller: it captures a target, reads a stored candidate, compares them, changes the candidate one step toward the target, writes the revision, and halts on equality.
+Episode 16 builds the Four-Bit Wonder Machine Autonomous Version on a new Vector `8016-1` wire-wrap board. The original photographed machine remains an intact manual reference. The new board is a separate, progressive controller: it captures a target, reads a stored candidate, compares them, changes the candidate one step toward the target, writes the revision, and halts on equality.
 
 Episode Summary:
 
@@ -272,7 +300,7 @@ Episode Summary:
 * Phase 2: scan all 64 exposed addresses automatically, advancing only after the current address reaches its target
 * Keep Phase 2B per-address target memory optional, so the first autonomous result remains legible
 
-### Episode #14
+### Episode #17
 
 _The Preessence Esoteric of Motorola_
 
@@ -286,11 +314,11 @@ Episode Summary:
 * Use Motorola's design language to show how architecture becomes concrete at the level of opcodes, buses, registers, and board constraints
 * Prepare the ground for the final fitting work by clarifying what the machine's computational body can and cannot support
 
-### Episode #15
+### Episode #18
 
 _Away from scratch-building toward manufactured production_
 
-Episode 15 pivots from wire-wrapping and bare-metal hardware construction to the M6x09-II-SBC: a minimal seventeen-component 6809 computer on a finished PCB. The board's layout, bill of materials, manufacturing files, and repeatable assembly make the hardware stable enough to examine the software running on it: build ASSIST09 from source, verify the ROM image, load and test programs through the serial terminal, and burn a verified milestone into EPROM. Professional design matters here not as a cosmetic finish, but because it creates a dependable platform for the next level of inquiry.
+Episode 18 pivots from wire-wrapping and bare-metal hardware construction to the M6x09-II-SBC: a minimal seventeen-component 6809 computer on a finished PCB. The board's layout, bill of materials, manufacturing files, and repeatable assembly make the hardware stable enough to examine the software running on it: build ASSIST09 from source, verify the ROM image, load and test programs through the serial terminal, and burn a verified milestone into EPROM. Professional design matters here not as a cosmetic finish, but because it creates a dependable platform for the next level of inquiry.
 
 Episode Summary:
 
@@ -301,7 +329,7 @@ Episode Summary:
 * Contrast a one-off prototype with a platform that another person can assemble, inspect, repair, program, and extend
 * End by asking what clearer, more durable, and more accessible technical systems should be for
 
-### Episode #16
+### Episode #19
 
 _Feel the (ROM) Burn_
 
@@ -319,7 +347,7 @@ Episode Summary:
 * Treat the act of programming chips as a material form of software work, where verification, handling, compatibility, and retention suddenly matter again
 * Position the ROM-burning stage as the threshold between planning the system and being able to place behavior back into hardware
 
-### Episode #17
+### Episode #20
 
 _Toward RB5X Heiserman in a Hero-1 Body_
 
@@ -332,7 +360,7 @@ Episode Summary:
 * Identify what should transfer from `RB5X` and what must change because the `Hero-1` is embodied
 * Sketch credible Beta-Hero and Gamma-Hero milestones rather than promising a finished intelligence
 
-### Episode #18
+### Episode #21
 
 _Little-Lost Robot: Initial Preparations_
 
@@ -347,7 +375,7 @@ Episode Summary:
   - Choices between old and new tech
   - Restoring a straighforward ROM burner
 
-### Episode #19
+### Episode #22
 
 _Little-Lost Robot: Final Preparations_
 

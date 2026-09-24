@@ -1,0 +1,24 @@
+Create a square, richly detailed vintage scientific-technical poster for Episode 11 of “The Last Cyberneticist,” titled “From Algebra to Algorithm: Multenions and Program Synthesis.” Continue the established presentation of Episodes 5–10: a dark deep-teal, blackened-paper background; antique-gold engraved linework and serif typography; subtle aged-paper grain; a fine ornamental border; carefully arranged technical panels; and a broad warm-parchment footer carrying the series identity. The mood is reflective, austere, exact, and late-1940s to early-1970s cybernetics-documentary—not futuristic or cyberpunk.
+
+The central illustration is an elegant finite-state program specification rendered as a physical engineering folio on a drafting table: a neatly ruled state table beside a compact relay-like controller diagram, with a small mechanical selector arm moving deliberately between named stations. It must look like a machine whose next action is chosen by an explicit rule, not like a generic computer, a robot, or a mystical mathematical abstraction.
+
+The central visual argument is: an algebra names what is lawful; an algorithm determines what happens next. Show two balanced, connected fields:
+
+- on the left, “STRUCTURED ALGEBRA,” with separate engraved tokens labelled TARGET, CANDIDATE, RELATION, TRANSFORMATION, and WRITE;
+- on the right, “ALGORITHM,” with a precise ordered sequence: READ → COMPARE → DECIDE → STEP → WRITE → VERIFY → HALT;
+- connect the fields with a single prominent bridge labelled “LAWFUL NEXT MOVE.”
+
+Make the distinction between the target and candidate unambiguous. Show two separate four-bit registers, both legibly distinct in role even when their binary marks are similar. The target register is stable and sealed; the candidate register is the only one connected to the step and write path. Do not show a direct path from comparison to writing.
+
+Surround the central folio with restrained technical insets:
+
+- upper left: “BEHAVIOUR,” showing a small observable trace of named states and events;
+- upper right: “PROGRAM SYNTHESIS,” showing a state table becoming a constructed controller, with the subtitle “WHAT MUST BE BUILT?”;
+- left middle: “PRECONDITIONS,” showing that LOWER permits STEP UP, HIGHER permits STEP DOWN, and EQUAL permits HALT;
+- right middle: “FORBIDDEN,” showing a barred arrow from COMPARE directly to WRITE, labelled “RELATION IS NOT A REVISED VALUE”;
+- lower left: “ERROR HAS A PLACE,” with a small branch to INVALID READ, INVALID WRITE, and FAILED VERIFY;
+- lower right: “NOT YET AN IMPLEMENTATION,” showing Forth, a tiled processor array, and a wire-wrapped sequencer only as three tiny distant possible representations, not as the central subject.
+
+At the top, use the exact title: “FROM ALGEBRA TO ALGORITHM.” Use the smaller subtitle: “Multenions and Program Synthesis.” At the bottom, on the warm-parchment panel, use: “THE LAST CYBERNETICIST” and “Episode 11 — From Algebra to Algorithm.” Preserve generous spacing, symmetrical editorial structure, warm gold-on-teal contrast, and the sober museum-plate quality of a technical field document.
+
+Avoid: humanoid robots, glowing brains, DNA helices, cyberpunk neon, glossy modern UI elements, generic microchip imagery, split human/machine faces, mystical auras, floating equations as decoration, generic neural-network graphics, black-box AI symbolism, or claims that a GA144 implementation has already been built. Do not invent mathematical axioms or operators for Multenions. No logos.

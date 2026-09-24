@@ -1,0 +1,29 @@
+Create a square, richly detailed vintage scientific-technical poster for Episode 12 of “The Last Cyberneticist,” titled “A Machine Must Know Its Next Move.” Continue the established presentation of Episodes 5–11: a dark deep-teal, blackened-paper background; antique-gold engraved linework and serif typography; subtle aged-paper grain; a fine ornamental border; carefully arranged technical panels; and a broad warm-parchment footer carrying the series identity. The mood is reflective, austere, exact, and late-1940s to early-1970s cybernetics-documentary—not futuristic or cyberpunk.
+
+The central illustration is a complete, intelligible four-bit control cycle, shown as a dignified bench-instrument study rather than a finished autonomous machine. Two separate engraved registers sit at the top of the central panel: TARGET = 1001, fixed and stable; CANDIDATE = 0110, initially lower. A small comparator lies between them, with the two signal paths visibly separate until they enter opposite sides. Beneath the comparator, show a carefully ordered progression of candidate cards or register windows: 0110 → 0111 → 1000 → 1001. The target must remain 1001 throughout.
+
+The central visual argument is that a machine must have an explicit, lawful next move. Connect the cycle with clear numbered stages:
+
+1. READ CANDIDATE
+2. COMPARE
+3. LOWER: STEP UP
+4. WRITE CANDIDATE
+5. VERIFY
+6. EQUAL: HALT
+
+Show each completed step returning through verification before another comparison. At the final equality, place a restrained red lamp or seal labelled “HALT,” not a celebratory AI icon. The image must make it impossible to mistake comparison for writing, or writing for verification.
+
+Surround the central cycle with restrained technical insets:
+
+- upper left: “TWO WORDS, TWO ROLES,” showing TARGET and CANDIDATE as distinct objects even when their bits could coincide;
+- upper right: “THE ALGORITHM,” a concise decision panel: LOWER → STEP UP; HIGHER → STEP DOWN; EQUAL → HALT;
+- left middle: “NOT PERMITTED,” showing barred arrows from COMPARE directly to WRITE and from TARGET directly to CANDIDATE STORE;
+- right middle: “TRACE OF CONDUCT,” showing: 6 → lower → 7 → verify → lower → 8 → verify → lower → 9 → verify → equal → halt;
+- lower left: “ERROR, NOT PRETENCE,” showing a failed verification leading to an explicit ERROR state;
+- lower right: “A BOUNDED CONTROLLER,” stating only “VISIBLE STATE · LAWFUL ACTION · PERSISTENT MEMORY · INSPECTABLE TRACE.” Do not imply learning, self-generated goals, or general intelligence.
+
+Include a small lower bridge titled “NEXT: REPRESENTATION ON GA144.” Show the same named objects being carefully mapped to a few short Forth-style word blocks and a tiny tiled processor array. It should be an unfulfilled technical promise, not a product logo and not a completed implementation.
+
+At the top, use the exact title: “A MACHINE MUST KNOW ITS NEXT MOVE.” Use the smaller subtitle: “State, Algorithm, Verification, Halt.” At the bottom, on the warm-parchment panel, use: “THE LAST CYBERNETICIST” and “Episode 12 — A Machine Must Know Its Next Move.” Preserve generous spacing, symmetrical editorial structure, warm gold-on-teal contrast, and the sober museum-plate quality of a technical field document.
+
+Avoid: humanoid robots, glowing brains, DNA helices, cyberpunk neon, glossy modern UI elements, generic microchip imagery, split human/machine faces, mystical auras, floating equations as decoration, neural-network graphics, black-box AI symbolism, modern dashboard graphics, or a claimed GA144 build. No logos.
