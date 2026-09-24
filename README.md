@@ -193,7 +193,7 @@ Technical preparation for Episodes 10 and 11: document a minimal Multenions spec
 
 _Multenions: A Structured Algebra_
 
-Episode 10 continues Episode 9’s finite-state question by introducing Multenions as a structured algebra. Its concern is not a generic claim that an opaque system has found an answer, but whether a finite-state program can be pursued as an exercise in explicit algebraic objects: states, relations, transformations, and the lawful compositions that connect them. The contrast is with contemporary AI systems whose useful results often emerge from gradient-trained parameter spaces and accumulated examples, while their internal route to a result remains difficult to state and reconstruct. The episode does not deny that such systems can be powerful. It asks what becomes possible when the structure of a program is itself the object of inspection. Multenions’ claimed uniqueness among algebras should be introduced as the episode’s thesis and earned through its particular objects, operations, and constraints.
+Episode 10 continues Episode 9’s finite-state question by introducing Multenions as a structured algebra. The name comes from Alexander McAulay’s *Algebra after Hamilton, or Multenions* (1908), following his earlier *Octonions: a Development of Clifford’s Bi-quaternions* (1898) and later work on multenions and differential invariants. McAulay’s “octonions” were a development of Clifford’s biquaternions, not the algebra now usually called the octonions. In the record available to the project, he appears to be Multenions’ only sustained exponent; that is a qualified research finding, not a settled exclusivity claim. The episode does not claim that every finite-state controller is already McAulay’s calculus. It asks whether named states, relations, transformations, and lawful compositions can be brought into contact with programs and machines we can inspect. The contrast is with contemporary AI systems whose useful results often emerge from gradient-trained parameter spaces and accumulated examples, while their internal route to a result remains difficult to state and reconstruct. The episode does not deny that such systems can be powerful. It asks what becomes possible when the structure of a program is itself the object of inspection.
 
 Episode Summary:
 
@@ -201,9 +201,11 @@ Episode Summary:
 * Introduce Multenions as a structured algebra whose programmatic objects and operations are intended to remain explicit
 * Treat a finite-state program as a constructed algebraic object rather than an opaque result or a loose flowchart
 * Make the intended contrast with gradient-trained, data-intensive systems precise without caricaturing all contemporary AI
-* Identify the objects, operations, compositions, constraints, and observable consequences that make the algebra distinct
-* Test the claim of uniqueness through a worked finite-state example rather than merely asserting it
+* Use a small `Compare → StepUp/StepDown → Write → Verify` fragment to distinguish permitted composition from forbidden shortcuts
+* Introduce, but do not yet establish, the exact objects, operations, constraints, and uniqueness claim that would make Multenions formally distinct
 * End by asking how those explicit algebraic objects can be rendered as Forth words on the GA144 without losing their legibility
+
+Possible bridge before Episode 11: if the historical Multenions specification cannot be mapped directly and responsibly to GA144 Forth, insert a bridge episode. It should establish the exact formal objects, lawful operations, invalid compositions, representations, and trace conditions required for an implementation. It should also use Trakhtenbrot and Barzdin’s distinction between an automaton’s behaviour and the synthesis of its program to identify the algorithmic structure being realized, rather than treating a Forth implementation as evidence by assertion. Only then should Episode 11 claim to test a concrete Multenions realization on hardware.
 
 ### Episode #11
 

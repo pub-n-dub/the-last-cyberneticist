@@ -8,11 +8,17 @@ This episode is called *Multenions: A Structured Algebra*.
 
 Last time, we stayed with the Four-Bit Wonder long enough to make a simple claim. A light at the edge of a circuit is not automatically a fact. Before it can count as evidence, we have to know which word was present, which memory location was selected, which control state the machine occupied, which path carried the signal, and what operation was actually permitted.
 
-That discipline gave us a finite-state system in miniature. The board has a bounded repertoire of conditions. A word can be present or absent on a path. A memory location can be selected. A read can be valid. A write can be valid. A comparator can report lower, equal, or higher. The possible situations are not infinite, and neither are the transitions between them. They can be traced.
+That discipline gave us a finite physical arrangement whose configurations can be treated as a state system. The board has a bounded repertoire of conditions. A word can be present or absent on a path. A memory location can be selected. A read can be valid. A write can be valid. A comparator can report lower, equal, or higher. The possible situations are not infinite, and neither are the transitions between them. They can be traced.
 
 Today I want to pursue a more ambitious question. What if we did not treat that trace merely as a description we draw after a machine has been built? What if states, relations, transformations, and their permitted compositions were themselves the material of a program?
 
 That is the direction I want to introduce through Multenions: a structured algebra.
+
+Multenions is not a new name invented for this series. It comes from Alexander McAulay, whose 1908 paper was called *Algebra after Hamilton, or Multenions*. McAulay worked in the long aftermath of Hamilton’s quaternions. He also published *Octonions: a Development of Clifford’s Bi-quaternions* in 1898, and returned to multenions in a sequence of papers on differential invariants in the 1920s.
+
+The historical line needs care. It is tempting to say quaternions, then octonions, then multenions, as though each word named one simple ladder of ever-larger numbers. It does not. McAulay’s “octonions” were his name for a development of Clifford’s biquaternions; they are not the algebra now usually called the octonions. Multenions was his later attempt to systematize an algebraic method after Hamilton. In the record available to this project, McAulay appears to be its only sustained exponent. That is a research finding to be checked, not a claim that one name settles a theory.
+
+This episode also does not claim that every finite-state controller is already McAulay’s calculus. It begins a more modest task: to see whether the insistence on named kinds of object, lawful operations, and explicit composition can be brought into contact with programs and machines we can inspect. The exact historical and formal correspondence has to be earned in the work that follows.
 
 The word algebra can make a listener expect a blackboard full of symbols. Sometimes it deserves that expectation. But the first useful sense of algebra is much plainer. An algebra tells us what kinds of things we are dealing with, what can be done to them, and what follows when those operations are combined. It does not merely name objects. It makes their relations and transformations answerable to rules.
 
@@ -68,6 +74,8 @@ The point is not the particular arithmetic. The point is that each item can be n
 
 In a structured algebra, those distinctions are not merely good habits for a careful engineer. They are candidates for the very objects and operations through which the program is expressed. That is the bridge from a finite-state diagram to a finite-state program with an intelligible form.
 
+Here is one small fragment, stated as a program rather than as a diagram. Let `Candidate` and `Target` be distinct objects. Let `Compare(Candidate, Target)` yield one relation: lower, equal, or higher. Only `lower` permits `StepUp(Candidate)`; only `higher` permits `StepDown(Candidate)`; and only the result of one of those steps permits `Write` to the candidate store. `Write(Target)` is not an alternative spelling of the same operation. It is forbidden by the stated roles. Nor may `Write` follow directly from `Compare`: a relation is evidence, not yet a revised value. The short sequence `Compare → lower → StepUp → Write → Verify` tells another builder both what may happen and what must not be silently skipped.
+
 At this point, it is fair to ask what makes Multenions unique among algebras. The answer cannot responsibly be: it has a remarkable name. Nor can it be: it is unique because we have declared it so. Uniqueness must be earned by a particular account of its objects, operations, constraints, and compositions. If the same account could be replaced without loss by an ordinary table of numbers, a generic flowchart, or an unstructured sequence of instructions, then its special claim has not yet been made.
 
 This episode therefore introduces the thesis rather than pretending to settle it by assertion. Multenions proposes that there is a distinctive structured account of programmatic conduct available here. In the episodes that follow, that proposal has to acquire sharper form. We will need to state what its elementary objects are. We will need to show what operations it permits and forbids. We will need to demonstrate a composition that would be obscure if left as ordinary control flow. And we will need to build or simulate a finite example whose behavior can be checked.
@@ -99,7 +107,8 @@ Thank you for listening.
 - W. Ross Ashby, *Design for a Brain*, 2nd ed. (1960): organization, regulation, and the conditions of adaptive behavior.
 - John E. Hopcroft, Rajeev Motwani, and Jeffrey D. Ullman, *Introduction to Automata Theory, Languages, and Computation*, 3rd ed. (2006): finite-state systems, transitions, and formal-language vocabulary.
 - B. A. Trakhtenbrot and Ya. M. Barzdin, *Finite Automata: Behavior and Synthesis* (1973): behavior and synthesis in automata theory.
+- Alexander McAulay, “Algebra after Hamilton, or Multenions” (1908), and “Multenions and Differential Invariants” I–III (1921–1923): the historical Multenions programme and its later development.
 
 ## Drafting note (not spoken)
 
-Before recording, add the formal Multenions reference or specification that defines its elementary objects, operations, and uniqueness claim. This draft deliberately introduces the pursuit without inventing those axioms.
+Before recording, verify the historical wording against McAulay’s original papers and add the formal Multenions specification that defines its elementary objects, operations, and uniqueness claim. This draft introduces the historical programme and a modern finite-state exercise without inventing an equivalence between them.
