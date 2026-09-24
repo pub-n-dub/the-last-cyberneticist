@@ -2,38 +2,49 @@
 
 ## Title
 
-`Feel the (ROM) Burn`
+`A Truly Machine-Intelligent System: The Autonomous Board`
 
 ## Script
 
 Welcome to Episode 16 of `The Last Cyberneticist`.
 
-This episode is called `Feel the (ROM) Burn`.
+This episode is called `A Truly Machine-Intelligent System: The Autonomous Board`.
 
-In the previous episode, we followed the processor to its first question after power-on: where do I begin?
+Episode 9 argued that architecture can be understood as a language in matter. This episode asks the practical follow-up: what happens when the relation shown by the comparator is allowed to enter a controlled cycle?
 
-For the M6x09-II-SBC, the answer is an EPROM.
+The answer is not to keep adding parts to the photographed Four-Bit Wonder until its original clarity disappears. That board remains intact. It is the manual reference machine: small, readable, and useful precisely because a person remains inside every operation.
 
-The `27C128` does not contain an idea of a program. It contains the actual bytes that the processor will read when the board resets. If those bytes are wrong, the machine's behavior is wrong. If we cannot say where they came from, how they were built, or whether they were verified, then we do not yet have a durable system. We have a guess installed in a socket.
+The autonomous version is a separate build on a new Vector `8016-1` wire-wrap board.
 
-That is why ROM burning deserves to be treated as software work in material form.
+Its first job is deliberately narrow. Capture a four-bit target. Read one candidate word from SRAM. Compare candidate and target. If the candidate is too low, raise it by one step. If it is too high, lower it by one step. Write the revised word back. Stop when the candidate and target match.
 
-The reliable path begins before the programmer is switched on. Build the ASSIST09 monitor from source. Verify the resulting ROM image. Use the known-good monitor to load an experiment into RAM through the serial terminal. Run it there first.
+That is a hill climber.
 
-RAM is the fast loop.
+It is not a general intelligence. It is not a machine with a hidden interior life. It is a controlled read-compare-step-write cycle whose behavior can be watched at a slow clock rate.
 
-It is where a program can be changed, sent, tested, and changed again without turning every small experiment into a permanent hardware operation.
+The distinction matters because the whole value of this project lies in keeping the claim proportional to the evidence. The target latch holds the desired word. The candidate register holds the value under revision. The `74LS85` produces the relation. The sequencer gives each operation a place in time. A tri-state driver makes sure that the revised value is placed on the SRAM bus only when it is safe to write.
 
-Only when the image has earned trust in RAM should it become an EPROM candidate.
+In other words, the machine has to earn every step.
 
-Then the task becomes careful and ordinary. Read the existing chip and preserve a backup. Select the exact device. Blank-check the replacement. Program the verified image with the Batronix Barlino II 32P. Verify the result. Label the chip with its image and date. Record what board, adapter, and test conditions were involved.
+Read and load.
 
-Each step is modest.
+Compare.
 
-Together, they turn a file into a milestone.
+Step.
 
-The value is not in the drama of putting a chip into a programmer. The value is that a later person can recover the chain of evidence: this source made this image; this image passed this test; this chip contains that image; this board booted with it.
+Write.
 
-That is how behavior becomes durable without becoming mysterious.
+Then begin again, unless equality has halted the cycle.
 
-A burned ROM is not the end of experimentation. It is the point at which one experiment is stable enough to support the next.
+The build order should follow the same logic. First verify the mode controls. Then verify the comparator indications. Then capture a target and prove that it remains stable. Then make one controlled up or down step without writing SRAM. Then test one automatic read-modify-write cycle. Only after that should continuous operation be allowed.
+
+This is not caution for its own sake. It is how we prevent bus contention, accidental writes, and a story that outruns the machine.
+
+Phase 1 concerns a single selected address. Phase 2 extends the idea across the exposed sixty-four addresses. An automatic address counter moves on only after the current location reaches its target. The board therefore becomes a small field of local corrections rather than a single demonstration.
+
+There is an optional future extension in which each address has its own stored target. That is interesting, but it is not necessary for the first achievement. The first achievement is enough: the board sees a difference, acts once in the indicated direction, preserves the result, and stops when the relation is satisfied.
+
+The difference is no longer only displayed.
+
+It has entered the machine's own cycle of correction.
+

@@ -1,47 +1,59 @@
-# Episode 14 Script
+# Episode 11 Script
 
 ## Title
 
-`The Preessence Esoteric of Motorola`
+`Criteria of Merit: Polysance`
 
 ## Script
 
-Welcome to Episode 14 of `The Last Cyberneticist`.
+Welcome to Episode 11 of `The Last Cyberneticist`.
 
-This episode is called `The Preessence Esoteric of Motorola`.
+This episode is called `Criteria of Merit: Polysance`.
 
-We have spent time with wires, memory, comparators, and the small visible cycles that make a machine seem to act. But there is another object at the center of all of this: the processor.
+The previous episodes have been concerned with very small machines and very careful claims. A memory board remembers while power is present. A comparator makes a relation visible. A separate autonomous board can move a stored candidate toward a target in a controlled cycle.
 
-The processor is not the whole computer. It cannot remember without memory, speak without an interface, or persist without ROM. But it is where instruction, timing, address, and decision are gathered into a sequence.
+Those are technical facts. But they also raise an educational question, and a practical one.
 
-For this part of the story, the Motorola `6808` and `6809` matter because they make that sequence legible.
+What should a person be allowed to see when we teach machine intelligence?
 
-They belong to an era when a computer's boundaries could still be held in view. Registers have names. Buses have jobs. An instruction reaches for an address. A peripheral occupies a place in memory. A reset vector tells the processor where to begin.
+And who will make that kind of education possible?
 
-None of that is mystical.
+Too often, the answer is a polished surface and a large claim. The interesting parts are hidden. The terms are vague. The machine is treated as impressive before anyone has been given a way to inspect what it is doing.
 
-It is an agreement between silicon, wiring, and program.
+Polysance offers a different direction: education in electronic computing, programming, and integrated-circuit design through a first-principles, cross-disciplinary approach. Its interest in Charles H. Moore's work and Forth methodology matters here because it keeps returning to a useful demand. Can we see the organization clearly enough to reason about it?
 
-The M6x09-II-SBC gives us a concrete way to see the agreement. Its `6809` does not float in an invisible cloud of services. It reads from memory, reaches the serial interface, and begins in ROM. What software can do depends on those physical arrangements: how memory is divided, what address belongs to a device, what clock is available, and what instructions the processor understands.
+This is especially important for children who are intelligent enough to be bored by the usual material. Boredom is not always a failure of attention. Sometimes it is the experience of being ready for a real problem and being offered only a simplified performance of one.
 
-This is why processor choice is never merely a matter of speed or nostalgia.
+Those children do not need to be flattered with the language of genius. They need access to demanding, tangible work: a circuit to trace, a memory location to select, a value to test, a mistake that can be found, and an explanation that holds up when they ask another question.
 
-Choose a processor and you also choose a vocabulary of operations, a shape of memory, a set of constraints, and a particular discipline for the programmer. The machine does not become less expressive because its limits are visible. Its limits become possible to reason about.
+The Four-Bit Wonder becomes an educational action in that spirit.
 
-That is the useful contrast with contemporary computing. We are often asked to accept an enormous system without being able to locate its boundaries. Here, we can point to the processor, the ROM, the RAM, the serial path, and the program that crosses between them.
+Someone chooses an address. Someone proposes a four-bit target. The machine reads a stored word and shows a relation: lower, equal, or higher. Green, red, and yellow lights do not announce an invisible intelligence. They show a concrete condition that the participant can test.
 
-The point is not that the `6809` is secretly more intelligent than a modern processor.
+Then the participant can intervene. Write a new value. Return to read mode. Compare again. The relation changes because the memory changed.
 
-The point is that it is close enough to the bench that we can ask better questions.
+That is the lesson.
 
-What does this instruction change?
+The machine is not a black box making a claim about itself. It is an object whose state, limit, and consequence can be observed together.
 
-Where does this value live?
+The limits belong in the lesson as much as the successful demonstration. This original-board game does not choose its own values. It does not write automatically. It does not sequence phases or scan addresses. Its SRAM does not preserve content when power is removed. Saying those things does not weaken the demonstration. It makes the demonstration trustworthy.
 
-What happens after reset?
+There is a separate autonomous board for the next level of exploration. It should remain separate, because the distinction between a manual comparison game and a controller that acts on comparison is exactly what the learner needs to understand.
 
-And how do we know that the program we wrote is the program the machine will actually execute?
+So the criterion of merit is not whether we can persuade someone that a machine is intelligent.
 
-That final question takes us from the processor to the chip that holds its first instructions.
+It is whether we can give them enough access to decide what the machine is actually doing.
 
-Next time, we burn the ROM.
+That is a good educational standard. It is also a good standard for the rest of this series.
+
+It is also why this episode is a request for support.
+
+Polysance needs donors because this kind of education takes material and time. It takes components that can be handled, repaired, and shared. It takes preparation. It takes patient teaching. It takes the freedom to let a learner remain with a difficult question long enough for it to become their own.
+
+A contribution to Polysance supports that possibility: education in which a bored, intelligent child is not treated as a problem to entertain, but as a person ready to encounter real systems and learn how to think with them.
+
+If that sounds like a worthwhile future, please support Polysance.
+
+Next time, we change the scene completely. The bench gives way to an archive, a photograph, and a question that cannot be answered by turning a switch.
+
+Who built the Tati robot?
