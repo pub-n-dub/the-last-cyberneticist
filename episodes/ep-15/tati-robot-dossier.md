@@ -355,7 +355,7 @@ The `France family connection` line is currently weak.
 
 The `engineering-culture connection` line is currently strong.
 
-So the Sherlock path should proceed like this:
+So the investigative path should proceed like this:
 
 1. Treat `Porter / Jensen / Vall` as the best named analogues for the builder profile.
 2. Treat direct authorship by them as plausible but unproven.

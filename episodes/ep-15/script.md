@@ -24,7 +24,13 @@ It is not a straight history episode.
 
 It is not a bench episode either.
 
-It is a case file.
+It is a radio drama built from a case file.
+
+The sound has to do real work: the quiet of the archive, paper and photographs
+being handled, a workshop heard at a distance, and the small mechanical noises
+that make a missing machine present. The style is deliberate—spare, precise,
+and documentary in the tradition of BBC radio drama—but the atmosphere never
+gets to invent evidence.
 
 ### INSERT - THE ROBOT
 
@@ -70,7 +76,18 @@ What I do have is a set of clues.
 
 And what I want to do in this episode is walk through those clues in a disciplined way.
 
-Just a proper Sherlock exercise.
+Not a detective fantasy. A rigorous inquiry, staged as radio drama.
+
+Most of this series has moved in the other direction. We begin with a rule,
+a circuit, or an algorithm, and deduce what it must do. Here we begin with
+the traces left by a machine and work back toward the people and practices
+that could explain it.
+
+That is not deduction. It is an evidence-bound search for the best
+explanation: inductive pattern matching, with a little abduction at its
+heart. The result will not be a proof. It will be a ranked list of plausible
+builders, and a clear account of why some candidates fit the clues better
+than others.
 
 We have an object.
 
@@ -450,7 +467,7 @@ What kind of craft discipline.
 
 ### VOICEOVER
 
-At that point, the Sherlock exercise becomes a cybernetic exercise.
+At that point, the radio drama becomes a cybernetic exercise.
 
 The mystery becomes mechanical.
 

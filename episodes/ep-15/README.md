@@ -1,4 +1,4 @@
-# Episode 8 Workspace
+# Episode 15 Workspace
 
 Working title:
 
@@ -6,7 +6,7 @@ Working title:
 
 Alternate framing:
 
-- `Sherlock and the Tati Robot`
+- `The Tati Robot: A Radio Drama of Inference`
 - `A Cinemascape of the Unknown Robot`
 - `The Hidden Builders of the Tati Robot`
 
@@ -16,11 +16,12 @@ This folder collects the research and interpretive notes for a possible future e
 
 ## Included Materials
 
-- [running-proof-unknown-robot.md](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/ep-08/running-proof-unknown-robot.md:1)
-- [tati-robot-dossier.md](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/ep-08/tati-robot-dossier.md:1)
-- [tati-robot-suspect-board.md](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/ep-08/tati-robot-suspect-board.md:1)
-- [berkeley-associates-people.md](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/ep-08/berkeley-associates-people.md:1)
-- [supplement.jpg](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/ep-08/supplement.jpg:1)
+- [running-proof-unknown-robot.md](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/ep-15/running-proof-unknown-robot.md:1)
+- [tati-robot-dossier.md](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/ep-15/tati-robot-dossier.md:1)
+- [tati-robot-suspect-board.md](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/ep-15/tati-robot-suspect-board.md:1)
+- [berkeley-associates-people.md](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/ep-15/berkeley-associates-people.md:1)
+- [supplement.jpg](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/ep-15/supplement.jpg:1)
+- [radio-drama-planner.md](/home/cartheur/ame/aiventure/aiventure-github/dublications/the-last-cyberneticist/episodes/ep-15/radio-drama-planner.md:1)
 
 ## Current Best Framing
 
@@ -43,8 +44,8 @@ The best current inference is:
 
 This folder can support:
 
-- a future `Episode 8` script
-- a `Sherlock`-style investigative episode
+- an `Episode 15` script
+- a rigorously sourced radio-drama investigative episode, with BBC-style sound grammar
 - a `cinemascape`-style narrative treatment
 - a reenactment-build research track
 

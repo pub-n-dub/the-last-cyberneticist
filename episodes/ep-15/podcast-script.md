@@ -58,7 +58,18 @@ It is not a straight history episode.
 
 It is not a bench episode either.
 
-It is a case file.
+It is a radio drama built from a case file.
+
+SFX: The quiet of an archive room. A photograph lifted from paper; a distant,
+unidentified workshop hum.
+
+HOST:
+
+The sound has to do real work: the quiet of the archive, paper and photographs
+being handled, a workshop heard at a distance, and the small mechanical noises
+that make a missing machine present. The style is deliberate—spare, precise,
+and documentary in the tradition of BBC radio drama—but the atmosphere never
+gets to invent evidence.
 
 PAUSE.
 
@@ -68,7 +79,7 @@ Not wishful thinking.
 
 Not romantic fog.
 
-Just a proper Sherlock exercise.
+Not a detective fantasy. A rigorous inquiry, staged as radio drama.
 
 MUSIC: A subtle cue shift. Still spare.
 
@@ -448,7 +459,7 @@ What kind of craft discipline.
 
 PAUSE.
 
-At that point, the Sherlock exercise becomes a cybernetic exercise.
+At that point, the radio drama becomes a cybernetic exercise.
 
 The mystery becomes mechanical.
 

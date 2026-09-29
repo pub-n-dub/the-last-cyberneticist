@@ -272,9 +272,9 @@ From strongest to weakest:
 5. `External follower using Berkeley design grammar`
 6. `French family-link explanation`
 
-## Best Current Detective Reading
+## Best Current Inferential Reading
 
-If this were a Sherlock board pinned to a wall, I would circle two statements:
+If this were an evidence board pinned to a wall, I would circle two statements:
 
 ### Circle 1
 

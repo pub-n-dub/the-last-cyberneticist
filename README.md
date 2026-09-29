@@ -273,12 +273,14 @@ Episode Summary:
 
 _Logic of a Pure Mystery: The Tati Robot_
 
-Episode 15 changes genre. It is neither a bench episode nor a straight history: it is a restrained `Sherlock` case file about an unidentified robot found in a Paris second-hand store in the early 2000s by Daniel Dennett. The question is not whether the machine can be made into a legend, but what the available evidence can actually support about who built it and the workshop culture from which it emerged.
+Episode 15 changes genre. It is neither a bench episode nor a straight history: it is a rigorously sourced radio drama, using the spare atmosphere, scene grammar, and documentary sound of a BBC-style production to investigate an unidentified robot found in a Paris second-hand store in the early 2000s by Daniel Dennett. The question is not whether the machine can be made into a legend, but what the available evidence can actually support about who built it and the workshop culture from which it emerged.
 
 Episode Summary:
 
 * Open on the Tati robot as a mystery object: too finished to read as an accidental one-off
+* Make the radio-drama form part of the argument: archive-room ambience, photographs handled as sound, workshop texture, and pauses create tension without pretending uncertainty is proof
 * Establish the known Berkeley orbit around `Simon`, `Squee`, and their named assistants
+* Contrast the series' usual deductive reasoning from algorithms and mechanisms with this episode's evidence-bound inductive and abductive search for candidate builders
 * Use the evidence for decentralized workshop labor, especially Jack Koff's offsite work on `Squee`
 * Test the credible suspect field: Porter, Jensen, Vall, Koff, Berkeley himself, or an unnamed Berkeley-adjacent workshop
 * Eliminate weak explanations, including the unsupported France-family theory
