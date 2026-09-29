@@ -1,8 +1,8 @@
-# Episode 12 Script
+# Episode 15 Script
 
 ## Title
 
-`Advent of Holmes: The Tati Robot`
+`Logic of a Pure Mystery: The Tati Robot`
 
 ## Script
 
@@ -14,9 +14,9 @@ A photograph of an unidentified robot lies on a table under a hard pool of light
 
 ### VOICEOVER
 
-Welcome to Episode 12 of `The Last Cyberneticist`.
+Welcome to Episode 15 of `The Last Cyberneticist`.
 
-This episode is called `Advent of Holmes: The Tati Robot`.
+This episode is called `Logic of a Pure Mystery: The Tati Robot`.
 
 This one is a little different.
 

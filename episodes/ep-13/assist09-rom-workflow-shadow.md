@@ -1,6 +1,6 @@
-# Episode 10: ASSIST09 ROM Workflow Shadow
+# Episode 13: ASSIST09 ROM Workflow Shadow
 
-This companion record grounds Episode 10, `Away from scratch-building toward manufactured production`, in the M6x09-II-SBC workflow it describes.
+This companion record grounds Episode 13, `Feel the (ROM) Burn`, in the M6x09-II-SBC workflow it describes.
 
 ## What The Episode Claims
 

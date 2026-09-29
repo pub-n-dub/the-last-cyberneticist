@@ -2,49 +2,56 @@
 
 ## Title
 
-`A Truly Machine-Intelligent System: The Autonomous Board`
+`The Polysance Initiative`
 
 ## Script
 
 Welcome to Episode 16 of `The Last Cyberneticist`.
 
-This episode is called `A Truly Machine-Intelligent System: The Autonomous Board`.
+This episode is called `The Polysance Initiative`.
 
-Episode 9 argued that architecture can be understood as a language in matter. This episode asks the practical follow-up: what happens when the relation shown by the comparator is allowed to enter a controlled cycle?
+The previous episodes have been concerned with very small machines and very careful claims. A memory board remembers while power is present. A comparator makes a relation visible. A separate autonomous board can move a stored candidate toward a target in a controlled cycle.
 
-The answer is not to keep adding parts to the photographed Four-Bit Wonder until its original clarity disappears. That board remains intact. It is the manual reference machine: small, readable, and useful precisely because a person remains inside every operation.
+Those are technical facts. But they also raise an educational question, and a practical one.
 
-The autonomous version is a separate build on a new Vector `8016-1` wire-wrap board.
+What should a person be allowed to see when we teach machine intelligence?
 
-Its first job is deliberately narrow. Capture a four-bit target. Read one candidate word from SRAM. Compare candidate and target. If the candidate is too low, raise it by one step. If it is too high, lower it by one step. Write the revised word back. Stop when the candidate and target match.
+And who will make that kind of education possible?
 
-That is a hill climber.
+Too often, the answer is a polished surface and a large claim. The interesting parts are hidden. The terms are vague. The machine is treated as impressive before anyone has been given a way to inspect what it is doing.
 
-It is not a general intelligence. It is not a machine with a hidden interior life. It is a controlled read-compare-step-write cycle whose behavior can be watched at a slow clock rate.
+Polysance offers a different direction: education in electronic computing, programming, and integrated-circuit design through a first-principles, cross-disciplinary approach. Its interest in Charles H. Moore's work and Forth methodology matters here because it keeps returning to a useful demand. Can we see the organization clearly enough to reason about it?
 
-The distinction matters because the whole value of this project lies in keeping the claim proportional to the evidence. The target latch holds the desired word. The candidate register holds the value under revision. The `74LS85` produces the relation. The sequencer gives each operation a place in time. A tri-state driver makes sure that the revised value is placed on the SRAM bus only when it is safe to write.
+This is especially important for children who are intelligent enough to be bored by the usual material. Boredom is not always a failure of attention. Sometimes it is the experience of being ready for a real problem and being offered only a simplified performance of one.
 
-In other words, the machine has to earn every step.
+Those children do not need to be flattered with the language of genius. They need access to demanding, tangible work: a circuit to trace, a memory location to select, a value to test, a mistake that can be found, and an explanation that holds up when they ask another question.
 
-Read and load.
+The Four-Bit Wonder becomes an educational action in that spirit.
 
-Compare.
+Someone chooses an address. Someone proposes a four-bit target. The machine reads a stored word and shows a relation: lower, equal, or higher. Green, red, and yellow lights do not announce an invisible intelligence. They show a concrete condition that the participant can test.
 
-Step.
+Then the participant can intervene. Write a new value. Return to read mode. Compare again. The relation changes because the memory changed.
 
-Write.
+That is the lesson.
 
-Then begin again, unless equality has halted the cycle.
+The machine is not a black box making a claim about itself. It is an object whose state, limit, and consequence can be observed together.
 
-The build order should follow the same logic. First verify the mode controls. Then verify the comparator indications. Then capture a target and prove that it remains stable. Then make one controlled up or down step without writing SRAM. Then test one automatic read-modify-write cycle. Only after that should continuous operation be allowed.
+The limits belong in the lesson as much as the successful demonstration. This original-board game does not choose its own values. It does not write automatically. It does not sequence phases or scan addresses. Its SRAM does not preserve content when power is removed. Saying those things does not weaken the demonstration. It makes the demonstration trustworthy.
 
-This is not caution for its own sake. It is how we prevent bus contention, accidental writes, and a story that outruns the machine.
+There is a separate autonomous board for the next level of exploration. It should remain separate, because the distinction between a manual comparison game and a controller that acts on comparison is exactly what the learner needs to understand.
 
-Phase 1 concerns a single selected address. Phase 2 extends the idea across the exposed sixty-four addresses. An automatic address counter moves on only after the current location reaches its target. The board therefore becomes a small field of local corrections rather than a single demonstration.
+So the criterion of merit is not whether we can persuade someone that a machine is intelligent.
 
-There is an optional future extension in which each address has its own stored target. That is interesting, but it is not necessary for the first achievement. The first achievement is enough: the board sees a difference, acts once in the indicated direction, preserves the result, and stops when the relation is satisfied.
+It is whether we can give them enough access to decide what the machine is actually doing.
 
-The difference is no longer only displayed.
+That is a good educational standard. It is also a good standard for the rest of this series.
 
-It has entered the machine's own cycle of correction.
+It is also why this episode is a request for support.
 
+Polysance needs donors because this kind of education takes material and time. It takes components that can be handled, repaired, and shared. It takes preparation. It takes patient teaching. It takes the freedom to let a learner remain with a difficult question long enough for it to become their own.
+
+A contribution to Polysance supports that possibility: education in which a bored, intelligent child is not treated as a problem to entertain, but as a person ready to encounter real systems and learn how to think with them.
+
+If that sounds like a worthwhile future, please support Polysance.
+
+Next time, we return to the machine and ask whether the careful distinctions of the earlier episodes can remain visible as a finite-state program on the GA144.

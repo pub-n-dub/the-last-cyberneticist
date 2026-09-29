@@ -288,7 +288,7 @@ Episode Summary:
 
 _The Polysance Initiative_
 
-Episode 14 turns the series' argument outward through Polysance, a nonprofit educational initiative in electronic computing, programming, and integrated-circuit design. Its first-principles, cross-disciplinary approach, informed by Charles H. Moore's work and Forth methodology, supplies a practical answer to the series' question of merit. This is also a donor-facing episode: it asks viewers to support hands-on education for bored, intelligent children who need genuine intellectual challenge rather than another polished technology spectacle. The comparator game becomes the proof of concept: modest enough to be truthful, tangible enough to invite participation, and clear enough to replace passive consumption with shared inquiry.
+Episode 16 turns the series' argument outward through Polysance, a nonprofit educational initiative in electronic computing, programming, and integrated-circuit design. Its first-principles, cross-disciplinary approach, informed by Charles H. Moore's work and Forth methodology, supplies a practical answer to the series' question of merit. This is also a donor-facing episode: it asks viewers to support hands-on education for bored, intelligent children who need genuine intellectual challenge rather than another polished technology spectacle. The comparator game becomes the proof of concept: modest enough to be truthful, tangible enough to invite participation, and clear enough to replace passive consumption with shared inquiry.
 
 Episode Summary:
 
@@ -306,7 +306,7 @@ Episode Summary:
 
 _Multenions Transition Automation in GA144_
 
-Episode 13 puts Episodes 10–12’s claim to work on a real machine. A minimal Multenions finite-state program is rendered on the GA144 as explicit Forth representations: named states, events, relations, transformations, permitted compositions, invalid cases, and an observable execution trace. The episode asks how explicit organization persists through time in hardware: where each object is represented, which Forth word performs a lawful transformation, how one transformation makes the next available, and how a halt or error condition can be verified. Its purpose is not to present Forth as an unexplained implementation layer, but to test whether the structured program remains legible when it meets a physical machine.
+Episode 17 puts Episodes 10–12’s claim to work on a real machine. A minimal Multenions finite-state program is rendered on the GA144 as explicit Forth representations: named states, events, relations, transformations, permitted compositions, invalid cases, and an observable execution trace. The episode asks how explicit organization persists through time in hardware: where each object is represented, which Forth word performs a lawful transformation, how one transformation makes the next available, and how a halt or error condition can be verified. Its purpose is not to present Forth as an unexplained implementation layer, but to test whether the structured program remains legible when it meets a physical machine.
 
 Episode Summary:
 
@@ -321,7 +321,7 @@ Episode Summary:
 
 _A Truly Machine-Intelligent System: The Autonomous Board_
 
-Episode 16 builds the Four-Bit Wonder Machine Autonomous Version on a new Vector `8016-1` wire-wrap board. The original photographed machine remains an intact manual reference. The new board is a separate, progressive controller: it captures a target, reads a stored candidate, compares them, changes the candidate one step toward the target, writes the revision, and halts on equality.
+Episode 18 builds the Four-Bit Wonder Machine Autonomous Version on a new Vector `8016-1` wire-wrap board. The original photographed machine remains an intact manual reference. The new board is a separate, progressive controller: it captures a target, reads a stored candidate, compares them, changes the candidate one step toward the target, writes the revision, and halts on equality.
 
 Episode Summary:
 
@@ -336,7 +336,7 @@ Episode Summary:
 
 _Away from scratch-building toward manufactured production_
 
-Episode 18 pivots from wire-wrapping and bare-metal hardware construction to the M6x09-II-SBC: a minimal seventeen-component 6809 computer on a finished PCB. The board's layout, bill of materials, manufacturing files, and repeatable assembly make the hardware stable enough to examine the software running on it: build ASSIST09 from source, verify the ROM image, load and test programs through the serial terminal, and burn a verified milestone into EPROM. Professional design matters here not as a cosmetic finish, but because it creates a dependable platform for the next level of inquiry.
+Episode 19 pivots from wire-wrapping and bare-metal hardware construction to the M6x09-II-SBC: a minimal seventeen-component 6809 computer on a finished PCB. The board's layout, bill of materials, manufacturing files, and repeatable assembly make the hardware stable enough to examine the software running on it: build ASSIST09 from source, verify the ROM image, load and test programs through the serial terminal, and burn a verified milestone into EPROM. Professional design matters here not as a cosmetic finish, but because it creates a dependable platform for the next level of inquiry.
 
 Episode Summary:
 
@@ -351,7 +351,7 @@ Episode Summary:
 
 _Toward RB5X Heiserman in a Hero-1 Body_
 
-The first small loop makes a larger question concrete: which parts of the Berkeley-Heiserman program can be carried into a `Hero-1` without pretending that a historical design can simply be copied into a different body? The aim is a real embodied behavior stack, constrained by the robot's sensing, motion, memory, and serial workflow.
+Now that we have a strong understanding of the Motorola 6809, what innovations can we bring to an embodied system? The first small loop makes a larger question concrete: which parts of the Berkeley-Heiserman program can be carried into a `Hero-1` without pretending that a historical design can simply be copied into a different body? The aim is a real embodied behavior stack, constrained by the robot's sensing, motion, memory, and serial workflow.
 
 Episode Summary:
 
@@ -388,3 +388,20 @@ Episode Summary:
 * Treat each precursor step as part of one cybernetic discipline: make the machine observable, make interventions reversible, and make failures interpretable
 * Mark the transition from parts, tools, and bench procedures into the first genuinely integrated robot sessions
 * Close by framing the next stage as the point where preparation ends and the machine begins to answer back
+
+### Episode #23
+
+_Sometimes Play is All You Need_
+
+This episode will cover machine intelligence in a wholly isolated system - the only kind of system we can trust.
+
+Episode Summary:
+
+* Define an isolated system through local power, memory, inputs, software, and a known physical boundary rather than through mere disconnection
+* Explain what isolation makes possible: repeatable experiments, privacy, local ownership, and a clearer route from cause to observed behavior
+* Make the limit explicit: isolation alone does not establish trust, safety, correctness, or intelligibility
+* Treat trust as something earned through inspectable construction, testable behavior, repairability, and records another person can challenge
+* Present play as disciplined experimentation: change one condition, observe one result, preserve the trace, and repeat surprising outcomes
+* Ground the argument in a bounded robot exercise with stated sensor input, control rule, motor action, and safe stop condition
+* Contrast local, reconstructable evidence with the shifting dependencies and hidden changes common to connected systems
+* Close by framing the isolated system as a practical place for a genuine robotics practice to begin
