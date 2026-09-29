@@ -280,7 +280,7 @@ Episode Summary:
 * Open on the Tati robot as a mystery object: too finished to read as an accidental one-off
 * Make the radio-drama form part of the argument: archive-room ambience, photographs handled as sound, workshop texture, and pauses create tension without pretending uncertainty is proof
 * Establish the known Berkeley orbit around `Simon`, `Squee`, and their named assistants
-* Contrast the series' usual deductive reasoning from algorithms and mechanisms with this episode's evidence-bound inductive and abductive search for candidate builders
+* Introduce abduction—the inference from clues to the most plausible explanation—between the series' usual deductive reasoning from algorithms and mechanisms and this episode's inductive ranking of candidate builders
 * Use the evidence for decentralized workshop labor, especially Jack Koff's offsite work on `Squee`
 * Test the credible suspect field: Porter, Jensen, Vall, Koff, Berkeley himself, or an unnamed Berkeley-adjacent workshop
 * Eliminate weak explanations, including the unsupported France-family theory
