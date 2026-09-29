@@ -238,20 +238,53 @@ Episode Summary:
 
 ### Episode #13
 
-_Multenions Transition Automation in GA144_
+_Feel the (ROM) Burn_
 
-Episode 13 puts Episodes 10–12’s claim to work on a real machine. A minimal Multenions finite-state program is rendered on the GA144 as explicit Forth representations: named states, events, relations, transformations, permitted compositions, invalid cases, and an observable execution trace. The episode asks how explicit organization persists through time in hardware: where each object is represented, which Forth word performs a lawful transformation, how one transformation makes the next available, and how a halt or error condition can be verified. Its purpose is not to present Forth as an unexplained implementation layer, but to test whether the structured program remains legible when it meets a physical machine.
+The M6x09-II-SBC needs non-volatile memory to preserve a program that can run at power-on. This episode follows the `27C128` EPROM as the boundary where source code, a verified ROM image, a physical device, and the board's observed behavior have to agree. The Batronix Barlino II 32P is the current programming tool; its value is not nostalgia, but a disciplined, repeatable path from a tested image to a labeled, verified hardware milestone.
+
+Memory is critical to a computer's operation, but durable behavior requires more than choosing a non-volatile part. It requires a record of the source, build, verification, device, and test result that lets the next person understand what the chip contains and why it can be trusted.
 
 Episode Summary:
 
-* Carry Episode 12’s demonstrated objects and algorithm into a concrete GA144 representation
-* Map states, events, relations, transformations, and constraints to inspectable Forth words and storage
-* Show time as an ordered, traceable succession of permitted state transitions rather than an abstract slogan
-* Show organization as the explicit arrangement of objects, memory, words, constraints, and observable consequences
-* Verify that invalid transitions and failed conditions have a locatable cause rather than appearing as unexplained output
-* Preserve the distinction between a legible finite-state controller and a general claim of autonomous intelligence
+* Focus on ROM burning as the point where abstract program logic has to become a real physical artifact that the machine can actually execute
+* Establish the `27C128` as the M6x09-II-SBC's concrete boot-ROM device and the Batronix Barlino II 32P as the current programming path
+* Build and verify ASSIST09 before programming hardware, then prove the RAM load-and-run path through the serial terminal
+* Show why reading the existing EPROM, selecting the exact device, blank-checking, programming, verifying, labeling, and recording the result are one experiment rather than separate chores
+* Explain why a preserved ROM image needs its source inputs, checksum, build date, test record, and board context to remain meaningful over time
+* Treat the act of programming chips as a material form of software work, where verification, handling, compatibility, and retention suddenly matter again
+* Position the ROM-burning stage as the threshold between planning the system and being able to place behavior back into hardware
 
 ### Episode #14
+
+_The Preessence Esoteric of Motorola_
+
+The center of the computing world is the centralized processor. This episode will examing the 6808 and 6809.
+
+Episode Summary:
+
+* Introduce the `6808` and `6809` as the local centers of decision, sequencing, and coordination inside the machine
+* Explain why processor choice matters for memory layout, peripheral access, timing behavior, and the shape of the software that can realistically run
+* Contrast the modest but legible capabilities of these chips with the present habit of treating computation as an invisible cloud resource
+* Use Motorola's design language to show how architecture becomes concrete at the level of opcodes, buses, registers, and board constraints
+* Prepare the ground for the final fitting work by clarifying what the machine's computational body can and cannot support
+
+### Episode #15
+
+_Logic of a Pure Mystery: The Tati Robot_
+
+Episode 15 changes genre. It is neither a bench episode nor a straight history: it is a restrained `Sherlock` case file about an unidentified robot found in a Paris second-hand store in the early 2000s by Daniel Dennett. The question is not whether the machine can be made into a legend, but what the available evidence can actually support about who built it and the workshop culture from which it emerged.
+
+Episode Summary:
+
+* Open on the Tati robot as a mystery object: too finished to read as an accidental one-off
+* Establish the known Berkeley orbit around `Simon`, `Squee`, and their named assistants
+* Use the evidence for decentralized workshop labor, especially Jack Koff's offsite work on `Squee`
+* Test the credible suspect field: Porter, Jensen, Vall, Koff, Berkeley himself, or an unnamed Berkeley-adjacent workshop
+* Eliminate weak explanations, including the unsupported France-family theory
+* End with a bounded inference: the robot most likely emerged from a Berkeley-adjacent machine culture that exceeded the published official line
+* Preserve the investigative tone through documents, photographs, uncertainty, and explicit distinctions between evidence and speculation
+
+### Episode #16
 
 _The Polysance Initiative_
 
@@ -269,23 +302,22 @@ Episode Summary:
 * Define merit through legibility, participation, repairability, and the ability to test a claim together
 * Make a direct case for donations to support the materials, preparation, patient teaching, and learner access that this educational work requires
 
-### Episode #15
+### Episode #17
 
-_Advent of Holmes: The Tati Robot_
+_Multenions Transition Automation in GA144_
 
-Episode 15 changes genre. It is neither a bench episode nor a straight history: it is a restrained `Sherlock` case file about an unidentified robot found in a Paris second-hand store in the early 2000s by Daniel Dennett. The question is not whether the machine can be made into a legend, but what the available evidence can actually support about who built it and the workshop culture from which it emerged.
+Episode 13 puts Episodes 10–12’s claim to work on a real machine. A minimal Multenions finite-state program is rendered on the GA144 as explicit Forth representations: named states, events, relations, transformations, permitted compositions, invalid cases, and an observable execution trace. The episode asks how explicit organization persists through time in hardware: where each object is represented, which Forth word performs a lawful transformation, how one transformation makes the next available, and how a halt or error condition can be verified. Its purpose is not to present Forth as an unexplained implementation layer, but to test whether the structured program remains legible when it meets a physical machine.
 
 Episode Summary:
 
-* Open on the Tati robot as a mystery object: too finished to read as an accidental one-off
-* Establish the known Berkeley orbit around `Simon`, `Squee`, and their named assistants
-* Use the evidence for decentralized workshop labor, especially Jack Koff's offsite work on `Squee`
-* Test the credible suspect field: Porter, Jensen, Vall, Koff, Berkeley himself, or an unnamed Berkeley-adjacent workshop
-* Eliminate weak explanations, including the unsupported France-family theory
-* End with a bounded inference: the robot most likely emerged from a Berkeley-adjacent machine culture that exceeded the published official line
-* Preserve the investigative tone through documents, photographs, uncertainty, and explicit distinctions between evidence and speculation
+* Carry Episode 12’s demonstrated objects and algorithm into a concrete GA144 representation
+* Map states, events, relations, transformations, and constraints to inspectable Forth words and storage
+* Show time as an ordered, traceable succession of permitted state transitions rather than an abstract slogan
+* Show organization as the explicit arrangement of objects, memory, words, constraints, and observable consequences
+* Verify that invalid transitions and failed conditions have a locatable cause rather than appearing as unexplained output
+* Preserve the distinction between a legible finite-state controller and a general claim of autonomous intelligence
 
-### Episode #16
+### Episode #18
 
 _A Truly Machine-Intelligent System: The Autonomous Board_
 
@@ -300,21 +332,7 @@ Episode Summary:
 * Phase 2: scan all 64 exposed addresses automatically, advancing only after the current address reaches its target
 * Keep Phase 2B per-address target memory optional, so the first autonomous result remains legible
 
-### Episode #17
-
-_The Preessence Esoteric of Motorola_
-
-The center of the computing world is the centralized processor. This episode will examing the 6808 and 6809.
-
-Episode Summary:
-
-* Introduce the `6808` and `6809` as the local centers of decision, sequencing, and coordination inside the machine
-* Explain why processor choice matters for memory layout, peripheral access, timing behavior, and the shape of the software that can realistically run
-* Contrast the modest but legible capabilities of these chips with the present habit of treating computation as an invisible cloud resource
-* Use Motorola's design language to show how architecture becomes concrete at the level of opcodes, buses, registers, and board constraints
-* Prepare the ground for the final fitting work by clarifying what the machine's computational body can and cannot support
-
-### Episode #18
+### Episode #19
 
 _Away from scratch-building toward manufactured production_
 
@@ -328,24 +346,6 @@ Episode Summary:
 * Show why the board's EPROM, SRAM, serial interface, expansion header, layout, bill of materials, and manufacturing files matter to that workflow
 * Contrast a one-off prototype with a platform that another person can assemble, inspect, repair, program, and extend
 * End by asking what clearer, more durable, and more accessible technical systems should be for
-
-### Episode #19
-
-_Feel the (ROM) Burn_
-
-The M6x09-II-SBC needs non-volatile memory to preserve a program that can run at power-on. This episode follows the `27C128` EPROM as the boundary where source code, a verified ROM image, a physical device, and the board's observed behavior have to agree. The Batronix Barlino II 32P is the current programming tool; its value is not nostalgia, but a disciplined, repeatable path from a tested image to a labeled, verified hardware milestone.
-
-Memory is critical to a computer's operation, but durable behavior requires more than choosing a non-volatile part. It requires a record of the source, build, verification, device, and test result that lets the next person understand what the chip contains and why it can be trusted.
-
-Episode Summary:
-
-* Focus on ROM burning as the point where abstract program logic has to become a real physical artifact that the machine can actually execute
-* Establish the `27C128` as the M6x09-II-SBC's concrete boot-ROM device and the Batronix Barlino II 32P as the current programming path
-* Build and verify ASSIST09 before programming hardware, then prove the RAM load-and-run path through the serial terminal
-* Show why reading the existing EPROM, selecting the exact device, blank-checking, programming, verifying, labeling, and recording the result are one experiment rather than separate chores
-* Explain why a preserved ROM image needs its source inputs, checksum, build date, test record, and board context to remain meaningful over time
-* Treat the act of programming chips as a material form of software work, where verification, handling, compatibility, and retention suddenly matter again
-* Position the ROM-burning stage as the threshold between planning the system and being able to place behavior back into hardware
 
 ### Episode #20
 
