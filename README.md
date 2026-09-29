@@ -320,6 +320,8 @@ Episode Summary:
 * Verify that invalid transitions and failed conditions have a locatable cause rather than appearing as unexplained output
 * Preserve the distinction between a legible finite-state controller and a general claim of autonomous intelligence
 
+_Maybe in this range the Intellivision foray_
+
 ### Episode #18
 
 _A Truly Machine-Intelligent System: The Autonomous Board_
