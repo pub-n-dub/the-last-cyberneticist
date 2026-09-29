@@ -4,49 +4,80 @@
 
 Welcome to Episode 12 of *The Last Cyberneticist*.
 
-Last time, we separated an algebra from an algorithm. The algebra names the objects and says what operations are lawful. The algorithm says what happens next, in what order, and under which condition.
+Last time, we separated two things that are often confused.
 
-This time, we will make that distinction visible with one very small machine problem.
+An algebra tells us what an operation means. An algorithm tells us when that operation happens, what permits it, what changes afterward, and how we know the account is true.
 
-Imagine that a machine holds two four-bit words. One is called `Target`. It states the condition the machine is trying to reach. The other is called `Candidate`. It is the condition the machine currently has. The words may have the same binary form at some point, but they are not interchangeable. One is the demand; the other is the thing being revised.
+Today we will make that distinction visible without pretending that a small demonstration is already a complete multenion machine.
 
-Let the target be nine. Let the candidate begin at six.
+Begin with one bounded formal claim.
 
-The machine reads the candidate and compares it to the target. Six is lower than nine. That relation is evidence. It does not yet alter anything. The algorithm now gives the relation a consequence: lower permits one operation, `StepUp`.
+We declare two primitive units, `i1` and `i2`, in a specified basis. The relevant rules are that each squares to negative one, and that their order matters: `i1i2` is the negative of `i2i1`.
 
-`StepUp` produces a new candidate: seven. The machine writes seven into the candidate store. Then it verifies the write by reading the candidate again. It compares seven to nine. The result is still lower.
+That is the algebraic contract.
 
-The same lawful cycle happens again. Step upward. Write eight. Verify. Compare eight to nine. Still lower.
+Now turn it into a machine task.
 
-Once more: step upward, write nine, verify, compare.
+The machine receives an operation request and two operands. First it validates them. Are they represented in the declared basis? Is their order known? Is there enough storage for the result? If any answer is no, the machine does not improvise an answer. It enters an error state and records the violated condition.
 
-Now the comparator reports equality. Equality does not permit another write. It permits `Halt`. The machine has reached its stated condition, and its trace can be told in full: target nine held; candidate six read; lower; seven written and verified; lower; eight written and verified; lower; nine written and verified; equal; halt.
+If validation succeeds, the machine performs exactly one named ordered product. It stores the result with its basis and grade information. Then it verifies the claim: run the reversed pair as a separate ordered operation and check that the two results have the required opposite sign. Finally, record the operands, their order, the result, the check, and the halt reason.
 
-Nothing in this example is mysterious. That is its strength.
+The result is still modest. It does not implement all of McAulay’s four-dimensional multenion system. It does not make a sixteen-component algebra appear merely because we said its name. But it does demonstrate the correct kind of bridge: a source rule, a representation, a transition, a verification, and evidence.
 
-We can see the algebraic distinctions. Target is not candidate. Comparison is not transformation. Transformation is not storage. Storage is not verification. Equality is not merely a pleasing red lamp; it is the condition that changes what the machine is permitted to do next.
+This is the first new insight for the listener.
 
-We can also see the algorithm. The algorithm is not the list of words alone. It is the rule that says: after lower, step upward; after higher, step downward; after equal, halt; after a step, write; after a write, verify; after a failed verification, enter an error condition rather than silently claiming success.
+A mathematical rule is not yet a machine event. The rule becomes a machine event only when the machine can represent its terms, select the operation, preserve its conditions, and leave a record that the right operation occurred.
 
-Suppose somebody skips one of those steps. They compare six with nine, see lower, and write nine directly. They may reach the desired answer, but they have not followed this algorithm. Or suppose they change the target while the candidate is being revised. The visible result may still be a number, but the trace no longer tells one stable story. Or suppose a write is attempted while the candidate store is not available. A lamp might glow. That is not enough. The program needs an error state, because the required transition has not been established.
+Now return to the Four-Bit Wonder, because it teaches the same lesson with fewer symbols.
 
-This is why the idea matters beyond a four-bit exercise. A machine-intelligence innovation should not be judged only by whether it produces an attractive answer. We should be able to ask: what distinction did the machine hold? What relation did it recognize? What algorithm selected its next action? What state changed? What invalid action was prevented? What evidence remains for another person to inspect?
+Let the machine hold two four-bit words. `Target` is the condition to be reached. `Candidate` is the condition currently held. They can have the same binary form, but they are not the same object. One is the demand; one is the value subject to revision.
 
-Those questions do not make a machine intelligent by decree. They establish the conditions under which its conduct can be intelligible, repairable, and answerable. Without them, an output can be impressive while the machine’s route to it remains unavailable to the people who must trust, change, or inherit it.
+Let the target be nine and the candidate be six.
 
-The little cycle also gives us a boundary. This is a controller with a defined task, not a general intelligence. It does not invent its own target. It does not decide whether adding or subtracting one is a good policy in every world. It does not learn a new rule from experience. Its value is that every one of its limits is visible.
+The comparator reports that six is lower than nine. That relation is evidence. It does not yet write a value, move a motor, or certify success. The algorithm gives it a consequence: lower permits `StepUp`.
 
-That visibility is an existential criterion for the kind of machine work this series is pursuing. A machine has to persist through time. It has to make a difference matter to what happens next. It has to act through lawful transformations. And it has to leave enough evidence that its conduct can be reconstructed. A formal algebra helps name those conditions. An algorithm brings them into time. A physical implementation has to preserve them under the resistance of actual hardware.
+`StepUp` produces seven. The controller writes seven as the candidate. Then it verifies the write by reading the candidate again. The new comparison is still lower. The cycle repeats: step, write, verify, compare.
 
-The next episode takes that final step. We will ask whether the GA144 and Forth can represent this exact cycle without dissolving its distinctions into unexplained code. Which word holds each object? Which word performs each lawful transformation? How is an invalid composition prevented? And what trace lets another person tell that the machine did what we say it did?
+When the candidate becomes nine, the comparator reports equality. Equality does not permit another write. It permits `Halt`.
+
+The trace is then readable: target nine held; candidate six read; lower; seven written and verified; lower; eight written and verified; lower; nine written and verified; equal; halt.
+
+That trace is not paperwork added after the machine has finished. It is the machine’s Ariadne thread. It is how a later person can walk backward from the result to the conditions and choices that produced it. In the architectural language of Episode 4, it is the route through activities, modes, transitions, and conditions.
+
+There is one more lesson from the labyrinth.
+
+This target-and-candidate cycle is a fixed route. It does not search, so it does not need backtracking. But suppose a later controller must explore a bounded set of lawful transformations: perhaps several candidate rewrite rules, several sensor explanations, or several ways to reach a stated normal form.
+
+Then it needs the labyrinth discipline.
+
+Every complete configuration becomes a junction. Every permitted transformation becomes a corridor. An untried operation is green. An operation on the current active path is yellow. A fully explored operation is red and cannot be selected again. The machine must choose among green options by a fixed declared order. The active path is stored as predecessor links or a stack. It halts when it reaches the target, returns to the start after exhausting the finite reachable space, or reports `STEP_BOUND_REACHED` when the stated bound ends the experiment.
+
+That last result is important.
+
+An exhausted bound is not proof that no route exists in every imaginable extension of the system. It is evidence about this finite run, under this basis, this rule set, and this step limit. A machine earns trust not by converting every limit into a verdict, but by naming the limit and preserving the route that led there.
+
+This lets us say something more precise about machine intelligence.
+
+The question is not whether a machine has produced an attractive answer. The question is whether it has held distinctions stable, recognized a condition, selected a permitted operation, preserved the meaning of its representation, and left enough evidence for another person to reconstruct or challenge its conduct.
+
+Those are strong virtues. They are also humble virtues.
+
+The controller does not invent its own algebra. It does not prove every identity of a general multenion system. It does not decide every possible formal question. It does not become a general intelligence because it can compare, step, multiply, or search a finite graph.
+
+Its achievement is more concrete. It can make a limited formal promise and keep it in public.
+
+That is the criterion this series can carry forward: not an opaque result, but a legible path from condition to action to evidence.
+
+The next episode asks how such a path can survive power-off and become durable behavior in a physical machine. Source code, a verified ROM image, an EPROM, and the board’s observed behavior will have to agree.
 
 Thank you for listening.
 
 ## Research spine
 
-- B. A. Trakhtenbrot and Ya. M. Barzdin, *Finite Automata: Behavior and Synthesis* (1973): finite-state behaviour, specification, and synthesis.
-- W. Ross Ashby, *Design for a Brain*, 2nd ed. (1960): regulation, state, and the conditions of organized behaviour.
+- Alexander McAulay, “Multenions and Differential Invariants,” §§1–6: primitive units, grades, products, vectoriums, and linities.
+- B. A. Trakhtenbrot, *Algorithms and Automatic Computing Machines*, Chapter 3: the labyrinth algorithm, active-path invariant, and deterministic choice convention.
+- B. A. Trakhtenbrot, *Algorithms and Automatic Computing Machines*, Chapters 5–9: programs, machine configurations, transitions, and halting.
 
 ## Drafting note (not spoken)
 
-Before recording, decide whether the numerical demonstration will be performed manually, simulated, or illustrated with a state table. Do not imply that the GA144 implementation has already been built or verified.
+The `i1`, `i2` operation is an illustrative finite fragment, not an implementation claim. Before recording, select an actual basis encoding, coefficient domain, product table or routine, expected results, trace format, and finite search bound. Do not claim a GA144 implementation until the words, storage map, and observed test record exist.

@@ -207,6 +207,8 @@ This cycle implements Trakhtenbrot’s demand for determinate control while keep
 
 Trakhtenbrot’s labyrinth algorithm is especially useful when the hybrid is asked to explore alternatives—such as possible rewrite paths, candidate transformations, test branches, or fault-isolation branches. It is stronger than a loose “feedback-loop” analogy because it includes a proved memory discipline.
 
+It also extends the architectural vocabulary established in Episode 4. Activities, modes, transitions, and conditions describe the structure of possible conduct. The Ariadne thread adds a historical and evidential dimension: it records the route actually taken through that structure, including abandoned branches and stated limits. Architecture is therefore not only a diagram of what a system may do; in a legible machine it is a recoverable account of what it did.
+
 ### The source invariant
 
 In the finite labyrinth, corridors are marked:

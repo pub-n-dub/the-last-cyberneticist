@@ -209,32 +209,33 @@ Episode Summary:
 
 _From Algebra to Algorithm: Multenions and Program Synthesis_
 
-An algebra gives computing a vocabulary and a discipline: it tells us what objects exist, what operations are lawful, and which compositions are forbidden. It does not, by itself, tell a machine what to do next. That requires an algorithm: a rule for selecting operations in sequence, under stated conditions, toward a halt, error, or other completion condition. This bridge episode turns Episode 10’s structured-algebra proposal into an implementable program design. Drawing on Trakhtenbrot and Barzdin’s distinction between an automaton’s behaviour and the synthesis of its program, it asks what exact algorithmic structure must be constructed before a Forth implementation can be evidence of anything more than a convenient encoding.
+The research record sharpens Episode 10’s proposal. McAulay’s Multenions is an associative, noncommutative, graded algebra: in the general `n = 4` case it has sixteen scalar components, explicit grade projections, and named linear operations. It is not already a program, and it is not an eight-component octonion machine. An algebra gives computing a vocabulary and a discipline—what objects exist and what operations are lawful—but an algorithm supplies the missing temporal rule: which lawful operation happens next, under what condition, with what state, trace, halt, or error. Drawing on Trakhtenbrot’s labyrinth and machine arguments, this episode asks how a program can retain an Ariadne thread: an ordered record of the permitted choices that led to a result, a failure, or an exhausted bounded search. That thread extends Episode 4’s architectural vocabulary of activities, modes, transitions, and conditions by preserving the route through that structure.
 
 Episode Summary:
 
-* Distinguish algebraic structure from an algorithm that selects and orders lawful operations
-* Specify the objects, relations, transformations, preconditions, invalid compositions, and observable consequences required by the proposed Multenions programme
-* Choose and justify a finite-state algorithmic structure: state representation, transition rule, input handling, memory update, verification, and halt or error condition
-* Show why `Compare` does not itself select a revision, and why a relation cannot become a `Write` without an intervening decision and transformed value
-* Define the trace and failure evidence another builder needs in order to reconstruct or challenge the program’s conduct
-* Separate McAulay’s historical formal programme from the modern implementation mapping, making any claimed correspondence explicit and testable
-* End with a prepared specification for Episode 12’s illustrative execution cycle
+* State the newly verified boundary: McAulay’s general `n = 4` multenions are associative, noncommutative, graded, and sixteen-component—not an octonion controller by another name
+* Distinguish the static algebraic layer—basis, grade, product, projection, linity, invariant—from the dynamic algorithmic layer of state, condition, transition, memory, and halt
+* Extend Episode 4’s activities, modes, transitions, and conditions with an architectural Ariadne thread: a recoverable path through the machine’s behavior
+* Specify the representation, transition, invariant, evidence, and scope contracts required before calling a program multenion-informed
+* Show why a lawful relation or product does not itself select a next action, write memory, or verify a result
+* Use Trakhtenbrot’s labyrinth invariant to explain when a bounded search needs an active path, closed transitions, deterministic choice order, and an honest exhausted-search result
+* End with a prepared Episode 12 demonstration of a named algebraic operation, a transition rule, and a traceable outcome
 
 ### Episode #12
 
 _A Machine Must Know Its Next Move_
 
-Episode 12 makes the central claim visible before it is entrusted to a complex machine. A held `Target` and a remembered `Candidate` are compared; the relation selects one lawful next operation—step upward, step downward, or halt; the revised candidate is written and verified; and a trace lets another person determine whether that sequence actually occurred. The example is deliberately small, but it establishes an existential criterion for machine-intelligence innovation: a machine needs more than a result or an algebraic vocabulary. It needs explicit distinctions, an algorithm for acting on them through time, constraints against invalid action, persistent state, and publicly inspectable evidence of its conduct. The episode is not a Forth tutorial. It is the demonstration that makes a later GA144 implementation meaningful.
+Episode 12 turns the hybrid claim into a deliberately small demonstration before it is entrusted to a complex machine. A bounded algebraic operation has a declared basis, operand order, and expected grade; a controller validates those preconditions, executes one named operation, stores or projects its result, verifies the claim, and records the path. The familiar `Target` and `Candidate` cycle remains a second example of algorithmic choice: comparison can permit `StepUp`, `StepDown`, or `Halt`, but it cannot itself write memory or certify a result. Where a system must explore alternatives, Trakhtenbrot’s labyrinth discipline adds an architectural Ariadne thread—an active path, a no-repeat rule, and an honest bounded-search failure. The episode’s value is not a grand intelligence claim but a practical criterion: a machine is more trustworthy when another person can walk its conduct backward through its activities, modes, transitions, and conditions.
 
 Episode Summary:
 
-* Work through `Compare → StepUp/StepDown/Halt → Write → Verify` as one complete, traceable cycle
-* Make clear why a relation does not determine an action until an algorithm specifies the next lawful operation
-* Show how state, memory, transition rules, invalid cases, verification, and halt conditions form one intelligible organization
-* Treat the ability to reconstruct a machine’s conduct as a criterion of meaningful machine-intelligence innovation
+* Work through a bounded operation contract: declared basis, ordered operands, named product or projection, expected result, and explicit verification
+* Preserve the distinction between McAulay’s formal algebra and a modern program that claims to represent only a specified fragment of it
+* Work through `Compare → StepUp/StepDown/Halt → Write → Verify` as a second, complete example of how a relation becomes a lawful action through time
+* Treat the trace as an architectural Ariadne thread: a reconstructable route through activities, modes, transitions, and conditions
+* Introduce the labyrinth discipline for genuine bounded searches: active path, deterministic branch order, closed transitions, target predicate, and `STEP_BOUND_REACHED` rather than a false claim of failure
 * Preserve the distinction between a small legible controller and a general claim of autonomous intelligence
-* End by asking how this exact cycle can be represented without loss on the GA144
+* End by asking how these contracts, transitions, and traces can be represented without loss on the GA144
 
 ### Episode #13
 
