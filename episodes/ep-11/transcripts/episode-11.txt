@@ -190,7 +190,7 @@ not what you think. So it asks a very severe question. Is there one method that 
 for every pair of words in a given calculus, whether they are equivalent? The associated graph
 is usually infinite.
 Every word is a vertex, and every lawful substitution is an edge. A method that simply tries
-substitutions can wander forever without proving that no connection exists. 
+substitutions can wander forever without proving that no connection exists.
 Here Trakhtenbrot offers a constructive case in which the problem
 can be solved. So the system is given directed reduction rules. Apply them in a fixed priority
 order at the first eligible position. The process reduces every word to one of eight forms. The
@@ -211,7 +211,7 @@ the symbols. Letters stand for an elementary transformation of a square. Concate
 letters composes these transformations. A substitution rule can express that two different sequences
 have the same geometric effect. Formal marks are not empty merely because they are formal.
 The interpretation must be stated and the operations on them must preserve the relations we claim
-they represent. 
+they represent.
 Returning to the multenion problem, if we write a program that transforms symbolic
 names for algebraic objects, we must say whether it's carrying out an algebraic product, changing
 a storage encoding, reducing an expression to a canonical form, or

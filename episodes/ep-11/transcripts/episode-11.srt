@@ -916,7 +916,7 @@
 
 230
 00:32:19,960 --> 00:32:34,460
- they represent. 
+ they represent.
 
 231
 00:32:34,460 --> 00:32:44,120
@@ -1081,4 +1081,3 @@
 271
 00:38:27,440 --> 00:38:31,140
  for next time. Thank you for listening.
-
