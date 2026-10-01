@@ -1,0 +1,1172 @@
+1
+00:00:00,000 --> 00:00:05,500
+ Welcome to episode 10 of The Last Cyberneticist.
+
+2
+00:00:05,500 --> 00:00:12,380
+ This episode is called Multenions, A Structured Algebra.
+
+3
+00:00:12,380 --> 00:00:17,960
+ Last episode, we spent quite a bit of time with the 4-bit wonder, so that we could explore
+
+4
+00:00:17,960 --> 00:00:24,320
+ what is required to make substantive claims about machine intelligence, contrast it to
+
+5
+00:00:24,320 --> 00:00:29,560
+ the overblown hype of today's artificial intelligence.
+
+6
+00:00:29,560 --> 00:00:38,080
+ A summary would read, a light at the edge of a circuit is not automatically a fact.
+
+7
+00:00:38,080 --> 00:00:43,960
+ Before it can count as evidence, we have to know which wood was present, which memory
+
+8
+00:00:43,960 --> 00:00:50,080
+ location was selected, which control state the machine occupied, which path carried the
+
+9
+00:00:50,080 --> 00:00:57,800
+ signal, and what operation was actually permitted.
+
+10
+00:00:57,800 --> 00:01:03,760
+ That discipline gave us a finite physical arrangement whose configurations can be treated
+
+11
+00:01:03,760 --> 00:01:07,760
+ as a state system.
+
+12
+00:01:07,760 --> 00:01:15,560
+ The board has a bounded repertoire of conditions, a word can be present or absent on a path,
+
+13
+00:01:15,560 --> 00:01:21,720
+ a memory location can be selected, a read can be valid, a write can be valid, a comparator
+
+14
+00:01:21,720 --> 00:01:28,880
+ can report lower, equal, or higher, the possible situations are not infinite and neither are
+
+15
+00:01:28,880 --> 00:01:34,080
+ the transitions between them, they can be traced.
+
+16
+00:01:34,080 --> 00:01:41,160
+ With that behind us, today I want to pursue a more ambitious question and a bit more dangerous
+
+17
+00:01:41,160 --> 00:01:43,760
+ perhaps.
+
+18
+00:01:43,760 --> 00:01:48,960
+ What if we did not treat that trace merely as a description that we draw after a machine
+
+19
+00:01:48,960 --> 00:01:54,980
+ has been built, let's build a lot of time time up for it, but wonder, a lot of details
+
+20
+00:01:54,980 --> 00:02:03,920
+ about what the consistency of the build is, so what if the state's relations, transformations
+
+21
+00:02:03,920 --> 00:02:09,920
+ and the permitted compositions were themselves the critical material of a program.
+
+22
+00:02:09,920 --> 00:02:20,320
+ If you reflect back to episode 4, we talked about architecture as process, and that was
+
+23
+00:02:20,320 --> 00:02:28,480
+ primarily an evidence-based pursuit, so in the collective context, thereby, the question
+
+24
+00:02:28,480 --> 00:02:37,020
+ we will ask is what mathematical theories are relevant to manifest machine intelligence?
+
+25
+00:02:37,020 --> 00:02:44,720
+ That's the direction I want to introduce Multenions, a structured algebra, what is this stuff?
+
+26
+00:02:44,720 --> 00:02:49,760
+ Multenions is not a name that I invented for this series, it comes from Alexander McAulay,
+
+27
+00:02:49,760 --> 00:02:58,300
+ whose 1908 paper was called "Algebra after Hamilton, or Multenions".
+
+28
+00:02:58,300 --> 00:03:05,120
+ So McAulay worked in the long aftermath of Hamilton's quaternions.
+
+29
+00:03:05,120 --> 00:03:12,400
+ He published Octonions, a development of Clifford's biquaternions in 1898, and he returned
+
+30
+00:03:12,400 --> 00:03:18,040
+ to Multenions in a sequence of papers on differential invariants in the 1920s, the last one being
+
+31
+00:03:18,040 --> 00:03:24,280
+ published in 1921.
+
+32
+00:03:24,280 --> 00:03:31,240
+ So let's pay a little care on the historical line, so it's easy to say okay, we got quaternions
+
+33
+00:03:31,240 --> 00:03:35,100
+ from Hamilton, right, and then we got there's quite being four, right, we got octonions
+
+34
+00:03:35,100 --> 00:03:42,520
+ no, there's two, eight, octo, and the Multenions, which is a multiple of generalization of the
+
+35
+00:03:42,520 --> 00:03:50,440
+ concept, where quaternions are, where any goes for in the Multenions system.
+
+36
+00:03:50,440 --> 00:03:54,880
+ So even though each word looks like a simple ladder of ever larger numbers, it does not,
+
+37
+00:03:54,880 --> 00:03:56,720
+ it's not that way.
+
+38
+00:03:56,720 --> 00:04:02,320
+ So McAulay's octonions were the name for the development of Clifford's biquaternions
+
+39
+00:04:02,320 --> 00:04:09,440
+ specifically, they are not the algebra that is typically called octonions, which is based
+
+40
+00:04:09,440 --> 00:04:11,000
+ on Cayley.
+
+41
+00:04:11,000 --> 00:04:21,440
+ So Multenions is McAulay's later attempt to systemize an algebraic method after Hamilton.
+
+42
+00:04:21,440 --> 00:04:28,640
+ I'm not making a claim on research findings to say it's selling a theory on a thing, I'm
+
+43
+00:04:28,640 --> 00:04:36,400
+ just dropping an example on you here, because this is the stuff that it has to be.
+
+44
+00:04:36,400 --> 00:04:42,520
+ So let's begin this way, I'm not going to make a claim that every finite state controller
+
+45
+00:04:42,520 --> 00:04:50,280
+ is already on McAulay's calculus, it's more of a modest task to see whether the instance
+
+46
+00:04:50,280 --> 00:04:54,480
+ of the name kinds of objects, lawful operations, and explicit compositions can be brought into
+
+47
+00:04:54,480 --> 00:04:58,920
+ contact with programs and machines that we can inspect.
+
+48
+00:04:58,920 --> 00:05:02,600
+ That follows what I've been talking about here and now we're going to bring in some math
+
+49
+00:05:02,600 --> 00:05:03,600
+ stuff.
+
+50
+00:05:03,600 --> 00:05:09,680
+ So the historical correspondence is important because we need to know where stuff comes from.
+
+51
+00:05:09,680 --> 00:05:15,240
+ And you notice in that sentence they use word calculus, so we had an algebra and a calculus
+
+52
+00:05:15,240 --> 00:05:23,040
+ and that's usually split up between okay that's actually something called differential calculus.
+
+53
+00:05:23,040 --> 00:05:29,520
+ So without going into a lot of great detail on this, because it's pretty exhaustive, the
+
+54
+00:05:29,520 --> 00:05:40,320
+ calculus in quaternions was composed in the late 19th century by Peter Tait and Charles
+
+55
+00:05:40,320 --> 00:05:48,840
+ Jasper Joly, and that calculus is substantially or characterless can be different than the
+
+56
+00:05:48,840 --> 00:05:52,040
+ calculus that we talk about Newton and Leibniz.
+
+57
+00:05:52,040 --> 00:05:56,360
+ So we'll go into that in a different way, a different episode, not right now, but let's
+
+58
+00:05:56,360 --> 00:06:01,760
+ reflect that algebra, when you think about the word algebra you think okay it's just
+
+59
+00:06:01,760 --> 00:06:09,220
+ a blackboard full of symbols, a lot of things going on, an algebra, I mean obviously the
+
+60
+00:06:09,220 --> 00:06:15,640
+ word is from the Arabic, we came out in that form in the 7th century AD, but algebra is
+
+61
+00:06:15,640 --> 00:06:25,040
+ far far far far far older, we can trace it back to about 5,500 years ago, that's the
+
+62
+00:06:25,040 --> 00:06:29,920
+ earliest record like a document that we have that shows that that's being used to do you
+
+63
+00:06:29,920 --> 00:06:34,200
+ know useful things in the physical world.
+
+64
+00:06:34,200 --> 00:06:39,600
+ So it's something that's been on for a long time we've known about it and it's something
+
+65
+00:06:39,600 --> 00:06:44,200
+ that we have to be aware of when we're doing machine intelligence because we have a lot
+
+66
+00:06:44,200 --> 00:06:50,600
+ of expectations that are already set up by us by the marketing of artificial intelligence,
+
+67
+00:06:50,600 --> 00:06:55,760
+ but more on the lines of that we have traceability and we have already set out the things that
+
+68
+00:06:55,760 --> 00:07:01,960
+ we want to do, machines that we can inspect, and so we already have a very rigorously
+
+69
+00:07:01,960 --> 00:07:09,120
+ defined set of conditions, and we can now explore algebra in a way that we don't have
+
+70
+00:07:09,120 --> 00:07:17,000
+ to put restrictions on it, we can be more free in this way, and find out, okay, let's
+
+71
+00:07:17,000 --> 00:07:25,800
+ see how algebra can be useful to help us determine what we want to accomplish, we want to structure,
+
+72
+00:07:25,800 --> 00:07:32,120
+ we want to talk to the architecture, we want to structure, and the algebra will tell us
+
+73
+00:07:32,120 --> 00:07:36,960
+ what the kinds of things we're dealing with and what can be done with them, and what follows
+
+74
+00:07:36,960 --> 00:07:40,840
+ when those operations are combined, so it doesn't merely name objects, it makes your relations
+
+75
+00:07:40,840 --> 00:07:48,120
+ and transformations, answerable to rules, so that matters here because a finite state
+
+76
+00:07:48,120 --> 00:07:52,680
+ program should be more than just a list of instructions hidden in a processor, look at
+
+77
+00:07:52,680 --> 00:07:58,720
+ that table just to execute those things, no, it should be pursued as an exercise in explicit
+
+78
+00:07:58,720 --> 00:08:04,840
+ algebraic objects, so a state is an object, a permitted transformation is an object, and
+
+79
+00:08:04,840 --> 00:08:09,720
+ in relation between states is an object, composition is an object, a condition that blocks or allows
+
+80
+00:08:09,720 --> 00:08:16,000
+ a transition is an object, and a trace of what happened is an object of inquiry as well,
+
+81
+00:08:16,000 --> 00:08:20,920
+ but don't get the word object confused with the class objects in object-oriented programming,
+
+82
+00:08:20,920 --> 00:08:24,160
+ these are different things, we're talking object in a more primitive way, so it's just
+
+83
+00:08:24,160 --> 00:08:30,680
+ like a, I think it was a container, so let's not go too far with this, let's not say that
+
+84
+00:08:30,680 --> 00:08:39,120
+ every flowchart is an algebra, or that attaching a mathematical language to a program makes
+
+85
+00:08:39,120 --> 00:08:44,400
+ it so profound, it is the demand enough for a structure that we can say what a program
+
+86
+00:08:44,400 --> 00:08:51,040
+ is made of, what it may or may not do next, and what particular result follows, so this
+
+87
+00:08:51,040 --> 00:08:57,920
+ demand is becoming more important as we go, because we live among systems that produce
+
+88
+00:08:57,920 --> 00:09:02,880
+ striking results, without always taking the route, to find out how the results are easier
+
+89
+00:09:02,880 --> 00:09:07,960
+ to recover, so let's look at the stuff we got up, we got in front of this here, so a lot
+
+90
+00:09:07,960 --> 00:09:15,080
+ of the contemporary AI is built upon linear algebra, and trained through gradient-based
+
+91
+00:09:15,080 --> 00:09:20,480
+ optimizations, so large collections of examples become parameters, and those parameters are
+
+92
+00:09:20,480 --> 00:09:26,440
+ adjusted until a system becomes better at a specified task, so tuning, so the resulting
+
+93
+00:09:26,440 --> 00:09:33,160
+ system may classify, generate, predict or control, in ways that are genuinely useful,
+
+94
+00:09:33,160 --> 00:09:40,000
+ so we're not saying anything bad or dismissing it, so a gradient-trained system is very powerful,
+
+95
+00:09:40,000 --> 00:09:47,080
+ precisely because it finds regularities that no person can write that one at a time, it
+
+96
+00:09:47,080 --> 00:09:52,160
+ can use a scale of examples and a density of calculations that a small explicit program
+
+97
+00:09:52,160 --> 00:10:00,360
+ can't match it, but let's be very careful again to say that power and legibility are
+
+98
+00:10:00,360 --> 00:10:07,280
+ completely different virtues, so from the outside, a large trained system can feel like
+
+99
+00:10:07,280 --> 00:10:13,600
+ a search through a vast territory of possible answers, it's not literally the traveling
+
+100
+00:10:13,600 --> 00:10:21,720
+ salesman calculation, it shouldn't really describe this one, but the comparison is quite
+
+101
+00:10:21,720 --> 00:10:27,720
+ normal, because it looks that way from the outside, so but the resemblance is experimental,
+
+102
+00:10:27,720 --> 00:10:33,160
+ not experiential, more or less, a procedure that moves through an enormous space, according
+
+103
+00:10:33,160 --> 00:10:37,960
+ to a rule of improvements and eventually arrives at a result, it may work without offering
+
+104
+00:10:37,960 --> 00:10:43,720
+ a compact account of why this particular internal route was taken, so at its most superficial,
+
+105
+00:10:43,720 --> 00:10:49,200
+ the relation to data can resemble, that's more like train spotting, so you're sitting
+
+106
+00:10:49,200 --> 00:10:53,960
+ at a distance and you're watching a train pass you with freight cars and you're pointing
+
+107
+00:10:53,960 --> 00:10:59,400
+ out okay, there's this, but the data has a pants bias, immense collections of particulars
+
+108
+00:10:59,400 --> 00:11:07,920
+ are gathered, matched and made statistically useful, what's difficult is not that the system
+
+109
+00:11:07,920 --> 00:11:11,720
+ has no structure, it's a great deal of structure, but the difficulty is much that the operate
+
+110
+00:11:11,720 --> 00:11:16,000
+ of structure is distributed across learned parameters, rather than presented as a small
+
+111
+00:11:16,000 --> 00:11:22,560
+ public vocabulary of objects and operations, we've already talked about how everything
+
+112
+00:11:22,560 --> 00:11:29,720
+ is hype and a bunch of BS, but why is it BS?
+
+113
+00:11:29,720 --> 00:11:32,600
+ This is what we're getting at now, this is what, but this is what comes rather interesting,
+
+114
+00:11:32,600 --> 00:11:39,400
+ so the contrast is not to say, it's not intelligence against stupidity or new technology against
+
+115
+00:11:39,400 --> 00:11:45,960
+ old technology, it's not that simplistic, not us and them, it's between two different
+
+116
+00:11:45,960 --> 00:11:52,840
+ two different and very, very distinct ways of pursuing a machine, so one way asks whether
+
+117
+00:11:52,840 --> 00:11:58,000
+ a system can find a useful answer from examples, that's what I'm doing here, the other asks
+
+118
+00:11:58,000 --> 00:12:03,840
+ whether the terms of its conduct can be made explicit enough to construct, inspect, change
+
+119
+00:12:03,840 --> 00:12:12,920
+ and prove, so Multenions belongs to the second, the latter one, so by calling Multenions
+
+120
+00:12:12,920 --> 00:12:20,040
+ a structured algebra, it means that its intended structure is not an afterthought, it's a direct
+
+121
+00:12:20,040 --> 00:12:25,680
+ thing that we want to leverage, so elements are not merely numbers placed in a container
+
+122
+00:12:25,680 --> 00:12:31,480
+ and sent through a calculation, they stand in specified, well-defined relations to each
+
+123
+00:12:31,480 --> 00:12:40,040
+ other, the transformations are not merely whatever instructions happen to be convenient, they
+
+124
+00:12:40,040 --> 00:12:46,840
+ are part of what the system is, the composition is not merely putting one operation after another,
+
+125
+00:12:46,840 --> 00:12:54,160
+ it is where the system declares how one lawful change can become the condition for the next,
+
+126
+00:12:54,160 --> 00:12:58,920
+ so the important way is structured, structure is what prevents a collection of marks from
+
+127
+00:12:58,920 --> 00:13:05,280
+ becoming an invitation to say anything we like, so in terms of like physical circuits,
+
+128
+00:13:05,280 --> 00:13:09,920
+ electronic circuits, it is distinction between an address line and a data line, between selective
+
+129
+00:13:09,920 --> 00:13:15,080
+ membership and a deselected one, between a recondition and right condition, in an algebraic
+
+130
+00:13:15,080 --> 00:13:20,640
+ program, it is distinction between the kinds of object and the operations that may join
+
+131
+00:13:20,640 --> 00:13:28,120
+ them, so we can begin this way before demanding any notation, before any we start writing anything
+
+132
+00:13:28,120 --> 00:13:34,840
+ at all, this is how we would set this up as, so imagine a small controller for a door,
+
+133
+00:13:34,840 --> 00:13:43,840
+ as four states, closed, open, opening and closing, so it receives a few named events,
+
+134
+00:13:43,840 --> 00:13:51,640
+ a request to enter, a fully open sensor, a fully closed sensor and an obstruction signal,
+
+135
+00:13:51,640 --> 00:13:57,080
+ the controller has a few named transformations, our request applied to, our request applied
+
+136
+00:13:57,080 --> 00:14:05,400
+ to closed, begins opening, a fully open sensor applied to an opening produces open, a timeout
+
+137
+00:14:05,400 --> 00:14:13,040
+ applied to open begins closing and obstruction applied to closing returns the system to opening,
+
+138
+00:14:13,040 --> 00:14:20,640
+ so that is a finite state program that is described, its value is not that it's a complex thing,
+
+139
+00:14:20,640 --> 00:14:25,320
+ it's a value that it's a possible conduct that can lay out, without pretending the door
+
+140
+00:14:25,320 --> 00:14:31,640
+ it has a hidden personality, there's no man behind the curtain, we can ask whether the
+
+141
+00:14:31,640 --> 00:14:37,640
+ obstruction transition is present, we can ask whether the closed door can become open, without
+
+142
+00:14:37,640 --> 00:14:43,080
+ passing through an opening, we can ask whether this, there is a state in which no event is
+
+143
+00:14:43,080 --> 00:14:53,360
+ handled, we can test a trace, closed, request, opening, fully open, open, timeout, closing,
+
+144
+00:14:53,360 --> 00:15:01,680
+ obstruction, opening, so what's next, we make the demand stronger, do not leave those names
+
+145
+00:15:01,680 --> 00:15:06,880
+ as labels in the diagram, so treat state, event, transformation and composition as explicit
+
+146
+00:15:06,880 --> 00:15:13,200
+ objects in the program's account of itself, a transition is not merely a sentence and
+
+147
+00:15:13,200 --> 00:15:18,240
+ a manual, it is an entity that can be inspected for its source, its condition, its destination
+
+148
+00:15:18,240 --> 00:15:25,200
+ and consequence, a composition is not merely an accident of control flow, it is a declared
+
+149
+00:15:25,200 --> 00:15:32,560
+ way in which one transformation becomes available after another, so that's the kind of exercise
+
+150
+00:15:32,560 --> 00:15:39,040
+ that this episode 10 is concerned with, the pursuit of finite state programs becomes the
+
+151
+00:15:39,040 --> 00:15:53,640
+ pursuit of explicit algebraic objects, so there is a useful difference between an object
+
+152
+00:15:53,640 --> 00:16:03,560
+ and a value, number four is a value, but the four that names this memory address, the four
+
+153
+00:16:03,560 --> 00:16:08,880
+ that is the current candidate and the four that is the target are not interchangeable
+
+154
+00:16:08,880 --> 00:16:15,000
+ objects, even when they share the same representation, the same numeric representation, typically
+
+155
+00:16:15,000 --> 00:16:23,720
+ in a binary, but the roles determine what operations are appropriate, so we learn that
+
+156
+00:16:23,720 --> 00:16:30,520
+ when the same four wires can be harmless data in one condition, they can also be a misleading
+
+157
+00:16:30,520 --> 00:16:37,760
+ apparent result in another, the same four wires, and an explicit algebraic program must
+
+158
+00:16:37,760 --> 00:16:43,080
+ preserve that distinction, it should not collapse every meaningful difference into an anonymous
+
+159
+00:16:43,080 --> 00:16:49,080
+ number or bare memory location or just a line of code whose role is remembered by the guy
+
+160
+00:16:49,080 --> 00:16:53,920
+ who wrote it, and maybe didn't document, so no one knows anything is going on, but it
+
+161
+00:16:53,920 --> 00:16:59,800
+ should make room to ask, what is the object, where did it come from, which relation does
+
+162
+00:16:59,800 --> 00:17:09,880
+ it stand in, what can act upon it, and what has to be true before the action is valid,
+
+163
+00:17:09,880 --> 00:17:13,720
+ so that does not mean that every program has to carry a long philosophical explanation
+
+164
+00:17:13,720 --> 00:17:19,400
+ of itself, it just means that the structure needs to understand its conduct and not treated
+
+165
+00:17:19,400 --> 00:17:24,920
+ as disposable commentary, just put those notes on the document, no one is going to read it
+
+166
+00:17:24,920 --> 00:17:30,840
+ and it actually belongs to the construction, so a good label can be "help", a type can
+
+167
+00:17:30,840 --> 00:17:36,640
+ help, you know, like an object during a program, a table can help, a physical separation of
+
+168
+00:17:36,640 --> 00:17:44,200
+ paths can help, but none by itself is enough, the question is whether a program's stated
+
+169
+00:17:44,200 --> 00:17:53,160
+ objects and operations genuinely constrain one another, so reflect back on the door controller
+
+170
+00:17:53,160 --> 00:18:01,920
+ example, a simple list of commands might say, okay, if the obstruction sensor is active,
+
+171
+00:18:01,920 --> 00:18:07,640
+ command the motor to open, that can work, right, but then there's several questions of that
+
+172
+00:18:07,640 --> 00:18:13,960
+ remain hidden, is the door currently closing, does the obstruction matter while it's already
+
+173
+00:18:13,960 --> 00:18:21,160
+ open, does the command cancel appending closed or merely add another instruction to the queue,
+
+174
+00:18:21,160 --> 00:18:26,440
+ what happens if the fully open sensor never arrives, so these are like we just say, okay,
+
+175
+00:18:26,440 --> 00:18:31,440
+ those are edge cases, we add them after the real program, but they're part of the program's
+
+176
+00:18:31,440 --> 00:18:39,920
+ possible conduct, now in our structured approach that we're proposing here, those questions
+
+177
+00:18:39,920 --> 00:18:45,600
+ are put to the forefront, so the structure itself asks whether the obstruction is an
+
+178
+00:18:45,600 --> 00:18:51,120
+ event valid in every state or in only certain states, it asks whether opening is a state,
+
+179
+00:18:51,120 --> 00:19:01,840
+ an operation or both a different level of description, it asks whether a timeout composes
+
+180
+00:19:01,840 --> 00:19:08,080
+ with an obstruction and what order, it asks what the trace provides, that that controller
+
+181
+00:19:08,080 --> 00:19:13,760
+ returned to a safe state, the result may still be implemented with the ordinary electronics
+
+182
+00:19:13,760 --> 00:19:19,920
+ or ordinary code, right, but what changes the discipline is by which its behavior is
+
+183
+00:19:19,920 --> 00:19:29,600
+ specified and checked, so this is why the contrast with opaque systems should not be
+
+184
+00:19:29,600 --> 00:19:35,200
+ heard in an argument against calculation, it's too easily people will slide into this kind
+
+185
+00:19:35,200 --> 00:19:43,480
+ of us and M0 sum, this is not about that, explicit structures also calculate, they can
+
+186
+00:19:43,480 --> 00:19:48,880
+ be large, fast and demanding, the difference is that their decisive transformations are
+
+187
+00:19:48,880 --> 00:19:55,000
+ intended to remain presentable as operations are named kinds of objects, so a listener,
+
+188
+00:19:55,000 --> 00:20:00,720
+ a builder or a later repairer can follow a transition without having to reconstruct
+
+189
+00:20:00,720 --> 00:20:07,560
+ an entire history of training data and parameter adjustment and that's the extreme savings
+
+190
+00:20:07,560 --> 00:20:13,920
+ of this idea, of course there's always trade-offs, right, an explicit finite state structure
+
+191
+00:20:13,920 --> 00:20:20,360
+ that can become unwieldy when the world describes as too many relevant conditions, think about
+
+192
+00:20:20,360 --> 00:20:26,360
+ how a robot constructs its environment, a learned system may handle variation and hand
+
+193
+00:20:26,360 --> 00:20:32,160
+ specified controller can anticipate these things, but a learned system can also conceal
+
+194
+00:20:32,160 --> 00:20:38,600
+ a distinction that safety maintenance or accountability requires us to keep it visible, there you
+
+195
+00:20:38,600 --> 00:20:45,120
+ know, accountability, that seems to be always missing, but the right question is not which
+
+196
+00:20:45,120 --> 00:20:53,600
+ method wins everywhere, it is where the explicit structure has a condition to trust, so the
+
+197
+00:20:53,600 --> 00:20:59,120
+ phrase exercise, that matters, that means something, it doesn't mean the program is
+
+198
+00:20:59,120 --> 00:21:04,400
+ a toy, it means we learn the structure by performing it, we identify an object, we state
+
+199
+00:21:04,400 --> 00:21:11,900
+ an operation, we ask what composition is allowed, we test the consequence, we find an exception,
+
+200
+00:21:11,900 --> 00:21:19,760
+ we revise the account, our finite state program becomes less like a spell, there's some spooky
+
+201
+00:21:19,760 --> 00:21:25,200
+ magic that a computer does, it just happens to magically do that, oh it's obeying, but
+
+202
+00:21:25,200 --> 00:21:32,200
+ it looks more like a work proof of possible conduct, so keep beating this 4-bit wonder
+
+203
+00:21:32,200 --> 00:21:41,480
+ but it remains useful because it keeps the discussion honest, manual comparison does not
+
+204
+00:21:41,480 --> 00:21:46,200
+ yet supply a controller, and it doesn't hold a target independently, we decided next action
+
+205
+00:21:46,200 --> 00:21:52,400
+ revise a candidate or even verify it a completed cycle, but it exposes several objects we would
+
+206
+00:21:52,400 --> 00:21:58,760
+ need, a remembered word, a target word, a relation between them, a valid recondition, a valid
+
+207
+00:21:58,760 --> 00:22:10,720
+ recondition and visible trace, so let's say we wanted to make one small addition, a controller
+
+208
+00:22:10,720 --> 00:22:18,280
+ could inspect the comparator, if the remembered word were lower than the target, it could transform
+
+209
+00:22:18,280 --> 00:22:27,680
+ the candidate upper by one, contrarily if it were higher, it could transform the candidate
+
+210
+00:22:27,680 --> 00:22:34,760
+ downward by one, if it were equal it would stop, the states of the imagined controller
+
+211
+00:22:34,760 --> 00:22:41,160
+ we're talking about here, it might be capture target, read candidate, compare, step upward,
+
+212
+00:22:41,160 --> 00:22:50,520
+ step downward, write candidate, verify and halt, so we're not going to do any particular
+
+213
+00:22:50,520 --> 00:22:57,880
+ arithmetic here on this one, we're just saying that each item can be named and distinguished
+
+214
+00:22:57,880 --> 00:23:03,320
+ by the method that I'm describing here, so the target is not the candidate, the comparison
+
+215
+00:23:03,320 --> 00:23:07,640
+ is not a decision, the decision is not a right, the right is not a verification, the completion
+
+216
+00:23:07,640 --> 00:23:12,760
+ condition is not a decorative light, it prevents the process from continuing after the state
+
+217
+00:23:12,760 --> 00:23:20,040
+ of objective has been reached one more time, it prevents the process of continuing after
+
+218
+00:23:20,040 --> 00:23:29,920
+ the state objective has been reached, so in a structured algebra, the distinctions are
+
+219
+00:23:29,920 --> 00:23:34,720
+ not really good habits for a careful engineer, they are candidates for the very objects and
+
+220
+00:23:34,720 --> 00:23:44,240
+ operations to which the program is expressed, so that's the bridge from a finite state diagram
+
+221
+00:23:44,240 --> 00:23:53,480
+ to a finite state program with intelligible form, let me get into the intelligence now,
+
+222
+00:23:53,480 --> 00:23:57,920
+ so this is an interesting experiment on my own, I'm going to see if I can do a small
+
+223
+00:23:57,920 --> 00:24:04,920
+ code fragment here in speech, see how it goes, so there's a small fragment, I'm going to
+
+224
+00:24:04,920 --> 00:24:16,480
+ set it as a program rather than a diagram, so let candidate and target the distinct objects,
+
+225
+00:24:16,480 --> 00:24:23,340
+ and then we'll create a method, compare candidate target, that yields one relation, don't lower
+
+226
+00:24:23,340 --> 00:24:35,640
+ equal or higher, only lower permits step up, method candidate, only higher permits step
+
+227
+00:24:35,640 --> 00:24:43,600
+ down candidate, and only the result of one of those steps permits right to the candidate
+
+228
+00:24:43,600 --> 00:24:51,960
+ store, right target is not an alternative spelling of the same operation, it is forbidden by
+
+229
+00:24:51,960 --> 00:25:01,600
+ the stated rules, so normally write, follow directly from compare, the relation is evidence,
+
+230
+00:25:01,600 --> 00:25:14,140
+ not yet it provides value, so the short sequence is such, compare, lower, step up, write, verify,
+
+231
+00:25:14,140 --> 00:25:19,680
+ and that would tell that process, that sequence would tell another builder both what may happen
+
+232
+00:25:19,680 --> 00:25:28,480
+ and what not must not be skipped, so at this point after that let's, it's fair to ask what
+
+233
+00:25:28,480 --> 00:25:35,520
+ makes Multenions unique about algebras, let me kind of close up with this, so the answer
+
+234
+00:25:35,520 --> 00:25:48,240
+ is not just it's a remarkable name, it's not unique as we say it so, then we want to think
+
+235
+00:25:48,240 --> 00:25:51,200
+ about this in terms of a thesis, right, so let's kind of pivot here a little bit, I think
+
+236
+00:25:51,200 --> 00:25:57,160
+ I'll do this here, so if uniqueness, if we're saying something that's unique, it must be
+
+237
+00:25:57,160 --> 00:26:02,440
+ earned by a particular kind of objects, operations, constraints, and compositions, right, so let's
+
+238
+00:26:02,440 --> 00:26:07,960
+ kind of frame it in those ways, so instead of settling the thesis by pretending to settle
+
+239
+00:26:07,960 --> 00:26:15,160
+ it by assertion, which is typical, Multenions proposes that there is a distinctive structured
+
+240
+00:26:15,160 --> 00:26:22,120
+ account of programmatic conduct available here, now I'll need to explain more what that means
+
+241
+00:26:22,120 --> 00:26:27,200
+ in the next episodes that are coming up after this, so that way the, this proposal can get
+
+242
+00:26:27,200 --> 00:26:33,320
+ a boom, a sharp reform, but we have to begin by stating what the element, what the element
+
+243
+00:26:33,320 --> 00:26:39,200
+ your objects are, we need to show what operations are permitted and forbidden, so we need to
+
+244
+00:26:39,200 --> 00:26:44,320
+ demonstrate a composition that would be, that would be obscure if left as an ordinary control
+
+245
+00:26:44,320 --> 00:26:51,920
+ flow, and we need to build or simulate a finite example whose behavior can be checked, so
+
+246
+00:26:51,920 --> 00:26:55,880
+ that's just something to explain that what we have to get into, to know that we're talking
+
+247
+00:26:55,880 --> 00:27:05,280
+ about the right thing, so there's an important, there's an important practical consequence,
+
+248
+00:27:05,280 --> 00:27:12,960
+ so when a program is arranged as an explicit algebraic object, failure has an address, if
+
+249
+00:27:12,960 --> 00:27:18,080
+ a controller takes an impossible transition, we can ask whether the state object was wrong,
+
+250
+00:27:18,080 --> 00:27:24,520
+ whether the event was misidentified, whether a condition was omitted, whether an invalid
+
+251
+00:27:24,520 --> 00:27:31,840
+ composition was allowed, if the program reached the right result for the wrong reasons, we
+
+252
+00:27:31,840 --> 00:27:38,720
+ can compare the trace for the declared structure, if a new feature is proposed, we can ask which
+
+253
+00:27:38,720 --> 00:27:45,600
+ object it adds and which existing compositions it changes, so not saying that this whole
+
+254
+00:27:45,600 --> 00:27:51,000
+ explicit system will be easy, some of the hardest systems in engineering are difficult
+
+255
+00:27:51,000 --> 00:27:56,400
+ because precisely because their structures are made visible and must be kept consistent,
+
+256
+00:27:56,400 --> 00:28:01,160
+ but in this case, the difficulty can be located, the difficulties that are located are different
+
+257
+00:28:01,160 --> 00:28:15,380
+ in other ways, because the difficulty arrives as an unexplained output, so by those rather,
+
+258
+00:28:15,380 --> 00:28:20,720
+ I think it's rather simple ways of explaining it, it changes, this changes what it means
+
+259
+00:28:20,720 --> 00:28:27,160
+ to learn programming, so a beginner, so I'm going to just start, now it is often handed
+
+260
+00:28:27,160 --> 00:28:35,920
+ a language, a syntax and an assignment, make this computer do something, so that can teach
+
+261
+00:28:35,920 --> 00:28:40,600
+ useful skills, but apparently AI is going to be doing it for everybody, so why bother
+
+262
+00:28:40,600 --> 00:28:50,040
+ learning it, but that's not exactly the wrong way to think about it, we're not going to
+
+263
+00:28:50,040 --> 00:28:55,000
+ leave with the fact that a program is a string of commands whose internal form is accepted
+
+264
+00:28:55,000 --> 00:28:59,220
+ on trust, though this trust is that you don't even need to know the stuff that AI is going
+
+265
+00:28:59,220 --> 00:29:03,240
+ to do everything, just trust and trust, build up those layers of trust and just, you know,
+
+266
+00:29:03,240 --> 00:29:12,080
+ take a word for it, no, I don't think so, the finite state approach begins somewhere a
+
+267
+00:29:12,080 --> 00:29:17,480
+ little more concrete, let's say, there would be too much on it here, so what states can
+
+268
+00:29:17,480 --> 00:29:23,920
+ the system occupy with distinctions matter here, what event changes with state, what transformations
+
+269
+00:29:23,920 --> 00:29:31,640
+ are allowed, and how do we know which result is valid, and what trace would another person
+
+270
+00:29:31,640 --> 00:29:39,800
+ need in order to repeat the claims, now, there you go, that would be science, so those are
+
+271
+00:29:39,800 --> 00:29:45,400
+ algebraic questions before the questions of a particular programming language, and those
+
+272
+00:29:45,400 --> 00:29:50,960
+ are also cybernetic questions, by the way, cybernetics asks about control communication
+
+273
+00:29:50,960 --> 00:29:56,820
+ and feedback in organized systems, but control without a visible account of the state can
+
+274
+00:29:56,820 --> 00:30:05,640
+ become mysticism, teleology, feedback without an explicit relation can become slogan, the
+
+275
+00:30:05,640 --> 00:30:11,280
+ value of a structured algebra is that it presses the vocabulary down toward the machine, it
+
+276
+00:30:11,280 --> 00:30:17,280
+ asks whether the relation is held, what transformation occurs, what condition enables it, and what
+
+277
+00:30:17,280 --> 00:30:25,000
+ consequence follows, so the goal here is not to make every machine small, large systems
+
+278
+00:30:25,000 --> 00:30:28,720
+ will still exist and some will remain trained, statistically distributed and difficult to
+
+279
+00:30:28,720 --> 00:30:34,960
+ compress into a handful of objects, so the goal is to reserve another lineage of technical
+
+280
+00:30:34,960 --> 00:30:48,240
+ work, systems that are designed to reveal the terms of operation, so in closing the lineage
+
+281
+00:30:48,240 --> 00:30:54,920
+ that I'm talking about here needs both a formal account and a physical home, a finite state
+
+282
+00:30:54,920 --> 00:30:59,960
+ program cannot remain a philosophical diagram, its object must eventually be represented
+
+283
+00:30:59,960 --> 00:31:05,240
+ somewhere, the table, memory, and register in a program image, run a wire on a sequence
+
+284
+00:31:05,240 --> 00:31:10,680
+ of observed actions, its operations must be timing, power failure, and the ordinary resistance
+
+285
+00:31:10,680 --> 00:31:19,040
+ of material systems, so for now, Multenions gives us a direction to travel, we will pursue
+
+286
+00:31:19,040 --> 00:31:26,000
+ finite state programs as explicit algebraic objects, we will ask whether the operations
+
+287
+00:31:26,000 --> 00:31:30,680
+ can be structured, so the machine's conduct remains visible, not only after produced result
+
+288
+00:31:30,680 --> 00:31:39,560
+ but while it's being built to test the repaired and changed, so in the next episode we will
+
+289
+00:31:39,560 --> 00:31:48,160
+ start to look at whether these explicit objects can survive contact with a real machine, but
+
+290
+00:31:48,160 --> 00:32:03,040
+ in order to detail that, we will need to take a small segue into discussing algorithms, because
+
+291
+00:32:03,040 --> 00:32:12,520
+ if you, we talk about composition and the algebra is law for compositions, what processes
+
+292
+00:32:12,520 --> 00:32:19,000
+ but algorithms are we going to execute that makes this compatible, makes it work in a
+
+293
+00:32:19,000 --> 00:32:25,680
+ way that we are expecting it to, and that's for next time, thank you for listening.
+
