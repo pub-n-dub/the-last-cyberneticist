@@ -216,7 +216,7 @@ Episode Summary:
 * State the newly verified boundary: McAulay’s general `n = 4` multenions are associative, noncommutative, graded, and sixteen-component—not an octonion controller by another name
 * Distinguish the static algebraic layer—basis, grade, product, projection, linity, invariant—from the dynamic algorithmic layer of state, condition, transition, memory, and halt
 * Extend Episode 4’s activities, modes, transitions, and conditions with an architectural Ariadne thread: a recoverable path through the machine’s behavior
-* Specify the representation, transition, invariant, evidence, and scope contracts required before calling a program multenion-informed
+* Specify the algebraic, representation, transition, invariant, evidence, and scope contracts required before calling a program multenion-informed
 * Show why a lawful relation or product does not itself select a next action, write memory, or verify a result
 * Use Trakhtenbrot’s labyrinth invariant to explain when a bounded search needs an active path, closed transitions, deterministic choice order, and an honest exhausted-search result
 * End with a prepared Episode 12 demonstration of a named algebraic operation, a transition rule, and a traceable outcome
