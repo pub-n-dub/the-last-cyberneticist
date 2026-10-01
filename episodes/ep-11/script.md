@@ -36,7 +36,13 @@ That is valuable because it tells us what an algebra can do. It can make the ter
 
 But none of those facts chooses an operation in time.
 
-An algebra can tell us that `i1² = −1`, and that `i1i2 = −i2i1`. It cannot, by itself, tell a physical machine when two stored symbols should be treated as `i1` and `i2`, whether their order has been preserved in memory, or what should happen when an unfamiliar symbol arrives. It does not decide whether a product should be attempted, displayed, rejected, logged, or deferred. Those are algorithmic and architectural questions.
+Two of the compact relations we will need are visible here:
+
+i₁² = −1
+
+i₁i₂ = −i₂i₁
+
+The first says that multiplying the first primitive unit by itself gives negative one. The second says that exchanging the order of the two units changes the sign. But neither relation, by itself, tells a physical machine when two stored symbols should be treated as i₁ and i₂, whether their order has been preserved in memory, or what should happen when an unfamiliar symbol arrives. An algebra does not decide whether a product should be attempted, displayed, rejected, logged, or deferred. Those are algorithmic and architectural questions.
 
 This gives us two layers, and neither can replace the other.
 
