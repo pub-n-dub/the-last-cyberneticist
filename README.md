@@ -305,6 +305,8 @@ Episode Summary:
 * Define merit through legibility, participation, repairability, and the ability to test a claim together
 * Make a direct case for donations to support the materials, preparation, patient teaching, and learner access that this educational work requires
 
+_Move Hero here_, _Intelliputer foray after GA144_
+
 ### Episode #17
 
 _Multenions Transition Automation in GA144_
@@ -319,8 +321,6 @@ Episode Summary:
 * Show organization as the explicit arrangement of objects, memory, words, constraints, and observable consequences
 * Verify that invalid transitions and failed conditions have a locatable cause rather than appearing as unexplained output
 * Preserve the distinction between a legible finite-state controller and a general claim of autonomous intelligence
-
-_Maybe in this range the Intellivision foray_
 
 ### Episode #18
 
