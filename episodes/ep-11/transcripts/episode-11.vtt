@@ -1,0 +1,815 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:12.700
+ Welcome to episode 11 of The Last Cyberneticist. This episode is called Multenions and Program Synthesis.
+
+00:00:12.700 --> 00:00:17.360
+ Over the last few episodes we have been building a set of foundations and a ladder around
+
+00:00:17.360 --> 00:00:27.600
+ a very small machine. Episode 7 asked what it means for a machine
+
+00:00:27.600 --> 00:00:39.220
+ to remember. Episode 8 asked when a difference becomes consequential. Episode 9 investigated
+
+00:00:39.220 --> 00:00:44.360
+ what has to be true before a comparator light can count as an evidentiary statement.
+
+00:00:44.360 --> 00:00:51.560
+ Episode 10 introduced Multenions as a historical attempt to make
+
+00:00:51.560 --> 00:01:01.140
+ objects, transformations, and invariants explicit. So for today, I want to ask a question that
+
+00:01:01.140 --> 00:01:07.600
+ sounds modest, but it's really where a great deal of technical thinking becomes either
+
+00:01:07.600 --> 00:01:14.440
+ machinery or stays a beautiful diagram on paper. And
+
+00:01:14.440 --> 00:01:27.160
+ that question is, when do rules become an algorithm? This is not the same question as
+
+00:01:27.160 --> 00:01:34.000
+ whether we have a formula. It's not the same question as whether we know the answer in
+
+00:01:34.000 --> 00:01:45.200
+ a particular case. An algorithm is a promise of conduct. Given the stated kind of input,
+
+00:01:45.200 --> 00:01:51.080
+ it tells us what elementary action to take, what to inspect next, when to repeat, and when
+
+00:01:51.080 --> 00:02:01.000
+ to stop. It is an account of how a result comes into the world. Otherwise, an algorithm
+
+00:02:01.000 --> 00:02:14.880
+ is a promise of conduct. The mathematician, Boris Trakhtenbrot, begins his 1963 book
+
+00:02:14.880 --> 00:02:21.600
+ Algorithms and Automatic Computing Machines with the familiar numerical work, Decimal
+
+00:02:21.600 --> 00:02:30.480
+ arithmetic, and the Euclid method for finding a greatest common divisor. That choice of
+
+00:02:30.480 --> 00:02:38.320
+ beginning that discussion is very useful. From the very beginning, it prevents us from treating
+
+00:02:38.320 --> 00:02:43.400
+ an algorithm as a glamorous word, reserved for electronic machines, or something that
+
+00:02:43.400 --> 00:02:52.360
+ we can obfuscate away. A person, an individual, can carry out an algorithm with a pencil and
+
+00:02:52.360 --> 00:02:57.800
+ paper. A calculator can carry it out without any understanding of the larger mathematical
+
+00:02:57.800 --> 00:03:09.060
+ purpose. So what matters is the work has been decomposed into explicit and repeatable steps.
+
+00:03:09.060 --> 00:03:15.400
+ In Trakhtenbrot's version of the Euclid method, take two positive integers.
+
+00:03:15.400 --> 00:03:24.160
+ If they're equal, stop. That common value is the answer. If they're unequal, put the
+
+00:03:24.160 --> 00:03:31.080
+ larger and smaller in order, subtract the smaller from the larger, and then repeat with
+
+00:03:31.080 --> 00:03:39.200
+ the new pair. The number of repetitions is not known in advance. It depends on the input.
+
+00:03:39.200 --> 00:03:47.800
+ But every next move is known at every stage. So conversely, subtract the smaller from the
+
+00:03:47.800 --> 00:03:54.880
+ larger and repeat with the new pair. Again, the same repetitions. But the moves are known
+
+00:03:54.880 --> 00:04:02.880
+ at every stage. This small example gives us four questions to ask
+
+00:04:02.880 --> 00:04:12.760
+ about any proposed procedure. What inputs are permitted? What are the elementary operations?
+
+00:04:12.760 --> 00:04:20.560
+ Which condition chooses the next operation? And what counts as completion? If any one
+
+00:04:20.560 --> 00:04:26.920
+ of those answers is left as a private intuition, we may have a useful suggestion, but we do
+
+00:04:26.920 --> 00:04:36.360
+ not have an algorithm in the strongest sense. So looking at what we've been doing here,
+
+00:04:36.360 --> 00:04:43.560
+ "Compare the target and the candidate, then improve the candidate. Well, that's a
+
+00:04:43.560 --> 00:04:48.440
+ sounds like a procedure. That's what it sounds like, right? But how do we improve
+
+00:04:48.440 --> 00:04:55.200
+ it? What's that actually mean? So which difference is inspected? Which change is allowed? What
+
+00:04:55.200 --> 00:05:02.360
+ if two changes look possible simultaneously, right? What if the numbers are already equal?
+
+00:05:02.360 --> 00:05:10.520
+ What happens if the comparison is invalid? The input is absent, or a limit is reached? We talked
+
+00:05:10.520 --> 00:05:15.960
+ a lot about this in the last episode. But again, it's to enforce the point that the difference
+
+00:05:15.960 --> 00:05:24.680
+ between a slogan and a controller lives in those very questions. Trakhtenbrot
+
+00:05:24.680 --> 00:05:32.160
+ gives two names to the further parts of that promise. So an algorithm is general for a
+
+00:05:32.160 --> 00:05:40.160
+ stated class. One finite method must work for every permitted instance, not merely the
+
+00:05:40.160 --> 00:05:52.120
+ example that inspired it. And it is determinate. At each stage, it must say what happens next.
+
+00:05:52.120 --> 00:06:00.600
+ Generality does not mean omnipotence. It means that the domain has been named honestly. Determinacy
+
+00:06:00.600 --> 00:06:05.320
+ does not mean the result is known from the start. It means a procedure never asks its
+
+00:06:05.320 --> 00:06:14.680
+ operator to supply an unrecorded act of judgment. And we've ever heard that before. There is
+
+00:06:14.680 --> 00:06:25.680
+ another distinction here, which is almost unfashionable to say aloud. So an algorithm can
+
+00:06:25.680 --> 00:06:37.440
+ exist and still be practically useless at a given scale. So, digging that a little more,
+
+00:06:37.440 --> 00:06:43.160
+ a method can be perfectly specified, completely mechanical, and far too slow or too expensive
+
+00:06:43.160 --> 00:06:50.640
+ to use. Speed is not the definition of intelligence. It's not even the definition of an algorithm
+
+00:06:50.640 --> 00:06:57.680
+ although I want you to believe that. Feasibility is a separate question. One of responsible
+
+00:06:57.680 --> 00:07:04.040
+ design or has to ask himself or herself, whatever it's stated and what it's actually
+
+00:07:04.040 --> 00:07:10.400
+ doing. I'm telling you all about it, all this super intelligence now, I guess we've evolved
+
+00:07:10.400 --> 00:07:15.040
+ into. What is it actually doing? We didn't figure out what the AI, the artificial intelligence
+
+00:07:15.040 --> 00:07:26.240
+ is doing. But now it's just rebranded. Okay. That's why the word algorithm is critical
+
+00:07:26.240 --> 00:07:33.320
+ with the series. It gives us a way to resist the familiar kind of spectacle. So we don't
+
+00:07:33.320 --> 00:07:37.760
+ need to claim that a small controller solves every problem or that
+
+00:07:37.760 --> 00:07:44.560
+ a visible result. It proves a mysterious faculty. There's cognition right there. We
+
+00:07:44.560 --> 00:07:52.440
+ can ask the smaller, more durable questions. What class of situation was this built for?
+
+00:07:52.440 --> 00:08:01.880
+ What state can it recognize? What is it authorized to change? What record does it leave behind?
+
+00:08:01.880 --> 00:08:07.680
+ Can another person, a human, or maybe even agent, follow the chain from input to action
+
+00:08:07.680 --> 00:08:18.040
+ to result. I think the human observation point of that would be more welcome. So the new
+
+00:08:18.040 --> 00:08:28.160
+ research on McAulay's multenions makes the first half of this question sharper. So multenions
+
+00:08:28.160 --> 00:08:40.640
+ are not a hidden name for an eight-part octonion machine.
+
+00:08:40.640 --> 00:08:47.600
+ But in the general four-dimensional case, he describes an associative, noncommutative
+
+00:08:47.600 --> 00:08:55.520
+ graded algebra with 16 scalar components. So it has named primitive units, products
+
+00:08:55.520 --> 00:09:03.840
+ whose ordering matters. It makes a difference. Grade projections, vectoriums, linear operations,
+
+00:09:03.840 --> 00:09:13.120
+ he calls linities, and invariant pairings. Now the invariance is a, that's the part to
+
+00:09:13.120 --> 00:09:20.200
+ pay attention to the most. That's the valuable part. But all these things we just talked
+
+00:09:20.200 --> 00:09:26.120
+ about all that list is valuable. This is all valuable because it tells us what the algebra
+
+00:09:26.120 --> 00:09:33.720
+ can do. It can make the terms of an operation explicit. It can say that a product is lawful.
+
+00:09:33.720 --> 00:09:40.800
+ It can say that changing the order of two primitive units changes the sign. It can distinguish
+
+00:09:40.800 --> 00:09:47.200
+ the scalar part from a vector part or a grade two component from another grade. It can name
+
+00:09:47.200 --> 00:09:57.000
+ a transformation and state an identity that it preserves. But all of those things as great
+
+00:09:57.000 --> 00:10:08.920
+ as they are, none of those facts chooses an operation in time. So I'm looking at the most
+
+00:10:08.920 --> 00:10:16.420
+ primitive sense or the most basic sense. Two of the compact relations that we need visible
+
+00:10:16.420 --> 00:10:26.560
+ among all else are these two expressions, i sub 1 squared equals negative 1. i sub 1
+
+00:10:26.560 --> 00:10:35.320
+ times i sub 2 equals the negative of i sub 2 times i sub 1. So the first says, the first
+
+00:10:35.320 --> 00:10:45.640
+ point I said is multiplying the first primitive unit by itself gives a negative 1. The second
+
+00:10:45.640 --> 00:10:51.400
+ says that exchanging the order of the two units changes the sign. We said it in the
+
+00:10:51.400 --> 00:10:57.560
+ text but there's a numerical representation for it. But neither relation by itself tells
+
+00:10:57.560 --> 00:11:04.920
+ a physical machine and two stored symbols to be treated as i sub 1 and i sub 2. Whether
+
+00:11:04.920 --> 00:11:11.000
+ the order has been preserved in memory or what should happen when an unfamiliar symbol arrives.
+
+00:11:11.000 --> 00:11:16.200
+ So the algebra does not decide whether a product should be attempted, displayed, rejected,
+
+00:11:16.200 --> 00:11:24.760
+ logged or deferred. So those are the algorithmic and the architectural questions. So that gives
+
+00:11:24.760 --> 00:11:32.960
+ us two layers and neither can replace the other. So the first, let's review a bit here,
+
+00:11:32.960 --> 00:11:41.480
+ the first is the algebraic layer. What is the object? What basis is it written in? Which
+
+00:11:41.480 --> 00:11:49.000
+ grade does it have? What product or projection is permitted and which relation should remain
+
+00:11:49.000 --> 00:12:01.280
+ true? The second is the algorithmic layer. Where is the object stored? What input makes
+
+00:12:01.280 --> 00:12:11.000
+ an operation available? Which transition is selected? What changes in memory? What check
+
+00:12:11.000 --> 00:12:27.280
+ follows? And what ends the run? I would state here that an algebra without an algorithm
+
+00:12:27.280 --> 00:12:40.920
+ is a map with no route. A program without an algebraic contract may run, but it's important
+
+00:12:40.920 --> 00:12:52.800
+ terms can remain private habits in the head of the author. So let's do an example on that.
+
+00:12:52.800 --> 00:12:59.240
+ That's a good thing to bring home. Suppose a small program says it will work with two
+
+00:12:59.240 --> 00:13:07.280
+ primitive units, i1, i2. Before it performs anything, it has to declare what those names
+
+00:13:07.280 --> 00:13:14.400
+ mean, where they are represented, and which rule it is testing. So let's give it the
+
+00:13:14.400 --> 00:13:26.640
+ request, multiply i1 by i2. The algebra tells us that the ordered product has a meaning.
+
+00:13:26.640 --> 00:13:32.600
+ But the algorithm still has work to do. It must validate that both operands use the declared
+
+00:13:32.600 --> 00:13:40.240
+ basis. It must preserve their order. It must execute the named product. It must store
+
+00:13:40.240 --> 00:13:46.120
+ the result in a layout whose grade can be identified. It must test the result against
+
+00:13:46.120 --> 00:13:53.320
+ the expected relation, and then finally must record what happened. If the machine instead
+
+00:13:53.320 --> 00:14:02.120
+ receives i2, followed by i1, it is not allowed to treat that as a harmless rearrangement.
+
+00:14:02.120 --> 00:14:09.000
+ The order is part of the meaning. The program must either produce the negative result, as
+
+00:14:09.000 --> 00:14:15.200
+ prescribed by the rule, or enter an error because representation cannot preserve its
+
+00:14:15.200 --> 00:14:21.760
+ sign. So, the clever ones listening here can say, "I want you multiplying." The order
+
+00:14:21.760 --> 00:14:32.320
+ is irrelevant. Be careful on making assumptions before you execute the process. That's the
+
+00:14:32.320 --> 00:14:37.400
+ point of this one. I'm telling you this. A correct-looking final lamp, even in your head,
+
+00:14:37.400 --> 00:14:44.400
+ is not enough. The route by which that lamp was reached belongs to the
+
+00:14:44.400 --> 00:14:55.640
+ claim. It's segueing back into the book by Trakhtenbrot, chapter 2. It gives us a second
+
+00:14:55.640 --> 00:15:04.760
+ way to see why. Here he considers finite two-player games with perfect information. No hidden
+
+00:15:04.760 --> 00:15:14.040
+ cards, no dice, no accident smuggled in as fate. No cheats, in other words. A game position
+
+00:15:14.040 --> 00:15:22.240
+ is drawn as a tree. Each vertex is a position. Each edge is a permissible move. The leaves
+
+00:15:22.240 --> 00:15:30.360
+ of this tree are the finished games. Wins or losses. The important distinction in the
+
+00:15:30.360 --> 00:15:39.000
+ discussion is between a move and a strategy. A move may look clever at the opening. A complete
+
+00:15:39.000 --> 00:15:43.520
+ strategy says what to do in every situation that can arise, including positions the player
+
+00:15:43.520 --> 00:15:54.520
+ hopes never to see. Working backward from the leaves, one can label a position as winning
+
+00:15:54.520 --> 00:16:01.640
+ if the player whose turn it is, has at least one move to a winning successor. If every
+
+00:16:01.640 --> 00:16:06.480
+ permitted move hands the win to the other player, the position is losing. This is the
+
+00:16:06.480 --> 00:16:17.160
+ winning strategy, the losing strategy proposal. This is quite common in the world. This does
+
+00:16:17.160 --> 00:16:31.840
+ not imply that you play chess by brute force. There is an explicit separation of the theoretical
+
+00:16:31.840 --> 00:16:37.920
+ existence of a procedure and its practical feasibility. A finite game tree may be so
+
+00:16:37.920 --> 00:16:49.460
+ vast that the procedure is useless to a person in the moment. Within a stated class, a complete
+
+00:16:49.460 --> 00:16:55.480
+ strategy can be defined because each position is answered by the structure of the whole
+
+00:16:55.480 --> 00:17:18.040
+ tree. For our purposes, the controller is not a game opponent, but the lesson transfers
+
+00:17:18.040 --> 00:17:32.680
+ cleanly. A controller needs an answer for every reachable state. If the target matches
+
+00:17:32.680 --> 00:17:43.280
+ the candidate, what follows? If it does not, what action is chosen? If a sensor value
+
+00:17:43.280 --> 00:17:50.760
+ is outside the representation contract, where does the system go? If a branch is unavailable,
+
+00:17:50.760 --> 00:17:59.280
+ is there another prescribed branch, an error state or halt? An arrow for the happy path
+
+00:17:59.280 --> 00:18:10.240
+ is not a strategy for the machine. So there's a moral restraint in that.
+
+00:18:10.240 --> 00:18:26.280
+ We should refrain from calling a device autonomous because it produces an output after a prepared
+
+00:18:26.280 --> 00:18:36.600
+ demonstration. The serious question is whether its permitted situations have been bounded
+
+00:18:36.600 --> 00:18:44.040
+ and whether its response to each one has been made legible. A small, finite controller can
+
+00:18:44.040 --> 00:18:58.520
+ be modest in capacity and rigorous in that respect. That is already an achievement.
+
+00:18:58.520 --> 00:19:16.200
+ A very vivid example comes up in chapter 3 of Trakhtenbrot's book. So a labyrinth
+
+00:19:16.200 --> 00:19:21.040
+ is a finite graph made of junctions and corridors. You all kind of know what a labyrinth or a
+
+00:19:21.040 --> 00:19:27.760
+ maze looks like and those are two different things, but don't get into it in the moment.
+
+00:19:27.760 --> 00:19:35.000
+ So in the story, the Greek myth of the labyrinth and the minotaur, the question is not whether
+
+00:19:35.000 --> 00:19:44.680
+ the Theseus is inspired, whether it goes into the go and get the minotaur is the storyteller's
+
+00:19:44.680 --> 00:19:55.640
+ pleasure. For our purposes, it is whether a designated target junction can be
+
+00:19:55.640 --> 00:20:05.840
+ reached from a designated start. Trakhtenbrot's procedure gives the searcher a
+
+00:20:05.840 --> 00:20:22.560
+ form of external memory. In brief, the story is Ariadne gives Theseus a ball of yarn and she
+
+00:20:22.560 --> 00:20:31.760
+ holds one end of it. Theseus heads into the labyrinth. He can search for the Minotaur.
+
+00:20:31.760 --> 00:20:43.640
+ And as he's traversing the labyrinth, the corridors that he has not been in yet, the
+
+00:20:43.640 --> 00:20:54.760
+ first of them is green. Once he has traversed that corridor, we mark it yellow.
+
+00:20:54.760 --> 00:21:05.480
+ When he retraces that path,
+
+00:21:05.480 --> 00:21:11.920
+ that same corridor, perhaps in the opposite direction, to wind the string, we identify
+
+00:21:11.920 --> 00:21:22.960
+ that corridor as red. So the colors are not the decoration for the story, but it's making
+
+00:21:22.960 --> 00:21:34.200
+ the states visible. So at a junction, the procedure follows an ordered list of rules. Stop
+
+00:21:34.200 --> 00:21:40.120
+ if the target has been reached. Backtrack, when the loop has been closed. Otherwise,
+
+00:21:40.120 --> 00:21:47.060
+ take an untraversed, green corridor. Return and stop at the origin when the exploration
+
+00:21:47.060 --> 00:21:55.480
+ has fully come back there, so return to the origin. In the remaining case, in the
+
+00:21:55.480 --> 00:22:02.240
+ backtrack along the appropriate yellow corridor. Most importantly, never enter a red corridor.
+
+00:22:02.240 --> 00:22:10.200
+ Because that's where one becomes lost. So there's, I would state, there's a beautiful,
+
+00:22:10.200 --> 00:22:19.960
+ beautiful invariant in this procedure, in the very process. And on the level of an
+
+00:22:19.960 --> 00:22:29.680
+ epiphany, I would state. Because when you think about it, at every moment, or any moment,
+
+00:22:29.680 --> 00:22:36.200
+ the yellow corridors form one simple path, from the start to the traveller's present location.
+
+00:22:36.200 --> 00:22:43.200
+ So the yellow path is the thread. So it doesn't just say where the guy is, the traveler is,
+
+00:22:43.200 --> 00:22:48.560
+ but how the present state was reached. So we had two pieces at the same time. Since the
+
+00:22:48.560 --> 00:22:56.000
+ labyrinth is finite, and no corridor is used more than twice, the procedure must halt. It
+
+00:22:56.000 --> 00:23:03.520
+ either reaches the target, leaving a simple route back, or returns to the origin after
+
+00:23:03.520 --> 00:23:18.480
+ exhausting all reachable territory. And that description I just gave is a remarkable physical
+
+00:23:18.480 --> 00:23:36.520
+ picture of memory. It's not a pile of data accumulated somewhere, wherever. It's a recoverable
+
+00:23:36.520 --> 00:23:44.280
+ history with a current function. The markings distinguish what is untried, what is currently
+
+00:23:44.280 --> 00:23:53.800
+ active, and what has been exhausted. They prevent pointless repetition. They make a negative
+
+00:23:53.800 --> 00:24:00.880
+ result meaningful: not "we failed to find the target, but "we searched this finite, stated
+
+00:24:00.880 --> 00:24:07.480
+ region under this procedure and return to no unexplored corridor available. You know everything
+
+00:24:07.480 --> 00:24:19.200
+ that's going on, and you remember why. So there's a small add on here, I say a small,
+
+00:24:19.200 --> 00:24:28.400
+ but crucial repair in Trakhtenbrot's account. A rule that says take any green
+
+00:24:28.400 --> 00:24:39.480
+ corridor is not determinate. So in that case, so a labyrinth has a structure without that
+
+00:24:39.480 --> 00:24:48.320
+ has single pathways. So there's no choices involved, but a maze has choices involved.
+
+00:24:48.320 --> 00:24:53.480
+ So a rule that says take any green corridor is not determinate because two searchers can
+
+00:24:53.480 --> 00:25:04.000
+ make two different unrecorded choices for different reasons. So in the book, he
+
+00:25:04.000 --> 00:25:09.240
+ repairs this by requiring a fixed convention. So such as choosing the first
+
+00:25:09.240 --> 00:25:18.160
+ eligible corridor clockwise from the direction of entry. So the convention perhaps can be
+
+00:25:18.160 --> 00:25:23.640
+ a bit arbitrary, but it must be fixed in algorithmic sense. So it has
+
+00:25:23.640 --> 00:25:31.120
+ to be a rule for that in that situation when you come upon a maze rather than labyrinth.
+
+00:25:31.120 --> 00:25:36.720
+ So that's exactly the kind of ordinary phrase that hides the machine's most consequential
+
+00:25:36.720 --> 00:25:44.160
+ ambiguity. Choose an available rewrite. Try a nearby value. Select the best candidate.
+
+00:25:44.160 --> 00:25:52.040
+ Choose the next free register. Every one of those conceals a human choice unless an ordering
+
+00:25:52.040 --> 00:25:58.520
+ rule has been declared. A tie-breaker is not bureaucratic debris. It's when it turns
+
+00:25:58.520 --> 00:26:07.560
+ into intention into a reproducible path. Now that I'm putting my finger on is exactly
+
+00:26:07.560 --> 00:26:21.360
+ the rub, the major problem that we're having today. So episode four gave us the architecture
+
+00:26:21.360 --> 00:26:28.120
+ of vocabulary of the activities, modes, transitions, and conditions. Alright, Ariadne's thread. It
+
+00:26:28.120 --> 00:26:34.240
+ adds the missing historical dimension to that architecture. A state diagram can say
+
+00:26:34.240 --> 00:26:39.680
+ what a machine may do. The thread says what it actually did, what it tried, and how it
+
+00:26:39.680 --> 00:26:49.360
+ arrived here. Now if a controller has only one fixed sequence, validate, multiply, verify
+
+00:26:49.360 --> 00:26:55.780
+ halt. It's not a labyrinth. And it does not need to pretend to be one. But it must be
+
+00:26:55.780 --> 00:27:01.000
+ a search on a bounded set of possible transformations. Or rewrite paths, test branches, or fault
+
+00:27:01.000 --> 00:27:08.720
+ cases. It needs a Ariadne's thread. It needs to know which transition remains available,
+
+00:27:08.720 --> 00:27:13.700
+ which is on the active path, which branch has already been exhausted, and which fixed
+
+00:27:13.700 --> 00:27:19.560
+ rule chooses among the remaining possibilities. Now for any of you that haven't experienced
+
+00:27:19.560 --> 00:27:26.960
+ with assembly and low-level programming, design your branching, and you'll know what I mean.
+
+00:27:26.960 --> 00:27:33.020
+ Otherwise, the machine arrives at an answer without leaving anyone a route back to the
+
+00:27:33.020 --> 00:27:44.640
+ question. No responsibility, no traceability. We have no idea what it's doing. Reflecting
+
+00:27:44.640 --> 00:27:58.560
+ back to Trakhtenbrot. Chapter four, which is what I'll call that with here. It moves
+
+00:27:58.560 --> 00:28:02.120
+ from the finite corridors of the labyrinth, so we're getting out of these quarters kind
+
+00:28:02.120 --> 00:28:09.400
+ of things, but into a far more dangerous territory, I would say. Words and substitutions, people
+
+00:28:09.400 --> 00:28:19.480
+ would think that that's a very dangerous thing, but let me explain. So an associative calculus,
+
+00:28:19.480 --> 00:28:29.480
+ which is reticent in the quaternions, octonions, multenions world. In the case of algorithms,
+
+00:28:29.480 --> 00:28:34.800
+ begins with a finite alphabet and a finite collection of allowed replacement rules. One
+
+00:28:34.800 --> 00:28:40.440
+ word may be changed into another by applying a rule at an eligible position. Two words
+
+00:28:40.440 --> 00:28:49.320
+ are equivalent if a finite chain of such legal substitutions connects them. So in a very
+
+00:28:49.320 --> 00:28:57.200
+ terse way, it can look like a game with strings, but the word problem is not like that. That's
+
+00:28:57.200 --> 00:29:04.800
+ not what you think. So it asks a very severe question. Is there one method that decides
+
+00:29:04.800 --> 00:29:17.920
+ for every pair of words in a given calculus, whether they are equivalent? On inspection,
+
+00:29:17.920 --> 00:29:25.760
+ the associated graph, they're usually infinite, maybe not really, but the okay, they're infinite.
+
+00:29:25.760 --> 00:29:33.440
+ Every word is a vertex. Every lawful substitution is an edge. A method that tries, simply tries
+
+00:29:33.440 --> 00:29:38.520
+ substitutions can wander forever without proving that no connection exists. That's where we've
+
+00:29:38.520 --> 00:29:44.160
+ got to kind of lean into zips, zips law or not. But that's not the subject for this here.
+
+00:29:44.160 --> 00:29:52.280
+ Here Trakhtenbrot offers a constructive case in which the problem
+
+00:29:52.280 --> 00:30:00.440
+ can be solved. So the system is given directed reduction rules. Apply them in a fixed priority
+
+00:30:00.440 --> 00:30:10.720
+ order at the first eligible position. The process reduces every word to one of eight forms. The
+
+00:30:10.720 --> 00:30:16.080
+ argument does not stop with the observation that the strings have been changed. Rather,
+
+00:30:16.080 --> 00:30:23.000
+ it proves that the reductions terminate and then uses the parity invariants and an index
+
+00:30:23.000 --> 00:30:33.280
+ parity argument to show that no two of the eight reduced forms are equivalent. Two original
+
+00:30:33.280 --> 00:30:39.920
+ words are equivalent exactly when their final reduced forms match. That's how it's working
+
+00:30:39.920 --> 00:30:48.720
+ there. And we call that the normal form idea. And that's something we can use right away
+
+00:30:48.720 --> 00:30:56.000
+ in our work and our implementations. So a rewrite procedure is not a decision procedure
+
+00:30:56.000 --> 00:31:03.760
+ merely because it produces a tidy representation. But to use a final
+
+00:31:03.760 --> 00:31:09.040
+ form as evidence, We need to know that the reduction ends and that that final form is
+
+00:31:09.040 --> 00:31:15.920
+ meaningful enough to settle the question we asked. Termination and uniqueness or another
+
+00:31:15.920 --> 00:31:23.560
+ explicitly proved equivalence criterion are part of the design. See, not decorations
+
+00:31:23.560 --> 00:31:32.920
+ to add on after the demo works. So what's the most beautiful thing about this, I would
+
+00:31:32.920 --> 00:31:41.120
+ say, the takeaway and what leads to the epiphany is that chapter four, it's the geometric
+
+00:31:41.120 --> 00:31:50.520
+ example of words. So let me explain a little bit on that. So the geometric example grounds
+
+00:31:50.520 --> 00:31:59.800
+ the symbols. Letters stand for an elementary transformation of a square. Concatenating
+
+00:31:59.800 --> 00:32:06.880
+ letters composes these transformations. A substitution rule can express that two different sequences
+
+00:32:06.880 --> 00:32:14.280
+ have the same geometric effect. Formal marks are not empty merely because they are formal.
+
+00:32:14.280 --> 00:32:19.960
+ The interpretation must be stated and the operations on them must preserve the relations we claim
+
+00:32:19.960 --> 00:32:34.460
+ they represent. 
+
+00:32:34.460 --> 00:32:44.120
+ Returning to the multenion problem, if we write a program that transforms symbolic
+
+00:32:44.120 --> 00:32:53.320
+ names for algebraic objects, we must say whether it's carrying out an algebraic product, changing
+
+00:32:53.320 --> 00:33:04.560
+ a storage encoding, reducing an expression to a canonical form, or
+
+00:33:04.560 --> 00:33:12.480
+ really rearranging display characters. But these are not interchangeable acts. The output
+
+00:33:12.480 --> 00:33:21.440
+ may look similar while the contracts differ completely. And this is what we're going to
+
+00:33:21.440 --> 00:33:29.960
+ dovetail into. This is where we're going to create a central claim. For a machine to make
+
+00:33:29.960 --> 00:33:38.260
+ a formal relation operational, it is more than valid symbols and more than a working
+
+00:33:38.260 --> 00:33:51.560
+ output. It needs a declared representation, a determinate transition rule, preserved invariants,
+
+00:33:51.560 --> 00:34:01.800
+ an explicit completion or failure condition, and a trace sufficient to reconstruct the run.
+
+00:34:01.800 --> 00:34:14.960
+ So you may recognize from the early episodes that parts of that sentence. And let me indicate
+
+00:34:14.960 --> 00:34:23.280
+ those. Episode seven, we said that memory is not merely accumulation, but the continuity
+
+00:34:23.280 --> 00:34:31.940
+ that can be recovered. So in episode eight, we said a difference matters, only when it
+
+00:34:31.940 --> 00:34:41.120
+ changes what happens next. And then episode nine, we stated that a visible signal counts
+
+00:34:41.120 --> 00:34:49.920
+ only as evidence under valid conditions. So here I've, I put them together in one statement.
+
+00:34:49.920 --> 00:34:57.920
+ Now those ideas meet. Memory becomes the thread, right? A consequential difference
+
+00:34:57.920 --> 00:35:03.600
+ selects a lawful branch. Evidence is the trace that lets another person walk the architectural
+
+00:35:03.600 --> 00:35:17.160
+ behavior backward. So closing, because I'm running on a bit here, I'm going to make up
+
+00:35:17.160 --> 00:35:28.240
+ a new term. So before calling a program, multenion-informed. Okay. We need six promises. So we
+
+00:35:28.240 --> 00:35:40.000
+ need an algebraic contract. The basis, grades, operations, and identities in use. We need
+
+00:35:40.000 --> 00:35:49.560
+ a representation contract: where those things live in memory or code. We need a transition
+
+00:35:49.560 --> 00:35:59.480
+ contract. What makes each operation available and which fixed convention resolves a choice?
+
+00:35:59.480 --> 00:36:09.120
+ We need an invariant contract. So what must remain true across every permitted step? We
+
+00:36:09.120 --> 00:36:18.080
+ need an evidence contract. That's the trace. And finally, we need a scope contract that
+
+00:36:18.080 --> 00:36:27.200
+ what limits we are not hiding. So we spend a little bit of time in the scope
+
+00:36:27.200 --> 00:36:33.240
+ contract because it deserves a little more reflection out here. A finite controller is
+
+00:36:33.240 --> 00:36:41.760
+ not a universal machine. A normal form that works in one stated calculus is not a solution
+
+00:36:41.760 --> 00:36:48.640
+ to every word problem. So a successful traversal of one bounded graph does not prove a general
+
+00:36:48.640 --> 00:37:00.200
+ method for every search space. Exact claims are not modesty theater. They are what makes
+
+00:37:00.200 --> 00:37:05.860
+ the work testable. So in practical terms, the trace for a small controller should be
+
+00:37:05.860 --> 00:37:12.520
+ able to say, hey, this was the input. This was the current state. This was the transition
+
+00:37:12.520 --> 00:37:20.560
+ chosen at this memory location or actuator changed. This check passed or failed. And this
+
+00:37:20.560 --> 00:37:26.600
+ was the reason for the halt or error or the declared step limit. So if the allowed number of steps
+
+00:37:26.600 --> 00:37:33.660
+ is reached before the target or an exhaustive result, an honest output is not a no solution.
+
+00:37:33.660 --> 00:37:43.520
+ It is `STEP_BOUND_REACHED` together with the active path and the unexplored frontier.
+
+00:37:43.520 --> 00:37:55.040
+ So it doesn't make the program intelligent by declaration. It makes it answerable. In
+
+00:37:55.040 --> 00:38:04.240
+ the next episode, we'll make that answerability visible in two small demonstrations. So first,
+
+00:38:04.240 --> 00:38:09.040
+ a declared algebraic operation will be validated, performed in order, checked, and recorded.
+
+00:38:09.040 --> 00:38:14.400
+ Then the Four-Bit Wonder's familiar target-and-candidate cycle will show how relation
+
+00:38:14.400 --> 00:38:21.520
+ becomes action only through an explicit algorithm. The concrete next action is to build a representation
+
+00:38:21.520 --> 00:38:27.440
+ table and transition trace before asking the machine to persuade us of anything. That's
+
+00:38:27.440 --> 00:38:31.140
+ for next time. Thank you for listening.
+

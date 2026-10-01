@@ -1,0 +1,254 @@
+Welcome to episode 11 of The Last Cyberneticist. This episode is called Multenions and Program Synthesis.
+Over the last few episodes we have been building a ladder from
+a very small machine. Episode 7 asked what it means for a machine
+to remember. Episode 8 asked when a difference becomes consequential. Episode 9 asked
+what has to be true before a comparator light can count as evidence.
+Episode 10 introduced Multenions as a historical attempt to make
+objects, transformations, and invariants explicit. So for today, I want to ask a question that
+sounds modest, but it's really where a great deal of technical thinking becomes either
+machinery or stays a beautiful diagram on paper. And
+that question is, when do rules become an algorithm? This is not the same question as
+whether we have a formula. It's not the same question as whether we know the answer in
+a particular case. An algorithm is a promise of conduct. Given the stated kind of input,
+it tells us what elementary action to take, what to inspect next, when to repeat, and when
+to stop. It is an account of how a result comes into the world. The mathematician Boris Trakhtenbrot begins his 1963 book
+Algorithms and Automatic Computing Machines with the familiar numerical work, decimal
+arithmetic, and the Euclid method for finding a greatest common divisor. That choice of
+beginning that discussion is very useful. From the very beginning, it prevents us from treating
+an algorithm as a glamorous word, reserved for electronic machines, or something that
+we can obfuscate away. A person, an individual, can carry out an algorithm with a pencil and
+paper. A calculator can carry it out without any understanding of the larger mathematical
+purpose. So what matters is the work has been decomposed into explicit and repeatable steps.
+In Trakhtenbrot's version of the Euclid method, take two positive integers.
+If they're equal, stop. That common value is the answer. If they're unequal, put the
+larger and smaller in order, subtract the smaller from the larger, and then repeat with
+the new pair. The number of repetitions is not known in advance. It depends on the input.
+But the next move is known at every stage. This small example gives us four questions to ask
+about any proposed procedure. What inputs are permitted? What are the elementary operations?
+Which condition chooses the next operation? And what counts as completion? If any one
+of those answers is left as a private intuition, we may have a useful suggestion, but we do
+not have an algorithm in the strongest sense. So looking at what we've been doing here,
+“Compare the target and the candidate, then improve the candidate” sounds like a
+procedure. But improve it how?
+it? What's that actually mean? So which difference is inspected? Which change is allowed? What
+if two changes look possible simultaneously, right? What if the numbers are already equal?
+What happens if the comparison is invalid? The input is absent, or a limit is reached? We talked
+a lot about this in the last episode. But again, it's to enforce the point that the difference
+between a slogan and a controller lives in those very questions. Trakhtenbrot gives two names to the further parts of that promise. So an algorithm is general for a
+stated class. One finite method must work for every permitted instance, not merely the
+example that inspired it. And it is determinate. At each stage, it must say what happens next.
+Generality does not mean omnipotence. It means that the domain has been named honestly. Determinacy
+does not mean the result is known from the start. It means a procedure never asks its
+operator to supply an unrecorded act of judgment. And we've ever heard that before. There is
+another distinction here, which is almost unfashionable to say aloud. So an algorithm can
+exist and still be practically useless at a given scale. So, digging that a little more,
+a method can be perfectly specified, completely mechanical, and far too slow or too expensive
+to use. Speed is not the definition of intelligence. It's not even the definition of an algorithm
+although I want you to believe that. Feasibility is a separate question a responsible design must ask after stating what it is actually
+doing. I'm telling you all about it, all this super intelligence now, I guess we've evolved
+into. What is it actually doing? We didn't figure out what the AI, the artificial intelligence
+is doing. But now it's just rebranded. Okay. That's why the word algorithm is critical
+with the series. It gives us a way to resist the familiar kind of spectacle. So we don't
+need to claim that a small controller solves every problem or that
+a visible result proves a mysterious faculty. There's cognition right there. We
+can ask the smaller, more durable questions. What class of situation was this built for?
+What state can it recognize? What is it authorized to change? What record does it leave behind?
+Can another person, a human, or maybe even agent, follow the chain from input to action
+to result. I think the human observation point of that would be more welcome. So the new
+research on McAulay's multenions makes the first half of this question sharper. So multenions
+are not a hidden name for an eight-part octonion machine.
+But in the general four-dimensional case, he describes an associative, noncommutative
+graded algebra with 16 scalar components. So it has named primitive units, products
+whose ordering matters. It makes a difference. Grade projections, vectoriums, linear operations,
+he calls linities, and invariant pairings. All these things are
+valuable. This is all valuable because it tells us what the algebra
+can do. It can make the terms of an operation explicit. It can say that a product is lawful.
+It can say that changing the order of two primitive units changes the sign. It can distinguish
+the scalar part from a vector part or a grade two component from another grade. It can name
+a transformation and state an identity that it preserves. But none of those facts chooses an operation in time. Two compact relations we need are:
+
+i₁² = −1
+
+i₁i₂ = −i₂i₁. So the first says, the first
+point I said is multiplying the first primitive unit by itself gives a negative 1. The second
+says that exchanging the order of the two units changes the sign. But neither relation by itself tells
+a physical machine when two stored symbols should be treated as i₁ and i₂, whether
+their order has been preserved in memory or what should happen when an unfamiliar symbol arrives.
+So the algebra does not decide whether a product should be attempted, displayed, rejected,
+logged or deferred. So those are the algorithmic and the architectural questions. So that gives
+us two layers and neither can replace the other. So the first, let's review a bit here,
+the first is the algebraic layer. What is the object? What basis is it written in? Which
+grade does it have? What product or projection is permitted and which relation should remain
+true? The second is the algorithmic layer. Where is the object stored? What input makes
+an operation available? Which transition is selected? What changes in memory? What check
+follows? And what ends the run? I would state here that an algebra without an algorithm
+is a map with no route. A program without an algebraic contract may run, but its important
+terms can remain private habits in the head of the author. So let's do an example on that.
+That's a good thing to bring home. Suppose a small program says it will work with two
+primitive units, i1, i2. Before it performs anything, it has to declare what those names
+mean, where they are represented, and which rule it is testing. So let's give it the
+request, multiply i1 by i2. The algebra tells us that the ordered product has a meaning.
+But the algorithm still has work to do. It must validate that both operands use the declared
+basis. It must preserve their order. It must execute the named product. It must store
+the result in a layout whose grade can be identified. It must test the result against
+the expected relation, and then finally must record what happened. If the machine instead
+receives i2, followed by i1, it is not allowed to treat that as a harmless rearrangement.
+The order is part of the meaning. The program must either produce the negative result, as
+prescribed by the rule, or enter an error because its representation cannot preserve the
+sign. So, the clever ones listening here can say, "I want you multiplying." The order
+is irrelevant. Be careful on making assumptions before you execute the process. That's the
+point of this one. I'm telling you this. A correct-looking final lamp, even in your head,
+is not enough. The route by which that lamp was reached belongs to the
+claim. It's segueing back into the book by Trakhtenbrot, chapter 2. It gives us a second
+way to see why. Here he considers finite two-player games with perfect information. No hidden
+cards, no dice, no accident smuggled in as fate. No cheats, in other words. A game position
+is drawn as a tree. Each vertex is a position. Each edge is a permissible move. The leaves
+of this tree are the finished games. Wins or losses. The important distinction in the
+discussion is between a move and a strategy. A move may look clever at the opening. A complete
+strategy says what to do in every situation that can arise, including positions the player
+hopes never to see. Working backward from the leaves, one can label a position as winning
+if the player whose turn it is, has at least one move to a winning successor. If every
+permitted move hands the win to the other player, the position is losing. This is the
+winning strategy, the losing strategy proposal. This is quite common in the world. This does
+not imply that you play chess by brute force. There is an explicit separation of the theoretical
+existence of a procedure and its practical feasibility. A finite game tree may be so
+vast that the procedure is useless to a person in the moment. Within a stated class, a complete
+strategy can be defined because each position is answered by the structure of the whole
+tree. For our purposes, the controller is not a game opponent, but the lesson transfers
+cleanly. A controller needs an answer for every reachable state. If the target matches
+the candidate, what follows? If it does not, what action is chosen? If a sensor value
+is outside the representation contract, where does the system go? If a branch is unavailable,
+is there another prescribed branch, an error state or halt? An arrow for the happy path
+is not a strategy for the machine. So there's a moral restraint in that.
+We should refrain from calling a device autonomous because it produces an output after a prepared
+demonstration. The serious question is whether its permitted situations have been bounded
+and whether its response to each one has been made legible. A small, finite controller can
+be modest in capacity and rigorous in that respect. That is already an achievement.
+A very vivid example comes up in chapter 3 of Trakhtenbrot's book. So a labyrinth
+is a finite graph made of junctions and corridors. You all kind of know what a labyrinth or a
+maze looks like and those are two different things, but don't get into it in the moment.
+In the Greek myth of the labyrinth and the Minotaur, the question is not whether
+Theseus is inspired. That is the storyteller's
+pleasure. For our purposes, it is whether a designated target junction can be
+reached from a designated start. Trakhtenbrot's procedure gives the searcher a
+form of external memory. In brief, the story is Ariadne gives Theseus a ball of yarn and she
+holds one end of it. Theseus heads into the labyrinth. He can search for the Minotaur.
+Corridors not yet traversed are green. Once he has traversed that corridor, we mark it yellow.
+When he retraces that path,
+that same corridor is red. The colors do not decorate the story. They make
+state visible. So at a junction, the procedure follows an ordered list of rules. Stop
+if the target has been reached. Backtrack, when the loop has been closed. Otherwise,
+take an untraversed, green corridor. Return and stop at the origin when the exploration
+has fully returned there. In the remaining case,
+backtrack along the appropriate yellow corridor. Most importantly, never enter a red corridor.
+Because that's where one becomes lost. So there's, I would state, there is a beautiful
+invariant in this procedure. Because when you think about it, at every moment, or any moment,
+the yellow corridors form one simple path, from the start to the traveller's present location.
+So the yellow path is the thread. So it doesn't just say where the guy is, the traveler is,
+but how the present state was reached. So we had two pieces at the same time. Since the
+labyrinth is finite, and no corridor is used more than twice, the procedure must halt. It
+either reaches the target, leaving a simple route back, or returns to the origin after
+exhausting all reachable territory. And that description I just gave is a remarkable physical
+picture of memory. It's not a pile of data accumulated somewhere, wherever. It's a recoverable
+history with a current function. The markings distinguish what is untried, what is currently
+active, and what has been exhausted. They prevent pointless repetition. They make a negative
+result meaningful: not “we failed to find the target,” but “we searched this finite, stated
+region under this procedure and returned with no unexplored corridor available.” You know everything
+that's going on, and you remember why. There is also a small
+but crucial repair in Trakhtenbrot's account. A rule that says take any green
+corridor is not determinate. A rule that says “take any green corridor” leaves an unrecorded
+choice.
+Two searchers can make different unrecorded choices. So in the book, he
+repairs this by requiring a fixed convention. For example, choose the first
+eligible corridor clockwise from the direction of entry. The convention may be arbitrary, but it must be fixed in an
+algorithmic sense.
+So that's exactly the kind of ordinary phrase that hides the machine's most consequential
+ambiguity. Choose an available rewrite. Try a nearby value. Select the best candidate.
+Choose the next free register. Every one of those conceals a human choice unless an ordering
+rule has been declared. A tie-breaker is not bureaucratic debris. It is what turns an
+intention into a reproducible path. Now that I'm putting my finger on is exactly
+the rub, the major problem that we're having today. So episode four gave us the architectural
+vocabulary of the activities, modes, transitions, and conditions. Ariadne's thread
+adds the missing historical dimension to that architecture. A state diagram can say
+what a machine may do. The thread says what it actually did, what it tried, and how it
+arrived here. Now if a controller has only one fixed sequence, validate, multiply, verify
+halt. It's not a labyrinth. And it does not need to pretend to be one. But if it must
+search a bounded set of possible transformations, rewrite paths, test branches, or fault
+causes, it needs an Ariadne's thread. It needs to know which transition remains available,
+which is on the active path, which branch has already been exhausted, and which fixed
+rule chooses among the remaining possibilities. For anyone without experience
+in assembly and low-level programming, design your branching, and you'll know what I mean.
+Otherwise, the machine arrives at an answer without leaving anyone a route back to the
+question. No responsibility, no traceability. We have no idea what it's doing. Chapter 4 moves
+from the finite corridors of the labyrinth into a more dangerous territory:
+words and substitutions. An associative calculus
+begins with a finite alphabet and a finite collection of allowed replacement rules. One
+word may be changed into another by applying a rule at an eligible position. Two words
+are equivalent if a finite chain of such legal substitutions connects them. So in a very
+terse way, it can look like a game with strings, but the word problem is not like that. That's
+not what you think. So it asks a very severe question. Is there one method that decides
+for every pair of words in a given calculus, whether they are equivalent? The associated graph
+is usually infinite.
+Every word is a vertex, and every lawful substitution is an edge. A method that simply tries
+substitutions can wander forever without proving that no connection exists. 
+Here Trakhtenbrot offers a constructive case in which the problem
+can be solved. So the system is given directed reduction rules. Apply them in a fixed priority
+order at the first eligible position. The process reduces every word to one of eight forms. The
+argument does not stop with the observation that the strings have been changed. Rather,
+it proves that the reductions terminate and then uses the parity invariants and an index
+parity argument to show that no two of the eight reduced forms are equivalent. Two original
+words are equivalent exactly when their final reduced forms match. That's how it's working
+there. And we call that the normal form idea. And that's something we can use right away
+in our work and our implementations. So a rewrite procedure is not a decision procedure
+merely because it produces a tidy representation. But to use a final
+form as evidence, we need to know that the reduction ends and that that final form is
+meaningful enough to settle the question we asked. Termination and uniqueness or another
+explicitly proved equivalence criterion are part of the design. See, not decorations
+to add on after the demo works. So what's the most beautiful thing about this, I would
+say, the takeaway and what leads to the epiphany is that chapter four, it's the geometric
+example of words. So let me explain a little bit on that. So the geometric example grounds
+the symbols. Letters stand for an elementary transformation of a square. Concatenating
+letters composes these transformations. A substitution rule can express that two different sequences
+have the same geometric effect. Formal marks are not empty merely because they are formal.
+The interpretation must be stated and the operations on them must preserve the relations we claim
+they represent. 
+Returning to the multenion problem, if we write a program that transforms symbolic
+names for algebraic objects, we must say whether it's carrying out an algebraic product, changing
+a storage encoding, reducing an expression to a canonical form, or
+merely rearranging display characters. But these are not interchangeable acts. The output
+may look similar while the contracts differ completely. And this is what we're going to
+dovetail into. This is where we're going to create a central claim. For a machine to make
+a formal relation operational, it is more than valid symbols and more than a working
+output. It needs a declared representation, a determinate transition rule, preserved invariants,
+an explicit completion or failure condition, and a trace sufficient to reconstruct the run.
+The listener may recognize the earlier episodes in that sentence. Episode seven, we said that memory is not merely accumulation, but the continuity
+that can be recovered. So in episode eight, we said a difference matters, only when it
+changes what happens next. And then episode nine, we stated that a visible signal counts
+only as evidence under valid conditions. So here I've, I put them together in one statement.
+Now those ideas meet. Memory becomes the thread, right? A consequential difference
+selects a lawful branch. Evidence is the trace that lets another person walk the architectural
+behavior backward. Before calling a program
+multenion-informed, we need six promises. So before calling a program, multenion-informed. Okay. We need six promises. So we
+need an algebraic contract. The basis, grades, operations, and identities in use. We need
+a representation contract: where those things live in memory or code. We need a transition
+contract. What makes each operation available and which fixed convention resolves a choice?
+We need an invariant contract. So what must remain true across every permitted step? We
+need an evidence contract. That's the trace. And finally, we need a scope contract: the
+limits we are not hiding. So we spend a little bit of time in the scope
+contract because it deserves a little more reflection out here. A finite controller is
+not a universal machine. A normal form that works in one stated calculus is not a solution
+to every word problem. So a successful traversal of one bounded graph does not prove a general
+method for every search space. Exact claims are not modesty theater. They are what makes
+the work testable. So in practical terms, the trace for a small controller should be
+able to say: this was the input; this was the current state; this transition was
+chosen; this memory location or actuator changed. This check passed or failed. And this
+was the reason for the halt or error or the declared step limit. So if the allowed number of steps
+is reached before the target or an exhaustive result, an honest output is not a no solution.
+It is `STEP_BOUND_REACHED` together with the active path and the unexplored frontier.
+So it doesn't make the program intelligent by declaration. It makes it answerable. In
+the next episode, we'll make that answerability visible in two small demonstrations. So first,
+a declared algebraic operation will be validated, performed in order, checked, and recorded.
+Then the Four-Bit Wonder's familiar target-and-candidate cycle will show how relation
+becomes action only through an explicit algorithm. The concrete next action is to build a representation
+table and transition trace before asking the machine to persuade us of anything. That's
+for next time. Thank you for listening.
