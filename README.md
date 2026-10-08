@@ -225,17 +225,19 @@ Episode Summary:
 
 _A Machine Must Know Its Next Move_
 
-Episode 12 turns the hybrid claim into a deliberately small demonstration before it is entrusted to a complex machine. A bounded algebraic operation has a declared basis, operand order, and expected grade; a controller validates those preconditions, executes one named operation, stores or projects its result, verifies the claim, and records the path. The familiar `Target` and `Candidate` cycle remains a second example of algorithmic choice: comparison can permit `StepUp`, `StepDown`, or `Halt`, but it cannot itself write memory or certify a result. Where a system must explore alternatives, Trakhtenbrot’s labyrinth discipline adds an architectural Ariadne thread—an active path, a no-repeat rule, and an honest bounded-search failure. The episode’s value is not a grand intelligence claim but a practical criterion: a machine is more trustworthy when another person can walk its conduct backward through its activities, modes, transitions, and conditions.
+Episode 12 is built around a deliberately small, visible control cycle: a fixed `Target`, a revisable `Candidate`, a comparator, a lawful next action, a verified write, and a halt. Its artwork functions as a technical plate rather than an ornamental cover, keeping the distinct roles and forbidden shortcuts in view. A comparison is evidence, not a write; a write is not established until it has been verified; and a desired display is not enough unless the route to it can be reconstructed. The episode also returns to Trakhtenbrot’s labyrinth algorithm—structurally a branching maze in contemporary terms—to show what additional memory, deterministic choice, and bounded failure mean when a controller must search rather than follow one fixed cycle. The claim is not that the controller has judgment or general intelligence. Its virtue is narrower: it can act only within a named authority, refuse an unauthorized action, name error and halt, and leave a trace that another person can inspect.
 
 Episode Summary:
 
-* Work through a bounded operation contract: declared basis, ordered operands, named product or projection, expected result, and explicit verification
-* Preserve the distinction between McAulay’s formal algebra and a modern program that claims to represent only a specified fragment of it
-* Work through `Compare → StepUp/StepDown/Halt → Write → Verify` as a second, complete example of how a relation becomes a lawful action through time
-* Treat the trace as an architectural Ariadne thread: a reconstructable route through activities, modes, transitions, and conditions
-* Introduce the labyrinth discipline for genuine bounded searches: active path, deterministic branch order, closed transitions, target predicate, and `STEP_BOUND_REACHED` rather than a false claim of failure
-* Preserve the distinction between a small legible controller and a general claim of autonomous intelligence
-* End by asking how these contracts, transitions, and traces can be represented without loss on the GA144
+* Use the artwork’s `Target = 1001` and `Candidate = 0110` as distinct four-bit values with different roles
+* Work through `Read → Compare → StepUp/StepDown → Write → Verify → Halt` as a complete, bounded control cycle
+* Mark the prohibited shortcuts: comparison cannot write memory, and the target cannot be copied into the candidate store
+* Treat verification, `ERROR`, and `HALT` as distinct, meaningful states rather than decorative outcomes
+* Explain the trace as an account of authority: which observation licensed which action, and whether the action actually succeeded
+* Distinguish Trakhtenbrot’s historical “labyrinth” from the branching maze structure relevant to a genuine finite search
+* Establish a modest trust criterion: visible state, lawful action, persistent memory, inspectable trace, and an explicit scope limit
+
+Companion material: `The Authority to Act` develops the episode’s recorded argument about judgment, lawful authority, refusal, hidden discretion, and why an output’s route belongs to its legitimacy.
 
 ### Episode #13
 

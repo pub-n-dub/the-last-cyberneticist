@@ -1,0 +1,300 @@
+Welcome to episode 12 of The Last Cybernetist.
+This episode is called "A Machineless No, It's Next Move."
+There's a particular mistake that becomes easy to make when a formal system is but frankly
+beautiful.
+We see a compact rule, an elegant identity, or a suggestive diagram, and begin to speak
+as though the machine has already done something merely because the rule can be stated.
+It is not.
+A mathematical relation can be perfectly sound and still have no time, no memory, no input,
+no convention, no failure condition, and no material consequence.
+It becomes part of a machine only when someone decides how its terms will be represented,
+what event calls for it, which operation is permitted, and what record remains when
+the operation is over.
+And that is the question for this episode.
+What must be present before a machine can honestly be said to know it's next move.
+Well, the answer is not consciousness, what does that mean?
+It's not a claim that the machine has grasped the purpose of its work in a way a person
+might.
+It's more exact, more useful.
+Machine needs a complete account of its present condition, that one permitted next action
+can be selected without an unrecorded human judgment.
+I'm talking about judgments in the Kantian definition of the word.
+It could take a pure reason.
+So the artwork that's generated for this episode is a bit more descriptive than it has been
+in the past.
+So we put the whole point into one field of view.
+So at the top there are two small registers with the target, it's fixed at the binary
+number one, zero, zero, one, and zero, nine.
+The other is candidate, beginning at the binary number zero, one, one, zero, or decimal six.
+Meeting them sits a comparator.
+Below them is a complete sequence.
+Read candidate, compare, step up and lower, write candidate, verify, and halt when equal.
+It's not an image of a mysterious intelligence, it is an instrument panel for a limited machine
+whose conduct can be followed.
+So the side panels, let's draw your attention there.
+There are as important as a central cycle.
+So one says two words, two words, two roles, another marks two arrows as not permitted.
+Comparison may not jump straight into writing, and the target may not be written into the
+candidate's store.
+A third gives a failed verification in its own explicit error state, and these are not
+despite what you may think, decorative cautions.
+It's very deliberate, so there are a difference between a sequence of values and a controller
+including the claim to make, that where we can evolve from just a purely technical discussion
+into more than a epistemological foundation, which is where it starts to get interesting.
+So the image is a technical plate for the arguments that are presented in here.
+It asks us to read a small controller as an arrangement of distinct objects, permitted
+paths, barred paths, and available results, including those that are observable.
+The gold lines are doing the work of a schematic, keep the target path and the candidate path
+separate until the comparator has something meaningful to compare.
+So again, the central panel gives a basic run.
+Target fixed at 101, candidate begins at 0110, so target nine, candidate six, and the comparator
+has three possible reports, lower equal and higher, and the case is says lower.
+Just in that self, alter the register, and we're very strict on this point with the
+artwork to make this more visible, because listen to me talking, it's nice to have something
+at least in front of you to look at and follow.
+So comparison that we're talking about now is the observation, that's the observation
+specifically.
+The next move comes only from the algorithm that interprets the observation, okay?
+So on the right side of the poster, the algorithm is written in its smallest useful form.
+Lower permits step up, higher permits step down, equal permits halt.
+So the rule does not tell the machine to seek a flattering answer, or to ask my arm.
+I actually understand something, does not get obfuscate those things or abstract things
+away, it's going to tell which need action is lawful, lawful in the terms of following
+the rules in that traditional sense of the word of the definition, and one name circumstance,
+so that's perfectly enough to begin.
+So the central cycle makes the authority visible.
+First you read the candidate, second compare it with a fixed target, third when the relation
+is lower, step up row by one, fourth, write that new value into the candidate register,
+fifth, verify that the register holds, the value is just written, and sixth compare again.
+Only on a quality does the red lamp, does that red lamp appear, the halt event.
+So each of those stages answers a different question.
+Read asks what value is held, compare asks what relation exists, step produces a new proposed
+new value, write changes the candidate's store, verify asks whether that change actually
+occurred, halt says the state of condition has been reached, following them together
+to one instruction, make the candidate equal the target, it's convenient for us to say
+to each other, can we understand innately what all the sub steps are for that, but in a machine
+that has no idea, because you got to tell everything, so the artwork, the poster, it's
+a typical example, but it's not how it must be, but in there we say we borrow an arrow
+from a compared directly to write, okay, a relation alone is not an authorized revision,
+it borrows an arrow from a target directly into the candidate's store, the target is
+a reference, not a source from which the answer may be copied, so these prohibitions matter
+because the machine can display the desired final value for the wrong reason, okay, we
+started those in previous episodes, the result is evidence only when the route to it has respected
+the stated roles, there we go, looking toward the bottom of the panel, the panels are, if
+we're keeping the claim honest, if a failed verification goes to error, it's not to a
+continuation that hopes the mistake would disappear, or swallow, we call it swallow the
+error, that was a lot in the C language, by the way, the trace of conduct records the
+visible run, 6 lower, 7 verified, then 8 verified, then 9 verified, then equal and halt, and
+bound to control the panel makes no claim of open-ended intelligence, it claims visible
+state lawful action, persistent memory, and inspect the bold traces, now I would state
+you're right here, that's a serious achievement for such a small machine, I find you to be
+also talking about it in that way, the accompanying control cycle sheet, it follows the same
+run one state at a time, it is there for anyone who wants to dwell with the cycle rather than
+taking the sequences on trust, so the image gives you the entire architecture at one
+time, and the sheet goes, gives the route to the full duration, so the board we built,
+the 4-bit wonder, lets us see the same structure without an algebraic notation, so for example
+let it hold two words, target and candidate, they may contain the same binary pattern on
+a particular run but they have different roles, target is a condition that has been set, candidate
+is the value for the control that is authorized to revise, so confusing the two would make
+a successful looking demonstration meaningless, the controller can simply override the demand
+rather than bringing the candidate into relation with it, now you're going to make a target
+of 9 and a candidate of 6, the first state does not increase, it is read, the controller
+reads both the stored words under the stated valid recondition, then enters compare, where
+the comparator returns one of three relations, again lower equal higher, the relation is
+evidence about the present configuration but is not instruction to the register, only the
+transition rule gives the relation to a consequence, again it is lower step up, it is permitted
+if it is higher step down, it is permitted, if equal halt is permitted, no other transition
+is available in those states, particularly equality does not permit another increment
+because the controller has been moving upward, and the low result by contrast does not permit
+a write to the target store, having said that in a couple of ways, I think it is useful
+to be precise about what present configuration, that term, what that means, so it is not simply
+the number that happens to be visible in the display for the controller, the configuration
+includes at least the target word, the candidate word, the current activity, the most recent
+relation, and the status of the last write verification, so the two runs can show the
+same candidate value and still have different configurations, the candidate of nine immediately
+after a verified write is not the same as the candidate of nine read from an uncertain
+location, or one appears when the controller is still in middle of the transaction, so
+that is why the state names are not purely decorative, compare, says which question the
+machine is currently authorized to ask, write candidate, says which memory location may
+change, verify write, says that the controller is not yet entitled to treat the intended
+change as an accomplished fact, a well-made transition table narrows the authority at
+every point, it tells us not just what the machine can do, but what is forbidden to do
+while this particular distinction is unsettled, and you will find, as you get more familiar
+with this, that the unsettled part is what persists the most throughout the entire time
+of computation, so the same discipline that requires or clarifies timing, if the candidate
+is a read, compared and later written, physical implementation has to specify whether anything
+else may alter the story in between, if it may, the comparison can become stale before
+the write occurs, in a simple experiment, we can prohibit that by giving the controller
+exclusive control for one cycle, in a larger system, or asynchronous systems, we mean it
+a lot, version numbers or some other way of tagging, the comparison before committing
+the result, that's why we're doing the synchronous system, it's a much simpler way of implementation
+and also conceptualizing of what we're doing here, so we want to illustrate that the specific
+mechanism changes, right, but the requirement doesn't, an action should be licensed, that's
+where you say it, by the conditions that are still true when the action is taken, so there
+is one reason the trace should record transition identifiers, and not just values, a list says
+that, okay, six, seven, eight, nine, that tells us that the values are changing, or have
+changed, depending on your looking at it, it does not tell us whether that each change
+is followed by a lower comparison, or whether the write was verified, or whether someone
+bypassed the controller together, so I'll compact record, such as, let's just say something
+under, so compare, lower, transition to step up, transitioning to write candidate, transitioning
+to verify, okay, that syntactical description carries much more machines conduct without
+attempting to preserve every bit of minutia that comes through there, I think we've covered
+it, a lot of that, all the electrical details, so we can kind of look at a little bit of higher
+level on this, and so, with the running hand, the lower accepts step up, six becomes seven
+and working register, the controller enters write candidate, commits seven to the candidate
+store, and then enters verify write, it reads the candidate again, and checks that the stored
+value is seven, not merely the write signal that was issued, so only after the verification
+does it return to compare, and then that's two, next two cycles have the same form, seven
+is lower than nine, where eight is written and verified. Eight is lower than nine. The
+nine is written and verified. So at that point, the comparative reports equality. Quality
+selects halt. The final trace can be read as a sequence of accountable claims. Target
+nine read, candidate six read, lower seven produced, seven written, seven read back, lower
+nine produced, nine written, nine written, nine read back, equal halt. So notice what
+is absent from that account that I just read off here. There is no vague instructions
+or any appeal to getting closer. Closeness is a useful language for a designer or people
+who work in government. But it's not a rule of control that can execute. The actual control
+in these name relations, name actions, a place to store that revised value and a condition
+under which it stops. The machine doesn't need a grand philosophy to know its next move.
+It just presents distinctions that may be operational.
+So boundary cases, we have not discussed this yet, that brings these conundrums more
+sharply in focus. So what happens when the four bit candidate is already 15 and the
+commandment step it upward. So what happens if that target is absent? I read it was an
+invalid word because it's above the range of the number system, right? The right cannot
+be verified or the candidate has been changed by some of the process between comparison
+and right. So persuasive state diagram, it can emit these cases and call itself complete.
+So let's walk through this here. For the bounded experiment, we can make the scope explicit.
+So inputs are the 16 valid words or 0 to 15. The controller may require exclusive control
+of the machine for that store during the cycle. Attempting to step up. So that commands step
+up at 15 and enters upper bound. So rather than silently wrapping around a 0, attempting
+to step down at 0 enters lower bound. A failed feedback enters right unverified. Involved
+input enters invalid word. Each state has a defined halt, recovery or error transition.
+So the machine is still simple. But it's no longer relying on the operator to a pair of
+specifications halfway through the run. Now that's what's really interesting about this.
+So a lot of, not a lot of, a lot of, well, some designs that I've seen a lot of them.
+So I'm going to say a lot is that you'll just route these number systems around. It's
+like, oh well, it fell off the, it went out of the range. We don't get, we'll just kick
+it out with an exception. Or wrap it around something else. And when we get into arithmetic
+and add functions and these, we'll get into that a bit later. But this is, the emphasized
+why trace, why trace and tracing matters. It's not a diary that's composed after the fact.
+It's a statement available to later inspection. So the trace preserves the distinction between
+the controller that reached nine by the lawful, right? It's coded by following the rules.
+Incuments and a control that happened to display nine after a memory fall. And intervention
+authorized, unauthorized, right, two things. So the negative aspects. So, but the result
+itself cannot tell us how the history occurred. Now, in keeping traces, there are, there's
+a lot of different strategies for that. And several ways to keep it. So the small machine
+here, the tiny machine in the far, but wonder exposes, you know, it's got state lights,
+serial line, paper log, or sequence of manual copy registers. I've got another, we get into
+the 6809 boards, which is obviously a little more sophisticated than the further wonder.
+This will be a little more apparent. But for now, a lot of these types of systems, these
+larger systems will keep time stamped records, transition identifiers and checksums. And
+a lot of people have opinions on that. That's fine. The appropriate mechanism chosen depends
+on the machine. Okay. The invariance is what matters. The record must be sufficient for
+another person to reconstruct the relevant path without asking the original operator to
+remember what happened. Do this kind of thing in programming. So the phrase from that last
+sentence, the relevant path, that matters when a controller has choices, right? Now here's
+where this is not, let's take this to the next level. We talked about track engine
+growth, the labyrinth. And that, I think that we can bring that into focus now that gives
+us the right picture. So a traveler, he enters a finite set of junctions and corridors with
+a state of target. But the route can't be left to his, his hunches or instinct. Quarters
+not yet tried or margrine. The route currently followed as yellow and a corridor whose possibilities
+have been exhausted is red. So the colors, they're not pretty decorations. Maybe you
+can make them into flavors, give us some more appropriate. But however you reconcile that,
+the memories are made visible. A record remains what's available and what brought the traveler
+here and what might not be entered again. Trinkentum Road calls this structure a labyrinth.
+So following the story of Thasius. But if you look at how we talk about it now, so this
+is from 1963. If you look at how we discuss it now, current usage. So finite graph of
+junctions, loops and alternate corridors is more actually a maze. The, the shift in definition
+is the technical definition matters because a labyrinth from the Greek suggests a route
+already given. So a single, a single maze without any choices in it. While a maze makes
+knowledge, makes knowledge of something established by branching. So choice, remember returns and
+exhaustion of alternatives. That's more appropriate to where we're going. But in the Trinkentum
+Road to labyrinth, the algorithm that he presents, it gives that uncertainty of physical memory.
+That's, that's the take on. We're going to, we're going to always keep that in mind.
+We want to maybe make a slight repair to that. So take any green corridor. It's not an algorithm
+because two travelers may make different unrecorded decisions when there's a branch. Choose the
+first eligible quarter clockwise for the point of entry. And then you've got some reproducible
+logic to that. The convention may be arbitrary in the human sense, but it can't be absent
+from the machine. If you want to do reconstruction and tracing. So the target in candidate routine
+follows one fixed route, compares steps, writes, verifies and compares again. It's not a search.
+We do not want to go there with this. But we find that many systems eventually must choose
+among several different kinds of lawful operations. Our repair controller may test several thought
+hypotheses. A self writing system may have several, several eligible rules. And we get
+the self programming that will be much more apparent. And a planner may have several bounded
+actions available for one configuration. And these are, we'll find out as the systems become
+more complex. And we're approaching machine intelligence. We'll find these things will
+come into play when we start talking about intuitive programs, intuition in machine intelligence.
+But in the case of the labyrinth, it offers us a very demanding model that we want to fix
+it upon. They trust or you trust treat each complete configuration as a junction. And each
+permitted action is a corridor, right? So an action that has not been tried is green. One
+in an active path is yellow. One whose possible consequences have yet to be fully explored is
+red. Heaven fully explored. Sorry. The controller stores predecessor links on a stack. So the
+active path is recoverable, whether in the imaginary and stack programming is really the
+much more, I would say recommended approach, because you'll find it's a lot more, a lot
+fewer things you have to worry about when you're going through the unknowns in this, in these
+scenarios. So we can select one of the one of the results of that is that we can select
+among green actions with a fixed priority order, not choose whatever seems best. But that fixed
+order is, it sounds a bit arbitrary, but it's extremely, it's extremely essential. This is
+the rub where we can have a bit of fun and start think outside the box. So perhaps operations
+are attempted alphabetically, okay, by the identifier, perhaps in a physical clockwise
+order, we mentioned earlier, perhaps I declared numeric priority. You can choose whatever you
+want. The choice does not become objectively profound, just because it's written down,
+but the virtue is reproducibility. Two operators give the same configuration, the same rule,
+and traverse the same finite path. And later investigating Stolta 1, one quarter second
+before another, but running different experiments, different sequences will take place. Let me
+just keep that in mind. What comes that? A bit later, the colors, you want to protect
+the meaning of failure, that'll happen all the time. In fact, when you find yourself doing
+your first machine intelligence experiments, you find that it'll expire, die, fail, halt
+within the first minute, within the first few seconds, perhaps. And once you get that
+kind of irony out of the way, then you'll say that you start to reach finite reachable
+spaces that have been exhausted under fixed transition sets. A machine can report a state
+such as no route in stated space. All right, declared experiment permits only 1000 transitions
+and meets the bounded first, the reports step bound reached. So those are different results,
+of course, the former concedes in exhaustive exploration of the state of finite space.
+And later says only that the experiment ended where a possibility still remained. So neither
+of these should be converted into a grand claim about every extension of the formal system.
+But this is where the idea of intelligence becomes stateable and not needlessly theatrical
+like you see everywhere else. A machine that can preserve roles, recognize the condition,
+select permitted operation, verify change, and expose its traits. It's not a general
+reason error, right? It's not escaped specification. But neither is it trivial in a dismissive
+sense. Some problem trying to make all these episodes is that we are creating a limited
+form of promise that keeps its promise while still helping us to walk down the path of
+what is machine intelligence? What is intelligence? Answer the questions that we've been struggling
+for for thousands of years. So that standard we're trying to reach is a very, I think that's
+a very attractive antecedent in an output. An attractive output can be accidental, staged
+or detached from the process of produced it. And as you're observing these things happening,
+you'll start to identify this in your mind as you see these things. And they were invisible
+before. But a legible path that binds an output to its conditions. That's what we need to
+do. That's the builder finds in the mistakes. That's the maintainer period of test. And
+that's the critic say exactly which assumptions must be challenged to continue to the next
+step. So there's always a forward momentum in exercising it this way. It's really bloody
+cool. But we start to close out the episode here. Let's, let me return for a moment to
+the image, the artwork of the two registers. The target does not travel through the machine
+as a command to be copied, right? It remains as a reference. The candidate is the thing
+that travels. I'm going to read out to the comparison and then it's step to a right verification
+and back to comparison. The movement is modest, but it contains the whole moral of the episode.
+A condition may guide an action without being confused with the thing it acted upon. Continue
+with this a bit. The halt lap at the end is deliberately restrained. It does not announce
+a triumph of artificial intelligence or super intelligence, right? That's what we're going
+to go talk about now. It only says that the candidate has reached the stage target under
+the declared cycle. The verification has failed. An honest nap would be error. Not a forced
+continuation toward a pleasing result. I'm just going to solve that and that didn't
+happen. We don't know what's going on, right? It's just got out of the laboratory. We could
+have it. Okay. In our case, if our candidates are equaling the targets, honest action would
+be the halt without writing. Our machines are much more trustworthy. We're going to decline
+an authorized action. Clearly as they can perform an authorized one, right? So if we say it's
+unauthorized, send out nuclear weapons, everybody. Hey, we get a trustworthy set of actions that
+we can trace and hey, we get that figured out. We're not going to blow ourselves to bits.
+So the poster, the artwork, it's talking about a boundary controller. That's again, a very
+strong tenet of cybernetics. States are visible. Actions are lawful. Memory has stated rules.
+States can be inspected. Inspected. The bounds do not diminish the experiment. They define
+its shape. We say what can be tested or was tested, what's not tested, and what the correct
+result actually establishes. Far better foundation for further work than any of those systems.
+But pontificate, pontificate, propagandize, how great all this stuff is. Shut up. Here
+we state unequivocally that a machine knows its next move when the relevant distinctions
+have been given a durable form. It's holding, what has been observed, what transitions are
+permitted, what conditions selects among them, and what will count as success, error, or
+justified limit. The machine need not know why we care about the answer. We do. As humans.
+Our responsibility is to ensure that the machine's conduct does not depend on a hidden decision
+that only appears after something has gone wrong. That is the practical discipline at
+the heart of the series. Keep the claim bounded. Name the representation, state the transition,
+check the result, preserve the route. Thank you for listening.
