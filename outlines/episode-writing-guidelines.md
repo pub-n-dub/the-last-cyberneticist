@@ -129,6 +129,10 @@ When preparing an ODT for script review, use the established Episode 12 reading 
 
 Treat the ODT as a reading copy rather than a generic Markdown conversion. Preserve any formatting the editor applies directly to an ODT; do not regenerate it from Markdown unless asked.
 
+## Terminology note
+
+Do not call a four-bit quantity a “word” unless the architecture explicitly defines a four-bit word. Use `four-bit value`, `four-bit register`, `nibble`, or `four-bit pattern` according to the actual claim.
+
 ## Default instruction for future drafting
 
 Unless explicitly told otherwise, every new episode draft should be written to these defaults:
