@@ -4,6 +4,8 @@
 
 This is the companion supplement for Episode 12 of *The Last Cyberneticist*.
 
+Thank you for subscribing and for helping to sustain the research, materials, and machine work behind this series.
+
 The artwork gives the whole idea in one square: a fixed target, a changing candidate, a comparator, and a small sequence of lawful actions. This companion stays with the vertical control-cycle sheet and reads it slowly, one pass at a time.
 
 The point is not that a four-bit controller is secretly a general intelligence. The point is almost the opposite. When the machine is small enough, we can see exactly what it is permitted to do, what it is not permitted to do, and what the trace of one honest run looks like.
