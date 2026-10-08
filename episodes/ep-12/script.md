@@ -4,6 +4,8 @@
 
 Welcome to Episode 12 of *The Last Cyberneticist*.
 
+This episode is called *A Machine Must Know Its Next Move*.
+
 There is a particular mistake that becomes easy to make when a formal system is beautiful. We see a compact rule, an elegant identity, or a suggestive diagram, and begin to speak as though the machine has already done something merely because the rule can be stated.
 
 It has not.
@@ -18,29 +20,21 @@ The artwork for this episode puts the whole claim in one field of view. At the t
 
 The side panels are as important as the central cycle. One says, “two words, two roles.” Another marks two tempting arrows as not permitted: comparison may not jump straight to writing, and the target may not be written into the candidate store. A third gives failed verification its own explicit error state. These are not decorative cautions. They are the difference between a sequence of values and a controller with a claim to make.
 
-Begin with a deliberately small formal claim.
+The image is not a generic cover placed beside the episode after the fact. It is a technical plate for the argument. It asks us to read a small controller as an arrangement of distinct objects, permitted paths, barred paths, and observable results. The gold lines are doing the work of a schematic: they keep the target path and the candidate path separate until the comparator has something meaningful to compare.
 
-We declare two primitive units, `i1` and `i2`, in a stated finite basis. Each squares to negative one. Their order matters: `i1i2` is the negative of `i2i1`. This is only a fragment chosen for an experiment. It is not a claim to have implemented McAulay’s complete four-dimensional multenion system, and it should not be inflated into one.
+The centre panel gives the basic run. `TARGET` is fixed at `1001`, which is nine. `CANDIDATE` begins at `0110`, which is six. The comparator has three possible reports: lower, equal, and higher. In this case it says lower. That does not itself alter either register. The artwork is very strict on this point. A comparison is an observation. The next move comes only from the algorithm that interprets the observation.
 
-Even so, the fragment has obligations. The symbols must mean something stable. The machine cannot quietly treat `i1` as an arbitrary character one moment and as an algebraic unit the next. Nor can it receive `i2`, `i1` and rearrange them into `i1`, `i2` because that happens to be more convenient for a table lookup. In this little universe, order belongs to the meaning.
+On the right of the poster, the algorithm is written in its smallest useful form. Lower permits step up. Higher permits step down. Equal permits halt. The rule does not tell the machine to seek a flattering answer or to act as though it understands nine. It tells it which named action is lawful in one named circumstance. That is enough to begin.
 
-We can now distinguish five things that are too often compressed into the phrase “do the multiplication.” There is the request. There is the representation of each operand. There is the selected operation. There is the stored result. And there is the test that tells us whether the stated rule was kept. A working machine has to keep those things apart long enough for them to be checked.
+The central cycle makes the authority visible. First, read the candidate. Second, compare it with the fixed target. Third, when the relation is lower, step upward by one. Fourth, write that new value into the candidate register. Fifth, verify that the register holds the value just written. Sixth, compare again. Only at equality does the red halt lamp appear.
 
-Imagine a request record with fields for operation, left operand, right operand, and run identifier. The operation field might say `ORDERED_PRODUCT`. The operands might say `i1` and `i2`. The run identifier is not algebra; it is there so that a later trace can tell this attempt from another one. A representation table then says which stored code stands for each permitted primitive unit, which codes are invalid, and where sign and grade are placed in a result.
+Each of those stages answers a different question. Read asks what value is held. Compare asks what relation exists. Step produces a proposed new value. Write changes the candidate store. Verify asks whether that change actually occurred. Halt says the stated condition has been reached. Folding them together into one instruction—“make the candidate equal the target”—may be convenient for a person, but it is not yet a legible machine.
 
-The particular codes are not sacred. We might use small integers, bit patterns, tagged records, or names in a simple interpreter. What matters is that the choice is declared before the result is admired. If code `01` means `i1` today and means a sign bit tomorrow, the experiment has lost the continuity it needs to make a claim.
+The poster also shows what must not happen. It bars an arrow from compare directly to write. A relation alone is not an authorized revision. It bars an arrow from target directly into the candidate store. The target is a reference, not a source from which the answer may be copied. These prohibitions matter because a machine can display the desired final value for the wrong reason. The result is evidence only when the route to it has respected the stated roles.
 
-Validation is the machine’s first real move. Is the requested operation one that this bounded experiment supplies? Are both operand codes present in the declared table? Are they in the required order slots? Is the output location available? Is the coefficient or sign representation sufficient for the result? A failure at this stage is not an embarrassment to conceal. It is a result of a different kind: `INVALID_OPERAND`, `UNSUPPORTED_OPERATION`, or `STORAGE_UNAVAILABLE`, with the relevant condition recorded.
+The lower panels keep the claim honest. A failed verification goes to `ERROR`, not to a continuation that hopes the mistake will disappear. The trace of conduct records the visible run: six, lower, seven, verified; then eight, verified; then nine, verified; then equal and halt. And the bounded-controller panel makes no claim of open-ended intelligence. It claims visible state, lawful action, persistent memory, and an inspectable trace. That is a serious enough achievement for a small machine.
 
-This may sound excessively cautious for two symbols and a small table. But the smallness is what lets us see the principle. A great many large systems rely on precisely these checks while hiding them behind friendly interfaces. The interface says “calculate.” The actual machine has to decide whether the input parses, whether the types agree, whether the address is valid, whether an arithmetic exception occurred, and whether a result can be committed. A small controller has fewer cases, not fewer responsibilities.
-
-Suppose validation succeeds for `ORDERED_PRODUCT(i1, i2)`. Now the controller may enter an execution state. It selects the row and column corresponding to the two operand codes, reads the stored product, and writes a result record. The result must preserve more than a pleasing display string. It needs a basis label, a sign, and whatever grade information the stated representation makes relevant. If the result is later displayed as a named composite unit, that display name is an interpretation of the stored record, not a substitute for it.
-
-Then comes verification. The controller runs the reversed request as a separate event: `ORDERED_PRODUCT(i2, i1)`. It does not merely negate the first answer and congratulate itself. It performs the second lookup under the same representation contract. Only then does it check whether the two result records agree in basis and differ in sign as the rule requires. The trace can therefore say which two operations occurred, in what order, what they returned, and which comparison passed or failed.
-
-There is a valuable restraint here. Verification is not an oracle. If the product table and the checker were copied from the same mistaken assumption, they can agree while both are wrong. A responsible experiment should therefore identify an independent source for expected cases: a hand-checked table, a separately reviewed derivation, or a second implementation whose errors are not likely to be identical. The trace shows that this implementation was internally consistent. It does not by itself prove every premise from which the implementation was made.
-
-That distinction keeps the word evidence honest. Evidence is not a light that comes on at the end of a program. It is a documented connection between a claim, the conditions under which the claim was tested, the transitions that occurred, and the observed outcome.
+The accompanying control-cycle sheet follows this same run one state at a time. It is there for anyone who wants to dwell with the cycle rather than take its sequence on trust. The image gives us the whole architecture at once. The sheet gives the route through it its full duration.
 
 The Four-Bit Wonder lets us see the same structure without algebraic notation.
 
@@ -74,6 +68,12 @@ There are several ways to keep such a trace. A tiny machine may expose state lig
 
 That phrase, relevant path, matters when a controller has choices.
 
+Trakhtenbrot’s labyrinth gives us the right picture. A traveller enters a finite set of junctions and corridors with a stated target, but a route cannot be left to a private hunch. Corridors not yet tried are marked green. The route currently being followed is yellow. A corridor whose possibilities have been exhausted is red. The colours are not decoration. They are memory made visible: a record of what remains available, what brought the traveller here, and what may not be entered again.
+
+Trakhtenbrot calls this structure a labyrinth, following the story of Theseus, but in current usage his finite graph of junctions, loops, and alternative corridors is more accurately a maze. The shift matters because a labyrinth suggests a route already given, while a maze makes knowledge something established by branching choice, remembered returns, and the exhaustion of alternatives.
+
+The crucial repair in that account is a fixed convention for choice. “Take any green corridor” is not an algorithm, because two travellers may make different unrecorded decisions. Choose the first eligible corridor clockwise from the point of entry, and the route becomes reproducible. The convention may be arbitrary in a human sense, but it cannot be absent from a machine whose conduct is meant to be reconstructed.
+
 The target-and-candidate routine follows one fixed route. It compares, steps, writes, verifies, and compares again. It is not a search. But many systems eventually must choose among several lawful operations: a repair controller may test several fault hypotheses; a rewrite system may have several eligible rules; a planner may have several bounded actions available from one configuration.
 
 Here the labyrinth offers a demanding model. Treat each complete configuration as a junction and each permitted action as a corridor. An action that has not been tried is green. One on the active path is yellow. One whose possible consequences have been fully explored is red. The controller stores predecessor links or a stack, so the active path is recoverable rather than imaginary. It selects among green actions with a fixed priority order, not with the phrase “choose whichever seems best.”
@@ -82,7 +82,7 @@ That fixed order can be arbitrary and still be essential. Perhaps operations are
 
 The colors also protect the meaning of failure. If a finite reachable space has been exhausted under a fixed transition set, the machine can report `NO_ROUTE_IN_STATED_SPACE`. If a declared experiment permits only one thousand transitions and reaches that bound first, it reports `STEP_BOUND_REACHED`. Those are different results. The former concerns exhaustive exploration of the stated finite space. The latter says only that the experiment ended while possibilities remained. Neither sentence should be converted into a grand claim about every extension of the formal system.
 
-This is where the idea of intelligence can become needlessly theatrical. A machine that can preserve roles, recognize a condition, select a permitted operation, verify a change, and expose its trace is not thereby a general reasoner. It has not escaped its specification. But neither is it trivial in the dismissive sense. It has made a limited formal promise and kept that promise in public.
+This is where the idea of intelligence can become needlessly theatrical. A machine that can preserve roles, recognize a condition, select a permitted operation, verify a change, and expose its trace is not thereby a general reasoner. It has not escaped its specification. But neither is it trivial in the dismissive sense. It has made a limited formal promise and kept that promise in a form others can inspect.
 
 That is a stronger standard than an attractive output. An attractive output can be accidental, staged, or detached from the process that produced it. A legible path binds an output to its conditions. It lets a builder find a mistake, lets a maintainer repeat a test, and lets a critic say exactly which assumption must be challenged.
 
@@ -100,11 +100,10 @@ Thank you for listening.
 
 ## Research spine
 
-- Alexander McAulay, “Multenions and Differential Invariants,” §§1–6: primitive units, grades, products, vectoriums, and linities.
 - B. A. Trakhtenbrot, *Algorithms and Automatic Computing Machines*, Chapters 1–4: determinacy, finite-game strategies, the labyrinth algorithm, active-path invariants, and fixed choice conventions.
 - B. A. Trakhtenbrot, *Algorithms and Automatic Computing Machines*, Chapters 5–9: programs, machine configurations, transitions, and halting.
 - B. A. Trakhtenbrot and Ya. M. Barzdin, *Finite Automata: Behavior and Synthesis* (1973): behavioural descriptions and synthesis.
 
 ## Drafting note (not spoken)
 
-The `i1`, `i2` operation remains an illustrative finite fragment, not an implementation claim. Before recording, select an actual basis encoding, coefficient domain, product table or routine, expected results from an independently checked source, trace format, and finite search bound. Do not claim a GA144 implementation until the words, storage map, and observed test record exist.
+The artwork and control-cycle sheet are explanatory diagrams of a bounded controller, not records of a completed hardware implementation. Before recording any implementation claim, select the actual register representation, comparator conditions, step routine, write/verify procedure, trace format, and observed test record.

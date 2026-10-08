@@ -115,6 +115,20 @@ Before treating a draft as finished, check:
 - Does it return to the machine, the bench, or the practical consequence?
 - Does the ending create momentum into the next episode?
 
+## ODT reading-copy format
+
+When preparing an ODT for script review, use the established Episode 12 reading layout:
+
+- Letter page, portrait, with one-inch margins
+- episode title centred at the top
+- Times New Roman, 12 pt, for spoken prose
+- body paragraphs fully justified
+- section headings kept distinct but aligned with the prose
+- compact, justified research-source bullets
+- page number in the footer
+
+Treat the ODT as a reading copy rather than a generic Markdown conversion. Preserve any formatting the editor applies directly to an ODT; do not regenerate it from Markdown unless asked.
+
 ## Default instruction for future drafting
 
 Unless explicitly told otherwise, every new episode draft should be written to these defaults:
