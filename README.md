@@ -241,21 +241,22 @@ Companion material: `The Authority to Act` develops the episode’s recorded arg
 
 ### Episode #13
 
+
 _Feel the (ROM) Burn_
 
-The M6x09-II-SBC needs non-volatile memory to preserve a program that can run at power-on. This episode follows the `27C128` EPROM as the boundary where source code, a verified ROM image, a physical device, and the board's observed behavior have to agree. The Batronix Barlino II 32P is the current programming tool; its value is not nostalgia, but a disciplined, repeatable path from a tested image to a labeled, verified hardware milestone.
+Episode 13 records the completed ASSIST09 bring-up on the M6x09-II-SBC. The `27C128` EPROM is now a verified recovery environment rather than a proposed programming milestone: the monitor rebuilds from original source, occupies the checked fixed ROM layout, boots at `115200,n,8,1` without a CTS jumper, receives and runs a RAM smoke test, and returns to its prompt. The final full-device EPROM readback matches the programmer image byte for byte.
 
-Memory is critical to a computer's operation, but durable behavior requires more than choosing a non-volatile part. It requires a record of the source, build, verification, device, and test result that lets the next person understand what the chip contains and why it can be trusted.
+The episode follows the full chain that made that result dependable: rebuilding the archived assembler on a modern host, restoring the fixed monitor layout, correcting the ACIA register contract, diagnosing the board's RTS-to-CTS loopback, programming and reading back the EPROM with the Batronix Barlino II 32P, and repairing the Tcl terminal's upload and input pacing. Durable behavior requires a record of the source, build, verification, device, terminal conditions, and observed result that lets the next person understand what the chip contains and why it can be trusted.
 
 Episode Summary:
 
-* Focus on ROM burning as the point where abstract program logic has to become a real physical artifact that the machine can actually execute
-* Establish the `27C128` as the M6x09-II-SBC's concrete boot-ROM device and the Batronix Barlino II 32P as the current programming path
-* Build and verify ASSIST09 before programming hardware, then prove the RAM load-and-run path through the serial terminal
-* Show why reading the existing EPROM, selecting the exact device, blank-checking, programming, verifying, labeling, and recording the result are one experiment rather than separate chores
-* Explain why a preserved ROM image needs its source inputs, checksum, build date, test record, and board context to remain meaningful over time
-* Treat the act of programming chips as a material form of software work, where verification, handling, compatibility, and retention suddenly matter again
-* Position the ROM-burning stage as the threshold between planning the system and being able to place behavior back into hardware
+* Establish ROM burning as a material form of software work: a physical chip is trustworthy only when its source, image, device, and observed behavior agree
+* Rebuild the archived ASSIST09 assembler locally and verify the 2,048-byte monitor, fixed image layout, and reset vector before programming hardware
+* Correct the MC6850-compatible ACIA's register accesses and identify the RTS-to-CTS loopback that had disabled transmission in the prior control-byte configuration
+* Use measured power, reset, CPU clock, address-bus, and serial-clock observations to narrow a blank-terminal failure instead of treating it as an undifferentiated ROM problem
+* Read back the full programmed `27C128` and compare it byte for byte with the intended programmer image
+* Show that the Tcl terminal is part of the system: its S-record upload behavior, echo expectations, and character pacing must match the monitor's serial protocol
+* End with the verified `ASSIST09 RAM SMOKE TEST PASSED` result and a returned monitor prompt, opening the next phase of RAM-resident experiments
 
 ### Episode #14
 

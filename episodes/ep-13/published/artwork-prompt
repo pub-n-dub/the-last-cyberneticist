@@ -1,0 +1,32 @@
+Create a square, richly detailed vintage scientific-technical poster for Episode 13 of “The Last Cyberneticist,” titled “Feel the (ROM) Burn.” Continue the established presentation of Episodes 5–12: a dark deep-teal, blackened-paper background; antique-gold engraved linework and serif typography; subtle aged-paper grain; a fine ornamental border; carefully arranged technical panels; and a broad warm-parchment footer carrying the series identity. The mood is reflective, austere, exact, and late-1940s to early-1970s cybernetics-documentary—not futuristic or cyberpunk.
+
+The central illustration is the M6x09-II-SBC as a compact, legible 6809 single-board computer in a dignified three-quarter bench view. Show a socketed 27C128 EPROM, a 6809 processor, RAM, a small serial-interface IC, crystal, orderly traces, and a restrained serial lead leading to a tiny terminal paper-tape or cathode-ray display. It must look like a real, modest, repairable board whose individual functions can be followed—not a generic modern motherboard, a glowing arcade computer, or a dense photographic close-up.
+
+The central visual argument is: a ROM is trustworthy only when a continuous chain connects source, image, chip, board, and observed behavior. Place a clear engraved progression around the board, with distinct linked stations:
+
+SOURCE → BUILD → CHECKED ROM IMAGE → 27C128 EPROM → RESET → ASSIST09 PROMPT → RAM SMOKE TEST
+
+The route must be orderly and materially grounded. It may curve around the board, but it must never look like an abstract data stream or a neon circuit. At the end of the route, the small terminal display must show exactly:
+
+ASSIST09 RAM SMOKE TEST PASSED
+
+ASSIST09
+
+>
+
+The prompt must appear quiet and earned, not triumphant. Give the EPROM a small, precise label: “27C128 · VERIFIED IMAGE.” The central board should feel stable and active, with faint but visible address and serial pathways; do not make the individual chips look like anonymous black rectangles.
+
+Surround the central board with restrained technical insets that make the completed work visible:
+
+- upper left: “FIXED BEGINNING,” showing a compact ROM address strip from F800 to FFFF, a small RESET VECTOR arrow to F837, and the phrase “2,048-BYTE MONITOR”;
+- upper right: “SERIAL CONTRACT,” showing two distinct ACIA register compartments: BE00 = CONTROL / STATUS and BE01 = DATA. Keep the two functions visibly separate;
+- left middle: “MEASURE, THEN INFER,” with a tiny disciplined instrument panel: POWER, RESET, E CLOCK, ADDRESS BUS, SERIAL CLOCK. Use modest probe marks and measured traces, not a dramatic oscilloscope explosion;
+- right middle: “FLOW CONTROL,” showing RTS connected locally to CTS, with an old value 51 crossed out and the repaired value 11 leading to a small annotation “RTS LOW.” The inset must communicate a resolved local loopback, not an external modem;
+- lower left: “READ BACK, DO NOT ASSUME,” showing a complete EPROM image returning to a matching checksum seal. Do not print a full SHA-256 string; use the concise phrase “BYTE-FOR-BYTE MATCH”;
+- lower right: “THE TERMINAL IS PART OF THE SYSTEM,” showing a paced stream of small S-record lines travelling from host to monitor, with the concise labels “CONTINUOUS UPLOAD” and “5 ms CHARACTER PACE.”
+
+Include a small bridge from Episode 12 near the lower edge: a compact engraved control-cycle card labelled “FROM LAWFUL NEXT MOVE,” with the sequence READ → COMPARE → WRITE → VERIFY → HALT reduced to a quiet secondary motif. It should connect to the new monitor prompt with a small phrase: “A DEPENDABLE PLACE TO BEGIN.” Do not show the Episode 12 target/candidate controller as the main subject.
+
+At the top, use the exact title: “FEEL THE (ROM) BURN.” Use the smaller subtitle: “From Source to Prompt, a Verified Beginning.” At the bottom, on the warm-parchment panel, use: “THE LAST CYBERNETICIST” and “Episode 13 — Feel the (ROM) Burn.” Preserve generous spacing, symmetrical editorial structure, warm gold-on-teal contrast, and the sober museum-plate quality of a technical field document.
+
+Avoid: humanoid robots, glowing brains, DNA helices, cyberpunk neon, glossy modern UI elements, generic microchip imagery, split human/machine faces, mystical auras, floating equations as decoration, neural-network graphics, black-box AI symbolism, sensational flames, a generic commercial EPROM programmer as the sole subject, or an unexplained tangle of wires. Do not imply that the board is autonomous or that the monitor itself is artificial intelligence. No logos, no QR codes, no modern sans-serif interface labels.
