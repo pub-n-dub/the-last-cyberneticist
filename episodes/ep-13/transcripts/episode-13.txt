@@ -1,0 +1,504 @@
+Welcome to episode 13 of The Last Cybernetesist.
+This episode is called Feel the Rom Burn.
+It's a bit cheeky, but I'll get into the seriousness of the topic shortly.
+Episode 12.
+We established that a machine can know its next move only when it's state, permitted
+actions and record of conduct are explicit.
+We also talked about the very specific importance of not only these points, but how they flow
+together to form an algorithm.
+An algorithm, a very important thing for us to talk about in future episodes, is where
+we can start to define our first idea of machine intelligence.
+However, before we continue, we need to reflect on a more complex set of hardware.
+One that's more complex than we've been talking about so far, and why is that, right?
+Of all the things we've discussed, the control problems, the transpositions, transformations,
+of the data is transformed into information.
+We never had a robust ability to address the memory store.
+Again, that's the place where we keep data, a program, but also how the transition between
+static data that we put into a program that's transformed into information doing the process
+of the runtime and the machine, we need to look at these aspects of it.
+At the same time, when we're talking about this, let's also simultaneously address the
+quality of modern tools that we find these days on the internet, specifically I'm talking
+about codecs, an agent software from OpenAI, that we're going to use to diagnose potential
+errors and run some debugging exercises that are really a very common place on our journey.
+Let's begin here.
+Let's remind ourselves a few points.
+A controller cannot act on a program that exists only in notes or on a modern host.
+We want to get away from the idea of modern hosts because we want to go back to the primitive
+basics of things and then build our knowledge from that perspective.
+When we think about expanding our complexity, as I'm talking about in this episode, and
+looking at hosting our evolve experiments that could be loaded, tested, and repeated,
+at this point in our evolution, a new board is a very dependable place to begin.
+So after power up, we got what's called a monitor, it's a program, this is a ROM that
+loads up, a serial path that actually works because we want to talk to it on a box and
+using the tools that we are accustomed to and create an evidential chain that the bytes
+that we intend are the bytes that the processor will execute.
+So we need to establish this very detailed sense of continuity and factual base, evidential
+foundations.
+So this is where we're going to turn now.
+So from the logic of a rules-based next move to the material question of how the machine
+receives its first instructions, so what system do we want to choose?
+They've got to think about something, right?
+So we have a lot of options, the one that I'm going to suggest is a format called an
+SBC or a single board computer.
+Those are nice because everything's in one place and you can connect into and parse out
+of that format without having other things to plug into it.
+So it's not a collection of like 10 boards to get your quote-unquote computer system.
+You have one board that does everything for you.
+Once in that simple, we don't want to get too away from our evolutionary pathway.
+So we started with the 4-bit wonder.
+So let's do it this way.
+I propose a single board computer that revolves around the Motorola 6809, Hitachi 6309, 8-bit
+view, circa 1980s.
+So these are, it's a small family of chips and this, in the single world computer, I'll
+get into in just a moment, but this board is built around the 609 and related X09 processors.
+So the machines are intentionally close enough to the hardware that the processor memory,
+ROM, serial interface, and expansion bus, it's a visible, distinct part of what I understand
+of a whole.
+So they're not, well, people could argue they're not modern computers.
+We're used to a hobbyist scale.
+That's a judgment.
+We don't want to call on judgments yet because then we're going to introduce bias into our
+situation.
+So we want a working system that's designed to make a boundary between the circuit and
+program available for study.
+So the board that I'm going to talk about today is what I call the M6-X09-2 SBC.
+I'll share the GitHub repo where you can find this on the supplements page in the sub-stack,
+but it gives us a dependable and reproducible place to continue the questions that begin
+from that wire up thing that we were working on.
+Such as how computers assembled, but from a wire up situation to a PCB.
+This is a PCB you send off to have it manufactured, and then you can either assemble it yourself
+with your own parts or you can ask the fab to do that, but I recommend getting the parts
+on your own.
+You can plug in, it's all socketed, so you can have things socketed in, so on and so on.
+Other than the chips themselves, the hardware, the parts are as modern as anything else.
+This way we can focus on how the software comes in to inhabit it, how it's tested and
+how that knowledge can be passed on, and that's where we're at now.
+So there is a familiar little drama in quote-unquote old computer work.
+So a chip is placed at a programmer, you've got a progress bar across your screen, the
+chip is removed, labeled and pressed into a socket, the fall goes well, a machine that
+has been silent, represents as a prompt.
+So it's tempting to make that story, the old ritual, the satisfying of a socket or e-prom,
+the moment a program becomes a physical object, so that sounds, that's a full cycle thing,
+but that's not really what we want to get into.
+But that is only the visible end of a longer chain.
+A raw, a brown programmer is exceptionally literal.
+It doesn't know whether an image is assembled from the intended source, or whether it ends
+at the intended address, or whether it's reset vector points to the executable code, or whether
+a serial interface has been configured so that it's flow control, the signal prevents it
+from talking to the other machines that we're looking at, so it accepts bytes, plays at
+a chip, and it leaves the rest to us.
+So we got to figure out everything, and that's not a bad thing.
+So the real question here is not how to burn a ROM, it's more like this.
+When can a program placed in a ROM be called dependable, a bit dependable beginning for
+a machine?
+Like I said, we're going to make machine intelligence, and we want to work it from that
+perspective and then come forward with a clean start.
+So for this, um, 6X09, the answer turned out to be much larger than one successful burn.
+It required the monitor to be rebuilt from its original source, and that source I got
+on somewhere across the internet.
+And so the quality of such things is always, you know, you have to be real skeptical in
+this stuff.
+So we presented it as an image whose fixed layout was checked in the serial interface,
+whose register contract was corrected measurements on the physical board, you know, with a oscilloscope,
+a fully primed read back, and a terminal that behaved as part of the protocol rather than
+as an innocent window into it.
+These are all, all these things are connected together.
+But at the end of all this process, which took, took, took a bit of time, the result
+is almost disappointingly simple, and you find this in the repository, a SIST09 Ram Smoke
+Test Past, then a SIST09, and then a prompt.
+So the lines are not much to look at, but they mean that the board, without a CTS jumper,
+now boots at 115,200 baud, receives a small program through its serial port, writes it
+into ram, executes it, returns to the monitor, and remains ready for this experiment.
+The point of this is not to say that it's a spectacular prompt, but that the point that
+we've earned this.
+So the first thing I'll talk about is the system 9, the monitor.
+It's a typical monitor, remoteable 6809, another I think other 6800 class TPUs, and what is
+a monitor?
+A monitor is a, it's a small recovery environment, I guess it's the best way to put it.
+It lives at a known, very specific address, comes up, immediately after reset, talks over
+a serial line, and gives the human operator a narrow, but immensely useful foothold, inspect
+the memory, load a program, begin execution, and return when the experiment is done.
+And that cycle makes a very good object for the series.
+There is not any kind of an intelligence on any, any grand sensor, any sense at all perhaps.
+But it's a way of refusing to begin from nothing, which is where we were with the 4-bit wonder.
+Nothing's in place, we've got to perform the sequences to bring the system up.
+And that works great for that part of the series, but now that we want to get more into what
+machine intelligence actually is, now that we have all the parameters set up, we don't
+want it to start from nothing.
+It's frustrating and it takes too much time, so we need someplace that's the next thing
+we stand upon next platform.
+We need a first conversation, basically.
+So I'll describe the process that I went through for this board.
+So how did I do this, I got this board that's available across the internet.
+I kind of re-engaged with it a bit, modernized a few things on it, and sent it off for manufacture.
+And I assembled it myself when I got back.
+Got the Assist09 monitor software from somewhere, not exactly where.
+And I decided to use the codecs agent to help diagnose it, because when everything was
+together, it didn't do anything, did the terminal didn't communicate with it.
+So by using an ubiquitous tool, such as an AI, I guess they call it now, such as a coding
+agent, right, we have to always be on guard for not just any syntactical errors, but wholesale
+errors and diagnostic judgements.
+So let me go through the case of this codecs agent, who helped me diagnose the Assist09
+problem, why it wouldn't boot, the monitor wouldn't report to the terminal.
+Where as a summary of the experience, I would state that it consistently pointed to hardware
+problems, while ignoring what actually the solution was a very simple software error.
+So let me start from the beginning.
+So in looking at this board and trying to create a next step for the machine intelligence
+work, there's an immediate practical difficulty with these things.
+The project, I know what I needed as a set of ingredients, so the project needed an assembler
+executable, which I think the build I got was from 1994, maybe a bit later, no one really
+knows where it came from, obviously it was from Motorola at some point.
+But that executable would not run on the present host.
+So okay, well, there's easy ways to conceal such a problem, I could look at this by getting
+another replacement binary on someone else's website, find a contemporary assembler that
+seemed compatible, or simply preserve the raw image forever, and stop asking how it was
+made, and maybe give up entirely when it just was not performed.
+But each option is useful in emergency, I suppose, but none of these is an adequate
+foundation for machines, a behavior machine intelligence that we need to understand and
+preserve going forward, there's no other way.
+So what I ended up doing was I got the original assembler source, and I use it to build a
+native host version, and that's what it's called AS9 host, the choice doesn't make
+the word glamorous, it makes it inspectable.
+The monitor can be assembled locally from its own source, and generate artifacts can
+be compared with the known baselines, so I know what I have here in front of me, and
+I can get the data sheets on each of these things to talk about that.
+But then the build is no longer historical accident performed by vanishing operation,
+vanishing operating system, it's vanished, it's obsolete, orphaned.
+But all these things come into the present day, there's not artifacts, archaeological
+artifacts anymore, they're like real life active things.
+So when your sources produce builds that are complete, that the machine executes these
+bytes from wrong, that's what we call a hardware work, even though we're doing a lot
+of software stuff, but it's still part of the hardware work, some people call it firmware.
+But more essentially it belongs in the same chain of care, as like checking the clock,
+you're going to find a painter measuring a supply rail, it's just as bad as all the
+other things.
+The point is, especially clear because there's one small source change, eventually that
+was the end of having to be the problem with this system, whose obsolete instructions had
+been removed during cleanup at some point.
+The monitor was still assembled, and it looked like a sound when the agent said, "Oh, this
+is just fine."
+But it was just one byte shorter.
+So the one byte is not an abstraction, when a fixed ROM image is expected to occupy a fixed
+region of the address space.
+So the monitor, in this case the monitor belongs on top of what a set up is a 16 kilobyte EPROM.
+So the monitor itself is about 2048 bytes, and then the full program image must reach
+the end of the memory at hexadecimal FFFF.
+And then the reset vector must point to F837, where the process should be executing after
+the reset.
+So the deleted byte definitely matters, it shifted the layout, but it intended to remain
+exact.
+So the repair is deliberately plain, retain the layout by it as an LP, no operation instruction,
+then result restores the 2048 byte monitor, correctly sized image, and a non-reset vector.
+That was good.
+And this is, deduction is a useful corrective to the habit of describing software's weightless,
+or configurable, which it is to a degree, but that's not, that's to which of a comfort
+word.
+The source code can always be improved, tidied up, or modernized in ways that are harmless,
+when a linker and loader will rearrange everything in runtime.
+The ROM image has a geography, right?
+Addresses are part of its meaning.
+A programmer does not recognize the unintended gap of that geography, it will faithfully write
+line by line, byte by byte, a technically valid, but misplaced sequence of bytes.
+So the image was checked in several ways, by size, mapped address range, reset vector,
+and to check sum.
+So none of these checks prove that the monitor will work though, but together they rule out
+a class of mistakes before chip is asked to carry them, so they turn all the bill completed
+into more useful statement.
+This is the image we believe in the place where the processor will look for it.
+So that's the first set of problems.
+The second set of problems, a little more insidious and show the weaknesses of the codecs, the
+diagnostic process of it.
+It assessed that the problem is zero in the face.
+So on this board there's a Motorola 6850 ACIA, and that's an asynchronous communications
+interface adapter, and then occupy two addresses, BE00 is a control and status register, BE01
+is a transmit and receive data register.
+The distinction follows directly from the wiring, CPU's address line A0 connects to the ACIA's
+register select pin.
+So that's a very compact description, but it's a contract.
+I want to address a write configures the device and read reports its condition.
+And we have the other side of that, a write sends a byte and read resends one.
+The source code reverses these roles, it's not using an unusual convention, it's addressing
+a different device from the one on the board.
+So the monitor code did not consistently under the contract.
+Its receive routine tested the transmit empty status bit, and its transmit routine tested
+the full, receive full bit.
+Earlier is it early initialization, wrote its reset and configuration values, so the data
+register and so the control register.
+Isn't that one error repeated, these are separate assumptions that happen to occupy the same
+piece of source?
+Who did this, I mean, wow, okay.
+But instead of pointing fingers, which is always fun to do, right?
+Especially when you're a programmer.
+With the repair, and each corrected each path, and added an emulator progression test.
+So as I'm going on fixing things, we're going to add a regression test as we go because
+let's make this complete.
+And it created a regression test for the register offsets and the status bit behavior in the
+emulator, right?
+So the emulator is extremely valuable tool to have because it doesn't replace the board
+which a lot of people do, but it gives us the register contract as a continuing test.
+It can tell us if a later edit once again writes control values to data address and
+waits for the wrong condition.
+So we have a set of truth, that's a staging before we actually take the time to burn.
+There is a bit of a process, but to burn the ROM, and then I'll take the chip out, put
+the chip in, that whole aspect.
+But in this case, the emulator cannot settle the whole question.
+So the model can reproduce, the model itself can reproduce a mistake of premise perfectly.
+When the model, both the model and the source share it, it's coincidentally right, but when
+they share that, you get this mistake in premise, the decisive evidence is the thing that you
+should always remember to go back on, it's the datasheet, that's the sense of truth,
+that's the manufacturer's datasheet, it tells you all the information you need to know about
+how that chip works, how that system works.
+And we'll describe the actual address 0, A0, to register select connection.
+And then you can transfer those observations made onto the physical board and see, okay,
+is the layout, is the board correct, was it main right, is there a line that's not going
+the right way, is there a physical error, or is it a software, so you can start to segregate
+through the debugging process and where the fault lies, before I had no idea, right,
+but now you're starting to, okay, I'm now reading the candidates of what could be situation.
+So in the physical sense of the board, you get a very unhelpful symptom, it's just silent,
+okay, the little LED light comes on when you plug it in, it's got power, and you know the
+chip gets won a little bit, but, okay, what else?
+The terminal window, yeah, it was blank after reset, nothing happened, same things to it
+but nothing.
+And then this is where things become a theater, of guessing, right, rounds wrong, clock's absent,
+we said the release of Syracuse was crossed, monitors saying something, you don't know,
+it's like everything at one time.
+And that's when a lot of people, including myself, just say, let me set this aside for
+a while, because it's, what is all this, I don't want to deal with it, but, and looking
+at the disciplined response, I don't want to choose the most vivid theory, it's to reduce
+the number of theories that remain possible, okay, use the process of deduction for that.
+So what do we have here?
+We have the power path, it's from the FTDI serial adapter, FTDI friend, it's a DF robot.
+So that adapter was corrected and measured at the board.
+And you can do that by, okay, you can measure the power, and you can also do a conduction
+between the TX and RX, and then sent on into a terminal, and you can see it, those bytes
+reflected back it, those values reflected back it just put that way.
+The reset was examined, we said the external buttons are reset, was found to release slowly
+through its RC network, rather than exhibiting the digital chatter, that accepts, that it
+suggests an unsuitable short capture, so that's how this is set up.
+We wanted to go through, we wanted to release it slowly through the RC network, and not
+digital chatter, that's what we do not want.
+The clock that's on the board measured in the range of 1.4, 1.843 megahertz, and that's
+expected from a 7.378 megahertz oscillator divided by 4.
+And the activity appeared on the lower address bus after reset, the ACA receiving transmit
+clocks were present at their expected rates, and then, of course, the ROM layout and its
+reset vector not been checked independently outside of that.
+So there you go, monitors, oh, the monitor's working, it should be working, right?
+But it's not.
+The force lies in the combination of these elements, give the board S power, processor
+leaves reset, it's clocked, it's fetching instructions, the serial device has clocks
+attached to it, right?
+The blank terminal is no longer the mystery, it's spread across the entire machine, it's
+bounded questions in these small segments.
+So the measurements that are made on the methodological points are easy to learn and
+easy to forget.
+You go through within the oscilloscope to diagnose and create a chain of evidence about
+measurement arrangements that can earn the trust as we're going along through this process.
+So missing your mismatch probe, a ground especially can create a comparison that looks persuasive
+precisely because it has the detail.
+But before I'm drawing conclusions from Sput captures, the channel 1 channel 2, on the
+ACI where you just select signal and it's transmitted output, channels are rechecked with
+the same pin on the shared ground, right?
+So only then was a comparison with interpreting.
+So the next clue was a clear descent, CTS.
+It's on the 6850 when the CTS is high, the transmitter's empty condition is inhibited.
+So the behavior match that symptom with an uncomfortable position, right?
+So that's the ACI could be active, right, and the process could be running, but the
+monitor can still wait forever for permission to send the first character.
+So here's where the human element comes into place and then the artificial intelligence
+AI diagnostic thing kind of gets pushed into the background.
+So there's two mistakes that had to be corrected before the clue could become, oh, this is what
+we're going to do.
+This is the solution for us.
+So first of all, the AI misidentified the pin sets.
+All it's on, CTS is on pin 24, right?
+And pin 23 is DCD, but I got these two things reversed.
+So having the data sheet in the repo and saying, check the data sheet, just look at this again.
+And that's settled that whole situation quickly.
+And for some reason, it assessed a low resolution schematic view that made the CTS look unconnected
+when in fact it's connected to a pad and then that pad connects to RTS on the other side
+and pin five.
+And then the agent spent quite a bit of time trying to convince me that you need to do
+a jumper between the CTS to ground and we'll do that as an experiment first.
+I said, OK, we can do this experiment.
+Let's just go through this.
+But then the system immediately came, immediately started working.
+So a system nine appeared.
+Now there are still problems with the terminal communication on the terminal itself, but
+that's a different story.
+But the RAM smoke test loaded in RAM and the monitor returned to its prompt.
+So hey, that strong evidence that there looks like there's a problem in hardware now, right?
+So it was telling me between the connection on the board.
+Well, OK, I'm not going to leave a jumper on it.
+That's stupid.
+I need to fix what's going on here.
+That's again, I can plug in on it or I put a solder a jumper on the backside of the board,
+right?
+And that was the next thing that came up.
+But again, going back and saying, hey, no, slow down here, look, look at the PCB.
+So what you can do is add an EDA Pro, that's actually really cool piece of software.
+You can load up a PC board and you can see highlights, you can highlight the connections
+as you're touching the different pins with your mouse.
+Then I can take a screenshot saying that CTS at pin 24 is connected to RTS, which is the
+request to send output in pin 5.
+And that is the board using a local horror flow control.
+So the ACA is not waiting for an external modem or a dangling input, it's responding
+to its own output.
+That's what's very interesting about this board, which makes it a good candidate for
+what we're going with the next, but, okay, then the last question we're looking at is
+that, okay, it's the control byte, it has to be worked out.
+The previous initialization value was 51 hexadecimal.
+So I selected the desired divided by 16 rate, 8N1 framing, but it set the RTS high.
+And since the RTS was looped back to CTS, the configuration disables the very transmitter
+that the monitor would later wait it upon.
+So the code was waiting correctly for a condition that its own initialization had made impossible.
+Gotta love that program and do that.
+The repair, it's repaired the control byte as 11 hexadecimal, it preserves the serial
+rate in the framing, it keeps RTS low, and it leaves the transmit interrupts disabled.
+With that changed, the temporary CTS jumper could be removed, I had to write another E
+prime image.
+And I think all told, I had to write 7, I had to write this GIP 7 times over the pair
+of diagnostics, saw a new 16 kilobyte E prime as a programmed, read back in the software
+and tested.
+And the monitor spoke without any external help at all, any connections.
+And a little side, a little side, set aside here, it got so severe at one point that the
+codecs agent was telling me that I had a solder, a pull-down resistor, a 10k pull-down resistor
+between the CTS and the ground.
+And it was so, oh no, that's the problem, that's the problem, that's the problem, that
+a lot of people are maybe not as driven as I am, or just maybe not as like bullheaded,
+like I'm not going that way, I'm not modifying this board if it's broken, okay it's broken,
+it's got to go back to the design process, kick back through that way, not, let me just
+put this on here.
+That's, we really got to be careful, be extremely cautious about listening to AIs, telling you
+what to do with diagnostic affairs.
+It seems to me that it's not sufficient to get the work done, so you still need to use
+your brain.
+But the tools are still viable in getting a lot of the minutiae out of the way, so you
+can focus on what's important, so I'm not discounting the entire thing and poo-pulling
+it to the heavens, but that there are useful contexts for the tools, but contexts where
+they fail, and fail miserably.
+So that's the other, the second aspect of what I'm talking about here, so our correct
+setting is not merely a setting that contains the expected expected board rate, it's a statement
+about the whole electrical relationship that follows from every bit in the control register.
+So I hexed that somebody's convenient shorthand, but it's not an explanation.
+So looking at the EEPROM itself, you'll feel the wrong burn, the chip that I'm using here
+is a 27C128, those CMOS.
+And I was using LG Tech, but I decided to upgrade it to the modern stuff, so I found
+this Bateronix Barlino Model 2, 32P, German company, it's so far working fabulous, it's
+not so great analytics, but it works on Windows, just fine.
+And the ordinary sequence is the right one, preserve a bit of an existing chip, select
+an exact device, blank checker replacement, program the image and verify it, do a read-back.
+And I liked it, what I like about the unit in the software they provide is, these systems
+are quote unquote old, so this is from the 80s, right?
+And that was quite a few years ago, and the chips themselves are also from that period
+of time, right?
+And what we're using, you know, one is 11 over here, right?
+And Linux, Trixie, the distance of time between these two events that need to be rectified
+in a way that you still have intuitiveness of what you want to carry out, but not lost
+in strange, not strange, but workarounds or ways of working with a piece of equipment
+that has been forgotten.
+So like there was a GTAC system, there was a way of doing multiple line writes that there
+was a way it was described in the manual, but it didn't really work that way, and I'm sure
+there was a way it would work, because obviously they worked at one point in time.
+But the whole rediscovery process, I decided, that's not where we want to go with this.
+We want to, the point of this is to create foundation points, so steps where we can evolve
+into machine intelligence, not get mired in details of segments that we don't really need.
+So we want to create a very important refinement on the word verify.
+So a successful dialogue from the program is useful, but it's not the only record.
+So this is the read back, as I just talked about.
+And that's a complete device image, and it compares byte for byte with a program image.
+So it's a SHA-256, it checks some, and when using the codecs to check, okay, check the
+read back that this is matching what was built, it can validate, oh, that's the same thing
+that's on the image.
+So we can guarantee that we're doing a one-for-one, we have the thing that we've created, and that
+thing is actually on the, I think, so that magic token.
+It's a very modest thing that it's doing, but it's a very important criteria of merit
+to say what's being intended, what we've done, built from source, and what we're intending
+to create, to put on the ROM, is not a dependency, it's a one-for-one relationship.
+I would state there's a very practical philosophy, and using small developmental rotations
+of e-proms.
+So a chip is not a sacred artifact, really because it's got the, it felt the burn.
+So if a program is being developed, something that stretches out from an algorithm, two
+reusable devices encourage each burn to answer the same name question.
+So does the image boot, does this configuration transmit, does this revise monitor load the
+smoke test, which is a S19 file, and it's an S file from Motorola.
+The repository, I get a repository I share on the sub-stack, it shows you that it'll
+provide the evidence and the reason for the changes and all the stuff is documented there.
+But then what I wanted to establish is that the chips remain instruments rather than becoming
+an expanded box of unlabeled near misses.
+So the monitor is now correct enough to reveal one final layer, the host terminal.
+It's natural to think of the terminal as a passive witness, it's not.
+It sets the pace, it sets your line endings, decides how to respond to echo, accepts keyboard
+events, and shapes the serial traffic that reaches a small pole machine, what we got here.
+So the first problem is those concerned S record uploads.
+The terminal I use here I wrote in TCL, a tool control language, I really like TCL because
+of its compactness and I'm using it a long time and it's really easy to work with, especially
+with the AI tool sets as well, it's very clear to the point.
+So the TCL terminal, the sender, that used to wait for a carriage return after each line
+and the assisto 9, that loader deliberately suppresses echo with carriage returns while
+it's loading.
+So what does that mean, the sender would transmit the first record but then wait for
+reply that the monitor was deliberately designed not to send.
+So both ends are behaving according to their own rules, together they had no protocol.
+So in revising the terminal software, you recognize the S record files and then transmit
+them as a character paste to continue streaming.
+So we're not demanding that an echo and the loader had promised to withhold.
+And this points back to the GTAC burner, I won't go into that, but that's when I mention
+that right here, that's more or less what's happening there.
+The second problem, the concerns, ordinarily typed commands, so typing directly into the
+scrollback window, it delivered the de gooey keys events immediately and it bypassed the
+configured inter-character delay, because it means the serial port, right, it's a copper
+wire, it's a line, then it can't go to speed of light, it's got to have a bit of time to
+get there.
+But we don't want to be in the situation, we're waiting forever.
+So there's a sweet spot between those two, so the inter-character delay is one of these
+techniques.
+So the fast 32 core tower box, Persephone can send a short command more quickly than a pulled
+ACA routine can rely on the consumer, obviously, right?
+So from the human perspective, the translation from what I expected, okay, a command seems
+to work, but only on its second attempt.
+So the repair to the cues, so the repairs that I did, it cues the direct typing and
+paces it at five milliseconds per character.
+A separate command entry field retains preferred route for complete monitor commands.
+Again, the lesson here is not that old serial systems are fragile curacities, but focus
+on timing, timing, focus behavior, echoes, and line endings are part of the interface
+contract.
+The host tool deserves to be tested as carefully as the board trace, when it's carrying the
+program that will run on the board, we want reliability end to end.
+So at this point, can read the modest smoke test, result with more precision, the message
+did not emerge from a single lucky boot, it stands at the end of the chain, original
+source built on a modern house, a fixed image with a checked size, range, and reset vector,
+ACIA address corrected against data sheet and the wiring, power reset clock, buses and
+serial clocks observed, local RTS to CTS flow control understood, and an EEPROM that's
+programmed and completely read back.
+And a terminal whose loader and typing behavior match the monitor it serves.
+And that chain is what turns Ram burning from a ritual into an engineering act.
+Now we've evolved.
+We've felt the burn in a way that helps us to reach the next step, and it changes what
+reproducible means.
+So reproducibility is not the claim that a source file exists somewhere, it's the ability
+to take a declared source and tool chain, produce an identified image, place it in an
+identified device, install it on an identified board, use stated serial conditions, and obtain
+a recorded behavior.
+It's a path from text to machine conduct that does not rely on any tricks whatsoever.
+There's a useful humility in this standard.
+The prompt does not establish that this 1609 system is general, autonomous or profound.
+It sets up a place where the 6809 is great, right?
+But I like we want to lead into the 6309 from Hitachi because there's a lot of quote unquote
+secret features that are implemented that makes the programmability and the things that it
+can do really, really, really interesting and things that you won't see in many of the
+places.
+But in order to get there, we need to establish a very narrow and a more viable context that
+there is now a known recovery experiment from which further claims and further hypotheses
+can be developed and tested.
+Now the board can load any contextually correct RAM resident experiment.
+It can run it, it can come back.
+Now that's the beginning that you can bank on.
+So the next phase does not require another blind term memory of your idea.
+We've already done that.
+We're finished with that part.
+We are free from all those things.
+So RAM becomes the fast loop, assemble test, inspect, revise and ROM holds the stable beginning
+that makes those experiments possible and that distinction matters.
+A durable monitor does not end experimentation.
+It begins the next generation of them.
+Thank you for listening.
