@@ -241,7 +241,6 @@ Companion material: `The Authority to Act` develops the episode’s recorded arg
 
 ### Episode #13
 
-
 _Feel the (ROM) Burn_
 
 Episode 13 records the completed ASSIST09 bring-up on the M6x09-II-SBC. The `27C128` EPROM is now a verified recovery environment rather than a proposed programming milestone: the monitor rebuilds from original source, occupies the checked fixed ROM layout, boots at `115200,n,8,1` without a CTS jumper, receives and runs a RAM smoke test, and returns to its prompt. The final full-device EPROM readback matches the programmer image byte for byte.
