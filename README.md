@@ -261,15 +261,21 @@ Episode Summary:
 
 _The Preessence Esoteric of Motorola_
 
-The center of the computing world is the centralized processor. This episode will examing the 6808 and 6809.
+Episode 14 turns from the verified ROM monitor to the processor as a visible centre of sequencing—not as a little electronic sovereign. Using the 6809-compatible HD63C09RP board as the concrete case, it follows the material arrangement that gives a small computer its conduct: registers, addresses, reset, ROM, RAM, serial I/O, peripherals, and the clock that makes an instruction sequence occur in time.
+
+The episode also returns to the transition function of a Turing machine: a finite rule table in which a current state and scanned symbol determine a write, a movement, and a next state. This “function matrix” is not a mystical source of intelligence or a numerical matrix; it is a disciplined account of what licenses a machine's next move. The 6809 is not a Turing machine, but its explicit state, condition codes, branches, and memory make the same question inspectable on a physical board.
+
+That legibility also becomes a political argument about present-day AI. The episode rejects both the doomer fantasy of a disembodied machine will and the booster claim that systems are neutral tools. Contemporary AI is made from data, labour, energy, institutions, ownership, deployment choices, and systems of accountability. The relevant questions are therefore material and civic: what is this system connected to, who is allowed to change it, who bears its failures, and who can contest or refuse its decisions?
 
 Episode Summary:
 
-* Introduce the `6808` and `6809` as the local centers of decision, sequencing, and coordination inside the machine
-* Explain why processor choice matters for memory layout, peripheral access, timing behavior, and the shape of the software that can realistically run
-* Contrast the modest but legible capabilities of these chips with the present habit of treating computation as an invisible cloud resource
-* Use Motorola's design language to show how architecture becomes concrete at the level of opcodes, buses, registers, and board constraints
-* Prepare the ground for the final fitting work by clarifying what the machine's computational body can and cannot support
+* Use the actual green HD63C09RP/6809-compatible SBC to distinguish a processor from the larger system of memory, interfaces, clock, power, and environment that produces behaviour
+* Explain the register model, 16-bit address space, reset vector, ROM/RAM roles, MC68B50-compatible serial path, and conditional branch as visible architectural agreements
+* Introduce the Turing-machine transition table: current state plus scanned symbol yields write, movement, and next state
+* Connect that finite rule structure to the practical question of which observation and condition authorise a program's next action
+* Contrast a small, testable computer with contemporary computation that is routinely discussed as an invisible cloud resource
+* Name the real political stakes of AI deployment—surveillance, discrimination, deskilling, extraction, concentration of power, and contestability—without treating them as inevitable acts of an autonomous machine
+* Prepare the next embodied-control experiments by clarifying both what the board can support and what a program alone cannot claim to be
 
 ### Episode #15
 
