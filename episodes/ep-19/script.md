@@ -10,6 +10,12 @@ Welcome to Episode 19 of `The Last Cyberneticist`.
 
 This episode is called `Away from scratch-building toward manufactured production`.
 
+Before we begin, a word about the M6x09 systems.
+
+They are a small family of single-board computers built around Motorola's 6809 and related x09 processors: machines intentionally close enough to the hardware that their processor, memory, ROM, serial interface, and expansion bus remain visible as distinct parts of one understandable whole. They are not modern computers reduced to a hobbyist scale. They are working systems designed to make the boundary between circuit and program available for study.
+
+The M6x09-II-SBC is one member of that family. It gives us a dependable, reproducible place to continue the questions that began at the wire-wrap bench: not only how a computer is assembled, but how software comes to inhabit it, how it is tested, and how that knowledge can be passed on.
+
 The machine in front of us is the M6x09-II-SBC.
 
 After the Four-Bit Wonder, it presents a useful change of scale.
