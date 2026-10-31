@@ -1,4 +1,4 @@
-# Episode 8 Podcast Script
+# Episode 15 Podcast Script
 
 ## Title
 
@@ -48,7 +48,7 @@ MUSIC: Let the tension bed widen slightly.
 
 HOST:
 
-Welcome to Episode 8 of `The Last Cyberneticist`.
+Welcome to Episode 15 of `The Last Cyberneticist`.
 
 This episode is called `The Tati Robot`.
 

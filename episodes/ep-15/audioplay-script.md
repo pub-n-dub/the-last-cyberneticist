@@ -55,10 +55,7 @@ room tone. The title is stamped on screen:
 
 **HOST — [NARRATION | `AV-HOST-INVESTIGATOR`]**
 
-This is an investigation into an object whose maker is not presently known.
-
-The photograph before us shows a small robot: a face, a chassis, mechanisms
-arranged to be seen as well as to do work.
+This is the results of an investigation into an object whose maker is not presently known. A long time ago an engineer set into hardware one of the most advanced animal-like robots ever to be invented. The photographs I was able to find show a small robot: a face, a chassis, mechanisms arranged to be seen as well as to do work. Not a prototype but one of a series of production models. The rumours are that it was made in France sometime during the mid-1950s, but nobody actually knows. The name, given by its discoverer, is the Tati. Named after the famed French director of the futuristic-comedy Mon Oncle. This report is not to turn any posed idenfication or anthromorpisation into authorship claims, it is simple a good story.
 
 It has come to be called the Tati robot. That name is a handle for this
 inquiry. It is not an authorship claim.

@@ -281,19 +281,19 @@ Episode Summary:
 
 _Logic of a Pure Mystery: The Tati Robot_
 
-Episode 15 changes genre. It is neither a bench episode nor a straight history: it is a rigorously sourced radio drama, using the spare atmosphere, scene grammar, and documentary sound of a BBC-style production to investigate an unidentified robot found in a Paris second-hand store in the early 2000s by Daniel Dennett. The question is not whether the machine can be made into a legend, but what the available evidence can actually support about who built it and the workshop culture from which it emerged.
+Episode 15 follows the Tati robot: an unusually finished, animal-like electromechanical machine whose maker remains unknown. It treats the gap in the record not as an invitation to invent a lone genius, but as evidence of the collective and often uncredited labour behind engineering. The episode sets that lost workshop history against the contemporary AI/AGI sales pitch, asking who owns the tools, who controls the infrastructure, and who gets to decide what machines are for.
 
 Episode Summary:
 
-* Open on the Tati robot as a mystery object: too finished to read as an accidental one-off
-* Make the radio-drama form part of the argument: archive-room ambience, photographs handled as sound, workshop texture, and pauses create tension without pretending uncertainty is proof
-* Establish the known Berkeley orbit around `Simon`, `Squee`, and their named assistants
-* Introduce abduction—the inference from clues to the most plausible explanation—between the series' usual deductive reasoning from algorithms and mechanisms and this episode's inductive ranking of candidate builders
-* Use the evidence for decentralized workshop labor, especially Jack Koff's offsite work on `Squee`
-* Test the credible suspect field: Porter, Jensen, Vall, Koff, Berkeley himself, or an unnamed Berkeley-adjacent workshop
-* Eliminate weak explanations, including the unsupported France-family theory
-* End with a bounded inference: the robot most likely emerged from a Berkeley-adjacent machine culture that exceeded the published official line
-* Preserve the investigative tone through documents, photographs, uncertainty, and explicit distinctions between evidence and speculation
+* Introduce the Tati robot as a finished mystery object, rather than a rough or accidental prototype
+* Treat the missing creator as a historical problem: a machine can survive while the workshop, technicians, and record of its making disappear
+* Reject the lone-genius account of engineering in favour of its actual conditions—teams, arguments, borrowed parts, failures, poor conditions, institutional politics, and uncredited skill
+* Place the robot within the partial evidence around mid-century cybernetics and an unnamed workshop culture, without turning resemblance into proof of authorship
+* Keep the limits visible: the identity of the builder remains unknown, and inference is not documentation
+* Contrast this open historical mystery with the closed story currently told about AI and AGI as an inevitable destiny
+* Name the material stakes behind that story: corporate control of data, energy, computing infrastructure, access, and the terms on which people work
+* Ask what a neo-feudal platform economy does to engineers, artists, learners, scientists, and other people who no longer own or control their tools
+* End with the political question carried by the Tati robot: who gets remembered, who gets paid, who gets control, and who gets to decide what machines are for
 
 ### Episode #16
 
